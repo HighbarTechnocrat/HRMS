@@ -1,0 +1,65 @@
+﻿.bd-title2 {
+  color: #843719;
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  height: 20px;
+  padding: 10px 3% 5px;
+  text-transform: uppercase;
+  width: 92%;
+}
+
+
+.following2 {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: auto;
+  margin: 5px 10px 0 0;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+  width: 98%;
+}
+
+.following-name2 {
+  float: left;
+  height: auto;
+  margin: 0 0 10px;
+  padding: 0 10px;
+  text-align: left;
+  width: 63%;
+	color:#000;
+	font-size:14px;
+}
+
+.following-name2 a {
+  color: #ae441a;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding:0;
+   margin:0 0 11pt 0;
+}
+
+.gallary-main3 {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: auto;
+  margin: 2% 0 0 3%;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+  width: 98%;
+}
+
+
+
+.following-name2.following-title img{
+	border: 0 none;
+    float: left;
+    margin: 0 10px 0 0;
+    opacity: 1;
+    vertical-align: middle;
+
+
+}

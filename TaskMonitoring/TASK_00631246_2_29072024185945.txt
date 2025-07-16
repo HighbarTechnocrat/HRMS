@@ -1,0 +1,73 @@
+	
+
+http://123.108.44.40:8002/vpsapapis/vpcrtvend?sap-client=300
+
+
+
+http://123.108.44.40:8002/vpsapapis/getauthtoken?sap-client=300
+
+
+Rg_Highbar
+Rg@1234567
+
+yOzSj4lweqGbx1JA3VZYLA==
+
+
+PRM_LocationChange.aspx
+PM_LocationChange.aspx
+RMChangeAdd.aspx
+DH_LocationChange.aspx
+DM_LocationChange.aspx
+RMPRMHODDMChangeAdd.aspx
+LocationTimesheetAdd.aspx
+
+EmployeeExitAdd.aspx
+EmployeeExit.aspx    Txt_Separation
+
+TaskExecuter_Edit.aspx
+
+
+Username:harshad.dhande@highbartech.com
+Password: Hd$Mar2021
+
+8600347275
+
+86986967286
+221122
+
+RG010255
+
+IP : 192.168.21.31
+User Name : Administrator
+Password : P@$$w0rd@123
+
+RefByRunwalEmp
+
+
+
+hdnEmpCode.Value
+,OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+
+http://localhost/APIAARP/api/ExcelDownload/Download?path1=
+
+
+
+https://docs.microsoft.com/en-us/certifications/exams/pl-300
+
+
+
+Username:harshad.dhande@highbartech.com
+Password: Hd$Mar2021, kIyDedYt , EMP_ID -631246
+https://iess.hgs-bs.com/Login.aspx?company=HIGHBAR
+
+intimations@cpc.incometax.gov.in
+
+sadanand.sarmalkar@highbartech.com
+
+https://sanjaypatil.atlassian.net/welcome/software
+
+
+mail.Body = "toMailIDs =" + toMailIDs + "<br> ccMailIDs =" + ccMailIDs + "<br><br>" + Convert.ToString(strbody) + Convert.ToString(strsignature);
+
+https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill
+

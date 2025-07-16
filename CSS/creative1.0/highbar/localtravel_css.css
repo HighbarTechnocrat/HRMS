@@ -1,0 +1,127 @@
+﻿select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+/*#content-container select {
+    -moz-appearance: none !important;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e8e8e8;
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    color: hsl(0, 0%, 39%);
+    float: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-top: 3px;
+    outline: 0 none;
+    padding: 10px 20px 10px 0;
+    width: 63% !important;
+    height: 50px !important;
+}
+input, textarea {
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin-top: 15px;
+    padding: 15px;
+}*/
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea{/*width:100%;*/}
+
+
+  
+
+#MainContent_localtevl_chkCOS {
+    width: 38%;
+}
+.localtrvl_Savebtndiv {
+    text-align: center;
+}
+#MainContent_localtrvl_delete_btn,#MainContent_localtrvl_btnSave,#MainContent_localtrvl_cancel_btn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+	/*Added by R1 on 27092018*/
+	margin: 25px !important;	
+    padding: 5px 15px;
+}
+#MainContent_localtrvl_delete_btn {
+    margin: 0 12px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+input[type="file"] {
+    max-width: 83% !important;
+}
+ 
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 80% !important;
+    /*height: 20px;*/
+}
+#MainContent_localtevl_chkCOS {
+    width: 11%;
+}
+.localtrvl_book {
+    width: 63% !important;
+}
+
+
+}
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) {
+
+
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 80% !important;
+}
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+@media only screen and (min-device-width : 600px) and (max-device-width : 960px) {
+
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 80% !important;
+    /*height: 20px;*/
+}
+
+}
+@media only screen and (min-device-width : 800px) and (max-device-width : 1280px) {
+
+}
+

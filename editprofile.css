@@ -1,0 +1,410 @@
+.editprofile{width:699px;float:left;border:1px solid #f8e497;margin:0 0 25px 80px !important}.editprofile-text{font-size:15px;color:#fff;padding:8px 10px;font-weight:700;background:#616161}.editprofileform{padding:10px}.editprofileform table{width:100%}.formtitle{text-align:left;padding:0 10px;vertical-align:top}.formtitle span{color:#000000;font-size:15px}.formtitle font{color:red;font-size:11px}.forminput{text-align:left;padding:5px 0;color:#000}.forminput font{font-size:11px;color:#fff}
+.forminput input {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #cccccc;
+  color: #000000;
+  font-family: Roboto,Arial,Tahoma,Verdana,serif,sans-serif;
+  font-size: 13px;
+  margin: 5px 20px;
+  outline: 0 none;
+  padding: 5px 0;
+  width: auto;
+}.forminput input:focus{background:#fff;color:#000;border-color:#843719;}.forminput textarea {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #cccccc;
+  color: #000000;
+  font-family: Roboto,Arial,Tahoma,Verdana,serif,sans-serif;
+  font-size: 13px;
+  min-width: 90%;
+  outline: 0 none;
+  padding: 0 10px;
+  width: auto;
+}.forminput textarea:focus{background:#fff;color:#000;border-color:#843719;}.forminput select{border:1px solid #f28820;padding:5px 0;width:96%;font-size:13px;outline:0;color:#000000;font-family:Roboto,Arial,Tahoma,Verdana,serif,sans-serif;background:#fff}.forminput select:focus{background:#fff;color:#000;border-color:#f28820;}.forminput select option{font-weight:400}.formerror{text-align:left;color:red;font-size:12px;padding-left:50px !important;}
+.cancelbtndiv, .cancelbtndiv, .submitbtndiv {
+  float: left;
+  margin: 20px 5px 20px 20px !important;
+  padding: 5px 0;
+}
+.start {
+  float: left;
+  width: 28% !important;
+}
+.startrtime {
+  width: 27% ;
+}
+.alignRight {
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+.alignLeft {
+  border: 1px solid rgb(226, 226, 226);
+  display: inline-block;
+  padding-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+.select1 {
+  float: left;
+  width: 96% !important;
+}
+.mobilenotextbox{width:256px}
+/*.submitbtn{background:rgba(0, 0, 0, 0) none repeat scroll 0 0;color:#843719 !important;-webkit-transition:all .3s ease 0s;
+-moz-transition:all .3s ease 0s;transition:all .3s ease 0s;cursor:pointer;padding:8px 10px;
+text-transform:capitalize;font-size:14px;text-decoration:none;text-align:center;border-radius:0px;
+border:1px solid #843719;border:1px solid #843719;}
+.submitbtn:active,.submitbtn:hover{
+	color:#fff !important;background:#f28820;border:1px solid #f28820;}*/.cancelbtn{background:none ;color:#843719;-webkit-transition:all .3s ease 0s;-moz-transition:all .3s ease 0s;transition:all .3s ease 0s;cursor:pointer;padding:8px 20px;text-transform:capitalize;font-size:14px;text-decoration:none;text-align:center;border:none;border:1px solid #843719;border-radius:3px;}.cancelbtn:active,.cancelbtn:hover{color:#fff !important;background:#f28820;border:1px solid #f28820;border-radius:3px;}
+
+
+.formtitle {
+  text-align: left;
+  padding-top:6px;
+}
+
+.rbtnprofile {
+  position: relative;
+  width: 100px;
+  top:10px;
+}
+
+.rbtnprofile > input {
+  width: 35px;
+}
+
+.rbtnprofile > label {
+  padding-left: 17px !important;
+}
+.formcheckbox {
+  border: 1px solid #f28820;
+  color: #000000;
+  font-family: Roboto,Arial,Tahoma,Verdana,serif,sans-serif;
+  font-size: 13px;
+  min-height: inherit;
+  padding: 1%;
+  font-weight:400;
+}
+
+.pstchk{
+    padding:1%;
+    width:96%;
+}
+
+.rblpostgrp td {
+  border-collapse: collapse;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+                                                                                                                                                                 .editprofileform table tr{
+    margin-top:5px;  
+    margin-bottom:5px;                                                                                                                                               }
+
+                                                                                                                                                                 .uplbtn{Width:95px;background:#303030;color:#fff;-webkit-transition:all .3s ease 0s;-moz-transition:all .3s ease 0s;transition:all .3s ease 0s;cursor:pointer;padding:8px 16px;text-transform:capitalize;font-size:14px;text-decoration:none;text-align:center;border-radius:5px;border:none;border:1px solid #505050}.uplbtn:active,.uplbtn:hover{color:#fff;background:#2e85dc;border:1px solid #2e85dc}
+
+
+
+.MainContent_userpost_txtdesc_OuterTable{width:100% !important;margin:0px !important;margin-top:0px !important;margin-bottom:0px !important;}.MainContent_userpost_txtdesc_Toolbar > table{margin:0 !important;margin-top:0px !important;margin-bottom:0px !important;}.MainContent_userpost_txtdesc_Toolbar tr {
+  margin: 0 !important;margin-top:0px !important;margin-bottom:0px !important;
+}.MainContent_userpost_txtdesc_Toolbar td {
+  margin: 0 !important;
+  padding: 0 !important;margin-top:0px !important;margin-bottom:0px !important;
+}
+
+ /* addpost page css*/
+
+   table {
+  margin:0px !important;
+}
+    td{padding:5px 0;}.wishlistpage {
+  margin: 0 auto;
+  width: 100%;
+}.editprofile {
+  border: 1px solid #f8e497;
+  margin: 0 auto;float:none;
+}.editpost {
+  width: 86% !important;
+}
+   .wishlistpagediv {
+  float: right;
+  margin: 20px 0px;
+  padding: 0 5px;
+  width: 99%;
+  }
+
+   .editpost {
+    width: 86% !important;
+}
+.editprofile {
+    border: none;
+    float: none;
+    margin: 0 0 25px 20px;
+    width: 600px;
+}
+.editprofile {
+  margin-left: 60px !important;
+}
+#MainContent_userpost_pnlpost > table {
+  background: #ffffff none repeat scroll 0 0;
+  text-align: center;
+  width: 100% !important;
+}
+.enterposttitle {
+  display: table-cell;
+  float: left;
+  padding-left: 40px !important;
+  position: relative;
+  width: 675px;
+}
+.enterpostdescription {
+  display: table-cell;
+  float: left;
+  padding-left: 40px;
+  position: relative;
+  width: 65% !important;
+}
+.startdate-endate {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  display: inline-block;
+  float: right;
+  min-width: 255px;
+  position: absolute;
+  right: 180px;
+  width: 200px !important;
+}
+.editpost {
+  width: 90% !important;
+}
+.forminput i {
+  color: #843719;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 0 0 -43px;
+  vertical-align: middle;
+  width: auto;
+}
+#MainContent_userpost_txtdesc_toolbarArea select {
+  background-color: #ffffff;
+  color: #151515;
+  font: 11px Tahoma,Verdana,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.mandatory > font {
+  color: red;
+}
+.mandatory {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.ckeditor iframe {
+  border: 1px solid #f28820;
+  margin: 0 1%;
+  width: 97% !important;
+}
+
+.ckeditor iframe:focus{
+    border:1px solid #843719 !important;
+     background:#fff;
+        color:#000;
+}
+ /*.mainContainer {
+        background: #FFFFFF;
+       
+    }*/
+
+.delete{
+  background: rgba(0, 0, 0, 0) url("../images/delete.png") no-repeat scroll 0 0 / 100% auto;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+.chkboxpost input {
+  margin: 5px !important;
+  padding: 5px !important;
+  vertical-align: middle;
+}
+
+.rblpostgrp {width:23% !important;}
+
+@media only screen and (max-width:1000px) and (min-width:240px){.editprofile{width:90%;margin: 10px 5% !important;}.formtitle{width:30%;padding:0}.forminput input,.forminput select,.forminput textarea{width:100%}.editprofile {
+}
+.editprofileform table {
+  display: inline-block;
+  width: 100%;
+}
+tbody {
+  display: inline-block;
+  width: 100%;
+}
+.editprofileform table tr {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+.mandatory {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+.forminput {
+  color: #000000;
+  padding: 5px 0;
+  text-align: left;
+  width: 100%;
+}
+.formtitle {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+.rblpostgrp td label {
+  display: inline-block;
+  width: 50%;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30% !important;
+}
+.rblpostgrp td {
+  border-collapse: collapse;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 !important;
+  width: 50%;
+}
+.rblpostgrp {
+  width: 100% !important;
+}
+.editprofile {
+  margin: 10px 2% !important;
+  width: 92% !important;
+}
+.cancelbtndiv, .submitbtndiv {
+  float: left;
+  margin: 20px 0 0 30px !important;
+  padding: 5px 0;
+  text-align: center;
+}
+td {
+  display: inline-block;
+}}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20% !important;
+}
+.start {
+  float: left;
+  width: 41% !important;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: auto;
+}
+input[type="checkbox"], input[type="radio"] {
+  width: auto !important;
+}
+#MainContent_userpost_ddlgroup label {
+  display: inline;
+  width: 100% !important;
+}
+
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px){
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 18% !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

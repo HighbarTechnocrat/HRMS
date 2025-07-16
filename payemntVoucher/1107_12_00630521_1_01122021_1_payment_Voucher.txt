@@ -1,0 +1,59 @@
+public static void sendMail(string toMailIDs, string strsubject, string strbody, String strattchfilepath, string ccMailIDs)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                string[] strtoEmail = Convert.ToString(toMailIDs).Trim().Split(';');
+
+                string[] strCCEmail = Convert.ToString(ccMailIDs).Trim().Split(';');
+                for (int i = 0; i < strtoEmail.Length; i++)
+                {
+                    if (Convert.ToString(strtoEmail[i]).Trim() != "")
+                        mail.To.Add(strtoEmail[i]);
+                }
+
+                for (int i = 0; i < strCCEmail.Length; i++)
+                {
+                    if (Convert.ToString(strCCEmail[i]).Trim() != "")
+                        mail.CC.Add(strCCEmail[i]);
+                }
+
+                StringBuilder strsignature = new StringBuilder();
+                mail.From = new MailAddress("noreply@highbartech.com", "OneHR");
+
+                mail.Subject = strsubject;
+                mail.Body = Convert.ToString(strbody) + Convert.ToString(strsignature);
+                mail.IsBodyHtml = true;
+                mail.Priority = MailPriority.Low;
+
+
+                if (Convert.ToString(strattchfilepath).Trim() != "")
+                {
+                    Attachment attch = new Attachment(strattchfilepath);
+                    mail.Attachments.Add(attch);
+                }
+
+                using (SmtpClient smtp = new SmtpClient())
+                {
+                    smtp.Host = "smtp.office365.com"; //Highbar SMTP
+                   
+                    smtp.Port = 587;
+                    smtp.TargetName = "STARTTLS/smtp.office365.com";
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    System.Net.NetworkCredential SMTPUserInfo = new System.Net.NetworkCredential("noreply@highbartech.com", "HBT@2019");
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = SMTPUserInfo;
+                    smtp.EnableSsl = true;
+                    System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls | System.Net.SecurityProtocolType.Tls11 | System.Net.SecurityProtocolType.Tls12;
+                    smtp.Send(mail);
+                }
+                mail.Dispose();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+        }

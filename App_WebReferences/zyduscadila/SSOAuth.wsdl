@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://portal.highbartech.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://portal.highbartech.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://portal.highbartech.com/">
+      <s:element name="ValidateSSOKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SSOKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateSSOKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateSSOKeyResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateBySSOKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SSOKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateBySSOKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AuthenticateBySSOKeyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateSSOKeyForIntranet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SSOKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateSSOKeyForIntranetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateSSOKeyForIntranetResult" type="tns:ValidateSSOKeyForIntranetRes" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ValidateSSOKeyForIntranetRes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsValid" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmployeeNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MobileNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DateOfBirth" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Designation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExtensionNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TemporaryAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PermanentAddress" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SSOAuthServiceUser" type="tns:SSOAuthServiceUser" />
+      <s:complexType name="SSOAuthServiceUser">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="AuthenticateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthenticateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AuthenticateUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployeeNoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateUserinSAP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateUserinSAPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidateUserinSAPResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="perner" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidateSSOKeySoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateSSOKey" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSSOKeySoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateSSOKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateBySSOKeySoapIn">
+    <wsdl:part name="parameters" element="tns:AuthenticateBySSOKey" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateBySSOKeySoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateBySSOKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSSOKeyForIntranetSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateSSOKeyForIntranet" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSSOKeyForIntranetSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateSSOKeyForIntranetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateSSOKeyForIntranetSSOAuthServiceUser">
+    <wsdl:part name="SSOAuthServiceUser" element="tns:SSOAuthServiceUser" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="AuthenticateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNo" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUserinSAPSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateUserinSAP" />
+  </wsdl:message>
+  <wsdl:message name="ValidateUserinSAPSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateUserinSAPResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SSOAuthSoap">
+    <wsdl:operation name="ValidateSSOKey">
+      <wsdl:input message="tns:ValidateSSOKeySoapIn" />
+      <wsdl:output message="tns:ValidateSSOKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateBySSOKey">
+      <wsdl:input message="tns:AuthenticateBySSOKeySoapIn" />
+      <wsdl:output message="tns:AuthenticateBySSOKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSSOKeyForIntranet">
+      <wsdl:input message="tns:ValidateSSOKeyForIntranetSoapIn" />
+      <wsdl:output message="tns:ValidateSSOKeyForIntranetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input message="tns:AuthenticateUserSoapIn" />
+      <wsdl:output message="tns:AuthenticateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNo">
+      <wsdl:input message="tns:GetEmployeeNoSoapIn" />
+      <wsdl:output message="tns:GetEmployeeNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserinSAP">
+      <wsdl:input message="tns:ValidateUserinSAPSoapIn" />
+      <wsdl:output message="tns:ValidateUserinSAPSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SSOAuthSoap" type="tns:SSOAuthSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateSSOKey">
+      <soap:operation soapAction="http://portal.highbartech.com/ValidateSSOKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateBySSOKey">
+      <soap:operation soapAction="http://portal.highbartech.com/AuthenticateBySSOKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSSOKeyForIntranet">
+      <soap:operation soapAction="http://portal.highbartech.com/ValidateSSOKeyForIntranet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ValidateSSOKeyForIntranetSSOAuthServiceUser" part="SSOAuthServiceUser" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://portal.highbartech.com/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNo">
+      <soap:operation soapAction="http://portal.highbartech.com/GetEmployeeNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserinSAP">
+      <soap:operation soapAction="http://portal.highbartech.com/ValidateUserinSAP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SSOAuthSoap12" type="tns:SSOAuthSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateSSOKey">
+      <soap12:operation soapAction="http://portal.highbartech.com/ValidateSSOKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateBySSOKey">
+      <soap12:operation soapAction="http://portal.highbartech.com/AuthenticateBySSOKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateSSOKeyForIntranet">
+      <soap12:operation soapAction="http://portal.highbartech.com/ValidateSSOKeyForIntranet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ValidateSSOKeyForIntranetSSOAuthServiceUser" part="SSOAuthServiceUser" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuthenticateUser">
+      <soap12:operation soapAction="http://portal.highbartech.com/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeNo">
+      <soap12:operation soapAction="http://portal.highbartech.com/GetEmployeeNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUserinSAP">
+      <soap12:operation soapAction="http://portal.highbartech.com/ValidateUserinSAP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SSOAuth">
+    <wsdl:port name="SSOAuthSoap" binding="tns:SSOAuthSoap">
+      <soap:address location="http://portal.highbartech.com/UserManagement/SSOAuth.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SSOAuthSoap12" binding="tns:SSOAuthSoap12">
+      <soap12:address location="http://portal.highbartech.com/UserManagement/SSOAuth.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

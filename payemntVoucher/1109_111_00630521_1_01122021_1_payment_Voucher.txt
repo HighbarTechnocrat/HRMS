@@ -1,0 +1,10 @@
+exec SP_Admin_Location_TimeSheet @qtype='Update',@comp_code='AMT-1',@company_name='Highbar Technocrat Ltd.',@isactive='D',
+@wrk_schedule='0',@view_attendance='Y',@view_travls='Y',@view_leave='Y',@view_fuel='Y',@view_mobile='Y',
+@view_paymentVoucher='Y',@org_Comp_code='1000',@Location_name='AMT-Daryapur',@ADDRESS='',@PIN='',@CITY='',@STATE='',@COUNTRY='',
+@TYPE='CLIENT',@PM='00631015',@UPDATEDBY='user.m1@highbartech.com',@SCHEDULE_ID=3,@Id='AMT-1',
+@PRM='00630521',@DM='00630521',@DH='00630521'
+
+Select  * from [dbo].[tbl_hmst_company_Location_Timesheet] order by CREATEDON DESC
+
+Select Comp_Code,SPOC_ID,Auto_ESCALATION,USER_ESCALATION,PM,PRM,DM,DH,CreatedBy,CREATEON,UPDATEBY,UPDATEON from tbl_CustEscalationSPOCDetail
+order by CREATEON DESC

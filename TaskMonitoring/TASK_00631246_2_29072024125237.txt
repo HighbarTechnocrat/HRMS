@@ -1,0 +1,122 @@
+https://s4hrdev.altasnim.com/sap/opu/odata/sap/ZTPI_HR_MAS_SRV/$metadata
+
+
+C:\VendorPortal\VendorPortal\VendorAdmin
+C:\VendorPortal\VendorPortalAPI\VendorAPI
+C:\VendorPortal\VendorPortal\VendorPortal
+
+
+
+http://123.108.44.41:8001/vpsapapis/getauthtoken?sap-client=120
+http://123.108.44.41:8001/vpsapapis/vpcrtvend?sap-client=120
+
+<add key="SAPUserName" value="vpuser" />
+<add key="SAPPassword" value="Pass@1234" />
+<add key="SAPAuthorizationKey" value="dnB1c2VyOlBhc3NAMTIzNA==" />
+
+<add key="SAPUserName" value="Rg_Highbar5" />
+<add key="SAPPassword" value="Rg@1234" />
+<add key="SAPAuthorizationKey" value="UmdfSGlnaGJhcjU6UmdAMTIzNA==" />
+
+
+RG010255
+
+IP : 192.168.21.31
+User Name : Administrator
+Password : P@$$w0rd@123
+
+
+
+
+http://rgdevapl.runwal.com:8001/zinv_billdesk?sap-client=110&VENDOR=TEST1
+
+Hd$Mar2021
+
+PONUMBER
+VENDORCODE
+INVOICENO
+INVOICEDATE
+INVOICEAMT
+INVOICEAPPROVALSTATUS
+PAYMENTAPPROVALSTATUS
+PAIDAMT
+VIEWINVOCIEFILE
+
+
+874982997
+
+RG010255
+
+https://vendorportal.runwalgroup.in/VendorPortal/VendorRegistration
+
+vportal
+@pOrt@l#@$
+
+RG000MDM
+Runwal@123
+
+SP_GETLEAVETYPE
+
+manishk
+Tanish@201
+
+103.182.141.77
+@#$$#@
+
+Administrator
+P@$$w0rd
+
+iIAKj4a7
+("noreply-vendorportal@runwalgroup.in", "Runwal@123");
+
+sudarshan@precastek.com
+
+Vendor Application Status Check
+
+
+ We Want one day's down time for vendor portal Application and database movement to production server.
+ Please suggest date as per your convenience
+
+
+ZVPF_VENDOR_CRT
+
+http://runwal.com/VendorPortal
+https://vendorportal.runwal.com/VendorAdmin/
+http://vendorportal.runwal.com/VendorPortal/
+
+
+
+https://vendorportal.runwalgroup.in/VendorPortal/
+https://vendorportal.runwalgroup.in/VendorPortal/
+https://vendorportal.runwalgroup.in/VendorAdmin/
+
+https://ess.hgsbs.com/Login/Login HGS-login
+
+--MH14JX0443
+Select * from tbl_VendorRegistrationDetails
+
+Select * from tbl_SAP_URLMaster
+
+--- http://123.108.44.41:8001/vpsapapis/getauthtoken?sap-client=120
+--  https://hbt-hana01.highbartech.com/vpsapapis/getcompnycode?sap-client=130
+--  http://123.108.44.41:8001/vpsapapis/vpcrtvend?sap-client=120
+
+-- http://123.108.44.39:8000/vpsapapis/getauthtoken?sap-client=300    -- login 
+-- http://123.108.44.39:8000/vpsapapis/getcompnycode?sap-client=300   -- GETCOMPANY
+-- http://123.108.44.39:8000/vpsapapis/vpcrtvend?sap-client=300      -- CreateVendor
+
+
+Rg_Highbar5
+Rg@1234
+
+RG_HIGHBAR5
+
+
+
+
+-- VP/NVR/06-2024/0001159
+
+ System.Net.NetworkCredential SMTPUserInfo = new System.Net.NetworkCredential("noreply-vendorportal@runwalgroup.in", "Runwal@123");
+
+https://pinetools.com/corrupt-file-generator
+

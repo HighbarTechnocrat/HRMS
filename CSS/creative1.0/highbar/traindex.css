@@ -1,0 +1,413 @@
+﻿#MainContent_lnk_mng_trvlrequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlrequest  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_trvlexpenses  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_trvlexpenses  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_trvlexpenseswpay  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlinbox  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlParametersmst  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvl_TDInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_TeamCalendar {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvl_COSInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvl_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_expens_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlreport  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlAccInbox  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvlattendanceinbox  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_trvePara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+
+}
+#MainContent_lnk_expPara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+
+}
+.index ul li {
+    margin: 0 0 2% 0;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    #MainContent_lnk_trvlParametersmst {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_trvl_TDInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_trvl_COSInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_trvl_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_expens_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+    #MainContent_lnk_trvlreport {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+       #MainContent_lnk_trvlAccInbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+    #MainContent_lnk_trvlattendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+    #MainContent_lnk_trvePara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+    #MainContent_lnk_expPara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+    #MainContent_lnk_TeamCalendar {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+#MainContent_lnk_mng_trvlrequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_trvlrequest  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_trvlexpenses  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_mng_trvlexpenses  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_mng_trvlexpenseswpay  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvlinbox  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvlParametersmst  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvl_TDInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvl_COSInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvl_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_expens_AccInbox{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvlreport  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvlAccInbox  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvlattendanceinbox  {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+}
+#MainContent_lnk_trvePara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+
+}
+    #MainContent_lnk_TeamCalendar {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_expPara {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+
+
+}
+}

@@ -1,0 +1,17 @@
+<NewDataSet>
+  <product>
+    <productid>10606</productid>
+    <categoryid>37</categoryid>
+    <categoryname>ProjectsTEST</categoryname>
+    <smallimage />
+    <bigimage>Chrysanthemum_20170918_040400.jpg</bigimage>
+    <productname>Test Project 1</productname>
+    <createdby>intranet@creativewebmall.com</createdby>
+    <createdon>2017-09-18T16:04:01.017+05:30</createdon>
+    <shortdescription>&lt;p&gt;test project goes here .. checkthe GUI output.. &lt;/p&gt;</shortdescription>
+    <startdate>2017-09-18T00:00:00+05:30</startdate>
+    <enddate>2017-09-20T00:00:00+05:30</enddate>
+    <videoembed />
+    <filename />
+  </product>
+</NewDataSet>

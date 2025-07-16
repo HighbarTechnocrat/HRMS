@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ThankyouCard" targetNamespace="http://tempuri.org/ThankyouCard.xsd" xmlns:mstns="http://tempuri.org/ThankyouCard.xsd" xmlns="http://tempuri.org/ThankyouCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ThankyouCard" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ThankyouCard" msprop:Generator_DataSetName="ThankyouCard">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dsThankyouCard_Send" msprop:Generator_RowClassName="dsThankyouCard_SendRow" msprop:Generator_RowEvHandlerName="dsThankyouCard_SendRowChangeEventHandler" msprop:Generator_RowDeletedName="dsThankyouCard_SendRowDeleted" msprop:Generator_RowDeletingName="dsThankyouCard_SendRowDeleting" msprop:Generator_RowEvArgName="dsThankyouCard_SendRowChangeEvent" msprop:Generator_TablePropName="dsThankyouCard_Send" msprop:Generator_RowChangedName="dsThankyouCard_SendRowChanged" msprop:Generator_UserTableName="dsThankyouCard_Send" msprop:Generator_RowChangingName="dsThankyouCard_SendRowChanging" msprop:Generator_TableClassName="dsThankyouCard_SendDataTable" msprop:Generator_TableVarName="tabledsThankyouCard_Send">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="card_sub" msprop:Generator_UserColumnName="card_sub" msprop:Generator_ColumnPropNameInTable="card_subColumn" msprop:Generator_ColumnPropNameInRow="card_sub" msprop:Generator_ColumnVarNameInTable="columncard_sub" type="xs:string" minOccurs="0" />
+              <xs:element name="Send_From" msprop:Generator_UserColumnName="Send_From" msprop:Generator_ColumnPropNameInTable="Send_FromColumn" msprop:Generator_ColumnPropNameInRow="Send_From" msprop:Generator_ColumnVarNameInTable="columnSend_From" type="xs:string" minOccurs="0" />
+              <xs:element name="Send_To" msprop:Generator_UserColumnName="Send_To" msprop:Generator_ColumnPropNameInTable="Send_ToColumn" msprop:Generator_ColumnPropNameInRow="Send_To" msprop:Generator_ColumnVarNameInTable="columnSend_To" type="xs:string" minOccurs="0" />
+              <xs:element name="createdon" msprop:Generator_UserColumnName="createdon" msprop:Generator_ColumnPropNameInTable="createdonColumn" msprop:Generator_ColumnPropNameInRow="createdon" msprop:Generator_ColumnVarNameInTable="columncreatedon" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsThankyouCard_Resived" msprop:Generator_RowEvHandlerName="dsThankyouCard_ResivedRowChangeEventHandler" msprop:Generator_RowDeletedName="dsThankyouCard_ResivedRowDeleted" msprop:Generator_RowDeletingName="dsThankyouCard_ResivedRowDeleting" msprop:Generator_RowEvArgName="dsThankyouCard_ResivedRowChangeEvent" msprop:Generator_TablePropName="dsThankyouCard_Resived" msprop:Generator_RowChangedName="dsThankyouCard_ResivedRowChanged" msprop:Generator_RowChangingName="dsThankyouCard_ResivedRowChanging" msprop:Generator_TableClassName="dsThankyouCard_ResivedDataTable" msprop:Generator_RowClassName="dsThankyouCard_ResivedRow" msprop:Generator_TableVarName="tabledsThankyouCard_Resived" msprop:Generator_UserTableName="dsThankyouCard_Resived">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Card_subject" msprop:Generator_ColumnPropNameInRow="Card_subject" msprop:Generator_ColumnPropNameInTable="Card_subjectColumn" msprop:Generator_ColumnVarNameInTable="columnCard_subject" msprop:Generator_UserColumnName="Card_subject" type="xs:string" minOccurs="0" />
+              <xs:element name="Resived_From" msprop:Generator_ColumnPropNameInRow="Resived_From" msprop:Generator_ColumnPropNameInTable="Resived_FromColumn" msprop:Generator_ColumnVarNameInTable="columnResived_From" msprop:Generator_UserColumnName="Resived_From" type="xs:string" minOccurs="0" />
+              <xs:element name="Received_To" msprop:Generator_ColumnPropNameInRow="Received_To" msprop:Generator_ColumnPropNameInTable="Received_ToColumn" msprop:Generator_ColumnVarNameInTable="columnReceived_To" msprop:Generator_UserColumnName="Received_To" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsThankyouCard_Count" msprop:Generator_RowEvHandlerName="dsThankyouCard_CountRowChangeEventHandler" msprop:Generator_RowDeletedName="dsThankyouCard_CountRowDeleted" msprop:Generator_RowDeletingName="dsThankyouCard_CountRowDeleting" msprop:Generator_RowEvArgName="dsThankyouCard_CountRowChangeEvent" msprop:Generator_TablePropName="dsThankyouCard_Count" msprop:Generator_RowChangedName="dsThankyouCard_CountRowChanged" msprop:Generator_RowChangingName="dsThankyouCard_CountRowChanging" msprop:Generator_TableClassName="dsThankyouCard_CountDataTable" msprop:Generator_RowClassName="dsThankyouCard_CountRow" msprop:Generator_TableVarName="tabledsThankyouCard_Count" msprop:Generator_UserTableName="dsThankyouCard_Count">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="SendCount" msprop:Generator_ColumnPropNameInRow="SendCount" msprop:Generator_ColumnPropNameInTable="SendCountColumn" msprop:Generator_ColumnVarNameInTable="columnSendCount" msprop:Generator_UserColumnName="SendCount" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedCount" msprop:Generator_ColumnPropNameInRow="ReceivedCount" msprop:Generator_ColumnPropNameInTable="ReceivedCountColumn" msprop:Generator_ColumnVarNameInTable="columnReceivedCount" msprop:Generator_UserColumnName="ReceivedCount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

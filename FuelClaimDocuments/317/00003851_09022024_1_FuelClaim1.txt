@@ -1,0 +1,153 @@
+RECEIVED , EXEMPTION
+https://vendorportal.runwalgroup.in/VendorPortal/VendorRegistration
+
+Abbott Hotel
+
+103.182.141.77
+@#$$#@
+
+sp_Vendor_Reg_Details
+
+var AntiBriberyCertificateReceived = null;
+var AntiBriberyCertificateExemption = null;
+
+AntiBriberyCertificateReceived
+AntiBriberyCertificateExemption
+
+http://localhost/VendorAPI/api/
+
+http://localhost/VendorAdmin
+http://localhost/VendorPortal
+http://localhost:50873/
+
+REQUEST MORE INFORMATION FROM VENDOR
+
+
+
+--filesBankDocument
+
+
+   var AntiBriberyCertificateReceived = null;
+    var AntiBriberyCertificateExemption = null;
+
+if ($('input[name="AntiBriberyCertificateReceived"]:checked').length == 0) {
+        $('#rd_03').parent(".radio-wrap").parent(".inputField").addClass('error');
+
+         "AntiBriberyCertificateReceived": AntiBriberyCertificateReceived,
+        "AntiBriberyCertificateExemption": AntiBriberyCertificateExemption,
+
+
+
+  AntiBriberyCertificateReceived = $("input[name='AntiBriberyCertificateReceived']:checked").val();
+
+ D:\Vendor Portal Source Code\VendorPortal\VendorAPI\VendorAPI\UploadedDocuments\VendorRegistration
+
+
+ We Want one day's down time for vendor portal Application and database movement to production server.
+ Please suggest date as per your convenience
+ 
+
+
+
+
+ZVPF_VENDOR_CRT
+
+http://runwal.com/VendorPortal
+https://vendorportal.runwal.com/VendorAdmin/
+http://vendorportal.runwal.com/VendorPortal/
+
+  "LIFNR":"2000001",
+ "CREATION_GROUP":"Z002",
+
+{
+  "COMPANY_CODE": "1000;1200;2000;2100;3000;4000;5000;6000;6100;7000;8000;9000;9100;8100",
+  "PURCH_ORG": "1000",
+  "Group": "Z003",
+  "TYPE": "2",
+  "TITLE_KEY": "0005",
+  "NAME_ORG1": "Ananya Shakya Enterprises",
+  "NAME_ORG2": "",
+  "NAME_ORG3": "",
+  "NAME_ORG4": "",
+  "FIRSTNAME": "",
+  "LASTNAME": "",
+  "LANGUAGE": "EN",
+  "STREET": "0,0, Kamliyapur,kampil",
+  "HOUSE_NUM1": "",
+  "POST_CODE1": "209505",
+  "CITY1": "Kampil",
+  "COUNTRY": "IN",
+  "STATE": "9",
+  "MOB_NUMBER": "8767264290",
+  "TEL_NUMBER": "",
+  "FAX": "",
+  "EMAIL": "ratanshakya0082@gmail.com",
+  "URI_ADDR": "",
+  "GSTN": "",
+  "PAN_NO": "DDOPD1227C",
+  "ZROLE": "FLVN00;FLVN01",
+  "CONTACT_PER": "Durgapal Shakya",
+  "MSMSE_CLASS": null,
+  "BNK_IFSC": "PUNB0155020",
+  "BNK_ACCNO": "1550202100000310",
+  "RECEIVED": "Y",
+  "EXEMPTION": "N"
+}
+
+https://vendorportal.runwalgroup.in/VendorPortal/
+https://vendorportal.runwalgroup.in/VendorPortal/
+https://vendorportal.runwalgroup.in/VendorAdmin/
+
+https://ess.hgsbs.com/Login/Login HGS-login
+
+--MH14JX0443
+Select * from tbl_VendorRegistrationDetails
+
+Select * from tbl_SAP_URLMaster
+
+--- http://123.108.44.41:8001/vpsapapis/getauthtoken?sap-client=120
+--  https://hbt-hana01.highbartech.com/vpsapapis/getcompnycode?sap-client=130
+--  http://123.108.44.41:8001/vpsapapis/vpcrtvend?sap-client=120
+
+-- http://123.108.44.39:8000/vpsapapis/getauthtoken?sap-client=300    -- login 
+-- http://123.108.44.39:8000/vpsapapis/getcompnycode?sap-client=300   -- GETCOMPANY
+-- http://123.108.44.39:8000/vpsapapis/vpcrtvend?sap-client=300      -- CreateVendor
+
+
+Rg_Highbar5
+Rg@1234
+
+RG_HIGHBAR5
+
+
+https://www.primaryobjects.com/2015/05/08/token-based-authentication-for-web-service-apis-in-c-mvc-net/
+
+https://dotnettutorials.net/lesson/token-based-authentication-web-api/
+https://www.c-sharpcorner.com/article/jwt-token-creation-authentication-and-authorization-in-asp-net-core-6-0-with-po/
+
+
+
+
+
+PF14TAT0
+
+shreya.singh@highbartech.com
+
+
+
+--Insert into Reimbursement_elig_matrix_Fuel(Grade,ReimbType_Id,ReimbSubType_Id,Eligibility,Active_From)
+--Select Grade,ReimbType_Id,ReimbSubType_Id,Eligibility,'2024-01-01' from Reimbursement_elig_matrix_Fuel where Active_Till is null
+
+
+--Update Reimbursement_elig_matrix_Fuel set Active_Till='2023-12-31' where Active_Till is null and Year(Active_From)='2023'
+--Select * from Reimbursement_elig_matrix_Fuel where  Year(Active_From)='2023'
+
+
+
+
+
+
+
+
+
+

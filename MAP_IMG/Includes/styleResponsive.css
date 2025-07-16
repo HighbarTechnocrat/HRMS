@@ -1,0 +1,290 @@
+.subhead {
+    position: relative;
+    color: #fff;
+    background: #ccc;
+    width: 100%;
+    background: url('../images/pattern.gif') repeat;
+}
+
+.guide-sidenav {
+    margin: 30px 0 0;
+    padding: 0;
+    background: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    box-shadow: 0 1px 4px rgba(0,0,0,.065);
+    width: 220px;
+    font-size: 13px;
+}
+
+    .guide-sidenav > li a {
+        display: block;
+        margin: 0 0 -1px;
+        padding: 8px 14px;
+        border: 1px solid #e5e5e5;
+    }
+
+    .guide-sidenav > li:first-child > a {
+        -webkit-border-radius: 6px 6px 0 0;
+        -moz-border-radius: 6px 6px 0 0;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .guide-sidenav > li:last-child > a {
+        -webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .guide-sidenav > .active > a {
+        position: relative;
+        z-index: 2;
+        padding: 9px 15px;
+        border: 0;
+        background: url('../images/pattern.gif') repeat;
+        text-shadow: 0 1px 0 rgba(0,0,0,.15);
+        -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+        -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+        box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+    }
+
+    .guide-sidenav > li i {
+        float: right;
+        margin-top: 2px;
+        margin-right: -6px;
+    }
+
+    .guide-sidenav.affix {
+        top: 40px;
+        width: 220px;
+    }
+
+    .guide-sidenav.affix-bottom {
+        position: absolute;
+        top: auto;
+        bottom: 270px;
+    }
+
+section, section section {
+    padding: 40px 0px 0px 0px;
+}
+
+    section > .page-header h1 {
+        color: #a5a5a5;
+    }
+
+    section.faq > h4 {
+        padding-top: 20px;
+    }
+
+        section.faq > h4.first {
+            padding-top: 0px;
+        }
+
+    section blockquote p {
+        font-size: 14px;
+    }
+
+.header-unit {
+    text-align: center;
+    position: relative;
+    padding: 80px 0px;
+    font-size: 100%;
+}
+
+    .header-unit h1 {
+        font-size: 600%;
+        line-height: normal;
+        color: #fff;
+        font-family: Georgia;
+        font-weight: normal;
+        text-shadow: 0 2px 5px rgba(255, 255, 255, 0.25);
+    }
+
+    .header-unit .htext1 {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: #cecece;
+    }
+
+    .header-unit .htext2 {
+        color: #e0c050;
+        font-size: 14px;
+        padding-bottom: 20px;
+        font-family: Georgia;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+
+.header-bottom {
+    background: #665f43;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+}
+
+.navbar .brand {
+    float: right;
+    padding: 5px 20px 0px 20px;
+}
+
+    .navbar .brand img {
+        padding: 0px;
+        margin: 0px;
+        float: left;
+    }
+
+.error-message {
+    font-size: 11px;
+    position: absolute;
+    float: left;
+    z-index: 1000;
+    color: #fff;
+    margin: 2px 0px 0px 0px;
+    background: #ee0101;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 6px #000;
+    -moz-box-shadow: 0 0 6px #000;
+    -webkit-box-shadow: 0 0 6px #000;
+    -o-box-shadow: 0 0 6px #000;
+    padding: 5px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.home-top-wrapper {
+    text-align: center;
+    background: #e6e4cb;
+    width: 100%;
+    border-bottom: solid 1px #d7d5bc;
+    padding: 20px 0px;
+}
+
+    .home-top-wrapper img {
+        padding: 10px 0px 0px 0px;
+        margin: 0px;
+    }
+
+    .home-top-wrapper h2 {
+        font-size: 18px;
+        color: #4d4105;
+        padding: 2px;
+        margin: 0px;
+        line-height: 20px;
+    }
+
+.home-quote-wrapper {
+    font-family: Georgia;
+    font-style: italic;
+    text-align: center;
+    padding: 10px 0px 5px 0px;
+    font-size: 16px;
+    color: #555;
+}
+
+.home-features-wrapper {
+    padding: 20px 0px;
+}
+
+    .home-features-wrapper img {
+    }
+
+    .home-features-wrapper h2 {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 5px 0px;
+    }
+
+    .home-features-wrapper .row {
+        padding: 10px 0px;
+    }
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .guide-sidenav, .guide-sidenav.affix {
+        width: 166px;
+    }
+
+    .subhead {
+        margin-top: -20px;
+    }
+
+    .home-top-wrapper {
+        margin-top: -20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .guide-sidenav, .guide-sidenav.affix {
+        width: 270px;
+    }
+}
+
+@media (max-width: 979px) {
+    .subhead {
+        padding: 40px 0px;
+    }
+
+    .guide-sidenav {
+        width: auto;
+    }
+
+    .header-unit {
+        padding: 0px;
+        font-size: 80%;
+    }
+
+    .navbar .brand {
+        float: left;
+    }
+}
+
+@media (min-width: 980px) {
+    .guide-sidenav {
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .guide-sidenav.affix {
+        position: static;
+        width: auto;
+    }
+
+    .guide-sidenav {
+        width: auto;
+    }
+
+    .subhead {
+        margin-top: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+
+    .home-top-wrapper {
+        margin-top: -20px;
+        margin-left: -20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .guide-sidenav {
+        width: auto;
+    }
+
+    .header-unit {
+        padding: 0px;
+        font-size: 50%;
+    }
+
+    .navbar .brand {
+        float: left;
+    }
+}

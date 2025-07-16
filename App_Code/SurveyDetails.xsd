@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SurveyDetails" targetNamespace="http://tempuri.org/SurveyDetails.xsd" xmlns:mstns="http://tempuri.org/SurveyDetails.xsd" xmlns="http://tempuri.org/SurveyDetails.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SurveyDetails" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SurveyDetails" msprop:Generator_DataSetName="SurveyDetails">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="css_Summary" msprop:Generator_TableClassName="css_SummaryDataTable" msprop:Generator_TableVarName="tablecss_Summary" msprop:Generator_TablePropName="css_Summary" msprop:Generator_RowDeletingName="css_SummaryRowDeleting" msprop:Generator_RowChangingName="css_SummaryRowChanging" msprop:Generator_RowEvHandlerName="css_SummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="css_SummaryRowDeleted" msprop:Generator_UserTableName="css_Summary" msprop:Generator_RowChangedName="css_SummaryRowChanged" msprop:Generator_RowEvArgName="css_SummaryRowChangeEvent" msprop:Generator_RowClassName="css_SummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientAnswer" msprop:Generator_ColumnVarNameInTable="columnClientAnswer" msprop:Generator_ColumnPropNameInRow="ClientAnswer" msprop:Generator_ColumnPropNameInTable="ClientAnswerColumn" msprop:Generator_UserColumnName="ClientAnswer" type="xs:string" minOccurs="0" />
+              <xs:element name="Answer" msprop:Generator_ColumnVarNameInTable="columnAnswer" msprop:Generator_ColumnPropNameInRow="Answer" msprop:Generator_ColumnPropNameInTable="AnswerColumn" msprop:Generator_UserColumnName="Answer" type="xs:string" minOccurs="0" />
+              <xs:element name="AnswerCount" msprop:Generator_ColumnVarNameInTable="columnAnswerCount" msprop:Generator_ColumnPropNameInRow="AnswerCount" msprop:Generator_ColumnPropNameInTable="AnswerCountColumn" msprop:Generator_UserColumnName="AnswerCount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="css_Survey_details" msprop:Generator_TableClassName="css_Survey_detailsDataTable" msprop:Generator_TableVarName="tablecss_Survey_details" msprop:Generator_TablePropName="css_Survey_details" msprop:Generator_RowDeletingName="css_Survey_detailsRowDeleting" msprop:Generator_RowChangingName="css_Survey_detailsRowChanging" msprop:Generator_RowEvHandlerName="css_Survey_detailsRowChangeEventHandler" msprop:Generator_RowDeletedName="css_Survey_detailsRowDeleted" msprop:Generator_UserTableName="css_Survey_details" msprop:Generator_RowChangedName="css_Survey_detailsRowChanged" msprop:Generator_RowEvArgName="css_Survey_detailsRowChangeEvent" msprop:Generator_RowClassName="css_Survey_detailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientAnswer" msprop:Generator_ColumnVarNameInTable="columnClientAnswer" msprop:Generator_ColumnPropNameInRow="ClientAnswer" msprop:Generator_ColumnPropNameInTable="ClientAnswerColumn" msprop:Generator_UserColumnName="ClientAnswer" type="xs:string" minOccurs="0" />
+              <xs:element name="SurveyNo" msprop:Generator_ColumnVarNameInTable="columnSurveyNo" msprop:Generator_ColumnPropNameInRow="SurveyNo" msprop:Generator_ColumnPropNameInTable="SurveyNoColumn" msprop:Generator_UserColumnName="SurveyNo" type="xs:string" minOccurs="0" />
+              <xs:element name="SurveyDate" msprop:Generator_ColumnVarNameInTable="columnSurveyDate" msprop:Generator_ColumnPropNameInRow="SurveyDate" msprop:Generator_ColumnPropNameInTable="SurveyDateColumn" msprop:Generator_UserColumnName="SurveyDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Answer" msprop:Generator_ColumnVarNameInTable="columnAnswer" msprop:Generator_ColumnPropNameInRow="Answer" msprop:Generator_ColumnPropNameInTable="AnswerColumn" msprop:Generator_UserColumnName="Answer" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" msprop:Generator_UserColumnName="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactDesignation" msprop:Generator_ColumnVarNameInTable="columnContactDesignation" msprop:Generator_ColumnPropNameInRow="ContactDesignation" msprop:Generator_ColumnPropNameInTable="ContactDesignationColumn" msprop:Generator_UserColumnName="ContactDesignation" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactEmail" msprop:Generator_ColumnVarNameInTable="columnContactEmail" msprop:Generator_ColumnPropNameInRow="ContactEmail" msprop:Generator_ColumnPropNameInTable="ContactEmailColumn" msprop:Generator_UserColumnName="ContactEmail" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

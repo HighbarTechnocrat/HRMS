@@ -1,0 +1,793 @@
+﻿
+.mainContainer {
+  background: #faf7f7 none repeat scroll 0 0;
+}#titlediv #title-prompt-text {
+  color: #72777c;
+  font-size: 20px;
+  padding: 11px 10px;
+  position: absolute;
+  vertical-align: top;
+}
+/*css added by samad 28th aug 2017 zydus/adpost/add resource*/
+/*
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+   //-- Put your IE specific css class here 
+#main-footer { width:86% !important; margin: 0 235px 0 !important; }   
+#main-content { width:94% !important; padding: 75px 120px 0 !important; }
+#left-content { margin: 0 10% !important; }   
+}*/
+/*end css samad 28th aug 2017 zydus/adpost/add resource*/
+
+ .grpscroll{
+     height:150px;
+     overflow-x:hidden;
+     overflow-y:auto;
+ }
+.submitbtn1 .submitbtndiv {
+  background-color: rgb(49, 139, 199);
+  border: 0 none !important;
+  border-radius: 0px;/*wasim change border radius 25px to 0 10oct17*/
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.posttitle {
+  background-color: hsl(0, 0%, 95%);
+  /*border: 1px solid hsl(0, 0%, 90%);*/
+  line-height: 100%;
+  outline: 0 none;
+  padding: 6px 0 0;
+  resize: none;
+  width: 96.5%;
+}
+#MainContent_userpost_txttitle {
+  display: inline-block;
+  height: 40px;
+  margin-top: 20px;
+  width: 96% !important;
+}
+#titlediv #title {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 17px;
+  height: 50px;
+  line-height: 100%;
+  margin: 0 0 3px;
+  outline: 0 none;
+  padding: 6px 10px;
+  width: 97.5%;
+}
+.full-page-title-decription-right {
+  display: inline-block;
+  margin-left: 0;
+  padding: 10px;
+  position: relative;
+  width: 60%;
+}
+#MainContent_userpost_txtvideo:focus {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border-bottom: 2px solid rgb(49, 139, 199) !important;
+  display: inline-block;
+  height: 100px;
+  margin: 0;
+  resize: none;
+  width: 100%;
+}
+.full-page-container-description {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  height: 400px;
+  margin: 20px 0;
+  width: 100%;
+}
+.full-page-description-common {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  padding: 2%;
+  width: 96%;
+}
+.full-page-title-decription-left {
+  display: inline-block;
+  float: right;
+  margin-top: 78px;
+  padding: 0 10px;
+  position: relative;
+  width: 30%;
+}
+.inside {
+  display: inline-block;
+  width: 94%;
+}
+.postbox {
+  list-style: outside none none;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 255px;
+  padding: 0;
+  position: relative;
+}
+.date {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0;
+  border: 1px solid hsl(0, 0%, 90%);
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.04);
+  display: inline-block !important;
+  width: 100% !important;
+}
+.image {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0 !important;
+  border: 1px solid hsl(0, 0%, 90%) !important;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.04);
+  display: inline-block !important;
+  margin-top: 20px;
+  width: 100% !important;
+}
+.post {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0 !important;
+  border: 1px solid hsl(0, 0%, 90%) !important;
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.04);
+  margin-top: 20px;
+}
+.date .date-picker-start-end-date {
+  box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.04);
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.date .title-all-post {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px;
+}
+.date .startdatepickercontent {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.date .txtdatepicker.hasDatepicker {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  border-bottom: 2px solid hsl(0, 0%, 62%);
+  margin-left: 37px;
+  padding: 10px !important;
+}
+.date .enddatepickercontent {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+.image .title-all-post{
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px;
+}
+.image #formatdivimg input {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  margin-left: 36px;
+  padding: 10px !important;
+  width: 64% !important;
+}
+.image .selecttexticon.tooltip {
+  display: inline-block;
+  margin-left: -21px;
+}
+.post .title-all-post{
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px;
+}
+.post .inside {
+  padding: 0 !important;
+  width: 100%;
+}
+.post .groups-category {
+  margin: 10px !important;
+}
+.post #MainContent_userpost_rblpostsubmit input {
+  margin: 10px;
+}
+.submitbtn1 {
+  margin: 20px 0;
+  width: 77% !important;
+}
+/*.submitbtn1 .submitbtn {
+  border: 1px solid hsl(200, 100%, 39%);
+  color: hsl(200, 100%, 39%) !important;
+}*/
+.submitbtn1 .submitbtn:hover {
+  background: rgb(49, 139, 199) none repeat scroll 0 0;
+  border: 1px solid rgb(49, 139, 199);
+  color: rgb(255, 255, 255) !important;
+}
+.submitbtndiv {
+  background: rgb(49, 139, 199) none repeat scroll 0 0;
+  border-radius: 0px;/*wasim change border radius 25px to 0 10oct17*/
+}
+.title .title-all-post {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0 !important;
+  padding-left: 3px !important;
+  padding-right: 0 !important;
+  padding-top: 12px;
+}
+.title > div {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+}
+.title .posttitle {
+  margin: 10px 0 0 !important;
+  border-bottom: 2px solid #9e9e9e;
+}
+.description .title-all-post {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0 !important;
+  padding-left: 3px !important;
+  padding-right: 0 !important;
+  padding-top: 12px;
+}
+.description {
+  margin-top: 30px;
+}
+.video .title-all-post {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+  margin: 30px 0 10px;
+  padding-bottom: 0 !important;
+  padding-left: 3px !important;
+  padding-right: 0 !important;
+  padding-top: 12px;
+}
+.video .full-page-container-description-video > textarea {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0 !important;
+  border-bottom: 2px solid hsl(0, 0%, 62%) !important;
+  width: 94% !important;
+}
+.image #formatdivdoc input {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  margin-left: 22px;
+  margin-right: 0;
+}
+.ckeditor iframe {
+  border: medium none !important;
+  margin: 0 1%;
+  width: 97% !important;
+}
+.hndle.ui-sortable-handle {
+  border-bottom: 1px solid #cccccc;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 8px 12px;
+}
+#poststuff .inside {
+  margin: 6px 0 0;
+  position:relative;
+}
+.postbox .inside, .stuffbox .inside {
+  
+  font-size: 13px;
+  line-height: 1.4em;
+  list-style: outside none none;
+  padding: 10px;
+}
+#post-formats-select {
+  line-height: 2em;
+}
+fieldset {
+  border: 0 none;
+}
+.checkbox, .post-categories, .zerosize, fieldset {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "pf_centro_sans_probold",sans-serif;
+}
+input.post-format {
+  margin-top: 1px;
+}
+.form-table input.tog, input[type="radio"], input[type="checkbox"] {
+  margin-bottom: -1px;
+}
+input[type="radio"] {
+  border-radius: 0%;/*wasim change border radius 50% to 0 10oct17*/
+  line-height: 10px;
+  margin-right: 4px;
+}
+input[type="radio"], input[type="checkbox"] {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #b4b9be;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  clear: none;
+  color: #555555;
+  cursor: pointer;
+  display: inline-block;
+  height: 16px;
+  min-width: 16px;
+  outline: 0 none;
+  padding: 0 !important;
+  text-align: center;
+  transition: border-color 0.05s ease-in-out 0s;
+  vertical-align: middle;
+  width: 16px;
+}
+input, select {
+  padding: 3px 5px;
+}
+input, select, textarea {
+  font-size: 14px;
+  padding-left:22px !important;
+  padding-top:5px !important;
+}
+
+.mce-content-body 
+{
+    padding-left:22px !important;
+}
+.pstchk input {
+  margin: 0 10px 0 0;
+}
+.groups-category {
+    margin:0;
+  background-color: #fdfdfd;
+  border: 1px solid #eaeaea;
+  list-style: outside none none;
+  max-height: 200px;
+  min-height: 42px;
+  overflow: auto;
+  padding: 10px;
+}
+.post-format td {
+  padding: 0 20px 0 0;
+}
+.groups-category  li {
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+label {
+  cursor: pointer;
+  vertical-align: middle;
+}
+.groups {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+}
+.date-picker-start-end-date {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 10px;
+  width: 94%;
+}
+.cancelbtndiv, .cancelbtndiv, .submitbtndiv {
+  float: right !important;
+  margin: 0px !important;
+  padding: 5px 13px !important;
+}
+.submitbtn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #318BC7;
+  border-radius: 0;
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+/*.submitbtn:active, .submitbtn:hover {
+  background: #f28820 none repeat scroll 0 0;
+  border: 1px solid #f28820;
+  color: #ffffff !important;
+   padding: 8px 10px;
+}*/
+.txtdatepicker {
+  /*border: 1px solid hsl(0, 0%, 92%);*/
+  margin-left: 0;
+  padding: 6px;
+  width: 190px !important;
+}
+#MainContent_userpost_uplimage {
+  border: 1px solid #eaeaea;
+  padding: 10px;
+}
+.datetexticon.tooltip {
+  margin-left: -30px;
+}
+.title-all-post {
+  color: hsl(0, 0%, 39%);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 14px 0;
+  padding: 0 0 6px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#formatdiv > li {
+  display: inline-block;
+  width: 100%;
+}
+.full-page-right-panel-content {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+.postbox1 {
+  background: #ffffff none repeat scroll 0 0;
+  list-style: outside none none;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 255px;
+  padding: 10px;
+  position: relative;
+}
+.full-page-right-panel-content > li {
+  display: inline-block;
+  width: 100%;
+}
+#MainContent_userpost_txtvideo {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: medium none;
+  display: inline-block;
+  height: 100px;
+  margin: 0;
+  resize: none;
+  width: 100%;
+}
+.enddatepickercontent {
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  width: 40%;
+}
+.startdatepickercontent {
+  display: inline-block;
+  float: left;
+  width: 42%;
+}
+.ckeditor iframe {
+  border: 1px solid #f28820;
+  height: 310px !important;
+  margin: 0 1%;
+  width: 97% !important;
+}
+.MainContent_userpost_txtdesc_OuterTable {
+  height: 400px;
+  margin: 0 !important;
+  width: 100% !important;
+}
+.MainContent_userpost_txtdesc_HtmlBox {
+  border-color: none;
+  border-style: none;
+  border-width: 0;
+  font-family: Courier New,Courier;
+  height: 320px !important;
+  overflow: auto;
+}
+.MainContent_userpost_txtdesc_HtmlBox {
+  border: 1px solid #f28820 !important;
+  margin: 0 1% !important;
+  width: 97% !important;
+}
+.pace .pace-progress, .progress-bar.progress-theme, input[type="submit"], #content-container #buddypress input[type="submit"], #buddypress #create-group-form input[type="button"], #content-container #bbpress-forums button[type="submit"], #right-sidebar .widget .intern-box.box-title::after, #nav-sidebar-trigger:hover, .widget.widget_search button, #content-container .heading::before, .widget_recent_entries .post-date, #content-container div#subnav.item-list-tabs ul li.current a, div.activity-meta a, #main-content #buddypress div.generic-button a, #buddypress .comment-reply-link, a.bp-title-button, .progress-bar, #content-container #buddypress .button-nav li a, #dashboard .widget .box-title::after, #content-container .masonry-layout .box .box-title::after, #content-container #buddypress button, #buddypress ul#members-list li div.item-avatar span.member-role, #content-container .mv-btn-success, #content-container td.publish, #content-container .mv-addfile-wrap a, #content-container .mv-submitfields button, #page-wrapper .wcContainer .wcMessage.wcCurrentUserMessage .wcMessageContent, #content-container #bp-browse-button, .gantt, .gantt-day.weekend span, .bbp-topic-tags a, #content #eventon_form p #evoau_submit, #content-container .mv-btn-success, #content-container td.publish, #content-container .mv-addfile-wrap a, #content-container .mv-submitfields button, #content-container div.item-list-tabs ul li.current a, p.wiki-like.voted, #content-container .badgeos-item-points::before, #learndash_next_prev_link a, #content-container .ssfa_fileup_wrapper span, #buddypress div.pagination .pagination-links span, #buddypress div.pagination .pagination-links a, #rtmedia_create_new_album, #dashboard .widget .box-title h3::before, #dashboard .widget .box-title h3::after, #dashboard .widget.evoFC_Widget h3.widget-title::before, #dashboard .widget.evoFC_Widget h3.widget-title::after, #content-container #buddypress .dataTables_wrapper .dataTables_paginate .paginate_button:not(.disabled), #dashboard.is-draggie .widget::after {
+  background-color: hsl(0, 0%, 80%);
+}
+@media only screen and (max-width:1000px) and (min-width:240px){
+	
+	.full-page-description-common {
+  background: #ffffff none repeat scroll 0 0;
+  display: inline-block;
+  padding: 2%;
+  width: auto;
+}
+.full-page-title-decription-right {
+  display: inline-block;
+  margin-left: 0;
+  padding: 10px;
+  position: relative;
+  width: 96%;
+}
+.full-page-right-panel-content {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.posttitle {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  height: 50px;
+  line-height: 100%;
+  margin: 0 0 3px;
+  outline: 0 none;
+  padding: 6px 10px;
+  resize: none;
+  width: 93%;
+}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#content-container .intern-padding {
+  cursor: auto;
+  padding: 0;
+}
+input, select, textarea {
+  padding-left:12px !important;
+  padding-top:5px !important;
+}
+.image #formatdivimg input {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  margin-left: 20px;
+  padding: 10px !important;
+  width: 78% !important;
+}
+.full-page-description-common {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+#MainContent_userpost_txttitle {
+  display: inline-block;
+  height: 40px;
+  margin-top: 20px;
+  width: 87% !important;
+}
+.full-page-right-panel-content > li {
+  display: inline-block;
+  width: 98%;
+}
+.full-page-title-decription-left {
+  display: inline-block;
+  float: right;
+  margin-top: 78px;
+  padding: 0 10px;
+  position: relative;
+  width: 94%;
+}
+.groups {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+  width: 92%;
+}
+.groups tr {
+  display: inline-block;
+  width: 100% !important;
+}
+.groups td {
+  display: inline-block;
+  width: 40%;
+}
+.video .full-page-container-description-video > textarea {
+  background: rgb(242, 242, 242) none repeat scroll 0 0 !important;
+  border-bottom: 2px solid rgb(158, 158, 158) !important;
+  width: 86% !important;
+}
+.image #formatdivimg input {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border-bottom: 2px solid rgb(204, 204, 204);
+  border-left: medium none !important;
+  border-right: medium none !important;
+  border-top: medium none !important;
+  margin-left: 20px;
+  padding: 10px !important;
+  width: 78% !important;
+}
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.full-page-title-decription-left {
+  display: inline-block;
+  float: left;
+  margin-top: 28px;
+  padding: 0;
+  position: relative;
+  width: 98.5%;
+}
+.txtdatepicker {
+  margin-left: 5px !important;
+  padding: 6px;
+  width: 122px !important;
+}
+.date .txtdatepicker.hasDatepicker {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border-bottom: 2px solid rgb(158, 158, 158);
+  margin-left: 0;
+  padding: 10px !important;
+}
+.date .startdatepickercontent {
+  display: inline-block;
+  float: left;
+  height: 111px;
+  width: 50%;
+}
+.date .enddatepickercontent {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 50%;
+}
+.date .startdatepickercontent {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.groups td {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.groups td {
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+.groups {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.submitbtn1 {
+  margin: 20px 0;
+  width: 60% !important;
+}
+.groups tr {
+  display: inline-block;
+  width: 100% !important;
+}
+.groups-category td {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+.groups-category tr {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+.image {
+  background: rgb(242, 242, 242) none repeat scroll 0 0 !important;
+  border: 1px solid rgb(229, 229, 229) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  display: inline-block !important;
+  float: left;
+  height: auto;
+  margin-left: 17px;
+  margin-top: 0;
+  width: 45% !important;
+}
+.post {
+  background: rgb(242, 242, 242) none repeat scroll 0 0 !important;
+  border: 1px solid rgb(229, 229, 229) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  margin-left: 18px;
+  margin-top: 20px;
+  width: 48% !important;
+}
+.image #formatdivimg input {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  margin-left: 35px;
+  padding: 10px !important;
+  width: 69% !important;
+}
+.date {
+  background: rgb(242, 242, 242) none repeat scroll 0 0;
+  border: 1px solid rgb(229, 229, 229);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  display: inline-block !important;
+  float: left;
+  margin-left: 14px;
+  width: 49% !important;
+}
+.date .startdatepickercontent {
+  display: inline-block;
+  float: left;
+  height: 111px;
+  width: 50%;
+}
+}
+@media only screen and (max-width: 240px) and (min-width:480px) {
+	
+	#left-content {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  transition: width 0.6s ease 0s;
+  width: 100% !important;
+}
+#content-container {
+  display: inline-block;
+  height: auto;
+  margin: 110px 0 0;
+  position: relative;
+  width: 100%;
+  z-index: 18;
+}
+#MainContent_userpost_txttitle {
+  display: inline-block;
+  height: 40px;
+  margin-top: 20px;
+  width: 80% !important;
+}
+.full-page-container-description {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(204, 204, 204);
+  display: inline-block;
+  height: 400px;
+  margin: 20px 0;
+  width: 93%;
+}
+.full-page-title-decription-left {
+  display: inline-block;
+  float: none;
+  margin-top: 78px;
+  padding: 0 10px;
+  position: relative;
+  width: 87%;
+}
+.postbox {
+  list-style: outside none none;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-width: 100%;
+  padding: 0;
+  position: relative;
+  width: 80%;
+}
+.txtdatepicker {
+  padding: 6px;
+  width: 144px !important;
+}
+.date .txtdatepicker.hasDatepicker {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border-bottom: 2px solid rgb(158, 158, 158);
+  margin-left: 25px;
+  padding: 10px !important;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 21% !important;
+}
+}
+@media only screen and (max-width:1280px) and (min-width:980px){
+	
+	.txtdatepicker {
+  margin-left: 5px !important;
+  padding: 6px;
+  width: 162px !important;
+}
+}

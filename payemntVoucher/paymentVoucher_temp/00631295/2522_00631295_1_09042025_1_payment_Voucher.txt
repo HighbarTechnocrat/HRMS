@@ -1,0 +1,70 @@
+ #region Payment Voucher Methods
+    public DataTable InsertPaymentVoucherDetails(int Rem_id, string Rem_Month, decimal Amount, string emp_code, decimal EligibleAmount, string qtype, string Remarks, string UploadFile, string dclaimid, string RcptFile, string dclaimid_O, string Billno)
+    {
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@empcode", emp_code),
+            new SqlParameter("@Rem_id", Rem_id),
+            new SqlParameter("@Rem_Month", Rem_Month),
+            new SqlParameter("@Amount", Amount),
+            new SqlParameter("@EligibleAmount", EligibleAmount),
+            new SqlParameter("@Remarks", Remarks),
+            new SqlParameter("@qtype", qtype),
+            new SqlParameter("@Billno", Billno) 
+        };
+        if (Convert.ToString(UploadFile).Trim() != "")
+            parameters.Add(new SqlParameter("@UploadFile", UploadFile));
+
+        if (Convert.ToString(dclaimid).Trim() != "")
+            parameters.Add(new SqlParameter("@Exp_Type", Convert.ToInt32(dclaimid)));
+
+        if (Convert.ToString(dclaimid_O).Trim() != "")
+            parameters.Add(new SqlParameter("@Claims_id_o", Convert.ToInt32(dclaimid_O)));
+
+        if (Convert.ToString(RcptFile).Trim() != "")
+            parameters.Add(new SqlParameter("@rcptFile", RcptFile));
+
+        return ExecuteDataTable("InsertPaymentVoucherDetails","SP_Insert_Payment_VoucherDetails", qtype, parameters.ToArray());
+    }
+    #endregion
+
+
+public void InsertPaymentVouDetails(int Rem_id, string Rem_Month, decimal Amount, string emp_code, decimal EligibleAmount,string qtype, string Remarks, string UploadFile, string dclaimid, string RcptFile)
+    {
+        var parameters = new List<SqlParameter>
+        {
+            new SqlParameter("@empcode", emp_code),
+            new SqlParameter("@Rem_id", Rem_id),
+            new SqlParameter("@Rem_Month", Rem_Month),
+            new SqlParameter("@Amount", Amount),
+            new SqlParameter("@EligibleAmount", EligibleAmount),
+            new SqlParameter("@Remarks", Remarks),
+            new SqlParameter("@qtype", qtype) 
+        };
+        if (Convert.ToString(UploadFile).Trim() != "")
+            parameters.Add(new SqlParameter("@UploadFile", UploadFile));
+
+        if (Convert.ToString(dclaimid).Trim() != "")
+            parameters.Add(new SqlParameter("@Claims_id", dclaimid));
+
+        if (Convert.ToString(RcptFile).Trim() != "")
+            parameters.Add(new SqlParameter("@rcptFile", RcptFile));
+
+        ExecuteNonQuery("InsertPaymentVouDetails","SP_Insert_Payment_VoucherDetails", qtype, parameters.ToArray());
+    }
+
+
+
+public DataTable GeTPaymentVoucherApproverEmailID(string empcode, string Grade, int Leaveconditionid, Decimal remid)
+    {
+        var parameters = new List<SqlParameter>
+        {
+           new SqlParameter("@Emp_code", empcode),
+           new SqlParameter("@Grade", Grade),
+           new SqlParameter("@Conditiontype_id", Leaveconditionid)
+        };
+        if (Convert.ToString(remid).Trim() != "0")
+            parameters.Add(new SqlParameter("@rem_id", remid));
+
+        return ExecuteDataTable("GeTPaymentVoucherApproverEmailID","SP_GETPAYMENTVOUCHERAPPROVERSEMAIL","", parameters.ToArray());
+    }

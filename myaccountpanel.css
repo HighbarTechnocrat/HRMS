@@ -1,0 +1,40 @@
+.myaccount{width:24%;float:left}
+.myaccountheading{padding:5px 8px;background:#2e85dc;color:#fff;font-size:18px;text-transform:capitalize;box-shadow:none;text-align:left;display:none}.myaccountlist{padding:0;float:left;width:99%;margin:0;display:block}
+.myaccountlist ul{list-style:none;margin:0;padding:0}
+.myaccountlist ul li{margin:0 2px 5px;padding:0;cursor:pointer}
+.myaccountlist ul li a:active,.myaccountlist ul li a:link,.myaccountlist ul li a:visited{
+	font-size:12px;color:#843719;text-decoration:none;display:block;padding:5px 40px;transition:all .3s ease 0s}
+	.myaccountlist ul li a:hover{color:#f28820}
+	.listselected{font-weight:700}.listselected a{color:#f28820!important}
+	.myaccountlist-mobiletab{display:none}
+	.myaccountpagesheading {
+  border-bottom: medium none;
+  color: hsl(204, 60%, 49%);
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  text-transform: capitalize;
+  width: 100%;
+}
+@media only screen and (max-width:1000px) and (min-width:240px){.myaccountpagesheading{text-align:center;width:auto;margin:0;font-size:20px;}.myaccountlist-mobiletab{display:block;margin:10px 0 0;width:auto}.myaccountlist-mobiletab select{width:100%;padding:5px 0;border:1px solid #505050;font-size:14px;text-align:center;text-transform:capitalize;background:#303030;color:#fff}.myaccountlist-mobiletab select:focus{background:#fff;color:#000}.myaccountlist-mobiletab select option{color:#000;background:#fff;margin:5px 0;font-weight:400}.myaccount{width:100%;display:none}.myaccountheading{width:auto;text-align:center;float:none}.myaccountlist{display:none}}
+
+
+.ckeditor table {
+  background-color: #eaeaea !important;
+}
+.ckeditor table td {
+  background-color: #eaeaea;
+  border: medium none;
+}
+
+
+
+
+
+
+
+
+
+

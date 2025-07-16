@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="cms.master.cs" Inherits="inner" EnableViewState="true" %>
+
+<%@ Register Src="~/control/header.ascx" TagName="header" TagPrefix="ucheader" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/footer.ascx" TagName="footer" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/birthday.ascx" TagName="birth" TagPrefix="uc" %>
+
+<%@ Register Src="~/themes/creative1.0/LayoutControls/homejs.ascx" TagName="home" TagPrefix="js" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/topbanner.ascx" TagName="top" TagPrefix="uc" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>oneHR</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	 <asp:PlaceHolder runat="server">
+    <link href="<%=ReturnUrl("sitepathmain") %>font/css/font-awesome.min.css" rel="stylesheet" />
+	</asp:PlaceHolder>
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription" />
+    <asp:PlaceHolder runat="server" ID="id1"></asp:PlaceHolder>
+    <asp:PlaceHolder runat="server">
+        <link rel="SHORTCUT ICON" href="<%=ReturnUrl("sitepathmain") %>images/Highbar.jpeg"
+            type="image/x-icon" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/hrms.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/scrollbar.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>bxcss/jquery.bxslider.css" type="text/css" />
+        <style type="text/css">
+            html, body {
+                height: auto !important;
+            }
+        </style>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home-page home page page-id-22 page-template page-template-page-templates page-template-dashboard page-template-page-templatesdashboard-php logged-in menu-is-vertical has_fixed_navbar no-js woffice-2-x ">
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+        <div id="page-wrapper">
+            <ucheader:header ID="topseach" runat="server" />
+            <section class="with-sidebar" id="main-content">
+                <aside id="right-sidebar" class="mobile-hidden" role="complementary">
+                    <uc:birth ID="uxbirthday" runat="server" />
+                    <%--sony commented this as on 12 Oct 2017 to STOP display of Right panel links--%>
+            <%--        <uc:category ID="uxcategory" runat="server" />--%>
+                    
+ <%--JAYESH COMMENTED BELOW CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+ <%--   <uc:recent ID="uxrecent" runat="server" />--%>
+ <%--JAYESH COMMENTED ABOVE CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+                </aside>
+                <div id="left-content">
+                    <div id="content-container">
+                        <div id="content">
+                            <article id="post-0" class="bp_members type-bp_members box content post-0 page type-page status-publish hentry">
+                                <div id="buddypress">
+                                    <div id="item-body" role="main">
+                                        <div class="intern-padding">
+                                            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="scroll-top-container">
+                        <a href="#main-header" id="scroll-top">
+                            <i class="fa fa-arrow-circle-o-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <uc:footer ID="uxfooter" runat="server"/>
+         </div>
+		
+        <js:home ID="uxhomejs" runat="server" />
+        <div id="sitewide-notice" class="admin-bar-off"></div>
+ <%--       <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/explore/explore.js"></script>--%>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/comments/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/comments/imagesloaded.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/comments/classie.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/comments/animonscroll.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/animation/animation.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/RatingPopup/jquery.leanModal.min.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/jqwidgets/jqxcore.js"></script>
+        <script type="text/javascript" src="<%=ReturnUrl("sitepath")%>js/jqwidgets/jqxrating.js"></script>
+        <script type="text/javascript">
+
+//            jQuery(document).ready(function () {
+  //              jQuery("#jqxRating").jqxRating({ height: 35, value: document.getElementById("MainContent_pdnewglobal_m_uxPdLayout_ctl04_hdvalue2").value });
+    //            jQuery("#jqxRating").bind('change', function (event) {
+      //              document.getElementById("MainContent_pdnewglobal_m_uxPdLayout_ctl04_hdvalue2").value = event.value;
+        //        });
+         //   });
+        </script>
+        <script type="text/javascript">
+            jQuery(".popup_trigger").leanModal({ top: 0, overlay: 0.8, closeButton: ".modal_close" });
+        </script>
+        <script>
+            var urlpd = window.location.href;
+            if (urlpd.toString().indexOf("/pd/")>=0) {
+                var refreshId = setInterval(function () {
+                    jQuery(document).ready(function () {
+                        jQuery.ajax({
+                            type: 'POST',
+                            contentType: "application/json; charset=utf-8",
+                            url: "<%=ReturnUrl("sitepathmain")%>manageservice.aspx/UpdateCounter",
+                                data: "{'id':'" + jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_hdproductid").val() + "'}",
+                                dataType: 'text',
+                                async: false,
+                                success: function (response) {
+                                    var json = JSON.parse(response);
+                                    var xmlDoc = jQuery.parseXML(json["d"]);
+                                    var $xml = jQuery(xmlDoc);
+                                    var $table = $xml.find("Table1");
+                                    var intCount = 0;
+                                    $table.each(function () {
+                                        var likes = jQuery(this).find('likecount').text(), dislikes = jQuery(this).find('dislikecount').text(), favorites = jQuery(this).find('favcount').text(), comments = jQuery(this).find('reviewcount').text(), visits = jQuery(this).find('visitcount').text();
+                                        if (likes != null) { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lbllike").html(likes); }
+                                        else
+                                        { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lbllike").html("0") }
+                                        if (dislikes != null) { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lbldislike").html(dislikes); }
+                                        else
+                                        { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lbldislike").html("0") }
+                                        if (comments != null) { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_reviewcount").html(comments); }
+                                        else
+                                        { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_reviewcount").html("0") }
+                                        if (favorites != null) { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lblfav").html(favorites); }
+                                        else
+                                        { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lblfav").html("0") }
+                                        if (visits != null) { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lblview").html(visits); }
+                                        else
+                                        { jQuery("#MainContent_pdnewglobal_m_uxPdLayout_ctl01_lblview").html("0") }
+                                    });
+                                },
+                                error: function (xhr, status, error) {
+                                    return false;
+                                }
+                            });
+                        });
+                    }, 2000);
+                }
+
+        </script>
+		
+		<style type="text/css" media="print">
+    body { visibility: hidden; display: none }
+</style>
+		
+        <script defer="defer">jQuery(document).ready(function () {
+    jQuery("#scroll-top").on("click", function () {
+        jQuery("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});</script>
+    </form>
+</body>
+</html>

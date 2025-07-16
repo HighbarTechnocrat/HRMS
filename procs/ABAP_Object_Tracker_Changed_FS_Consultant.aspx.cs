@@ -1,0 +1,371 @@
+﻿using Microsoft.Reporting.WebForms;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class ABAP_Object_Tracker_Changed_FS_Consultant : System.Web.UI.Page
+{
+    SP_Methods spm = new SP_Methods();
+
+    #region Creative_Default_methods
+
+    public DataSet dsDirecttaxSectionList = new DataSet();
+    Leave_Request_Parameters lpm = new Leave_Request_Parameters();
+    public string ReturnUrl(object path) { string url = ""; url = UrlRewritingVM.ChangeURL(path.ToString()); return url; }
+    protected void lnkhome_Click(object sender, EventArgs e)
+    {
+        Response.Redirect(ReturnUrl("sitepathmain") + "default");
+    }
+    #endregion
+
+    #region Page_Events
+
+    private void Page_Load(object sender, System.EventArgs e)
+    {
+        try
+
+        {
+            if (Convert.ToString(Session["Empcode"]).Trim() == "" || Session["Empcode"] == null)
+            {
+                Response.Redirect(ReturnUrl("sitepathmain") + "sessionend.aspx");
+            }
+
+            lblmessage.Text = "";
+
+
+            if (Convert.ToString(Session["Empcode"]).Trim() == "")
+                Response.Redirect(ReturnUrl("sitepathmain") + "login.aspx");
+            txtEmpCode.Text = Convert.ToString(Session["Empcode"]);
+
+            if (Page.User.Identity.IsAuthenticated == false)
+            {
+                Response.Redirect(ReturnUrl("sitepathmain") + "login.aspx?ReturnUrl=" + ReturnUrl("sitepathmain") + "procs/ABAP_Object_Tracker_Index.aspx");
+            }
+            else
+            {
+                Page.SmartNavigation = true;
+
+                if (!Page.IsPostBack)
+                {
+                    getProjectLocation();
+
+                    if (Request.QueryString.Count > 0)
+                    {
+                        DDLProjectLocation.Enabled = false;
+                        spnrgs.Visible = false;
+                        spnfs.Visible = false;
+                        spnhbttest.Visible = false;
+                        //ctmtest.Visible = false;
+                        hdnABAPODUploadId.Value = Convert.ToString(Request.QueryString["ABAPODId"]).Trim();
+                        get_ABAP_Object_Submitted_Plan_FSDetails();
+                        DDLABAPDevDesc_SelectedIndexChanged(sender, e);
+                    }
+                }
+
+            }
+
+        }
+        catch (Exception ex)
+        {
+            ErrorLog.WriteError(ex.ToString());
+        }
+
+    }
+
+    #endregion
+
+
+    #region ABAP Object Submitted Plan 
+    private void getProjectLocation()
+    {
+        try
+        {
+            SqlParameter[] spars = new SqlParameter[2];
+            spars[0] = new SqlParameter("@qtype", SqlDbType.VarChar);
+            spars[0].Value = "GetDropDownprojectLocation";
+
+            DataSet DS = spm.getDatasetList(spars, "SP_TASK_M_DETAILS");
+            DDLProjectLocation.DataSource = DS.Tables[0];
+            DDLProjectLocation.DataTextField = "Location_name";
+            DDLProjectLocation.DataValueField = "comp_code";
+            DDLProjectLocation.DataBind();
+            DDLProjectLocation.Items.Insert(0, new ListItem("Select Project Location", "0"));
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void get_ABAP_Object_Submitted_Plan_FSDetails()
+    {
+        try
+        {
+            //spnrgs.Visible = true;
+            //spnfs.Visible = true;
+            //spnhbttest.Visible = true;
+
+            var getCreatedBy = Convert.ToString(Session["Empcode"]).Trim();
+
+            SqlParameter[] spars = new SqlParameter[3];
+            spars[0] = new SqlParameter("@qtype", SqlDbType.VarChar);
+            spars[0].Value = "getABAPDevelopmentDescListBeasedOnABAPODUploadId";
+
+            spars[1] = new SqlParameter("@CreatedBy", SqlDbType.VarChar);
+            spars[1].Value = getCreatedBy;
+
+            spars[2] = new SqlParameter("@ABAPODUploadId", SqlDbType.VarChar);
+            spars[2].Value = hdnABAPODUploadId.Value;
+
+            DataSet DS = spm.getDatasetList(spars, "SP_ABAPObjectTracking");
+            if (DS != null && DS.Tables.Count > 0 && DS.Tables[0].Rows.Count > 0)
+            {
+                hdnProjLocation.Value = DS.Tables[0].Rows[0]["ProjectLocation"].ToString();
+                DDLABAPDevDesc.DataSource = DS.Tables[0];
+                DDLABAPDevDesc.DataTextField = "Development_Desc";
+                DDLABAPDevDesc.DataValueField = "ABAPODId";
+                DDLABAPDevDesc.DataBind();
+                DDLABAPDevDesc.Items.Insert(0, new ListItem("Select ABAP Development Desc", "0"));
+
+                DDLProjectLocation.SelectedValue = DS.Tables[0].Rows[0]["ProjectLocation"].ToString().Trim();
+                txtPRM.Text = DS.Tables[1].Rows[0]["ProgramManager"].ToString().Trim();
+
+
+                //gvRGSDetails.DataSource = DS.Tables[2];
+                //gvRGSDetails.DataBind();
+
+                //gvFSDetails.DataSource = DS.Tables[2];
+                //gvFSDetails.DataBind();
+
+                //gvHBTTestDetails.DataSource = DS.Tables[2];
+                //gvHBTTestDetails.DataBind();
+            }
+            else
+            {
+                DDLABAPDevDesc.Items.Insert(0, new ListItem("Select ABAP Development Desc", "0"));
+            }
+
+        }
+        catch (Exception ex)
+        {
+            return;
+        }
+
+    }
+
+
+    public void DDLABAPDevDesc_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        lblmessage.Text = "";
+        spnrgs.Visible = true;
+        spnfs.Visible = true;
+        spnhbttest.Visible = true;
+        //ctmtest.Visible = true;
+        var selectedCategoryId = DDLABAPDevDesc.SelectedValue;
+
+        DataSet dsABAPObjectPlanSubmitted = new DataSet();
+        SqlParameter[] spars = new SqlParameter[5];
+
+        spars[0] = new SqlParameter("@qtype", SqlDbType.VarChar);
+        spars[0].Value = "GetChangedConsultantRGSFSHBTDetails";
+
+        spars[1] = new SqlParameter("@ABAPODUploadId", SqlDbType.VarChar);
+        spars[1].Value = Convert.ToInt32(hdnABAPODUploadId.Value);
+
+        spars[2] = new SqlParameter("@CreatedBy", SqlDbType.VarChar);
+        spars[2].Value = (Session["Empcode"]).ToString().Trim();
+
+        spars[3] = new SqlParameter("@ProjectLocation", SqlDbType.VarChar);
+        spars[3].Value = DDLProjectLocation.SelectedValue == "0" ? "" : DDLProjectLocation.SelectedValue;
+
+        spars[4] = new SqlParameter("@ABAPDevDesc", SqlDbType.VarChar);
+        spars[4].Value = DDLABAPDevDesc.SelectedValue == "0" ? "" : DDLABAPDevDesc.SelectedValue;
+
+        dsABAPObjectPlanSubmitted = spm.getDatasetList(spars, "SP_ABAPObjectTracking");
+        if (dsABAPObjectPlanSubmitted != null && dsABAPObjectPlanSubmitted.Tables[0].Rows.Count > 0)
+        {
+            BindDataToGridView(dsABAPObjectPlanSubmitted, "RGS", gvRGSDetails);
+            BindDataToGridView(dsABAPObjectPlanSubmitted, "FS", gvFSDetails);
+            BindDataToGridView(dsABAPObjectPlanSubmitted, "HBT", gvHBTTestDetails);
+
+
+            //gvRGSDetails.DataSource = dsABAPObjectPlanSubmitted.Tables[0];
+            //gvRGSDetails.DataBind();
+
+            //gvFSDetails.DataSource = dsABAPObjectPlanSubmitted.Tables[0];
+            //gvFSDetails.DataBind();
+
+            //gvHBTTestDetails.DataSource = dsABAPObjectPlanSubmitted.Tables[0];
+            //gvHBTTestDetails.DataBind();
+        }
+        else
+        {
+            gvRGSDetails.DataSource = null;
+            gvRGSDetails.DataBind();
+
+            gvFSDetails.DataSource = null;
+            gvFSDetails.DataBind();
+
+            gvHBTTestDetails.DataSource = null;
+            gvHBTTestDetails.DataBind();
+
+            spnrgs.Visible = false;
+            spnfs.Visible = false;
+            spnhbttest.Visible = false;
+            lblmessage.Text = "No record found.";
+        }
+
+        DDLProjectLocation.SelectedValue = hdnProjLocation.Value;
+        txtPRM.Text = dsABAPObjectPlanSubmitted.Tables[1].Rows[0]["ProjectManager"].ToString().Trim();
+    }
+
+    private void BindDataToGridView(DataSet dataSet, string stage, GridView gridView)
+    {
+        if (dataSet.Tables != null)
+        {
+            //DataTable filteredTable = dataSet.Tables[0].AsEnumerable()
+            //    .Where(row => row.Field<string>("Stage") == stage)
+            //    .CopyToDataTable();
+
+            DataTable filteredTable = null;
+            if (dataSet.Tables.Count > 0 && dataSet.Tables[0].Rows.Count > 0)
+            {
+                var filteredRows = dataSet.Tables[0].AsEnumerable().Where(row => row.Field<string>("Stage") == stage);
+                if (filteredRows.Any())
+                {
+                    filteredTable = filteredRows.CopyToDataTable();
+                }
+                else
+                {
+                    filteredTable = dataSet.Tables[0].Clone();
+                }
+            }
+
+            if (gridView.ID == "gvRGSDetails")
+            {
+                if (filteredTable.Rows.Count > 0)
+                {
+                    spnrgs.Visible = true;
+                    gridView.Visible = true;
+                    gridView.DataSource = filteredTable;
+                    gridView.DataBind();
+                }
+                else
+                {
+                    spnrgs.Visible = false;
+                    gridView.Visible = false;
+                    gridView.DataSource = null;
+                    gridView.DataBind();
+                }
+            }
+            else if (gridView.ID == "gvFSDetails")
+            {
+                if (filteredTable.Rows.Count > 0)
+                {
+                    spnfs.Visible = true;
+                    gridView.Visible = true;
+                    gridView.DataSource = filteredTable;
+                    gridView.DataBind();
+                }
+                else
+                {
+                    spnfs.Visible = false;
+                    gridView.Visible = false;
+                    gridView.DataSource = null;
+                    gridView.DataBind();
+                }
+            }
+            else if (gridView.ID == "gvHBTTestDetails")
+            {
+                if (filteredTable.Rows.Count > 0)
+                {
+                    spnhbttest.Visible = true;
+                    gridView.Visible = true;
+                    gridView.DataSource = filteredTable;
+                    gridView.DataBind();
+                }
+                else
+                {
+                    spnhbttest.Visible = false;
+                    gridView.Visible = false;
+                    gridView.DataSource = null;
+                    gridView.DataBind();
+                }
+            }
+
+        }
+    }
+
+    protected void btnABAPPlanSubmit_Click(object sender, EventArgs e)
+    {
+        foreach (GridViewRow row in gvFSDetails.Rows)
+        {
+            if (row.RowType == DataControlRowType.DataRow)
+            {
+                string secondColumnValue = row.Cells[1].Text.Trim();
+                if (string.IsNullOrEmpty(secondColumnValue))
+                {
+                    lblmessage.Text = "Consultant value cannot be empty.";
+                    lblmessage.Visible = true;
+                }
+            }
+
+        }
+
+        foreach (GridViewRow row in gvFSDetails.Rows)
+        {
+            if (row.RowType == DataControlRowType.DataRow)
+            {
+                string secondColumnValue = row.Cells[1].Text.Trim();
+                if (string.IsNullOrEmpty(secondColumnValue))
+                {
+                    lblmessage.Text = "Consultant value cannot be empty.";
+                    lblmessage.Visible = true;
+                }
+            }
+
+        }
+
+
+        foreach (GridViewRow row in gvFSDetails.Rows)
+        {
+            if (row.RowType == DataControlRowType.DataRow)
+            {
+                string secondColumnValue = row.Cells[1].Text.Trim();
+                if (string.IsNullOrEmpty(secondColumnValue))
+                {
+                    lblmessage.Text = "Error: Second column value cannot be empty.";
+                    lblmessage.Visible = true;
+                }
+            }
+
+        }
+
+        foreach (GridViewRow row in gvFSDetails.Rows)
+        {
+            if (row.RowType == DataControlRowType.DataRow)
+            {
+                string secondColumnValue = row.Cells[1].Text.Trim();
+                if (string.IsNullOrEmpty(secondColumnValue))
+                {
+                    lblmessage.Text = "Error: Second column value cannot be empty.";
+                    lblmessage.Visible = true;
+                }
+            }
+
+        }
+    }
+
+
+
+    #endregion
+}

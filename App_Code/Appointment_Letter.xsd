@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Appointment_Letter" targetNamespace="http://tempuri.org/Appointment_Letter.xsd" xmlns:mstns="http://tempuri.org/Appointment_Letter.xsd" xmlns="http://tempuri.org/Appointment_Letter.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Appointment_Letter" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Appointment_Letter" msprop:Generator_UserDSName="Appointment_Letter">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataAppointmetLetter" msprop:Generator_TableClassName="DataAppointmetLetterDataTable" msprop:Generator_TableVarName="tableDataAppointmetLetter" msprop:Generator_TablePropName="DataAppointmetLetter" msprop:Generator_RowDeletingName="DataAppointmetLetterRowDeleting" msprop:Generator_RowChangingName="DataAppointmetLetterRowChanging" msprop:Generator_RowEvHandlerName="DataAppointmetLetterRowChangeEventHandler" msprop:Generator_RowDeletedName="DataAppointmetLetterRowDeleted" msprop:Generator_UserTableName="DataAppointmetLetter" msprop:Generator_RowChangedName="DataAppointmetLetterRowChanged" msprop:Generator_RowEvArgName="DataAppointmetLetterRowChangeEvent" msprop:Generator_RowClassName="DataAppointmetLetterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Code" msprop:Generator_ColumnVarNameInTable="columnEmp_Code" msprop:Generator_ColumnPropNameInRow="Emp_Code" msprop:Generator_ColumnPropNameInTable="Emp_CodeColumn" msprop:Generator_UserColumnName="Emp_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Emailaddress" msprop:Generator_ColumnVarNameInTable="columnEmp_Emailaddress" msprop:Generator_ColumnPropNameInRow="Emp_Emailaddress" msprop:Generator_ColumnPropNameInTable="Emp_EmailaddressColumn" msprop:Generator_UserColumnName="Emp_Emailaddress" type="xs:string" minOccurs="0" />
+              <xs:element name="emp_status" msprop:Generator_ColumnVarNameInTable="columnemp_status" msprop:Generator_ColumnPropNameInRow="emp_status" msprop:Generator_ColumnPropNameInTable="emp_statusColumn" msprop:Generator_UserColumnName="emp_status" type="xs:string" minOccurs="0" />
+              <xs:element name="emp_doj" msprop:Generator_ColumnVarNameInTable="columnemp_doj" msprop:Generator_ColumnPropNameInRow="emp_doj" msprop:Generator_ColumnPropNameInTable="emp_dojColumn" msprop:Generator_UserColumnName="emp_doj" type="xs:string" minOccurs="0" />
+              <xs:element name="EMP_MODULE" msprop:Generator_ColumnVarNameInTable="columnEMP_MODULE" msprop:Generator_ColumnPropNameInRow="EMP_MODULE" msprop:Generator_ColumnPropNameInTable="EMP_MODULEColumn" msprop:Generator_UserColumnName="EMP_MODULE" type="xs:string" minOccurs="0" />
+              <xs:element name="ModuleDesc" msprop:Generator_ColumnVarNameInTable="columnModuleDesc" msprop:Generator_ColumnPropNameInRow="ModuleDesc" msprop:Generator_ColumnPropNameInTable="ModuleDescColumn" msprop:Generator_UserColumnName="ModuleDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Appointmentletterissuedstatus" msprop:Generator_ColumnVarNameInTable="columnAppointmentletterissuedstatus" msprop:Generator_ColumnPropNameInRow="Appointmentletterissuedstatus" msprop:Generator_ColumnPropNameInTable="AppointmentletterissuedstatusColumn" msprop:Generator_UserColumnName="Appointmentletterissuedstatus" type="xs:string" minOccurs="0" />
+              <xs:element name="AppointmentletterIssueddate" msprop:Generator_ColumnVarNameInTable="columnAppointmentletterIssueddate" msprop:Generator_ColumnPropNameInRow="AppointmentletterIssueddate" msprop:Generator_ColumnPropNameInTable="AppointmentletterIssueddateColumn" msprop:Generator_UserColumnName="AppointmentletterIssueddate" type="xs:string" minOccurs="0" />
+              <xs:element name="Acceptance_Date" msprop:Generator_ColumnVarNameInTable="columnAcceptance_Date" msprop:Generator_ColumnPropNameInRow="Acceptance_Date" msprop:Generator_ColumnPropNameInTable="Acceptance_DateColumn" msprop:Generator_UserColumnName="Acceptance_Date" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

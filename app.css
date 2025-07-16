@@ -1,0 +1,229 @@
+.icon-github {
+    background: no-repeat url('../img/github-16px.png');
+    width: 16px;
+    height: 16px;
+}
+
+.bootstrap-tagsinput {
+    width: 100%;
+}
+
+.accordion {
+    margin-bottom:-3px;
+}
+
+.accordion-group {
+    border: none;
+}
+
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+    margin-bottom: 0;
+}
+
+.twitter-typeahead .tt-hint
+{
+    display: none;
+}
+
+.tt-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    cursor: pointer;
+}
+
+.tt-suggestion {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.tt-suggestion:hover,
+.tt-suggestion:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca;
+}
+/*
+ * bootstrap-tagsinput v0.8.0
+ * 
+ */
+.bootstrap-tagsinput {
+  background-color: #f8f8f8;
+  border-bottom:2px solid #9e9e9e;
+  color: #555;
+  cursor: text;
+  display: inline-block;
+  line-height: 22px;
+  max-width: 100%;
+  padding:15px;
+  vertical-align: middle;
+  width: 97%;
+}
+.bootstrap-tagsinput.focus {
+  border-bottom: 2px solid #338ec9;
+}
+    .bootstrap-tagsinput:focus {
+        border-bottom:2px solid #338EC9 !important;
+    }
+.label-default {
+    background-color: #777 !important;
+}
+.label-default[href]:focus, .label-default[href]:hover {
+    background-color: #5e5e5e !important;
+}
+.label-primary {
+    background-color: #337ab7 !important;
+}
+.label-primary[href]:focus, .label-primary[href]:hover {
+    background-color: #286090 !important;
+}
+.label-success {
+    background-color: #5cb85c !important;
+}
+.label-success[href]:focus, .label-success[href]:hover {
+    background-color: #449d44 !important;
+}
+.label-info {
+    background-color: #5bc0de !important;
+}
+.label-info[href]:focus, .label-info[href]:hover {
+    background-color: #31b0d5 !important;
+}
+.label-warning {
+    background-color: #f0ad4e !important;
+}
+.label-warning[href]:focus, .label-warning[href]:hover {
+    background-color: #ec971f !important;
+}
+.label-danger {
+    background-color: #d9534f !important;
+}
+.label-danger[href]:focus, .label-danger[href]:hover {
+    background-color: #c9302c !important;
+}
+.label {
+  border-radius: 0.25em;
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  padding:8px;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+.bootstrap-tagsinput input {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  padding: 5px;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #777;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #777;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: white;
+}
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  content: "x";
+  padding: 0px 2px;
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.aspNetHidden {
+  display: none !important;
+}
+@media only screen and (max-width:1000px) and (min-width:240px){.bootstrap-tagsinput {
+  background-color: rgb(248, 248, 248);
+  border-bottom: 2px solid rgb(158, 158, 158);
+  color: rgb(85, 85, 85);
+  cursor: text;
+  display: inline-block;
+  line-height: 22px;
+  max-width: 100%;
+  padding: 15px;
+  vertical-align: middle;
+  width: 90%;
+}}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+	.bootstrap-tagsinput {
+  background-color: rgb(248, 248, 248);
+  border-bottom: 2px solid rgb(158, 158, 158);
+  color: rgb(85, 85, 85);
+  cursor: text;
+  display: inline-block;
+  line-height: 22px;
+  max-width: 100%;
+  padding: 15px;
+  vertical-align: middle;
+  width: 90%;
+}
+.tag.label.label-warning {
+  font-size: 9px;
+  overflow-wrap: break-word !important;
+  width: 100%;
+}
+}
+@media only screen and (max-width:1280px) and (min-width:980px){
+	
+	.bootstrap-tagsinput {
+  background-color: rgb(248, 248, 248);
+  border-bottom: 2px solid rgb(158, 158, 158);
+  color: rgb(85, 85, 85);
+  cursor: text;
+  display: inline-block;
+  line-height: 22px;
+  max-width: 100%;
+  padding: 15px;
+  vertical-align: middle;
+  width: 97%;
+}
+}

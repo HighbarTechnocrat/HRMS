@@ -1,0 +1,62 @@
+﻿body {
+}
+.following-namefunzone a {
+  color: #83391a !important;
+  display: flex;
+  font-size: 12px !important;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}.following-namefunzone .copyright > p {
+  color: #83391a;
+  font-size: 12px;
+}
+.following-name a {
+  color: #83391a !important;
+  display: flex;
+  font-size: 12px !important;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.bd-title > a {
+  border: 1px solid #ac431a;
+  border-radius: 3px;
+  color: #ae441a;
+  float: right;
+  margin: -7px 3px;
+  padding: 2px 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.user-comment .wallimg > img {
+  float: right;
+}
+.following {
+  background: #ffffff none repeat scroll 0 0;
+ 
+  display: inline-block;
+  height: auto;
+  margin: 5px 10px 0 0;
+  padding: 0;
+  transition: all 0.3s ease 0s;
+  width: 98%;
+}
+.bd-title > a:hover {
+  background: #f28820 none repeat scroll 0 0 !important;
+  border: 1px solid #f28820 !important;
+  color: #ffffff !important;
+}
+.following-name.following-title > a:hover {
+  color: #f28820 !important;
+}
+.following-name {
+  float: left;
+  font-size: 12px;
+  height: auto;
+  margin: 0 0 10px;
+  padding: 0 10px;
+  text-align: left;
+}

@@ -1,0 +1,31 @@
+ 1)SP name :- SP_GET_REQ_REQUISTIONNO
+-------------------------------------
+Replace block sp_Report_HOD
+
+if(@HODEmpCode='00002726' or @HODEmpCode='00002082'or @HODEmpCode='00002878' OR @HODEmpCode='00630098'  OR @HODEmpCode=(SELECT RecruiterEmpCode FROM tbl_Rec_RecruterEmpInfo WHERE RecruiterEmpCode=@EmpCode))
+
+------------------------------------------------
+Replace block SP_RequisitionViewStatusList   SP Name :- (SP_GET_REQ_REQUISTIONNO)
+
+if(@HODEmpCode='00002726' or @HODEmpCode='00002082'or @HODEmpCode='00002878'OR @HODEmpCode='00630098'OR @HODEmpCode=(SELECT RecruiterEmpCode FROM tbl_Rec_RecruterEmpInfo WHERE RecruiterEmpCode=@EmpCode))
+
+-----------------------------------------------
+
+2)sp name :- SP_GetRecruterInoxList
+-----------------------------------------------
+Replace block  RequisitionViewAllApproved  
+
+if(@strreqempcode ='00002726' OR @strreqempcode='00002082'OR @strreqempcode='00002878' OR  @strreqempcode='00630098'  OR @strreqempcode=(SELECT RecruiterEmpCode FROM tbl_Rec_RecruterEmpInfo where RecruiterEmpCode=@strreqempcode))
+
+---------------------------------------------
+3)SP_Get_Rec_RequiterChangeIndex_Search
+
+--------------------------------------------
+Replace block  RequisitionViewAllApprovedSearch
+
+ if(@emp_Code ='00002726' OR @emp_Code='00002082'OR @emp_Code='00002878' OR @emp_Code='00630098' OR @emp_Code=(SELECT RecruiterEmpCode FROM tbl_Rec_RecruterEmpInfo where RecruiterEmpCode=@emp_Code))
+
+
+
+		
+		

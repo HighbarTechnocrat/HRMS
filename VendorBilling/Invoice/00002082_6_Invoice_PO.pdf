@@ -1,0 +1,1798 @@
+Could not find file 'D:\HRMS\hrms\VendorBilling\Invoice\Inv-00090.pdf'.
+
+         
+      
+ 
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	oneHR
+</title>
+	<style type="text/css" media="print">
+    body { visibility: hidden; display: none }
+
+
+</style>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /><meta name="keywords" content="highbartech.com" /><meta name="description" content="highbartech.com" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/contact/contact.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/highbar/travel_css.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/highbar/hbtmodalpopupCss.css" type="text/css" media="all" />
+    <style>
+        .Dropdown {
+            border-bottom: 2px solid #cccccc;
+            background: url('../themes/creative1.0/images/user_check_dropdown1.png') no-repeat right center;
+            cursor: default;
+        }
+
+        .LableName {
+            color: #F28820;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .noresize {
+            resize: none;
+        }
+
+        .BtnShow {
+            color: blue !important;
+            background-color: transparent;
+            text-decoration: none;
+            font-size: 13px !important;
+        }
+
+            .BtnShow:visited {
+                color: blue !important;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            .BtnShow:hover {
+                color: red !important;
+                background-color: transparent;
+                text-decoration: none !important;
+            }
+
+        /*InvoiceDetails*/
+        .LableName {
+            color: #F28820;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .textboxBackColor {
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+
+        .POWOContentTextArea {
+            width: 750px !important;
+            height: 400px !important;
+            overflow: auto;
+        }
+
+        .InvoiceRemarksText {
+              width: 755px;
+              height: 140px;
+              overflow: auto;
+        }
+  
+    </style>
+
+<link href="/hrms/WebResource.axd?d=Jk6EW1WP2KNMfarjlfLqxkX1bpOF-mG13FaF3vVr649NTd1_sU4BZkS8AgKus9E_rK_P6ByksIv6DCTXtwkZIIcxqwO2p6mSfb5_2hd_fHciloIjWO5xX_FwjbINgT3E6yRl3g2&amp;t=636369222720000000" type="text/css" rel="stylesheet" /></head>
+<body class="home-page home page page-id-22 page-template page-template-page-templates page-template-dashboard page-template-page-templatesdashboard-php logged-in menu-is-vertical has_fixed_navbar no-js woffice-2-x ">
+    <link href="http://localhost/hrms/font/css/font-awesome.min.css" rel="stylesheet" />
+     <link rel="SHORTCUT ICON" href="http://localhost/hrms/images/Highbar.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/highbar/hrms.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/highbar/scrollbar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/highbar/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/bxcss/jquery.bxslider.css" type="text/css" />
+    <form method="post" action="/hrms/procs/VSCB_CreateInvoiceACC.aspx?invid=64&amp;mngexp=1" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/hrms/WebResource.axd?d=Nrichbq6LvpJumZ-TlhfW4HNBeiPJbJ4xk1r6Hc7mRwqtzEKOJQ6McGYWCgRff0n0-ZDELPhAA4WR4duMB1FqIRZUnU1&amp;t=637814851746327080" type="text/javascript"></script>
+
+
+<script src="/hrms/ScriptResource.axd?d=QFXDPL-OGb5QKjSQvY70LFyaTCIZtcIF2FL_uFSMrwqdpUkxy5YbyPL8KFFHRFxmrss38nCC-wy0FL_sk5TwqLh-jATxPPQSpi_ycNAgplMiG6QKVIZIgF009dr_L8lKR41MOIIWXJy0SXsk4o8ffbKlDG41&amp;t=14d69f50" type="text/javascript"></script>
+<script src="/hrms/ScriptResource.axd?d=fmwssHP8nhjeWdxs9t5S6MuTBLf6dcOwYrpZ2nNqP5nN_B--9FYVHw_Zc2YcTZYXnOTelPYHjl4-_y2XX26LvFV4t2OrJXokzW9fxPwGken5IPG70&amp;t=f2cd5c5" type="text/javascript"></script>
+<script src="/hrms/ScriptResource.axd?d=K3zJ9l7rS0GfzyFJfFuNh_D8u42AnuCmOhmv0WTyyGgrNWai8L6Umggih2YAuLhmunSyKAqEA-1AR-pndbRUAjaADCc1aAmNfAYiZ-6ljdkehFGeutoOzND60AF-IgLj4543nQ2&amp;t=f2cd5c5" type="text/javascript"></script>
+<script src="/hrms/procs/VSCB_CreateInvoiceACC.aspx?_TSM_HiddenField_=ToolkitScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d4.1.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-GB%3aacfc7575-cdee-46af-964f-5d85d9cdcf92%3a475a4ef5%3aaddc6819%3a5546a2b%3ad2e10b12%3aeffe2a26%3a37e2e5c9%3a5a682656%3ac7029a2%3ae9e598a9" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F4087430" />
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="900" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="XlL6ZAom7Onhhbx4jpDfRFnjP9Q5Hu9C3d-l8XZDzmFO3uwpbGW2nqLOEPvGaUidZ7tcG9tHDMR2Cjr34NS-T_54Y0J7dtSTNSYFQ_pRh4bQTJJn0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="iSYC+VuEe31tjeX95ljCidie7ehZeV3tmeNjFvzAuVF8O8buvXImtwI0vCGQHxDHEqP1PL55uRJhwIKD9LHBFaybd262fLEbizSeDTtd1MdmsdV+1TdSl1GIUn6U6vCMoaQI/d+jP7QIdG/ZDoIZ1kSMWNlRn83nmXL60iQ1SKJg1eSbDuFT6K4aBzb7ANBM2xthQ9TaVVJ6d5zgi5j89bb3Nb0VaxXqx22ENNf+Srz2Wt+zJrvnzLIDD6/vZ/qM4cqgSlJqCkcRVgw22xuT9UljnkYZjSj8ZwpNdTRV0G1da45xEZuu2H5huyuEVWSsdVJOGUaEPo4O6Nlwr+kJySJMbNT3NDz5qoygpmvQjxFAx1sf/iJpXP0zHTThcECvxosbjAYBgXh8ehjjuhCgGMfH8mJ5gVVd5u3l6ZqXFwdAUB1Hh0cptCQRMKoJaLmXA7WEiObP7E6j/NrnZ81D0GzpBLoqb5fkkyjCAI/6QAag8P9d2lMfwpqk42udwk4CJEQmYfrMXuk3Qw4cMtskteS7xr4gP5gFi1Lro9Wq84BvuLH4EDuKk6FwLrm+y80Df53gk+AFt+6zCgGomum7fTstYGwyKcFxliyeuapFx79KZsUa9ox+O45h616SLQkQkAQgDBt0XKuKTSOCt40Bc/QriuNxehvC1/n8jFRSCVJ37dZxFdQ2XjDBmzIxbxE8J2cNtMmoxu6gztVmc1X6rRQoMYBeoITyDWBS8efu2fa4nljBIsaPEx4sc7+/+AsFxCHg9ot4CCiJsp1SBAU1DS8XlcdlwSfFNsf+uJ9sriSPQisxt/R928QJUyaCUzY+YKwrUuEBlUKdCwpBWSxlEFlgEOCil1o5YzrcheQEkX2Nv40yUTtuTlc9wf60NRpmtv9G0QTzJMZxaiyZ1je+2Qn6LlTLSRK6pJ7h3wEmGs+cwCPclcP7K0zCQX5hUeusZ7AV7tI2f/98Jy1KjZK6U1ugvxZ4Bq9AMLMEUuJYixbHFa28bZZSHVrn4ukrXH7Q0WmATkApKS2CcqKYHrE4ctRMBZ3kA6bpYiG3HRo4W4UnCo6VEkTIMNdSA6yRM2EfrzBLsRDFmRddhbcPtUvLfLJKyvuqE4xyWALwA5PwBm5zbBA4PjXTBRLxeoksTLbComs5iiuXpHTMWCVMAPOCbADXmQZ2sLLbDi40ZgtsfQqwEYficrGNqjeZcVZgqi+cFUbHOhcw2+bs2iGaMh7U9J8QWi08EVcDg7ACgSjtP+ohcsx/o53SRKN1PLODHmI1D2luTRdNArNNZ0dPA6eS7jaVwhKW9PBNURHyfRYIsIVpWPqj3/AOZeCxTAQDlmyPdyrrfYPnmlEkfVRaIrn4QjtfWGW48v+4Fha3MItMI8bB1R3SAhINRJpP08/1qyER5YqQpJ66rOiZAqL3UcdukFwnPxuqI5TJR8q8AdX9KFwKhSLXOQM3YWmzTIElECEK+MDitwVqaE+GXdDgmLS1Ni6kunhAUG1HYetrz3NzyRSl/FXuOIhxai59HZsR+hRV1Y/jg012rggW9oYLIQ32LYyNhs0RU0mYCjp0+znfYY+V6PARAZJWH+lpCDvLlD6vhEDzoBYUtakEGZzL3eTTWToXIqf92EpmnXtlljlKjz7qMpg+pr8JdY/lwxVMqg5T4zeEGuKCNRWR59d6ZocUDtGnawR9ALX4maByBtCZuUOo2/yIr3NxEiLnfkMCiiBMQiEqsCh4NK0JgIuZMyuEB5oRwYrGuN22PioEME5DWEeQTB/20YSOt8pK2uq0ekE3+MqietxRPRRPJhts0nQo/z1VPQTaoE5s73bkUh3MmvTw0UT8" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="page-wrapper">
+            
+
+
+ <script src="http://localhost/hrms/themes/creative1.0/js/singleautocomplete/jquery-1.4.1.min.js" type="text/javascript"></script>
+
+
+
+
+ <script src="http://localhost/hrms/themes/creative1.0/js/dropdown/jsframework.js" type="text/javascript"></script>
+
+ <script src="http://localhost/hrms/themes/creative1.0/js/dropdown/combinedefault.js" type="text/javascript"></script>
+
+
+ <script src="http://localhost/hrms/themes/creative1.0/js/dropdown/script.js" type="text/javascript"></script>
+
+
+ <script src="http://localhost/hrms/themes/creative1.0/js/singleautocomplete/jquery.autocomplete.js" type="text/javascript"></script>
+
+
+    
+
+
+        
+         
+        
+         
+
+
+         
+        
+         
+
+
+            
+
+
+       
+       
+        
+
+        
+       
+        
+
+         
+        
+            
+         
+
+           
+           
+          
+
+          
+     
+           
+
+         
+      
+           
+
+        
+         
+
+                 
+
+         
+           
+         
+
+         
+
+         
+
+
+
+
+<header id="main-header" class=" has-user ">
+    <nav id="navbar" class="has_fixed_navbar">
+        
+        <div id="nav-left">
+ <div class="corner_image">
+<a href="#">
+
+    <img class="cornerOnehr" src="http://localhost/hrms/images/profile/OneHR Logo Final.jpg" alt="" title="">
+</a></div>
+         
+
+            <!-- NAVIGATION TOGGLE -->
+            
+            <!-- START LOGO -->
+            <div id="nav-logo">
+
+           
+                <a href='http://localhost/hrms/default.aspx'>
+      
+                    <span class="z"> <img src="http://localhost/hrms/images/profile/Technocrat_Logo.png" /></span>
+
+               
+                
+  
+                    
+                
+            </div>
+           
+
+            <!-- USER INFORMATIONS -->
+<div id="topseach_navuser" class="clearfix navuser bp_is_active">
+
+
+            
+<a id="user-thumb" href="javascript:void(0);">
+        
+
+  
+     
+
+
+                   
+                </a>
+                <a href="javascript:void(0)" id="user-close">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- EXTRA BUTTONS ABOVE THE SIDBAR -->
+
+
+        <div>
+        
+      
+
+           
+            <!-- SIDEBAR TOGGLE -->
+          
+              
+
+            <!-- SEACRH FORM -->
+          
+
+            <a href="http://localhost/hccchat/default.aspx?id=1jVE0YYl-h6-VAbrdlUv1Q==&skey=atbrmg2yizt5ogwfjfpyye1l&internet=false" id="topseach_navchattrigger" title="Go To Chat" class="" target="_blank">
+               
+               
+                
+                </a>
+           
+               
+        
+
+                
+                <input type="hidden" name="ctl00$topseach$hdcount" id="topseach_hdcount" value="0" />
+            </a>
+
+            
+           
+                
+            
+
+                
+                <input type="hidden" name="ctl00$topseach$msghdcount" id="topseach_msghdcount" value="0" />
+            </a>
+
+          
+           </a>
+            
+        </div>
+
+    </nav>
+    <!-- HIDDEN PARTS TRIGGERED BY JAVASCRIPT -->
+    <!-- START USER LINKS - WAITING FOR FIRING -->
+
+<!-- START menu - sagar and prajyot   <a href='http://localhost/hrms/default.aspx'>-->
+<div class="megamenu">
+        
+    <a href="http://localhost/hrms/default.aspx">
+	<img src="http://localhost/hrms/images/homepage_imgs/home.png"   class="tttt"/>
+    </a>
+
+    <a href="http://localhost/hrms/logout.aspx">
+	<img src="http://localhost/hrms/images/homepage_imgs/logout (1).png" title="Logout"   class="logout"/>
+    </a>
+    
+    <div id="cssmenu2">
+ <!--SONY COMMENTED THIS TO MAKE MENU WORK ON MOBILE-->
+<!-- <div id="menu-button"></div> -->
+
+<ul>
+
+<li class="has-sub" style="display:none"><span ></span>
+<!-- <ul class="mega-sub-menu"></ul>--></li>
+
+    <li class="has-sub" ><span class="submenu-button"></span>
+        <a id="topseach_btnShowMsg" href="javascript:__doPostBack(&#39;ctl00$topseach$btnShowMsg&#39;,&#39;&#39;)" style="font-size: 14px !important;color:#F28820">Notifications (130)</a>
+        
+    <ul class="mega-sub-menu">
+        
+        <li id="topseach_lilblMsg_Mob" title="Mobile"><a href="http://localhost/hrms/procs/Mobile.aspx" id="topseach_aM" style="font-size: 12px !important;" title="Pending Mobile Approvals (17)">Pending Mobile Approvals (17)</a></li>
+        <li id="topseach_lilblMsg_Fuel" title="Fuel"><a href="http://localhost/hrms/procs/fuel.aspx" id="topseach_aF" style="font-size: 12px !important;" title="Pending Fuel Approvals (13)">Pending Fuel Approvals (13)</a></li>
+        <li id="topseach_lilblMsg_Pay" title="Payment"><a href="http://localhost/hrms/procs/Voucher.aspx" id="topseach_aP" style="font-size: 12px !important;" title="Pending Voucher Approvals (65)">Pending Voucher Approvals (65)</a></li>
+        <li id="topseach_lilblMsg_Travel" title="Travel"><a href="http://localhost/hrms/procs/travelindex.aspx" id="topseach_aE" style="font-size: 12px !important;" title="Travel expense Approvals (34)">Travel expense Approvals (34)</a></li>
+        
+        
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+        
+   
+
+        	
+        	
+		<li id="topseach_liVendorPayApp" title="Invoice Approvals"><a href="http://localhost/hrms/procs/VSCB_InboxPaymentRequest.aspx" id="topseach_APayApp" style="font-size: 12px !important;" title="Payment Request Approvals (1)">Payment Request Approvals (1)</a></li>
+		
+		
+		
+
+    </ul>
+
+    </li>
+<li class="has-sub" style="display:none" ><span class="submenu-button"></span>
+   
+
+</li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span><a href="http://localhost/hrms/ho.aspx" style="font-size: 14px !important;" title="HO">Head Office</a>
+<ul class="mega-sub-menu"></ul></li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span>
+    
+     <a href="#" style="font-size: 14px !important;"  title="Projects">Projects</a>
+<ul class="mega-sub-menu">
+<li><a href="http://localhost/hrms/ongoing.aspx" title="Ongoing">Ongoing</a></li>
+<li><a href="http://localhost/hrms/completed.aspx" title="Completed">Completed</a></li>
+ <!--<li><a href="http://localhost/hrms/projectmanagernamewithphotograph" title="Project Manager Name with photograph">Project Manager Name with photograph</a></li>
+  <li><a href="http://localhost/hrms/progressphotograph" title="Progress Photograph">Progress Photograph</a></li>
+  <li><a href="http://localhost/hrms/currentstatus" title="Current Status">Current Status</a></li>-->
+</ul>
+</li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;" title="Policy & Procedures">Policy & Procedures</a>
+<ul class="mega-sub-menu">
+ 
+ <li><a href="#" style="font-size: 14px !important;" title="Integrated Management Systems">Integrated Management Systems</a>
+<ul class="mega-sub-menu">
+<!--    <li><a href="http://localhost/hrms/corporatemanual" style="font-size: 14px !important;" title="Corporate Manual">Corporate Manual</a></li>
+    <li><a href="http://localhost/hrms/qms.aspx" style="font-size: 14px !important;" title="QMS">QMS</a></li>
+    <li><a href="http://localhost/hrms/ems" style="font-size: 14px !important;" title="EMS">EMS</a></li>
+    <li><a href="http://localhost/hrms/ohandsms" style="font-size: 14px !important;"  title="OH&SMS">OH&SMS</a></li>-->
+	<!--********************************************************************-->
+	  <li><a href="http://localhost/hrms/strategicdocuments" style="font-size: 14px !important;" title="Strategic Documents">Strategic Documents</a>		
+		   <!--<ul class="mega-sub-menu">
+			<li><a href="http://localhost/hrms/accordian" style="font-size: 14px !important;" title="Accordian">Accordian</a></li>
+		  </ul>		-->
+		</li>
+		 <li><a href="http://localhost/hrms/corporatemanual" style="font-size: 14px !important;" title="Corporate Manual">Corporate Manual</a></li>
+		 <li><a href="#" style="font-size: 14px !important;" title="Procedures">Procedures</a>
+		  <ul class="mega-sub-menu">
+		    
+			<li><a href="http://localhost/hrms/informationsystemdepartmentprocedures" style="font-size: 14px !important;" title="Information System Department Procedures">Information Systems</a></li>
+			<li><a href="http://localhost/hrms/engineeringmanagement " style="font-size: 14px !important;" title="Engineering Management">Engineering Management</a></li>
+			<li><a href="#" style="font-size: 14px !important;" title="IMS Common Procedures">IMS Common Procedures</a>
+			 <ul class="mega-sub-menu">
+				<li><a href="http://localhost/hrms/mr" style="font-size: 14px !important;" title="MR">MR</a></li>
+				<li><a href="http://localhost/hrms/qaqc" style="font-size: 14px !important;" title="QA QC">QA QC</a></li>
+				<li><a href="http://localhost/hrms/ems" style="font-size: 14px !important;" title="EMS">EMS</a></li>
+				<li><a href="http://localhost/hrms/emsperformance" style="font-size: 14px !important;" title="EMS Performance">EMS Performance</a></li>
+				<li><a href="http://localhost/hrms/ohsms" style="font-size: 14px !important;" title="OH&SMS">OH&SMS</a></li>
+				<li><a href="http://localhost/hrms/ohsmsperformance" style="font-size: 14px !important;" title="OH&SMS performance">OH&SMS performance</a></li>
+		     </ul>
+			</li>
+			<li><a href="http://localhost/hrms/procurementandsubcontract " style="font-size: 14px !important;" title="Procurement & Sub-Contract">Procurement & Sub-Contract</a></li>
+			<li><a href="http://localhost/hrms/humanresource" style="font-size: 14px !important;" title="HUMAN RESOURCE">Human Resouece</a></li>
+			<li><a href="http://localhost/hrms/equipment" style="font-size: 14px !important;" title="EQUIPMENT">Equipment</a></li>
+			<li><a href="http://localhost/hrms/contracts" style="font-size: 14px !important;" title="CONTRACTS">Contracts</a></li>
+			<li><a href="http://localhost/hrms/accountsfinanceandtaxation" style="font-size: 14px !important;" title="FINANCE ACCOUNTS & TAXATION">Accounts Finance & Taxation</a></li>
+			<!--<li><a href="http://localhost/hrms/projectmonitoringandcontrol" style="font-size: 14px !important;" title="PROJECT MONITORING & CONTROL">Project Monitoring & Control</a></li>-->
+			<li><a href="http://localhost/hrms/centralprojectsplanningandmonitoring" style="font-size: 14px !important;" title="CENTRAL PROJECTS PLANNING & MONITORING">Central Projects Planning & Monitoring</a></li>
+			<li><a href="http://localhost/hrms/cc" style="font-size: 14px !important;" title="CORPORATE COMMUNICATION">Corporate Communications</a></li>
+			<li><a href="http://localhost/hrms/cos" style="font-size: 14px !important;" title="CORPORATE OFFICE SERVICES">Corporate Office Services</a></li>
+			<li><a href="http://localhost/hrms/csr" style="font-size: 14px !important;" title="CSR">Corporate Social Responsibility</a></li>
+			<li><a href="http://localhost/hrms/tara" style="font-size: 14px !important;" title="TARA">TARA</a></li>
+			<li><a href="http://localhost/hrms/siteprocedure" style="font-size: 14px !important;" title="SITE PROCEDURE">Site Procedure</a></li>
+			
+		  </ul>
+		 
+		 
+		 </li>
+		 <li><a href="http://localhost/hrms/contextoforganization" style="font-size: 14px !important;" title="Context of Organization">Context of Organization</a></li>
+		 <li><a href="http://localhost/hrms/organizationalknowledge" style="font-size: 14px !important;" title="Organizational Knowledge">Organizational Knowledge</a>
+			<ul class="mega-sub-menu">
+				<li><a href="http://localhost/hrms/organizationalknowledgeenggmanagement" style="font-size: 14px !important;" title="Engg Management">Engg Management </a></li>		
+				<li><a href="http://localhost/hrms/organizationalknowledgefinanceandaccounts" style="font-size: 14px !important;" title="Finance And Accounts">Finance And Accounts </a></li>		
+				<li><a href="http://localhost/hrms/organizationalknowledgecorporateofficeservices" style="font-size: 14px !important;" title="Corporate Office Services">Corporate Office Services </a></li>		
+				<li><a href="http://localhost/hrms/organizationalknowledgecorporatesocialresponsibility" style="font-size: 14px !important;" title="Corporate Social Responsibility">Corporate Social Responsibility</a></li>		
+				<li><a href="http://localhost/hrms/organizationalknowledgecontracts" style="font-size: 14px !important;" title="Contracts">Contracts</a></li>		
+			</ul>
+		</li>
+		 <li><a href="http://localhost/hrms/safetyawareness" style="font-size: 14px !important;" title="Safety Awareness (E – Learning)">Safety Awareness    (E – Learning)</a>
+		 </li>
+		 <li><a href="http://localhost/hrms/environmentknowledge" style="font-size: 14px !important;" title="Environment Knowledge">Environment Knowledge</a>
+		 <!--<ul class="mega-sub-menu">
+			<li><a href="http://localhost/hrms/procedures" style="font-size: 14px !important;" title="Environment Messages">Environment Messages </a></li>
+			<li><a href="http://localhost/hrms/procedures" style="font-size: 14px !important;" title="Environment Posters">Environment Posters</a></li>
+		 </ul>	-->
+		 </li>
+	
+	<!--********************************************************************-->
+	
+ </ul>
+ </li>
+ <li><a href="http://localhost/hrms/humanresource-policies.aspx" style="font-size: 14px !important;" title="Human Resource">Human Resource</a></li>
+ <li><a href="http://localhost/hrms/corporateofficeservices" style="font-size: 14px !important;"  title="Corporate Office Services">Corporate Office Services</a>
+    <!--<ul class="mega-sub-menu">
+    <li><a href="#" style="font-size: 14px !important;" title="A">A</a></li>
+    <li><a href="#" style="font-size: 14px !important;" title="B">B</a></li>
+    <li><a href="#" style="font-size: 14px !important;" title="C">C</a></li>
+    <li><a href="#" style="font-size: 14px !important;" title="D">D</a></li>
+ </ul> -->
+  </li> 
+  <li><a href="#" style="font-size: 14px !important;" title="Corporate Communications">Corporate Communications</a>
+	<ul class="mega-sub-menu">
+		<li><a href="http://localhost/hrms/brandguidelines" style="font-size: 14px !important;" title="Brand Guidelines">Brand Guidelines</a></li>
+		<li><a href="http://localhost/hrms/grouppresentation" style="font-size: 14px !important;" title="Group Presentation">Group Presentation</a></li> 
+	</ul>
+	</li>
+  <li><a href="http://localhost/hrms/corporatesocialresponsibility" style="font-size: 14px !important;"  title="Corporate Social Responsibility">Corporate Social Responsibility</a></li>
+  <li><a href="http://localhost/hrms/informationsystems" style="font-size: 14px !important;" title="Information Systems">Information Systems</a></li>
+  <!--<li><a href="http://localhost/hrms/humanresource-policies.aspx" style="font-size: 14px !important;" title="Human Resource">Human Resource</a></li>-->
+        <!--<li><a href="http://localhost/hrms/alldepartmentprocedure" style="font-size: 14px !important;"  title="All Department Procedures">All Department Procedures</a>
+		 <ul class="mega-sub-menu">
+			<li><a href="http://localhost/hrms/newsaccordians" style="font-size: 14px !important;" title="Sub Menu">Sub Menu1</a></li>
+		 </ul>	
+	    </li>-->
+	  
+		  
+</ul>
+</li>
+
+<ul class="mega-sub-menu">
+
+</ul>
+</li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;"  title="Gallery">Gallery</a>
+<ul class="mega-sub-menu">
+<li><a href="#" style="font-size: 14px !important;"  title="Photographs">Photographs</a>
+    <ul class="mega-sub-menu">
+        
+        <li><a href="http://localhost/hrms/ps/hqjrtcrY5IJTEd2cPsDBFw==" style="font-size: 14px !important;" title="Transport">Transportation</a></li>
+		<li><a href="http://localhost/hrms/ps/6b0kgTGNAapd3n28TD_vig==" style="font-size: 14px !important;"  title="Hydro">Hydro Power</a></li>
+        <li><a href="http://localhost/hrms/ps/Ut7_RTkgp0vF_-ZEIiFlZQ==" style="font-size: 14px !important;"  title="Nuclear Power">Nuclear Power & Special Projects</a></li>
+		  <li><a href="http://localhost/hrms/ps/LDvv5iC7MC4UPbvLBTVjRQ==" style="font-size: 14px !important;"  title="Water Solution">Water Solution</a></li>
+		  <li><a href="http://localhost/hrms/ps/0JKuwKKfZXmayODjj6E9tQ==" style="font-size: 14px !important;"  title="Buildings & Industrial">Buildings & Industrial Plants</a></li>
+		  <li><a href="http://localhost/hrms/ps/IOYHQIKJUk0l00B5T3SwqA==" style="font-size: 14px !important;"  title="Thermal Power">Thermal Power</a></li>
+		  <li><a href="http://localhost/hrms/ps/VGGql6vR1crCkva-pVk5hQ==" style="font-size: 14px !important;"  title="Ports & Marine">Ports & Marine</a></li>
+		</ul>
+</li>
+<li><a href="http://localhost/hrms/ps/ylAI0oJu7HJ7MQqa9fgC8w==" style="font-size: 14px !important;"  title="Videos">Videos</a></li>
+</ul>
+</li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span><a href="http://localhost/hrms/whitepapers.aspx" style="font-size: 14px !important;"  title="Knowledge Centre">Knowledge Centre</a>
+<ul class="mega-sub-menu">
+
+
+	    <!--<li><a href="http://localhost/hrms/ps/4aBNc2DICzEVSii43gO4IA==" style="font-size: 14px !important;"  title="Test Whitepapers">Test Whitepapers</a></li> -->
+    
+
+</ul>
+</li>
+<li class="has-sub" style="display:none"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;" title="Media">Media</a>
+<ul class="mega-sub-menu">
+<li><a href="http://localhost/hrms/pressrelease.aspx" style="font-size: 14px !important;" title="Press Releases">Press Releases</a></li>
+<li><a href="http://localhost/hrms/ps/L7S11lAQzL9NKuo_x0byJg==" style="font-size: 14px !important;"  title=" Interviews">Interviews</a></li>
+<li><a href="http://localhost/hrms/financialresults.aspx" style="font-size: 14px !important;"  title="Financial Results">Financial Results</a></li>
+
+<li><a href="http://localhost/hrms/annualreports.aspx" style="font-size: 14px !important;"  title="Financial Results">Annual Reports</a></li>
+
+</ul>
+</li>
+</ul>
+
+
+   </div>
+</div>
+    <!-- end menu - sagar and prajyot -->
+
+<!-- SONY added this -->
+ 
+<!-- SONY code ends here -->
+     
+   
+    <div id="user-sidebar">  
+        <div class="text-birth1 mCustomScrollbar" style="overflow-x:hidden !important;">
+        <header id="user-cover">
+            <a href="http://localhost/hrms/profile/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkprof" class="clearfix">
+                
+                <img id="topseach_imgbigpic" class="avatar user-3-avatar avatar-96 photo" src="http://localhost/hrms/themes/creative1.0/images/profile55x55/99999999.jpg" />
+                
+                    <span id="topseach_lblfname" class="woffice-welcome">Accounts</span>
+               
+
+            </a>
+            <div class="user-cover-layer"></div>
+
+        </header>
+        <nav>
+            <ul id="menu-bp" class="menu">
+                <li id="activity-personal-li" class="menu-parent">
+                    <a href="#">Activity </a>
+                    <ul class="sub-menu">
+                        <li id="rating-me-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/user/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkrating">Ratings & Reviews</a>
+                        </li>
+                        <li id="following-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/following/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkfollowing">Following</a>
+                        </li>
+                        <li id="follower-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/followers/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkfollower">Follower</a>
+                        </li>
+                        <li id="activity-favs-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/favorites/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkfavorites">Favorites</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li id="xprofile-personal-li" class="menu-parent">
+                    <a href="#">Profile </a>
+                    <ul class="sub-menu">
+                        <li id="public-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/profile/1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkviewprofile">View</a>
+                        </li>
+                        <li id="edit-personal-li" class="menu-child">
+                            <a href="http://localhost/hrms/procs/editprofile" id="topseach_lnkeditprofile">Edit</a>
+                        </li>
+                        <li id="edit-settings-li" class="menu-child">
+                            <a href='http://localhost/hrms/procs/settings.aspx'>Settings</a>
+                        </li>
+                        <li id="edit-password-li" class="menu-child">
+                            <a href="http://highbarportal/UserManagement/ApplicationList.aspx?appid=184" id="topseach_lnkpass" target="_blank">Change Password</a>
+                        </li>
+                        <li id="edit-question-li" class="menu-child">
+                            <a href="http://highbarportal/UserManagement/ApplicationList.aspx?appid=185" id="topseach_lnkqst" target="_blank">Security Questions</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="messages-personal-li" class="menu-parent">
+                    <a href="#">Messages </a>
+                    <ul class="sub-menu">
+                        <li id="compose-personal-li" class="menu-child">
+                            <a href='http://localhost/hrms/composemail.aspx'>Compose</a>
+                        </li>
+                        <li id="inbox-personal-li" class="menu-child">
+                            <a href='http://localhost/hrms/inbox.aspx'>Inbox</a>
+                        </li>
+
+                        <li id="sentbox-personal-li" class="menu-child">
+                            <a href='http://localhost/hrms/outbox.aspx'>Sent</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+
+                <li id="logout-li">
+                    <a id="topseach_btnSingOut" title="Logout" href="javascript:__doPostBack(&#39;ctl00$topseach$btnSingOut&#39;,&#39;&#39;)">Logout</a></li>
+            </ul>
+        </nav>
+        </div>
+     </div>
+   
+    <div id="woffice-notifications-menu">
+        
+        <div id="topseach_divallnotify" class="divnotify">
+            <a href="http://localhost/hrms/notification.aspx" title="See All Notifications" class="viewall" style="">See All Notifications</a>
+        </div>
+        <div id="topseach_divmsg" class="textwidget bd_birth">
+            <p class="woffice-notification-empty">You have <b>0</b> unread notifications.</p>
+        </div>
+
+    </div>
+
+    <div id="woffice-message-menu">
+        
+        
+        <div id="topseach_divmsg1" class="textwidget bd_birth">
+            <p class="woffice-notification-empty">You have <b>0</b> unread messages.</p>
+        </div>
+    </div>
+
+    <div id="woffice-links-menu">
+        <span id="topseach_lbllnkmsg" style="font-size:18px;">No Records Found</span>
+        
+    </div>
+
+    <div id="woffice-chat-menu">
+        <div id="topseach_pnlchat" class="mscrollbar">
+	
+            <ul class="chat-container">
+            </ul>
+        
+</div>
+                <div id="topseach_divallchat" class="divnotify">
+            <a href="http://localhost/hccchat/default.aspx?id=1jVE0YYl-h6-VAbrdlUv1Q==" id="topseach_lnkchatlink" title="Go To Chat" class="viewall" target="_blank">Go To Chat</a>
+        </div>
+        <input type="hidden" name="ctl00$topseach$hduserid" id="topseach_hduserid" value="163058" />
+        <input type="hidden" name="ctl00$topseach$hduserchat" id="topseach_hduserchat" />
+    </div>
+    
+     
+
+    <!-- START SEARCH CONTAINER - WAITING FOR FIRING -->
+    <div id="main-search">
+        <div class="container">
+            <div class="search-form">
+                <input type="text" value="" name="s" id="s" placeholder="Search..." />
+                <input type="hidden" name="searchsubmit" id="searchsubmit" value="true" />
+                <button type="submit" name="searchsubmit"><i class="fa fa-search"></i></button>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <section class="with-sidebar" id="main-content">
+                <aside id="right-sidebar" class="mobile-hidden" role="complementary">
+                    
+
+
+
+<style type="text/css">
+    .tcls{
+        cursor: default;
+    }
+    
+</style>
+<div id="uxbirthday_bday1" class="widget widget_woffice_birthdays widget_woffice_birthdays1">
+	
+   
+        
+        
+         
+
+            
+           
+            
+               
+           
+     
+    
+
+    <div id="new123">
+        <div class="text-birth mCustomScrollbar-text">
+            <span id="uxbirthday_lblEmptyRepeater">NO BIRTHDAY TODAY</span>
+                
+                    
+                
+                </div>
+        </div>
+   
+
+</div>
+
+
+                    
+                   
+                    
+                    
+                </aside>
+                <div id="left-content">
+                    <div id="content-container">
+                        <div id="content">
+                            <article id="post-0" class="bp_members type-bp_members box content post-0 page type-page status-publish hentry">
+                                <div id="buddypress">
+                                    
+                                   
+
+
+                                    
+
+                                  
+
+                                    <div id="item-body" role="main">
+                                        <div class="intern-padding">
+                                            
+    <script src="http://localhost/hrms/themes/creative1.0/js/singleautocomplete/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="../js/dist/jquery-3.2.1.min.js"></script>
+    <script src="http://localhost/hrms/themes/creative1.0/js/singleautocomplete/jquery.autocomplete.js" type="text/javascript"></script>
+
+     <script src="../js/freeze/jquery-1.11.0.min.js"></script>
+
+    <div class="commpagesdiv">
+        <div class="commonpages">
+            <div class="wishlistpagediv">
+                <div class="userposts">
+                    <span>
+                        <span id="MainContent_lblheading">Create Invoice</span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <a href="vscb_index.aspx" class="aaaa">Vendor Sub-con Home</a>
+                    </span>
+                </div>
+                <div class="edit-contact">
+
+                    
+
+                    <ul>
+                        <li class="trvl_date">
+                            <span class="aspNetDisabled"><input id="MainContent_chkIsInvoiceWithoutPO" type="checkbox" name="ctl00$MainContent$chkIsInvoiceWithoutPO" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkIsInvoiceWithoutPO\&#39;,\&#39;\&#39;)&#39;, 0)" /><label for="MainContent_chkIsInvoiceWithoutPO">Is Invoice Without PO</label></span>
+                        </li>
+
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+                    </ul>
+                    <ul id="MainContent_editform">
+                        <li class="trvl_type">
+                            <span>PO/ WO Number</span>&nbsp;&nbsp;<span style="color: red">*</span><br />
+                            <select name="ctl00$MainContent$lstTripType" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$lstTripType\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_lstTripType" disabled="disabled" class="aspNetDisabled DropdownListSearch">
+	<option selected="selected" value="0">Select PO/WO Number</option>
+
+</select>
+                            
+                        </li>
+                        <li class="trvl_date">
+                            <span>PO/ WO Type</span>
+                            <br />
+                            <select name="ctl00$MainContent$lstPOType" id="MainContent_lstPOType" disabled="disabled" class="aspNetDisabled DropdownListSearch">
+	<option value="0">Select PO/WO Type</option>
+	<option value="9">ACCOUNTS PO</option>
+	<option value="7">ADMIN PO</option>
+	<option value="8">HR PO</option>
+	<option value="10">IT PO</option>
+	<option value="11">MARKETING PO</option>
+	<option value="2">PRIME PO</option>
+	<option selected="selected" value="1">Strategic PO</option>
+
+</select>
+                            
+                        </li>
+                        <li class="trvl_date">
+                            <span>PO/ WO Date </span>
+                            <br />
+                            <input name="ctl00$MainContent$txtFromdate" type="text" value="01-08-2022" readonly="readonly" id="MainContent_txtFromdate" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+                        <li class="trvl_date">
+                            <span>PO/ WO Title</span><br />
+                            <input name="ctl00$MainContent$txtPOTitle" type="text" value="Strategic PO" readonly="readonly" id="MainContent_txtPOTitle" disabled="disabled" title="Strategic PO" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>Vendor Name</span><br />
+                            <input name="ctl00$MainContent$txtVendor" type="text" value="sreeweb ERP Solutions Pvt Ltd." readonly="readonly" id="MainContent_txtVendor" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>GSTIN No.</span><br />
+                            <input name="ctl00$MainContent$txtGSTIN_No" type="text" value="ABCD1235" readonly="readonly" id="MainContent_txtGSTIN_No" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+
+                        <li class="trvl_date">
+                            <span>Cost Center</span><br />
+                            <input name="ctl00$MainContent$txtCostCenter" type="text" value="AARP" readonly="readonly" id="MainContent_txtCostCenter" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>Project/Department</span><br />
+                            <input name="ctl00$MainContent$txtProject" type="text" value="AARP" readonly="readonly" id="MainContent_txtProject" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+
+                        </li>
+                        <li class="trvl_date">
+                            <span>PO/ WO Status</span><br />
+                            <input name="ctl00$MainContent$txtPOStatus" type="text" value="Partial" readonly="readonly" id="MainContent_txtPOStatus" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+
+                        <li class="trvl_date">
+                            <span>PO/ WO Amount (Without GST)</span><br />
+                            <input name="ctl00$MainContent$txtBasePOWOWAmt" type="text" value="80000.00" readonly="readonly" id="MainContent_txtBasePOWOWAmt" disabled="disabled" class="aspNetDisabled textboxBackColor" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>PO/ WO Amount (With GST) (A)</span><br />
+                            <input name="ctl00$MainContent$txtPOWOAmt" type="text" value="94400.00" readonly="readonly" id="MainContent_txtPOWOAmt" disabled="disabled" class="aspNetDisabled textboxBackColor" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>Direct Tax Amount (B)</span><br />
+                            <input name="ctl00$MainContent$txtDiretTaxAmt" type="text" value="3200.00" readonly="readonly" id="MainContent_txtDiretTaxAmt" disabled="disabled" class="aspNetDisabled textboxBackColor" AutoComplete="off" />
+                        </li>
+
+                        <li class="trvl_date">
+                            <span>Paid Amount (C)</span><br />
+                            
+                            <input name="ctl00$MainContent$txtPoPaidAmt_WithOutDT" type="text" value="11000.00" readonly="readonly" id="MainContent_txtPoPaidAmt_WithOutDT" disabled="disabled" class="aspNetDisabled textboxBackColor" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>Balance Amount (A-B-C)</span><br />
+                            <input name="ctl00$MainContent$txtBalanceAmt" type="text" value="80200.00" readonly="readonly" id="MainContent_txtBalanceAmt" disabled="disabled" class="aspNetDisabled textboxBackColor" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <br />
+                            
+
+                            <span id="MainContent_spnPOWOSignCopy">PO/ WO Sign Copy</span><br />
+                            <a id="MainContent_lnkfile_PO" class="BtnShow" href="javascript:__doPostBack(&#39;ctl00$MainContent$lnkfile_PO&#39;,&#39;&#39;)">HBT-PO-21-22-AC-01026.pdf</a>
+                        </li>
+                    </ul>
+
+                    <ul id="MainContent_editform1">
+                        <li id="MainContent_litrvlgrid" class="trvl_grid">
+                            <div>
+                                <span id="MainContent_spMilestones" class="LableName">Milestone Details</span>
+                                <div>
+	<table cellspacing="0" cellpadding="3" rules="all" id="MainContent_dgTravelRequest" style="background-color:White;border-color:Navy;border-width:1px;border-style:Solid;width:130%;border-collapse:collapse;">
+		<tr style="color:#3D1956;background-color:#C7D3D4;font-weight:bold;">
+			<th align="left" scope="col">Milestone No.</th><th align="left" scope="col">Milestone Particulars</th><th align="left" scope="col">Milestone Due Date</th><th align="right" scope="col">Quantity</th><th align="right" scope="col">Rate</th><th align="right" scope="col">Amount (Without GST)</th><th align="right" scope="col">CGST Amount</th><th align="right" scope="col">SGST Amount</th><th align="right" scope="col">IGST Amount</th><th align="right" scope="col">Amount (With  GST) (A)</th><th align="right" scope="col">Direct Tax Amount (B)</th><th align="right" scope="col">Paid Amount (C)</th><th align="right" scope="col">Balance Amount (A-B-C)</th><th align="left" scope="col">Payment Status</th>
+		</tr><tr style="color:#000066;">
+			<td align="left" style="border-color:Navy;width:4%;">1</td><td align="left" style="border-color:Navy;width:20%;">Projec Initiation 12.5%</td><td align="left" style="border-color:Navy;width:6%;">27-08-2022</td><td align="right" style="border-color:Navy;width:4%;">1</td><td align="right" style="border-color:Navy;width:5%;">10000.00</td><td align="right" style="border-color:Navy;width:6%;">10000.00</td><td align="right" style="border-color:Navy;width:5%;">900.00</td><td align="right" style="border-color:Navy;width:5%;">900.00</td><td align="right" style="border-color:Navy;width:5%;">&nbsp;</td><td align="right" style="border-color:Navy;width:6%;">11800.00</td><td align="right" style="border-color:Navy;width:6%;">800.00</td><td align="right" style="border-color:Navy;width:6%;">11000.00</td><td align="right" style="border-color:Navy;width:7%;">0.00</td><td align="left" style="border-color:Navy;width:5%;">Paid</td>
+		</tr><tr style="color:#000066;">
+			<td align="left" style="border-color:Navy;width:4%;">2</td><td align="left" style="border-color:Navy;width:20%;">Business Blue Print 31.25%</td><td align="left" style="border-color:Navy;width:6%;">27-08-2022</td><td align="right" style="border-color:Navy;width:4%;">1</td><td align="right" style="border-color:Navy;width:5%;">25000.00</td><td align="right" style="border-color:Navy;width:6%;">25000.00</td><td align="right" style="border-color:Navy;width:5%;">2250.00</td><td align="right" style="border-color:Navy;width:5%;">2250.00</td><td align="right" style="border-color:Navy;width:5%;">&nbsp;</td><td align="right" style="border-color:Navy;width:6%;">29500.00</td><td align="right" style="border-color:Navy;width:6%;">2400.00</td><td align="right" style="border-color:Navy;width:6%;">0.00</td><td align="right" style="border-color:Navy;width:7%;">27100.00</td><td align="left" style="border-color:Navy;width:5%;">Partial</td>
+		</tr><tr style="color:#000066;">
+			<td align="left" style="border-color:Navy;width:4%;">3</td><td align="left" style="border-color:Navy;width:20%;">Go Live 56.25%</td><td align="left" style="border-color:Navy;width:6%;">27-08-2022</td><td align="right" style="border-color:Navy;width:4%;">1</td><td align="right" style="border-color:Navy;width:5%;">45000.00</td><td align="right" style="border-color:Navy;width:6%;">45000.00</td><td align="right" style="border-color:Navy;width:5%;">4050.00</td><td align="right" style="border-color:Navy;width:5%;">4050.00</td><td align="right" style="border-color:Navy;width:5%;">&nbsp;</td><td align="right" style="border-color:Navy;width:6%;">53100.00</td><td align="right" style="border-color:Navy;width:6%;">0.00</td><td align="right" style="border-color:Navy;width:6%;">0.00</td><td align="right" style="border-color:Navy;width:7%;">53100.00</td><td align="left" style="border-color:Navy;width:5%;">Pending</td>
+		</tr>
+	</table>
+</div>
+
+                                <div>
+
+</div>
+
+                            </div>
+                        </li>
+
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+
+                        <div>
+                            <span id="MainContent_lblmessage" style="color: red; font-size: 16px; font-weight: 500; text-align: center;"></span>
+                        </div>
+                        <br />
+
+                        <li>
+                            <span id="MainContent_Span1" class="LableName">Invoice Details</span>
+                        </li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+
+                        
+                        
+                        
+
+                        
+                        
+                         
+
+                        
+                        
+                        
+
+
+                        
+                        
+                        
+
+                        <li id="MainContent_idMilestone" class="trvl_date">
+                            <span>Milestone Particulars </span>
+                            <br />
+                            <input name="ctl00$MainContent$txtMilestoneName_Invoice" type="text" value="Business Blue Print 31.25%" readonly="readonly" id="MainContent_txtMilestoneName_Invoice" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li id="MainContent_idMilestoneAmt" class="trvl_date">
+                            <span>Milestone Amount (A)</span><br />
+                            <input name="ctl00$MainContent$txtMilestoneAmt_Invoice" type="text" value="29500.00" readonly="readonly" id="MainContent_txtMilestoneAmt_Invoice" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li id="MainContent_idDirectTaxAmt" class="trvl_date">
+                             <span>Milestone Direct Tax Amount (if Any) (B)</span><br />
+                            <input name="ctl00$MainContent$txtMilestoneDirectTaxAmt" type="text" value="2400.00" readonly="readonly" id="MainContent_txtMilestoneDirectTaxAmt" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+                         <li id="MainContent_idMilestonePaidAmt" class="trvl_date">
+                            <span>Milestone Paid Amount (C)</span><br />
+                            <input name="ctl00$MainContent$txtMilestonePaidAmt" type="text" value="0.00" readonly="readonly" id="MainContent_txtMilestonePaidAmt" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                         <li id="MainContent_idBalanceAmt" class="trvl_date">
+                             <span>Balance Amount (A-B-C)</span><br />
+                            <input name="ctl00$MainContent$txtMilestoneBalanceAmt_Invoice" type="text" value="27100.00" readonly="readonly" id="MainContent_txtMilestoneBalanceAmt_Invoice" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                         <li id="MainContent_idMilestoneBlnk_1" class="trvl_date">                            
+                        </li>
+
+
+                         <li id="MainContent_livoucher_1" class="trvl_date">
+                            <span>Voucher No</span>
+                            <br />
+                            <input name="ctl00$MainContent$txtVoucherNo" type="text" value="vno-002" maxlength="50" id="MainContent_txtVoucherNo" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li id="MainContent_livoucher_2" class="trvl_date">
+                             
+                            
+                            
+
+                        </li>
+                        <li id="MainContent_livoucher_3" class="trvl_date">
+                             
+                        </li>
+
+
+                        <li class="trvl_date">
+                            <span>Invoice No</span>&nbsp;&nbsp;<span style="color: red">*</span>
+                            <br />
+                            <input name="ctl00$MainContent$txtInvoiceNo" type="text" value="Inv-00090" maxlength="50" id="MainContent_txtInvoiceNo" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>Supplier Invoice Date</span>&nbsp;&nbsp;<span style="color: red">*</span><br />
+                            <input name="ctl00$MainContent$txtInvoiceDate" type="text" value="17-08-2022" id="MainContent_txtInvoiceDate" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                            
+
+                        </li>
+                        <li class="trvl_date">
+                            <span>Amount (Without GST)</span>&nbsp;&nbsp;<span style="color: red">*</span><br />
+                            <input name="ctl00$MainContent$txtAmtWithOutTax" type="text" value="20000.00" maxlength="10" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtAmtWithOutTax\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return onCharOnlyNumber_dot(event);" id="MainContent_txtAmtWithOutTax" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+
+                        </li>
+
+
+                        <li class="trvl_date">
+                            <span>CGST(%)</span>
+                            <br />
+                            <input name="ctl00$MainContent$txtCGST_Per" type="text" value="9.00" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtCGST_Per\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return onCharOnlyNumber_dot(event);" id="MainContent_txtCGST_Per" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>SGST(%)</span><br />
+                            <input name="ctl00$MainContent$txtSGST_Per" type="text" value="9.00" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtSGST_Per\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return onCharOnlyNumber_dot(event);" id="MainContent_txtSGST_Per" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>IGST(%)</span><br />
+                            <input name="ctl00$MainContent$txtIGST_Per" type="text" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$txtIGST_Per\&#39;,\&#39;\&#39;)&#39;, 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return onCharOnlyNumber_dot(event);" id="MainContent_txtIGST_Per" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+                        <li class="trvl_date">
+                            <span>CGST Amount</span>
+                            <br />
+                            <input name="ctl00$MainContent$txtCGST_Amt" type="text" id="MainContent_txtCGST_Amt" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>SGST Amount</span><br />
+                            <input name="ctl00$MainContent$txtSGST_Amt" type="text" id="MainContent_txtSGST_Amt" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date">
+                            <span>IGST Amount</span><br />
+                            <input name="ctl00$MainContent$txtIGST_Amt" type="text" id="MainContent_txtIGST_Amt" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+
+
+                        <li class="trvl_date">
+                            <span>Amount (With GST)</span><br />
+                            <input name="ctl00$MainContent$txtAmtWithTax_Invoice" type="text" value="29500.00" readonly="readonly" id="MainContent_txtAmtWithTax_Invoice" disabled="disabled" class="aspNetDisabled" AutoComplete="off" />
+                        </li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+                        
+                        
+                        
+
+
+                        <li class="trvl_date">  
+                             <span>Uploaded Invoice File</span>&nbsp;&nbsp;<span style="color: red">*</span>
+                            <br />
+                             <a id="MainContent_lnkfile_Invoice" class="BtnShow" href="javascript:__doPostBack(&#39;ctl00$MainContent$lnkfile_Invoice&#39;,&#39;&#39;)">Inv-00090.pdf</a>
+                        </li>
+                        <li class="trvl_date" > </li>
+                        <li class="trvl_date" >  </li>
+
+
+                        <li class="trvl_local" style="display:none">
+                            <span>Upload Supporting Files</span>
+                            <input type="file" multiple="multiple" name="ctl00$MainContent$ploadexpfile" id="MainContent_ploadexpfile" />
+                            <div>
+
+</div>
+                        </li>
+                        <li class="trvl_date" style="display:none"></li>
+                        <li class="trvl_date" style="display:none"></li>
+
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+                        <li class="trvl_Approver">
+                            <div>
+	<table cellspacing="0" cellpadding="3" rules="all" id="MainContent_DgvApprover" style="background-color:White;border-color:Navy;border-width:1px;border-style:Solid;width:75%;border-collapse:collapse;">
+		<tr style="color:#3D1956;background-color:#C7D3D4;font-weight:bold;">
+			<th align="left" scope="col">Approver Name</th><th scope="col">Status</th><th scope="col">Approved on</th><th scope="col">Approver Remarks</th>
+		</tr><tr style="color:#000066;">
+			<td align="left" style="border-color:Navy;width:33%;">Mr. Accounts   Department </td><td align="left" style="border-color:Navy;width:12%;">Approved</td><td align="left" style="border-color:Navy;width:15%;">28-09-2022</td><td align="left" style="border-color:Navy;width:37%;">&nbsp;</td>
+		</tr>
+	</table>
+</div>
+                        </li>
+                        <li class="trvl_date"></li>
+                        <li class="trvl_date"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trvl_Savebtndiv">
+        
+        
+        <a id="MainContent_btnback_mng" title="Back" class="Savebtnsve" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnback_mng&quot;, &quot;&quot;, false, &quot;&quot;, &quot;VSCB_MyInvoiceACC.aspx&quot;, false, true))">Back</a>
+    </div>
+
+
+    <div>
+        
+        <br />
+        <br />
+        <div>
+
+</div>
+    </div>
+
+    <div style="display:none">
+               <li id="MainContent_idWithoutInv_Expenses_1" class="trvl_date">
+                             <span>Select Expenses</span>
+                            <br />
+                            <select name="ctl00$MainContent$lstExpenses" id="MainContent_lstExpenses" class="DropdownListSearch">
+	<option selected="selected" value="0">Select Expense</option>
+	<option value="1">Depreciation and amortisation expenses</option>
+	<option value="3">Direct Expenses</option>
+	<option value="2">Employees benefits expenses</option>
+
+</select>
+                        </li>
+                        <li id="MainContent_idWithoutInv_Expenses_2" class="trvl_date">
+                             <span>Select Expenses Details</span>
+                            <br />
+                            <select name="ctl00$MainContent$lstExpense_details" id="MainContent_lstExpense_details" class="DropdownListSearch">
+
+</select>
+                        </li>
+                        <li id="MainContent_idWithoutInv_Expenses_3" class="trvl_date">
+
+                        </li>
+        </div>
+
+    
+    
+    
+    <br />
+    <span id="MainContent_RequiredFieldValidator1" class="formerror" style="display:none;">Please enter Employee code</span>
+    <span id="MainContent_regName" class="formerror" style="visibility:hidden;">Enter a valid name</span>
+
+    <input type="hidden" name="ctl00$MainContent$hflEmpName" id="MainContent_hflEmpName" value="Mr. Accounts   Department " />
+    <input type="hidden" name="ctl00$MainContent$hflEmpDesignation" id="MainContent_hflEmpDesignation" value="Executive - Admin" />
+    <input type="hidden" name="ctl00$MainContent$hflEmpDepartment" id="MainContent_hflEmpDepartment" value="Accounts &amp; Finance" />
+    <input type="hidden" name="ctl00$MainContent$hflEmailAddress" id="MainContent_hflEmailAddress" value="accounts@highbartech.com" />
+    <input type="hidden" name="ctl00$MainContent$hflGrade" id="MainContent_hflGrade" value="I" />
+
+    <input type="hidden" name="ctl00$MainContent$FilePath" id="MainContent_FilePath" />
+    <input type="hidden" name="ctl00$MainContent$hdnSrno" id="MainContent_hdnSrno" />
+    <input type="hidden" name="ctl00$MainContent$hdnpamentStatusid" id="MainContent_hdnpamentStatusid" />
+    <input type="hidden" name="ctl00$MainContent$hdnIGSTAmt" id="MainContent_hdnIGSTAmt" />
+    <input type="hidden" name="ctl00$MainContent$hdnCompCode" id="MainContent_hdnCompCode" value="AARP" />
+    <input type="hidden" name="ctl00$MainContent$hdnProject_Dept_Id" id="MainContent_hdnProject_Dept_Id" value="17" />
+    <input type="hidden" name="ctl00$MainContent$hdnVendorId" id="MainContent_hdnVendorId" value="2" />
+    <input type="hidden" name="ctl00$MainContent$hdnPOWOID" id="MainContent_hdnPOWOID" value="106" />
+    <input type="hidden" name="ctl00$MainContent$hdnInvoiceId" id="MainContent_hdnInvoiceId" value="64" />
+    <input type="hidden" name="ctl00$MainContent$hdnInvoiceApprStatusId" id="MainContent_hdnInvoiceApprStatusId" value="2" />
+
+    <input type="hidden" name="ctl00$MainContent$hdnstype_Main" id="MainContent_hdnstype_Main" />
+    <input type="hidden" name="ctl00$MainContent$hdnMilestoneID" id="MainContent_hdnMilestoneID" value="593" />
+
+    <input type="hidden" name="ctl00$MainContent$hdnProject_Dept_Name" id="MainContent_hdnProject_Dept_Name" value="AARP" />
+
+    <input type="hidden" name="ctl00$MainContent$hdnPOTypeId" id="MainContent_hdnPOTypeId" value="1" />
+    <input type="hidden" name="ctl00$MainContent$hdnYesNo" id="MainContent_hdnYesNo" />
+    <input type="hidden" name="ctl00$MainContent$hdnfileid" id="MainContent_hdnfileid" />
+
+    <input type="hidden" name="ctl00$MainContent$hdnCGSTPer_O" id="MainContent_hdnCGSTPer_O" value="9.00" />
+    <input type="hidden" name="ctl00$MainContent$hdnSGSTPer_O" id="MainContent_hdnSGSTPer_O" value="9.00" />
+    <input type="hidden" name="ctl00$MainContent$hdnIGSTPer_O" id="MainContent_hdnIGSTPer_O" />
+    <input type="hidden" name="ctl00$MainContent$hdnTotalInvoiceAmt" id="MainContent_hdnTotalInvoiceAmt" value="0" />
+
+    <script src="../js/dist/select2.min.js"></script>
+    <link href="../js/dist/select2.min.css" rel="stylesheet" />
+
+
+      <script src="../js/freeze/jquery-ui.min.js"></script>
+    <script src="../js/freeze/gridviewScroll.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+        $('#' + "MainContent_InvoiceUploadfile").attr('accept', 'application/pdf');
+    })
+
+        $(document).ready(function () {
+            $(".DropdownListSearch").select2();
+
+              $('#MainContent_dgTravelRequest').gridviewScroll({
+                width: 1070,
+                height: 600,
+                freezesize:6, // Freeze Number of Columns.
+                headerrowcount: 1, //Freeze Number of Rows with Header.
+            });
+
+    
+        });
+
+     
+        function onCharOnlyNumber(e) {
+            var keynum;
+            var keychar;
+            var numcheck = /[0123456789]/;
+
+            if (window.event) {
+                keynum = e.keyCode;
+            }
+            else if (e.which) {
+                keynum = e.which;
+            }
+            keychar = String.fromCharCode(keynum);
+            return numcheck.test(keychar);
+        }
+        function onCharOnlyNumber_dot(e) {
+            var keynum;
+            var keychar;
+            var numcheck = /[0123456789.]/;
+
+            if (window.event) {
+                keynum = e.keyCode;
+            }
+            else if (e.which) {
+                keynum = e.which;
+            }
+            keychar = String.fromCharCode(keynum);
+            return numcheck.test(keychar);
+        }
+
+        function SaveMultiClick() {
+            try {
+                var retunboolean = true;
+                var ele = document.getElementById('MainContent_trvl_btnSave');
+
+                if (ele != null && !ele.disabled)
+                    retunboolean = true;
+                else
+                    retunboolean = false;
+                if (ele != null) {
+                    ele.disabled = true;
+                    if (retunboolean == true)
+                        Confirm();
+                }
+            }
+            catch (err) {
+                alert(err.description);
+            }
+            return retunboolean;
+        }
+        function CancelMultiClick() {
+            try {
+                var retunboolean = true;
+                var ele = document.getElementById('MainContent_btnCancel');
+
+                if (ele != null && !ele.disabled)
+                    retunboolean = true;
+                else
+                    retunboolean = false;
+                if (ele != null) {
+                    ele.disabled = true;
+                    if (retunboolean == true)
+                        Confirm();
+                }
+            }
+            catch (err) {
+                alert(err.description);
+            }
+            return retunboolean;
+        }
+
+        function Confirm() {
+            //Testing();
+            var confirm_value = document.createElement("INPUT");
+            confirm_value.type = "hidden";
+            confirm_value.name = "confirm_value";
+            if (confirm("Do you want to Submit ?")) {
+                confirm_value.value = "Yes";
+            } else {
+                confirm_value.value = "No";
+            }
+            //alert(confirm_value.value);
+            //document.forms[0].appendChild(confirm_value);
+            document.getElementById("MainContent_hdnYesNo").value = confirm_value.value;
+            return;
+
+        }
+
+        function DownloadFile(file) {
+            // alert(file);
+            var localFilePath = document.getElementById("MainContent_FilePath").value;
+
+            //alert(localFilePath);
+            window.open("http://localhost/oneHRAPI/api/ExcelDownload/Download?path1=" + localFilePath + "" + file);
+        }
+    </script>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="scroll-top-container">
+                <a href="#main-header" id="scroll-top">
+                    <i class="fa fa-arrow-circle-o-up"></i>
+                </a>
+            </div>
+                </div>
+            </section>
+            
+ <footer id="main-footer" class="">
+            <!-- START FOOTER WIDGETS -->
+            <div id="widgets">
+                <div class="container">
+					<!-- class="row"-->
+                    <div>
+						<!--class="widget col-md-4 widget_text animate-me fadeIn" -->
+                        <div id="text-3" >
+                           <h3>Address</h3>
+							<div class="textwidget">
+							HIGHBAR TECHNOCRAT LIMITED<br/>
+							D-Wing, 14th Floor, Empire Tower, Reliable Cloud City, Off. Thane-Belapur Road, Airoli, Navi Mumbai – 400 708.<br />
+                            GST #: 27AABCO4311L1ZI
+							</div>
+
+                                  
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- START COPYRIGHT -->
+            <div id="copyright">			
+                 <p> Copyright © 2020 Highbar. All rights reserved.&nbsp;
+				
+				</p> 
+            </div>
+        </footer>
+        </div>
+        
+<script src="http://localhost/hrms/themes/creative1.0/js/highbar/jquery.js"></script>
+<script defer="defer">jQuery(document).ready(function () {
+    jQuery("#scroll-top").on("click", function () {
+        //SCROLL TO TOP
+        jQuery("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});</script>
+<script src="http://localhost/hrms/themes/creative1.0/js/bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        if (top != self) {
+            top.onbeforeunload = function () { };
+            top.location.replace(self.location.href);
+        }
+        jQuery('.slider1').bxSlider({
+            auto:true,
+            slideWidth: innerWidth,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 10
+        });
+    });
+</script>
+
+
+
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery(".lnkclose").click(function () {
+            var el = jQuery(this);
+            jQuery.ajax({
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: 'manageservice.aspx/InsertUpdateSettings',
+                data: "{'widget':'" + jQuery(this).attr("data") + "'}",
+                dataType: 'text',
+                async: false,
+                success: function (response) {
+                    if (response.indexOf("success") > -1) {
+                        // e.preventDefault();    
+                        el.parent().parent().css("display", "none");
+                        return false;
+                    }
+                    else if (response.indexOf("error") > -1) {
+                        //$('#m_uxloginpopup_lblstatus').show();
+                        //    e.preventDefault();
+                        return false;
+                    }
+                },
+                error: function (xhr, status, error) {
+                    //     e.preventDefault();
+                    return false;
+                    //alert(xhr.responseText);
+                }
+            });
+
+            //alert(jQuery(this).attr("data"));
+        });
+    });
+    //jQuery(document).ready(function () {
+    //    var refreshId = setInterval(function () {
+    //        jQuery.ajax({
+    //            type: 'POST',
+    //            contentType: "application/json; charset=utf-8",
+    //            url: 'http://192.168.0.72/chatapp/notify.ashx?id=2',
+    //            data: "{'userid':'2'}",
+    //            dataType: 'text',
+    //            async: false,
+    //            success: function (response) {
+    //                var json = JSON.parse(response);
+    //                //alert(json["d"]);
+    //                var xmlDoc = $.parseXML(json["d"]);
+    //                var $xml = $(xmlDoc);
+    //                var $table = $xml.find("Table1");
+    //                $table.each(function () {
+    //                    var msgcount = $(this).find('msgcount').text();
+    //                    alert(msgcount);
+    //                });
+
+    //            },
+    //            error: function (xhr, status, error) {
+    //                return false;
+    //            }
+    //        });
+    //    }, 2000);
+    ////});
+
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#nav-sidebar-trigger").click(function () {
+            //jQuery("#right-sidebar").css("right", "0");
+            jQuery("#right-sidebar").toggleClass("sidebar-wrap");
+            jQuery("#left-content").toggleClass("left-content-wrap");
+        });
+
+        // Close Notification tab :
+        function CloseNotfications() {
+            jQuery('#woffice-notifications-menu').fadeOut();
+        }
+        function CloseMessages() {
+            jQuery('#woffice-message-menu').fadeOut();
+        }
+        function CloseLinks() {
+            jQuery('#woffice-links-menu').fadeOut();
+        }
+        function CloseChat() {
+            jQuery('#woffice-chat-menu').fadeOut();
+        }
+        // Mark as read :
+        function MarkNotificationRead() {
+            jQuery('a.mark-notification-read').on('click', function () {
+                var readLink = jQuery(this);
+                var component_action = readLink.data('component-action');
+                var component_name = readLink.data('component-name');
+                var item_id = readLink.data('item-id');
+            });
+        }
+        // Notification AJAX :
+        jQuery('#nav-notification-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-notifications-menu').slideDown();
+                jQuery('#woffice-notfications-loader').fadeIn();
+                jQuery('#woffice-notifications-content').empty();
+                CloseMessages();
+                CloseLinks();
+                CloseChat();
+                jQuery(this).addClass('clicked');
+                jQuery('#topseach_navuser').removeClass
+                    ('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            } else {
+                CloseNotfications();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-message-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-message-menu').slideDown();
+                jQuery('#woffice-notfications-loader').fadeIn();
+                jQuery(this).addClass('clicked');
+                CloseNotfications();
+                CloseChat();
+                CloseLinks();
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            }
+            else {
+                CloseMessages();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-links-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-links-menu').slideDown();
+                jQuery(this).addClass('clicked');
+                CloseMessages();
+                CloseChat();
+                CloseNotfications();
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            }
+            else {
+                CloseLinks();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-chat-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                //jQuery('#woffice-chat-menu').slideDown();
+                //jQuery(this).addClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+                getchatdata();
+                CloseMessages();
+                CloseLinks();
+                CloseNotfications();
+            }
+            else {
+                CloseChat();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-sidebar-trigger').click(function () {
+            jQuery('#topseach_navuser').removeClass('active');
+            jQuery('#user-sidebar').removeClass('active');
+            jQuery('#nav-links-trigger').removeClass('clicked');
+            jQuery('#nav-message-trigger').removeClass('clicked');
+            jQuery('#nav-notification-trigger').removeClass('clicked');
+            jQuery('#nav-chat-trigger').removeClass('clicked');
+            CloseLinks();
+            CloseChat();
+            CloseMessages();
+            CloseNotfications();
+        });
+        jQuery('#user-thumb').click(function () {
+            
+            jQuery('#nav-links-trigger').removeClass('clicked');
+            jQuery('#nav-message-trigger').removeClass('clicked');
+            jQuery('#nav-notification-trigger').removeClass('clicked');
+            jQuery('#nav-chat-trigger').removeClass('clicked');
+            jQuery("#right-sidebar").removeClass("sidebar-wrap");
+            jQuery("#left-content").removeClass("left-content-wrap");
+            CloseLinks();
+            CloseChat();
+            CloseMessages();
+            CloseNotfications();
+        });
+
+        if (document.getElementById("topseach_msghdcount").value == 0) {
+            jQuery("#msg_count").hide();
+        }
+        else {
+            jQuery("#msg_count").html(document.getElementById("topseach_msghdcount").value);
+        }
+
+        if (document.getElementById("topseach_hdcount").value == 0) {
+            jQuery("#notification_count").hide();
+        }
+        else {
+            jQuery("#notification_count").html(document.getElementById("topseach_hdcount").value);
+        }
+        //jQuery("#MainContent_uxhomecontent_uxhome_m_uxcategory_panfun").load("http://192.168.0.72/chatjs/default.aspx?id=1");
+    });
+    
+</script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery("#btnclose").click(function () {
+            jQuery('.divpopup').toggle(500);
+        });
+    });
+</script>
+<script src="http://localhost/hrms/themes/creative1.0/js/highbar/plugins.js"></script>
+
+<img id="imgSessionAlive" src="" style="display:none;" />
+
+<script type='text/javascript' src='http://localhost/hrms/themes/creative1.0/js/datepicker/jquery-ui.js'></script>
+<script>
+        jQuery("#MainContent_txtdob").datepicker({
+            dateFormat: "dd/M/yy",
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "1950:2050",
+        });
+</script>   
+      <script>
+                      jQuery("#MainContent_txtsdate").datepicker({
+        dateFormat: "dd/M/yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1950:2050",
+    });
+                      jQuery("#MainContent_txtedate").datepicker({
+        dateFormat: "dd/M/yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1950:2050",
+    });
+
+
+    </script>
+<script src="http://localhost/hrms/themes/creative1.0/js/highbar/scripts.js"></script>
+
+<link rel="stylesheet" href="http://localhost/hrms/CSS/creative1.0/reminder/reminder.css" type="text/css" media="screen" />
+<div class="reminder-container">
+    <div class="reminder-wrapper">
+        <div class="reminder-head">
+            <span class="reminder-head-title"><i class="fa fa-bell"></i> Event Reminder (<span id="lblrmcount">0</span>)</span>
+            <a class="rmdclose"><i class="fa fa-close"></i></a>
+        </div>
+        <div class="reminder-body">
+            <div class="reminder-content">
+                <ul class="reminder-content-list mscrollbar">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reminder-overlay"></div>
+
+<script>
+    //SAGAR COMMENTED THIS FOR REMOVING EVENT REMINDER NOTIFICATION 6OCT2017 STRATS HERE
+ var refreshId = setInterval(function () {
+        var dt = new Date();
+        var time = dt.getMinutes();
+        var sec = dt.getSeconds();
+        if ((time == 30 && sec < 5) || (time == 0 && sec < 5))
+        //if ((time != 30))
+        {
+            jQuery.ajax({
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: "http://localhost/hrms/manageservice.aspx/GetReminders",
+                data: "{'rtime':'" + dt.toLocaleTimeString().replace(/:\d+ /, ' ') + "'}",
+            dataType: 'text',
+            async: false,
+            success: function (response) {
+                var json = JSON.parse(response);
+                var xmlDoc = jQuery.parseXML(json["d"]);
+                var $xml = jQuery(xmlDoc);
+                var $table = $xml.find("Table1");
+                jQuery(".reminder-content .mCSB_container").html("");
+                var intCount = 0;
+                if ($table.length > 0)
+                {
+                    $table.each(function () {
+                        
+                        intCount = intCount + 1;
+                        jQuery(".reminder-content .mCSB_container").append("<li id='rmlist" + jQuery(this).find('Id').text() + "'><a href='#'><span><i class='fa fa-calendar'></i></span><span class='reminder-guest'>" + jQuery(this).find('productname').text() + " at " + jQuery(this).find('reminder_time').text() + "<br />GUEST : " + jQuery(this).find('Tagged').text() + "</span></a><span class='rmclose' data-id='" + jQuery(this).find('Id').text() + "'><i class='fa fa-close'></i></span></li>");
+                    });
+                    //alert(intCount);
+                    if (intCount > 0) {
+                        jQuery('.rmclose').on('click', null, function () {
+                            var rid = jQuery(this).attr("data-id");
+                            jQuery.ajax({
+                                type: 'POST',
+                                contentType: "application/json; charset=utf-8",
+                                url: "http://localhost/hrms/manageservice.aspx/UpdateReminderStatus",
+                            data: "{'id':'" + jQuery(this).attr("data-id") + "'}",
+                            dataType: 'text',
+                            async: false,
+                            success: function (response) {
+                                var rmid = '#rmlist' + rid;
+                                //alert(rmid);
+                                jQuery(rmid).remove();
+                            },
+                            error: function (xhr, status, error) {
+                                return false;
+                            }
+                        });
+                    });
+                    jQuery("#lblrmcount").html(intCount);
+                    jQuery(".reminder-overlay").fadeIn();
+                    jQuery(".reminder-container").fadeIn(500);
+                    jQuery("html").css("overflow-y", "hidden");
+                    }
+                    else {
+                        jQuery("html").css("overflow-y", "auto");
+                        jQuery('.reminder-overlay').fadeOut(800);
+                        jQuery('.reminder-container').fadeOut(500);
+                    }
+              }
+                else {
+                    jQuery("html").css("overflow-y", "auto");
+                    jQuery('.reminder-overlay').fadeOut(800);
+                    jQuery('.reminder-container').fadeOut(500);
+                }
+            },
+                error: function (xhr, status, error) {
+                   // alert("readyState: " + xhr.readyState + "\nstatus: " + xhr.status);
+                    //alert("responseText: " + xhr.responseText);
+                    return false;
+                }
+            });
+
+            //jQuery(".reminder-overlay").fadeIn();
+            //jQuery(".reminder-container").fadeIn(500);
+            //jQuery("html").css("overflow-y","hidden");
+        }
+        //alert(dt.toLocaleTimeString().replace(/:\d+ /, ' '));
+    }, 2000);
+  
+    jQuery(document).ready(function () {
+        jQuery(".rmdclose").click(function () {
+            jQuery("html").css("overflow-y", "auto");
+            jQuery('.reminder-overlay').fadeOut(800);
+            jQuery('.reminder-container').fadeOut(500);
+        });
+    });
+    //SAGAR COMMENTED THIS FOR REMOVING EVENT REMINDER NOTIFICATION 6OCT2017 ENDS HERE
+</script>
+<link rel="stylesheet" type="text/css" href ="http://localhost/hrms/CSS/creative1.0/tooltip/tooltipster.css" media="all"/>
+<script type="text/javascript" src="http://localhost/hrms/themes/creative1.0/js/jquery.tooltipster.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.tooltip').tooltipster({
+            contentAsHTML: true,
+            animation: 'fade',
+            delay: 200,
+            theme: 'tooltipster-default',
+            touchDevices: false,
+            trigger: 'hover'
+        });
+    });
+</script>
+
+
+<script>jQuery(document).ready(function () { jQuery("body").on("contextmenu", function (n) { return !1 }) }), document.onkeypress = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, document.onmousedown = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, document.onkeydown = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, jQuery(function () { jQuery("#fullscreen_slider").slider({ height: "auto", pagination: !0, thumbnails: !1 }) });</script><script>    jQuery(document).ready(function () { jQuery(document).keydown(function (e) { var o = String.fromCharCode(e.keyCode).toLowerCase(); return !e.ctrlKey || "c" != o && "u" != o ? void 0 : !1 }) });</script>
+
+        <div id="sitewide-notice" class="admin-bar-off"></div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("MainContent_RequiredFieldValidator1"), document.getElementById("MainContent_regName"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var MainContent_RequiredFieldValidator1 = document.all ? document.all["MainContent_RequiredFieldValidator1"] : document.getElementById("MainContent_RequiredFieldValidator1");
+MainContent_RequiredFieldValidator1.controltovalidate = "MainContent_txtEmpCode";
+MainContent_RequiredFieldValidator1.focusOnError = "t";
+MainContent_RequiredFieldValidator1.errormessage = "Please enter Employee code";
+MainContent_RequiredFieldValidator1.display = "Dynamic";
+MainContent_RequiredFieldValidator1.validationGroup = "validate";
+MainContent_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator1.initialvalue = "";
+var MainContent_regName = document.all ? document.all["MainContent_regName"] : document.getElementById("MainContent_regName");
+MainContent_regName.controltovalidate = "MainContent_txtEmpCode";
+MainContent_regName.focusOnError = "t";
+MainContent_regName.validationGroup = "validate";
+MainContent_regName.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_regName.validationexpression = "^[a-zA-Z\'.\\s]{1,50}";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+
+theForm.oldOnLoad = window.onload;
+window.onload = WebForm_RestoreScrollPosition;
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"format":"dd-MM-yyyy","id":"MainContent_CalendarExtender1"}, null, null, $get("MainContent_txtInvoiceDate"));
+});
+
+document.getElementById('MainContent_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator1'));
+}
+
+document.getElementById('MainContent_regName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_regName'));
+}
+//]]>
+</script>
+</form>
+</body>
+</html>

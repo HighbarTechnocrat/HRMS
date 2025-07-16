@@ -1,0 +1,89 @@
+﻿body {
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #338EC9;
+  border-radius: 0px;/*wasim change border radius 3px to 09 oct17*/
+  color: #555555;
+  font-weight: normal;
+  display:block;
+  z-index:600 !important;
+
+}.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+  text-align: right;
+  text-decoration: none;
+}.ui-datepicker td {
+  padding: 1px;
+  float:left;
+  display:inline-block;
+  width:13%;
+}
+ tr {
+  width: 100%;
+  display:inline-flexbox;
+}
+ .ui-datepicker-prev {
+  left: 20px;
+  top: 12px !important;
+}
+ .ui-datepicker-next {
+  right: 20px;
+  top: 12px !important;
+}
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}.ui-datepicker .ui-datepicker-title {
+  line-height: 1.8em;
+  margin: 0 2.3em;
+  text-align: center;
+}.ui-widget-header {
+  background:#338EC9;
+  color: #222222;
+  font-weight: bold;
+  padding: 5px;
+}.ui-widget-content {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #338EC9;
+  border-radius: 0px;/*wasim change border radius 5px to 09 oct17*/
+  color: #222222;
+  min-height: 0;
+  padding: 0.2em 0.2em 0;
+  width: 17em;
+  display:none;
+  z-index:600 !important;
+}
+ .ui-icon.ui-icon-circle-triangle-w {
+  color:#fff;
+}
+ .ui-icon.ui-icon-circle-triangle-e {
+  color:#fff;
+}
+ .ui-datepicker th {
+  display: inline-block;
+  width: 13%;
+  float:left;
+}
+ .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+ 
+  height: 1.8em;
+  position: absolute;
+  top: 2px;
+  width: 1.8em;
+}
+@media only screen and (max-width:1000px) and (min-width:240px){
+	
+	.ui-datepicker td {
+  display: inline-block;
+  padding: 1px;
+  width: 13%;
+}
+.ui-datepicker-calendar tr {
+  display: inline-block;
+  width: 100%;
+}
+
+}

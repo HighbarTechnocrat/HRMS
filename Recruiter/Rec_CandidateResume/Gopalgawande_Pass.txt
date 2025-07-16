@@ -1,0 +1,57 @@
+
+Following candidate is finalized. Please refer to the details below.
+
+finalyzed candidate not joining for the request
+
+Following finalized candidate is not joining. Please refer to the details below
+
+Candidate finalyzed for the request
+
+D-Wing, 14th Floor, Empire Tower Reliable Cloud City, Off, Thane - Belapur Rd, Airoli, Navi Mumbai, Maharashtra 400708
+
+http://localhost/hrms/procs/InterviewerShortList.aspx?ReqID=6
+Username:harshad.dhande@highbartech.com
+Password: Hd$Mar2021
+
+485 313 366
+
+98KY9-HNQ4Q-CVMJP-KVBK7-XD8QJ
+
+VPN Username - harshadd
+Password -     Pass@123
+
+
+https://app.jibble.io/#login
+https://outlook.office.com/mail/inbox
+
+
+https://app.jibble.io/#dashboard
+userName - harshad.dhande@highbartech.com
+Password - Admin@123
+
+Login url - http://localhost/hrms/login.aspx
+Username – harshad.dhande@highbartech.com
+Default password - hrms@2020
+
+
+SP_INSERTSERVICE_REQUEST
+
+
+Requremnt Empcode - Without HR
+
+TravelsRequest.aspx
+
+
+raj.patel@highbartech.com
+tushar.prabhakar@highbartech.com
+pass - hrms@2020
+
+SP_GetRecruitment_Interviewerfeedback
+
+
+sendMail 126 line 
+
+ select  @Interviewer_EmpCodeEmailAddress=Emp_Emailaddress from tbl_Employee_Mst where Emp_Code =@InterviewerEmpCode
+ select  @Recruiter_EmpCodeEmailAddress=Emp_Emailaddress from tbl_Employee_Mst where Emp_Code =@Recruiter_EmpCode
+Following candidate is finalized. Please refer to the details below.
+

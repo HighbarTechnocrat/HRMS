@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	HRMS
+</title><meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" /><meta name="keywords" content="highbartech.com" /><meta name="description" content="highbartech.com" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/togglebuttoncss/on-off-switch.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/singleautocomplete/jquery.autocomplete.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/contact/contact.css" type="text/css" media="all" />
+    <link href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/calendar/calendar.css" rel="stylesheet" type="text/css" />
+     
+	 <!-- <link href="sampleform_css.css" rel="stylesheet" type="text/css" /> -->
+	 
+	 <!-- sony commented this -->
+	 <!--
+     <script>
+         $(document).ready(function () {
+             $('.customer-logos').slick({
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 autoplay: true,
+                 autoplaySpeed: 1000,
+                 arrows: false,
+                 dots: false,
+                 pauseOnHover: false,
+                 responsive: [{
+                     breakpoint: 768,
+                     settings: {
+                         slidesToShow: 3
+                     }
+                 }, {
+                     breakpoint: 520,
+                     settings: {
+                         slidesToShow: 2
+                     }
+                 }]
+             });
+         });
+    </script>
+	-->
+    <style>
+        .myaccountpagesheading {
+            text-align: center !important;
+            text-transform: uppercase !important;
+        }
+        
+        /*Jayesh_Prajyot Added below  background color code 13sep2017 */
+           .aspNetDisabled {
+            background: #dae1ed;
+        }
+        /*Jayesh_Prajyot Added below  background color code 13sep2017 */
+        
+        /*Jayesh_Prajyot
+        .aspNetDisabled {
+            background: #dae1ed;
+        }
+       */
+        /*.editprofile {
+            margin: 0 !important;
+            width: auto !important;
+            float: none !important;
+        }*/
+		.view-first {
+	display: inline-block;
+	height: 180px;
+	width: 200px;
+}
+.bx-caption {
+	display: none;
+}
+.recentlyaddproductdiv {
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	position: relative;
+	text-align: center;
+	width: 98%;
+	border: 0px !important;
+	box-shadow: none !important;
+	border-radius: 0px !important;
+}
+.bx-wrapper .bx-viewport {
+	height: 163px !important;
+}
+.recentlyaddproductdiv {
+	text-align: left !important;
+}
+    </style>
+   
+</head>
+
+<!-- sony added this -->
+<!--<link href="http://192.168.0.172/artuser/CSS/creative1.0/bxcss/jquery.bxslider.css" rel="stylesheet" type="text/css" />-->
+<!-- <link href="http://192.168.0.172/artuser/CSS/creative1.0/newhomeproduct/homeprod.css" rel="stylesheet" type="text/css" /> -->
+<link href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/newhomeproduct/homeprod.css" rel="stylesheet" type="text/css" />
+<!-- sony added this EDNS here -->
+
+<body class="home-page home page page-id-22 page-template page-template-page-templates page-template-dashboard page-template-page-templatesdashboard-php logged-in menu-is-vertical has_fixed_navbar no-js woffice-2-x ">
+    <link href="http://HRMS_ADMIN.com.websols.shared-servers.com/font/css/font-awesome.min.css" rel="stylesheet" />
+     <link rel="SHORTCUT ICON" href="http://HRMS_ADMIN.com.websols.shared-servers.com/images/Highbar.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/highbar/hrms.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/highbar/scrollbar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/highbar/style.css" type="text/css" media="screen" />
+	
+    <link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/bxcss/jquery.bxslider.css" type="text/css" />
+	
+    <form method="post" action="/projectdetails.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/WebResource.axd?d=Nrichbq6LvpJumZ-TlhfW4HNBeiPJbJ4xk1r6Hc7mRwqtzEKOJQ6McGYWCgRff0n0-ZDELPhAA4WR4duMB1FqIRZUnU1&amp;t=636355105360000000" type="text/javascript"></script>
+
+
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/ScriptResource.axd?d=fmwssHP8nhjeWdxs9t5S6MuTBLf6dcOwYrpZ2nNqP5nN_B--9FYVHw_Zc2YcTZYXnOTelPYHjl4-_y2XX26LvFV4t2OrJXokzW9fxPwGken5IPG70&amp;t=f2cd5c5" type="text/javascript"></script>
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/ScriptResource.axd?d=K3zJ9l7rS0GfzyFJfFuNh_D8u42AnuCmOhmv0WTyyGgrNWai8L6Umggih2YAuLhmunSyKAqEA-1AR-pndbRUAjaADCc1aAmNfAYiZ-6ljdkehFGeutoOzND60AF-IgLj4543nQ2&amp;t=f2cd5c5" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B166DE5A" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="0ggBeeNNhIyrhvnTSwVzHJRC/6YavoLAzohMNM6WPqV5fyDD+cgK85E2I/C4+GlVbUI8FmO426A8Bcui1E4yxqqNgvOJQDOge7EREQTlgJcVxvLbxirxIJDwPLuiugs9v7MTueiMA4aDxvwy66Sx39TUG3u+pdrUrAZF33sBh7u1beXnt0PxC6RoIWnZwffncbeaGfI9AWscGLvmN0UI8t3pYP95uHIboU3HAnkeAykUwQlRLbaqzuz3ORIvOMv8KwzhZTQzzgesXaPZarPJqA/vLhkwLeX6qTtHkt735i7jRNgnB7MgWewNdG9WFx8eJasmC0fMZqSVKYxa7SpJBSRX+MbB60YGVx05eGUPsnZR5ZP5YMqnPzKnrQi81DJcYkS990PRRwIK98Vfx0puNr5lNvHVT1ibLV9rJp1eiGgn9pZfObK2ebJUpVozWwEwvHB7KxaCsGm9eU3cQsTC/3GTcDtdzhBU5NNRM1yYf28lYTGKXyzcTQ/RWboUQocKADhpFQ==" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="page-wrapper">
+            
+
+
+ <script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/singleautocomplete/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/singleautocomplete/megamenu.js" type="text/javascript"></script>
+ <script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/singleautocomplete/jquery.autocomplete.js" type="text/javascript"></script>
+
+
+
+    
+
+
+        
+         
+        
+         
+
+
+         
+        
+         
+
+
+            
+
+
+       
+       
+        
+
+        
+       
+        
+
+         
+        
+            
+         
+
+           
+           
+          
+
+          
+     
+           
+
+         
+      
+           
+
+        
+         
+
+                 
+
+         
+           
+         
+
+         
+
+         
+
+
+
+
+<header id="main-header" class=" has-user ">
+    <nav id="navbar" class="has_fixed_navbar">
+        
+        <div id="nav-left">
+ <div class="corner_image">
+<a href="http://HRMS_ADMIN.com.websols.shared-servers.com">
+<!--<img class="corner" src="http://HRMS_ADMIN.com.websols.shared-servers.com/images/profile/corner5.png" alt="" title="">-->
+</a></div>
+         
+
+            <!-- NAVIGATION TOGGLE -->
+            
+            <!-- START LOGO -->
+            <div id="nav-logo">
+
+           
+                <a href='http://HRMS_ADMIN.com.websols.shared-servers.com/default.aspx'>
+      <!--<span class="z"> <img src="http://HRMS_ADMIN.com.websols.shared-servers.com/images/profile/hcclogo.png" /></span>-->
+                    <span class="z"> <img src="http://HRMS_ADMIN.com.websols.shared-servers.com/images/profile/Technocrat_Logo.png" /></span>
+
+               
+                
+  
+                    
+                
+            </div>
+           
+
+            <!-- USER INFORMATIONS -->
+<div id="topseach_navuser" class="clearfix navuser bp_is_active">
+
+
+            
+<a id="user-thumb" href="javascript:void(0);">
+        
+
+  
+     
+
+
+                   
+                </a>
+                <a href="javascript:void(0)" id="user-close">
+                    <i class="fa fa-arrow-circle-o-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- EXTRA BUTTONS ABOVE THE SIDBAR -->
+
+
+        <div>
+        
+      
+
+           
+            <!-- SIDEBAR TOGGLE -->
+          
+              
+
+            <!-- SEACRH FORM -->
+          
+
+            <a href="http://HRMS_ADMIN/hccchat/default.aspx?id=9X7J8uN3ErT108xJCxKlHA==&skey=egyduwqnfwk1edhn4ipuo44s&internet=false" id="topseach_navchattrigger" title="Go To Chat" class="" target="_blank">
+               
+               
+                
+                </a>
+           
+               
+        
+
+                
+                <input type="hidden" name="ctl00$topseach$hdcount" id="topseach_hdcount" value="0" />
+            </a>
+
+            
+           
+                
+            
+
+                
+                <input type="hidden" name="ctl00$topseach$msghdcount" id="topseach_msghdcount" value="0" />
+            </a>
+
+          
+           </a>
+            
+        </div>
+
+    </nav>
+    <!-- HIDDEN PARTS TRIGGERED BY JAVASCRIPT -->
+    <!-- START USER LINKS - WAITING FOR FIRING -->
+
+<!-- START menu - sagar and prajyot -->
+     <div class="megamenu">
+                 <div id="cssmenu2">
+
+<div id="menu-button">
+
+</div>
+
+<ul>
+
+<li class="has-sub"><span class="submenu-button"></span><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/default.aspx" style="font-size: 14px !important;"  title="Home">Home</a>
+
+<ul class="mega-sub-menu">
+
+
+
+
+</ul>
+</li>
+
+<li class="has-sub"><span class="submenu-button"></span><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/userdirectory.aspx" style="font-size: 14px !important;"  title="People">People</a>
+
+<ul class="mega-sub-menu">
+
+
+    
+
+
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;" title="Highbar Group">Highbar Group</a>
+
+<ul class="mega-sub-menu">
+
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/Highbar"  style="font-size: 14px !important;" title="Highbar">Highbar</a></li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/lavasa" style="font-size: 14px !important;" title="Lavasa">Lavasa</a></li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/steinerag" style="font-size: 14px !important;" title="Steiner AG">Steiner AG</a></li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/hccinfrastructure" style="font-size: 14px !important;" title="HCC Infrastructure">HCC Infrastructure</a></li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/charosawineries" style="font-size: 14px !important;" title="Charosa Wineries">Charosa Wineries</a></li>
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ho.aspx" style="font-size: 14px !important;" title="HO">Head Office</a>
+<ul class="mega-sub-menu">
+
+
+
+
+
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span>
+    <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/projectlist.aspx" style="font-size: 14px !important;"  title="Projects">Projects</a>
+
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;" title="Policy & Procedures">Policy & Procedures</a>
+<ul class="mega-sub-menu">
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/integratedmanagementsystem" style="font-size: 14px !important;" title="Integrated Management Systems">Integrated Management Systems</a>
+<ul class="mega-sub-menu">
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/corporatemanual" style="font-size: 14px !important;" title="Corporate Manual">Corporate Manual</a></li>
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/qms" style="font-size: 14px !important;" title="QMS">QMS</a></li>
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ems" style="font-size: 14px !important;" title="EMS">EMS</a></li>
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ohandsms" style="font-size: 14px !important;"  title="OH&SMS">OH&SMS</a></li>
+ </ul>
+ </li>
+
+  <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/corporateofficeservices" style="font-size: 14px !important;"  title="Corporate Office Services">Corporate Office Services</a></li>
+  <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/corporatecommunication" style="font-size: 14px !important;" title="Corporate Communications">Corporate Communications</a></li>
+  <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/corporatesocialresponsibility" style="font-size: 14px !important;"  title="Corporate Social Responsibility">Corporate Social Responsibility</a></li>
+  <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/informationsystem" style="font-size: 14px !important;" title="Information Systems">Information Systems</a></li>
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/humanresource-policies.aspx" style="font-size: 14px !important;" title="Human Resource">Human Resource</a></li>
+   
+</ul>
+</li>
+
+<ul class="mega-sub-menu">
+
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;"  title="Gallery">Gallery</a>
+<ul class="mega-sub-menu">
+<li><a href="#" style="font-size: 14px !important;"  title="Photographs">Photographs</a>
+    <ul class="mega-sub-menu">
+        <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ps/6b0kgTGNAapd3n28TD_vig==" style="font-size: 14px !important;"  title="Hydro">Hydro</a></li>
+        <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ps/hqjrtcrY5IJTEd2cPsDBFw==" style="font-size: 14px !important;" title="Transport">Transport</a></li>
+        </ul>
+</li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ps/ylAI0oJu7HJ7MQqa9fgC8w==" style="font-size: 14px !important;"  title="Videos">Videos</a></li>
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;"  title="Knowledge Centre">Knowledge Centre</a>
+<ul class="mega-sub-menu">
+
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ps/V4cbELyNCF6GlgD6lYZ_mQ==" style="font-size: 14px !important;" title="Speeches">Speeches</a></li>
+
+       <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/whitepapers.aspx" style="font-size: 14px !important;"  title="Whitepapers">Whitepapers</a></li> 
+    
+
+</ul>
+</li>
+<li class="has-sub"><span class="submenu-button"></span><a href="#" style="font-size: 14px !important;" title="Media">Media</a>
+<ul class="mega-sub-menu">
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/pressrelease.aspx" style="font-size: 14px !important;" title="Press Releases">Press Releases</a></li>
+<li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/financialresults.aspx" style="font-size: 14px !important;"  title="Financial Results">Financial Results</a></li>
+    <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/ps/L7S11lAQzL9NKuo_x0byJg==" style="font-size: 14px !important;"  title="Interviews">Interviews</a></li>
+
+</ul>
+</li>
+</ul>
+
+</>            
+          </div>
+    <!-- end menu - sagar and prajyot -->
+
+<!-- SONY added this -->
+ 
+<!-- SONY code ends here -->
+     
+   
+    <div id="user-sidebar">  
+        <div class="text-birth1 mCustomScrollbar" style="overflow-x:hidden !important;">
+        <header id="user-cover">
+            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/profile/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkprof" class="clearfix">
+
+                <img id="topseach_imgbigpic" class="avatar user-3-avatar avatar-96 photo" src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/images/profile55x55/carlos.jpg" />
+                
+                    <span id="topseach_lblfname" class="woffice-welcome">Highbar</span>
+               
+
+            </a>
+            <div class="user-cover-layer"></div>
+
+        </header>
+        <nav>
+            <ul id="menu-bp" class="menu">
+                <li id="activity-personal-li" class="menu-parent">
+                    <a href="#">Activity </a>
+                    <ul class="sub-menu">
+                        <li id="rating-me-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/user/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkrating">Ratings & Reviews</a>
+                        </li>
+                        <li id="following-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/following/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkfollowing">Following</a>
+                        </li>
+                        <li id="follower-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/followers/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkfollower">Follower</a>
+                        </li>
+                        <li id="activity-favs-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/favorites/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkfavorites">Favorites</a>
+                        </li>
+                    </ul>
+                </li>
+                <div id="topseach_admin">
+                 <li id="liadmin">
+                      <a onclick="document.forms[0].target = &#39;_blank&#39;;" id="topseach_lnkadmin" title="Admin Login" href="javascript:__doPostBack(&#39;ctl00$topseach$lnkadmin&#39;,&#39;&#39;)">Admin</a>
+                 </li>
+                </div>
+                <li id="xprofile-personal-li" class="menu-parent">
+                    <a href="#">Profile </a>
+                    <ul class="sub-menu">
+                        <li id="public-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/profile/9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkviewprofile">View</a>
+                        </li>
+                        <li id="edit-personal-li" class="menu-child">
+                            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/procs/editprofile" id="topseach_lnkeditprofile">Edit</a>
+                        </li>
+                        <li id="edit-settings-li" class="menu-child">
+                            <a href='http://HRMS_ADMIN.com.websols.shared-servers.com/procs/settings.aspx'>Settings</a>
+                        </li>
+                        <li id="edit-password-li" class="menu-child">
+                            <a href="http://hccportal/UserManagement/ApplicationList.aspx?appid=184" id="topseach_lnkpass" target="_blank">Change Password</a>
+                        </li>
+                        <li id="edit-question-li" class="menu-child">
+                            <a href="http://hccportal/UserManagement/ApplicationList.aspx?appid=185" id="topseach_lnkqst" target="_blank">Security Questions</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="messages-personal-li" class="menu-parent">
+                    <a href="#">Messages </a>
+                    <ul class="sub-menu">
+                        <li id="compose-personal-li" class="menu-child">
+                            <a href='http://HRMS_ADMIN.com.websols.shared-servers.com/composemail.aspx'>Compose</a>
+                        </li>
+                        <li id="inbox-personal-li" class="menu-child">
+                            <a href='http://HRMS_ADMIN.com.websols.shared-servers.com/inbox.aspx'>Inbox</a>
+                        </li>
+
+                        <li id="sentbox-personal-li" class="menu-child">
+                            <a href='http://HRMS_ADMIN.com.websols.shared-servers.com/outbox.aspx'>Sent</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+
+                <li id="logout-li">
+                    <a id="topseach_btnSingOut" title="Logout" href="javascript:__doPostBack(&#39;ctl00$topseach$btnSingOut&#39;,&#39;&#39;)">Logout</a></li>
+            </ul>
+        </nav>
+        </div>
+     </div>
+   
+    <div id="woffice-notifications-menu">
+        
+        <div id="topseach_divallnotify" class="divnotify">
+            <a href="http://HRMS_ADMIN.com.websols.shared-servers.com/notification.aspx" title="See All Notifications" class="viewall" style="">See All Notifications</a>
+        </div>
+        <div id="topseach_divmsg" class="textwidget bd_birth">
+            <p class="woffice-notification-empty">You have <b>0</b> unread notifications.</p>
+        </div>
+
+    </div>
+
+    <div id="woffice-message-menu">
+        
+        
+        <div id="topseach_divmsg1" class="textwidget bd_birth">
+            <p class="woffice-notification-empty">You have <b>0</b> unread messages.</p>
+        </div>
+    </div>
+
+    <div id="woffice-links-menu">
+        <span id="topseach_lbllnkmsg" style="font-size:18px;">No Records Found</span>
+        
+    </div>
+
+    <div id="woffice-chat-menu">
+        <div id="topseach_pnlchat" class="mscrollbar">
+	
+            <ul class="chat-container">
+            </ul>
+        
+</div>
+                <div id="topseach_divallchat" class="divnotify">
+            <a href="http://HRMS_ADMIN/hccchat/default.aspx?id=9X7J8uN3ErT108xJCxKlHA==" id="topseach_lnkchatlink" title="Go To Chat" class="viewall" target="_blank">Go To Chat</a>
+        </div>
+        <input type="hidden" name="ctl00$topseach$hduserid" id="topseach_hduserid" value="150171" />
+        <input type="hidden" name="ctl00$topseach$hduserchat" id="topseach_hduserchat" />
+    </div>
+    
+     
+
+    <!-- START SEARCH CONTAINER - WAITING FOR FIRING -->
+    <div id="main-search">
+        <div class="container">
+            <div class="search-form">
+                <input type="text" value="" name="s" id="s" placeholder="Search..." />
+                <input type="hidden" name="searchsubmit" id="searchsubmit" value="true" />
+                <button type="submit" name="searchsubmit"><i class="fa fa-search"></i></button>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <section class="with-sidebar" id="main-content">
+                <aside id="right-sidebar" class="mobile-hidden" role="complementary">
+                    <div id="uxbirthday_bday1" class="widget widget_woffice_birthdays">
+	
+   
+        
+        
+         
+
+            
+           
+            
+               
+           
+     
+    
+    <div id="new123">
+        <div class="text-birth mCustomScrollbar">
+           
+                
+                    
+                                       
+                            
+                               
+                             <a  href='#'>
+                                         <span class="birthday-item-content">
+                                         Sony Surana 
+                                            
+                                          
+                                          
+                                        
+                                     <br /> <span class="birthdaylightfont">Sr. Engineer </span>
+                                             <br />   <span class="birthdaylightfont">Finance </span>
+                                     <br /> <span class="birthdaylightfont">Pune  </span>
+                                             <br />
+                                             <i class="fa fa-birthday-cake" aria-hidden="true" style="color:grey"></i><span class="birthdaylightfont"> October 23</span>
+                                               
+                                      
+                                      
+                                    </span>
+                                    <img src='http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/images/profile55x55/gallery22.jpg' class="avatar user-7-avatar avatar-96 photo" width="96" height="96" alt='Sony Surana'align="right" />
+                                   </span>
+                                </a>
+                        
+                            
+                        
+                                       
+                            
+                               
+                             <a  href='#'>
+                                         <span class="birthday-item-content">
+                                         Highbar DemoUser 
+                                            
+                                          
+                                          
+                                        
+                                     <br /> <span class="birthdaylightfont">SOFTWARE DEVELOPER </span>
+                                             <br />   <span class="birthdaylightfont">Finance </span>
+                                     <br /> <span class="birthdaylightfont">Mumbai  </span>
+                                             <br />
+                                             <i class="fa fa-birthday-cake" aria-hidden="true" style="color:grey"></i><span class="birthdaylightfont"> October 23</span>
+                                               
+                                      
+                                      
+                                    </span>
+                                    <img src='http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/images/profile55x55/carlos.jpg' class="avatar user-7-avatar avatar-96 photo" width="96" height="96" alt='Highbar DemoUser'align="right" />
+                                   </span>
+                                </a>
+                        
+                            
+                        
+                
+                </div>
+        </div>
+   
+
+</div>
+
+
+                    
+                   
+                    
+                    
+                </aside>
+                <div id="left-content">
+                    <div id="content-container">
+                        <div id="content">
+                            <article id="post-0" class="bp_members type-bp_members box content post-0 page type-page status-publish hentry">
+                                <div id="buddypress">
+                                    
+                                   
+
+
+                                    
+
+                                  
+
+                                    <div id="item-body" role="main">
+                                        <div class="intern-padding">
+                                            
+    <script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/singleautocomplete/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/singleautocomplete/jquery.autocomplete.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var deprt;
+        $(document).ready(function () {
+            $("#MainContent_txtcity").autocomplete("http://HRMS_ADMIN.com.websols.shared-servers.com/Search_City.ashx", {
+                inputClass: "ac_input",
+                resultsClass: "ac_results",
+                loadingClass: "ac_loading",
+                minChars: 1,
+                delay: 1,
+                matchCase: false,
+                matchSubset: false,
+                matchContains: false,
+                cacheLength: 0,
+                max: 12,
+                mustMatch: false,
+                extraParams: {},
+                selectFirst: false,
+                formatItem: function (row) { return row[0] },
+                formatMatch: null,
+                autoFill: false,
+                width: 0,
+                multiple: false,
+                scroll: false,
+                scrollHeight: 180,
+                success: function (data) {
+                    response($.map(data, function (item) {
+                        return {
+
+                        }
+                    }));
+                },
+                context: this
+            });
+
+            $("#MainContent_txtloc").autocomplete("http://HRMS_ADMIN.com.websols.shared-servers.com/Search_location.ashx", {
+                inputClass: "ac_input",
+                resultsClass: "ac_results",
+                loadingClass: "ac_loading",
+                minChars: 1,
+                delay: 1,
+                matchCase: false,
+                matchSubset: false,
+                matchContains: false,
+                cacheLength: 0,
+                max: 12,
+                mustMatch: false,
+                extraParams: {},
+                selectFirst: false,
+                formatItem: function (row) { return row[0] },
+                formatMatch: null,
+                autoFill: false,
+                width: 0,
+                multiple: false,
+                scroll: false,
+                scrollHeight: 180,
+                success: function (data) {
+                    response($.map(data, function (item) {
+                        return {
+
+                        }
+                    }));
+                },
+                context: this
+            });
+
+            
+            $("#MainContent_txtsubdept").autocomplete("http://HRMS_ADMIN.com.websols.shared-servers.com/Search_subdepartment.ashx?d=" + deprt, {
+                inputClass: "ac_input",
+                resultsClass: "ac_results",
+                loadingClass: "ac_loading",
+                minChars: 1,
+                delay: 1,
+                matchCase: false,
+                matchSubset: false,
+                matchContains: false,
+                cacheLength: 0,
+                max: 12,
+                mustMatch: false,
+                extraParams: {d:deprt},
+                selectFirst: false,
+                formatItem: function (row) { return row[0] },
+                formatMatch: null,
+                autoFill: false,
+                width: 0,
+                multiple: false,
+                scroll: false,
+                scrollHeight: 180,
+                success: function (data) {
+                    response($.map(data, function (item) {
+                        return {
+                        }
+                    }));
+                },
+               
+                context: this
+            });
+        });
+    </script>
+    <div class="commpagesdiv">
+        <div class="commonpages">
+            <div class="wishlistpagediv">
+                <div class="wishlistpage">
+                    <div class="myaccount" style="display: none;">
+                        <div class="myaccountheading">My Account</div>
+                        <div class="myaccountlist">
+                            <ul>
+                                <li class="listselected"><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/procs/SampleForm" title="Edit Profile"><b>Edit Profile</b></a></li>
+                                <li><a href="http://HRMS_ADMIN.com.websols.shared-servers.com/procs/wishlist" title="Favorites">Favorites</a></li>
+                                
+                                <li>
+                                    <a id="MainContent_btnSingOut" title="Logout" href="javascript:__doPostBack(&#39;ctl00$MainContent$btnSingOut&#39;,&#39;&#39;)">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="myaccountlist-mobiletab">
+                            <select name="ctl00$MainContent$ddlprofile" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlprofile\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlprofile">
+	<option selected="selected" value="edit">Edit Profile</option>
+	<option value="pwd">Change Password</option>
+	<option value="wishlist">Favorites</option>
+	<option value="preference">preference</option>
+	<option value="subscription">Subscription History</option>
+	<option value="pthistory">Reward Points</option>
+	<option value="logout">Logout</option>
+
+</select>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="userposts">
+                    <span>
+                        <span id="MainContent_lblheading">Kishanganga Hydro Power</span><br/>
+ <div class="projectdetailas">
+
+<p class="hydropara">The 350 mw  KishanGanga Hydro Power Project is located on the river KishanGanga the tributary river of Jhelum in Bandipore district of Jammu & Kashmir. This was the first mega hydro power project awarded bt NHPC to HCC on Engineering, Procurement and Construction(EPC) basis.</p>
+
+<div class="imgpro1">
+<p>Project Manager</p>
+<img class="profiledetail1" src="http://HRMS_ADMIN.com.websols.shared-servers.com/images/profile/image.jpg" alt="" title="">
+<span class="proname1">Arackal Benny</span>
+
+</div>
+<p class="procli">Client: <span class="detailscli">NHPC Ltd.</span></p>
+<p class="proclivalu">Value: <span class="detailsval">Rs 2726.19 Crore</span></p>
+<div class="promethod">
+<span class="scopedetl">Scope of Work:</span><ul><li class="designpro">Design, Engineering, Procurement and construction of 35m high concrete face rock fill dam (CFRD), 560 m long diversion tunnel, 23.65 km long head race tunnel (HRT) constructed using teo methologies (8.9 km tunnel constructed by drill and blast method and 14.75 km costructed using tunnel boring machine), 862 m long tail race tunnel (TRT), 44 m long open channel, 100.7 m deep and 18.75 m diameter surge shaftg, pressure  shaft, three penstocks, power house and surface switchyard.</li>
+
+</ul>
+</div><div class="Achievements">
+<span class="majordetail">Major Achievements :</span> <ul><li class="create">HCC team created a world record of the first successful TBM operations in the Himalayan region and accomplished a national record by achieving 'highest tunnel progress in a month' of 816 meter in November 2012.</li>
+<li class="several ">The team successfully overcame several geological , Logistics and engineering Challenges.</span></li>
+
+</div>
+
+<span class="ppphoto">Progress Photograph</span>
+
+<!-- SONY CODE -->
+<!-- lightbox code -->
+<link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/lightbox/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://HRMS_ADMIN.com.websols.shared-servers.com/lightbox/lightbox.js"></script>
+<!-- lightbox code ends here -->	
+	
+<div id="tab1" class="recentlyaddproductdiv">
+        <div class="recentlyaddproductheading">
+          <!--  <span>Mostly Viewed</span>-->
+		  
+        </div>
+		
+		<div class"slidercourasel">
+        <div class="bx-wrapper" style="max-width: 1240px; margin: 0px auto;">
+		
+		<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 244px;">
+		<div id="carousel" class="slider1" style="width: 1415%; position: relative; transition-duration: 0s; transform: translate3d(-1227px, 0px, 0px);">
+		
+		<a rel="lightbox" id="MainContent_homebanner_msviewprod_rptfamilyproduct_Hlinkimg_7" class="recentlyaddproduct bx-clone" href="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/bigproduct/DSC09399_20171014_101852.jpg" style="float: left; list-style: outside none none; position: relative; width: 235.4px; margin-right: 10px;">
+                        <div class="slide">
+                            <div class="view-first">
+                                <div class="view-content">
+                                    
+                                    <div class="image">
+<img src="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/450x300/DSC09399_20171014_101852.jpg"  width="200" height="150">                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </a>
+							<a rel="lightbox" id="MainContent_homebanner_msviewprod_rptfamilyproduct_Hlinkimg_8" class="recentlyaddproduct bx-clone" href="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/bigproduct/chamera_20171016_101653.jpg" style="float: left; list-style: outside none none; position: relative; width: 235.4px; margin-right: 10px;">
+                        <div class="slide">
+                            <div class="view-first">
+                                <div class="view-content">
+                                    
+                                    <div class="image">
+<img src="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/450x300/chamera_20171016_101653.jpg" width="200" height="150">                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </a>
+							<a rel="lightbox" id="MainContent_homebanner_msviewprod_rptfamilyproduct_Hlinkimg_9" class="recentlyaddproduct bx-clone" href="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/bigproduct/IMG_5709_20171014_102428.JPG" style="float: left; list-style: outside none none; position: relative; width: 235.4px; margin-right: 10px;">
+                        <div class="slide">
+                            <div class="view-first">
+                                <div class="view-content">
+                                    
+                                    <div class="image">
+<img src="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/450x300/IMG_5709_20171014_102428.JPG" width="200" height="150">                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           </a>
+							<a rel="lightbox" id="MainContent_homebanner_msviewprod_rptfamilyproduct_Hlinkimg_10" class="recentlyaddproduct bx-clone" href="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/bigproduct/320Q4422_20171016_102936.jpg" style="float: left; list-style: outside none none; position: relative; width: 235.4px; margin-right: 10px;">
+                        <div class="slide">
+                            <div class="view-first">
+                                <div class="view-content">
+                                    
+                                    <div class="image">
+<img src="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/450x300/320Q4422_20171016_102936.jpg" width="200" height="150">                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						</a>
+							<a rel="lightbox" id="MainContent_homebanner_msviewprod_rptfamilyproduct_Hlinkimg_10" class="recentlyaddproduct bx-clone" href="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/bigproduct/_DSC3433_DxO_20171016_102142.jpg" style="float: left; list-style: outside none none; position: relative; width: 235.4px; margin-right: 10px;">
+                        <div class="slide">
+                            <div class="view-first">
+                                <div class="view-content">
+                                    
+                                    <div class="image">
+<img src="http://admin.HRMS_ADMIN.com.websols.shared-servers.com/images/450x300/_DSC3433_DxO_20171016_102142.jpg" width="200" height="150">                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						</a>
+						</div>
+                           
+                          <!--  <div class="bx-caption"><span>THE BIENNALE TABLE - ORANGE AND BLUE</span></div></a></div></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div></div></div>
+    </div>
+	<!-- SONy CODE ENDS -->
+	
+	
+               
+            
+    <script type="text/javascript">
+        function textboxMultilineMaxNumber(txt, maxLen) {
+            try {
+                if (txt.value.length > (maxLen - 1)) return false;
+            } catch (e) {
+            }
+        }
+
+
+        function maxLengthPaste(field, maxChars) {
+            event.returnValue = false;
+            if ((field.value.length + window.clipboardData.getData("Text").length) > maxChars) {
+                return false;
+            }
+            event.returnValue = true;
+        }
+
+        function Count(text) {
+            var maxlength = 250;
+            var object = document.getElementById(text.id)
+            if (object.value.length > maxlength) {
+                object.focus();
+                object.value = text.value.substring(0, maxlength);
+                object.scrollTop = object.scrollHeight;
+                return false;
+            }
+            return true;
+        }
+
+    </script> 
+	
+	
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="prostatus">
+<span class="psstatus">Project Status <span>
+<ul>
+<li>Tunnelling work of 14.6 km with TBM is complete &amp; 8.09 km out of 8.6 km of HRT lining is complete.</li>
+<li>Cut of wall construction is also complete.</li>
+<li>Spillway construction , CFRD embankment works and power house concreting work is well progressing.</li>
+<li>Water impounding activity is also taken up.</li>
+</ul>
+</span></span></div>
+
+                            </article>
+                        </div>
+						
+                    </div>
+					
+					
+                    <div id="scroll-top-container">
+                <a href="#main-header" id="scroll-top">
+                    <i class="fa fa-arrow-circle-o-up"></i>
+                </a>
+            </div>
+                </div>
+            </section>
+            
+ <footer id="main-footer" class="">
+            <!-- START FOOTER WIDGETS -->
+            <div id="widgets">
+                <div class="container">
+                    <div class="row">
+                        <div id="text-3" class="widget col-md-4 widget_text animate-me fadeIn">
+                            <h3>ADDRESS</h3>			<div class="textwidget">HIGHBAR TECHNOCRAT LIMITED. D-Wing | 14th Floor | Empire Tower | Reliable Cloud City| Off. Thane-Belapur Road | Airoli | Navi Mumbai – 400 708.<br /><br /></div>
+                        </div>
+                        <div id="uxfooter_uxfooterpost_woffice_wiki" class="widget col-md-4 widget_woffice_wiki animate-me fadeIn">
+        <h3>Recent post</h3>
+        <ul class="list-styled list-wiki">
+            
+                    <li><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/pd/GreXkXb2G-bByDqLryCJ-Q=='>nujhji
+                        
+                        
+                        </a></li>
+                
+                    <li><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/pd/kd4_UQ61F9MbRpvpjYT86g=='>my meeting
+                        
+                        
+                        </a></li>
+                
+                    <li><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/pd/l7cfFWI1Z9JGafPyyaJVzA=='>trial
+                        
+                        
+                        </a></li>
+                
+                    <li><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/photo-gallery/Yu7tx6PvjnkKvgB4WVGNeg=='>Lucknow Muzzafarpur National Highway Project
+                        
+                        
+                        </a></li>
+                
+                    <li><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/photo-gallery/DIlmEwDuqNOhgoImDAJ6Lg=='>Delhi Faridabad Elevated Expressway
+                        
+                        
+                        </a></li>
+                
+        </ul>
+    </div>
+
+                        <div id="uxfooter_uxcatfooter_bday" class="widget col-md-4 animate-me fadeIn">
+        <h3>Browse Category</h3>
+        <div class="menu-menu-footer-container">
+            <ul id="menu-menu-footer" class="menu">
+                
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/xEUkUkcMeJdzvZ5XMig6vw=='>Achievements</a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/_DcPDW2VOMv0a_fa2Z-aLg=='>Meetings</a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/qpWxk1i4vHHyVw9fmLUOeQ=='>News</a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/jVFBZ42a6PVRcjdHlx4LCg=='>Tasks</a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/OQtopggfHQG3pnGausNHAw=='>Time Out</a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/2StP8p8qHBLWgynfFDTiUA=='>Training Module </a></li>
+                    
+                        <li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href='http://HRMS_ADMIN.com.websols.shared-servers.com/ps/ylAI0oJu7HJ7MQqa9fgC8w=='>Video Gallery</a></li>
+                    
+            </ul>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- START COPYRIGHT -->
+            <div id="copyright">
+                 <p> Copyright © 2017 Highbar.&nbsp;&nbsp; All rights reserved.&nbsp;&nbsp;  <a href="http://www.creativewebmall.com/">Creative Intranet</a></p>
+               
+               
+            </div>
+        </footer>
+        </div>
+        
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/highbar/jquery.js"></script>
+<script defer="defer">jQuery(document).ready(function () {
+    jQuery("#scroll-top").on("click", function () {
+        //SCROLL TO TOP
+        jQuery("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+});</script>
+<!-- sony commented this  -->
+<!--
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        if (top != self) {
+            top.onbeforeunload = function () { };
+            top.location.replace(self.location.href);
+        }
+        jQuery('.slider1').bxSlider({
+            auto:true,
+            slideWidth: innerWidth,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 10
+        });
+    });
+</script>
+-->
+
+
+
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery(".lnkclose").click(function () {
+            var el = jQuery(this);
+            jQuery.ajax({
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                url: 'manageservice.aspx/InsertUpdateSettings',
+                data: "{'widget':'" + jQuery(this).attr("data") + "'}",
+                dataType: 'text',
+                async: false,
+                success: function (response) {
+                    if (response.indexOf("success") > -1) {
+                        // e.preventDefault();    
+                        el.parent().parent().css("display", "none");
+                        return false;
+                    }
+                    else if (response.indexOf("error") > -1) {
+                        //$('#m_uxloginpopup_lblstatus').show();
+                        //    e.preventDefault();
+                        return false;
+                    }
+                },
+                error: function (xhr, status, error) {
+                    //     e.preventDefault();
+                    return false;
+                    //alert(xhr.responseText);
+                }
+            });
+
+            //alert(jQuery(this).attr("data"));
+        });
+    });
+    //jQuery(document).ready(function () {
+    //    var refreshId = setInterval(function () {
+    //        jQuery.ajax({
+    //            type: 'POST',
+    //            contentType: "application/json; charset=utf-8",
+    //            url: 'http://192.168.0.72/chatapp/notify.ashx?id=2',
+    //            data: "{'userid':'2'}",
+    //            dataType: 'text',
+    //            async: false,
+    //            success: function (response) {
+    //                var json = JSON.parse(response);
+    //                //alert(json["d"]);
+    //                var xmlDoc = $.parseXML(json["d"]);
+    //                var $xml = $(xmlDoc);
+    //                var $table = $xml.find("Table1");
+    //                $table.each(function () {
+    //                    var msgcount = $(this).find('msgcount').text();
+    //                    alert(msgcount);
+    //                });
+
+    //            },
+    //            error: function (xhr, status, error) {
+    //                return false;
+    //            }
+    //        });
+    //    }, 2000);
+    ////});
+
+</script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#nav-sidebar-trigger").click(function () {
+            //jQuery("#right-sidebar").css("right", "0");
+            jQuery("#right-sidebar").toggleClass("sidebar-wrap");
+            jQuery("#left-content").toggleClass("left-content-wrap");
+        });
+
+        // Close Notification tab :
+        function CloseNotfications() {
+            jQuery('#woffice-notifications-menu').fadeOut();
+        }
+        function CloseMessages() {
+            jQuery('#woffice-message-menu').fadeOut();
+        }
+        function CloseLinks() {
+            jQuery('#woffice-links-menu').fadeOut();
+        }
+        function CloseChat() {
+            jQuery('#woffice-chat-menu').fadeOut();
+        }
+        // Mark as read :
+        function MarkNotificationRead() {
+            jQuery('a.mark-notification-read').on('click', function () {
+                var readLink = jQuery(this);
+                var component_action = readLink.data('component-action');
+                var component_name = readLink.data('component-name');
+                var item_id = readLink.data('item-id');
+            });
+        }
+        // Notification AJAX :
+        jQuery('#nav-notification-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-notifications-menu').slideDown();
+                jQuery('#woffice-notfications-loader').fadeIn();
+                jQuery('#woffice-notifications-content').empty();
+                CloseMessages();
+                CloseLinks();
+                CloseChat();
+                jQuery(this).addClass('clicked');
+                jQuery('#topseach_navuser').removeClass
+                    ('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            } else {
+                CloseNotfications();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-message-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-message-menu').slideDown();
+                jQuery('#woffice-notfications-loader').fadeIn();
+                jQuery(this).addClass('clicked');
+                CloseNotfications();
+                CloseChat();
+                CloseLinks();
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            }
+            else {
+                CloseMessages();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-links-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#woffice-links-menu').slideDown();
+                jQuery(this).addClass('clicked');
+                CloseMessages();
+                CloseChat();
+                CloseNotfications();
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                jQuery('#nav-chat-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+            }
+            else {
+                CloseLinks();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-chat-trigger').click(function () {
+            if (!jQuery(this).hasClass('clicked')) {
+                jQuery('#topseach_navuser').removeClass('active');
+                jQuery('#user-sidebar').removeClass('active');
+                //jQuery('#woffice-chat-menu').slideDown();
+                //jQuery(this).addClass('clicked');
+                jQuery('#nav-links-trigger').removeClass('clicked');
+                jQuery('#nav-message-trigger').removeClass('clicked');
+                jQuery('#nav-notification-trigger').removeClass('clicked');
+                jQuery("#right-sidebar").removeClass("sidebar-wrap");
+                jQuery("#left-content").removeClass("left-content-wrap");
+                getchatdata();
+                CloseMessages();
+                CloseLinks();
+                CloseNotfications();
+            }
+            else {
+                CloseChat();
+                jQuery(this).removeClass('clicked');
+            }
+        });
+        jQuery('#nav-sidebar-trigger').click(function () {
+            jQuery('#topseach_navuser').removeClass('active');
+            jQuery('#user-sidebar').removeClass('active');
+            jQuery('#nav-links-trigger').removeClass('clicked');
+            jQuery('#nav-message-trigger').removeClass('clicked');
+            jQuery('#nav-notification-trigger').removeClass('clicked');
+            jQuery('#nav-chat-trigger').removeClass('clicked');
+            CloseLinks();
+            CloseChat();
+            CloseMessages();
+            CloseNotfications();
+        });
+        jQuery('#user-thumb').click(function () {
+            
+            jQuery('#nav-links-trigger').removeClass('clicked');
+            jQuery('#nav-message-trigger').removeClass('clicked');
+            jQuery('#nav-notification-trigger').removeClass('clicked');
+            jQuery('#nav-chat-trigger').removeClass('clicked');
+            jQuery("#right-sidebar").removeClass("sidebar-wrap");
+            jQuery("#left-content").removeClass("left-content-wrap");
+            CloseLinks();
+            CloseChat();
+            CloseMessages();
+            CloseNotfications();
+        });
+
+        if (document.getElementById("topseach_msghdcount").value == 0) {
+            jQuery("#msg_count").hide();
+        }
+        else {
+            jQuery("#msg_count").html(document.getElementById("topseach_msghdcount").value);
+        }
+
+        if (document.getElementById("topseach_hdcount").value == 0) {
+            jQuery("#notification_count").hide();
+        }
+        else {
+            jQuery("#notification_count").html(document.getElementById("topseach_hdcount").value);
+        }
+        //jQuery("#MainContent_uxhomecontent_uxhome_m_uxcategory_panfun").load("http://192.168.0.72/chatjs/default.aspx?id=1");
+    });
+    
+</script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery("#btnclose").click(function () {
+            jQuery('.divpopup').toggle(500);
+        });
+    });
+</script>
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/highbar/plugins.js"></script>
+<script>jQuery(document).ready(function(){});</script>
+<img id="imgSessionAlive" src="" style="display:none;" />
+
+<script type='text/javascript' src='http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/datepicker/jquery-ui.js'></script>
+<script>
+        jQuery("#MainContent_txtdob").datepicker({
+            dateFormat: "dd/M/yy",
+            changeMonth: true,
+            changeYear: true,
+            yearRange: "1950:2050",
+        });
+</script>   
+      <script>
+                      jQuery("#MainContent_txtsdate").datepicker({
+        dateFormat: "dd/M/yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1950:2050",
+    });
+                      jQuery("#MainContent_txtedate").datepicker({
+        dateFormat: "dd/M/yy",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: "1950:2050",
+    });
+
+
+    </script>
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/highbar/scripts.js"></script>
+
+<link rel="stylesheet" href="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/reminder/reminder.css" type="text/css" media="screen" />
+<div class="reminder-container">
+    <div class="reminder-wrapper">
+        <div class="reminder-head">
+            <span class="reminder-head-title"><i class="fa fa-bell"></i> Event Reminder (<span id="lblrmcount">0</span>)</span>
+            <a class="rmdclose"><i class="fa fa-close"></i></a>
+        </div>
+        <div class="reminder-body">
+            <div class="reminder-content">
+                <ul class="reminder-content-list mscrollbar">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="reminder-overlay"></div>
+
+<script>
+    //SAGAR COMMENTED THIS FOR REMOVING EVENT REMINDER NOTIFICATION 6OCT2017 STRATS HERE
+  
+    //SAGAR COMMENTED THIS FOR REMOVING EVENT REMINDER NOTIFICATION 6OCT2017 ENDS HERE
+</script>
+<link rel="stylesheet" type="text/css" href ="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/tooltip/tooltipster.css" media="all"/>
+<script type="text/javascript" src="http://HRMS_ADMIN.com.websols.shared-servers.com/themes/creative1.0/js/jquery.tooltipster.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        jQuery('.tooltip').tooltipster({
+            contentAsHTML: true,
+            animation: 'fade',
+            delay: 200,
+            theme: 'tooltipster-default',
+            touchDevices: false,
+            trigger: 'hover'
+        });
+    });
+</script>
+
+
+<script>jQuery(document).ready(function () { jQuery("body").on("contextmenu", function (n) { return !1 }) }), document.onkeypress = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, document.onmousedown = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, document.onkeydown = function (n) { return n = n || window.event, 123 == n.keyCode ? !1 : void 0 }, jQuery(function () { jQuery("#fullscreen_slider").slider({ height: "auto", pagination: !0, thumbnails: !1 }) });</script><script>    jQuery(document).ready(function () { jQuery(document).keydown(function (e) { var o = String.fromCharCode(e.keyCode).toLowerCase(); return !e.ctrlKey || "c" != o && "u" != o ? void 0 : !1 }) });</script>
+
+        <div id="sitewide-notice" class="admin-bar-off"></div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+
+<!-- SONy added here -->
+
+<!-- Start Box Slider JS -->
+<!--<script src="http://192.168.0.172/artuser/themes/creative1.0/js/bxslider/jquery.bxslider.js"></script> -->
+<script src="http://HRMS_ADMIN.com.websols.shared-servers.com/CSS/creative1.0/js/bxslider/jquery.bxslider.js"></script> 
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        var screenwidth = jQuery(window).width();
+        if (screenwidth < 481)
+        {
+            jQuery('.slider1').bxSlider({
+                pager: false,
+                slideWidth: 250,
+                minSlides: 1,
+                maxSlides: 1,
+                slideMargin: 20,
+                adaptiveHeight: true,
+                captions: true
+            });
+        }
+        if (screenwidth > 481 && screenwidth < 781) {
+            jQuery('.slider1').bxSlider({
+                pager: false,
+                slideWidth: 250,
+                minSlides: 3,
+                maxSlides: 3,
+                slideMargin: 20,
+                adaptiveHeight: true,
+                captions: true
+            });
+        }
+        if (screenwidth > 1000) {
+            jQuery('.slider1').bxSlider({
+                pager: false,
+                slideWidth: 240,
+                minSlides: 5,
+                maxSlides: 5,
+                slideMargin: 10,
+                adaptiveHeight: true,
+                captions: true
+            });
+        }
+       
+    });
+</script>
+<!-- End JS for Box Slider --> 
+
+
+</form>
+</body>
+</html>

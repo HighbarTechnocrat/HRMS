@@ -1,0 +1,849 @@
+.moviebannerposter{width:100%;min-height:/*50%*/335px;}.backgroundimage{background-position: center -40px;background-repeat:no-repeat;background-attachment:fixed;background-color:#000}/*.sitelogodiv{float:left;position:absolute;top:0}.sitelogo{background:url(../../images/mz-sprite-image.png) no-repeat 0 0;float:left;height:35px;position:fixed;width:135px;z-index:999;left:40px;top:8px}*/.show-navigation{position:fixed;top:0px;height:50px;z-index:999;width:100%;background:#000;overflow:hidden;-webkit-transition:all 0.3s;transition:all 0.3s;top:0px}.sticky-show-navigation{background-color:#fff;opacity:1;top:0px}.comments-summery{width:66%;padding:0 0 0px;float:left}.comments-summerytitle{margin:0 auto 15px;width:100%}.moviename{font-size:30px;font-weight:700;text-align:center;text-transform:uppercase;color:#1d1f20;margin:0 0}.dateanddirector{text-align:center;font-size:15px;color:#454545;margin:0 0 20px;font-weight:300}.dateanddirector a{color:#454545}.commentsdiv{width:100% !important;margin:0 auto;}
+.formerror {color: red;font-size: 12px !important;position: relative;text-decoration-color: currentcolor !important;text-decoration-line: none !important;text-decoration-style: solid !important;text-transform: capitalize !important;}
+.commentsbyuser {
+	background: #ffffff none repeat scroll 0 0;
+	border-bottom: 1px solid #ccc;
+	/* border-radius: 4px; */
+	/* box-shadow: 0 1px 1px #eee; */
+	display: inline-block;
+	margin: 3px auto;
+	padding: 2% 2% 2% 0 !important;
+	width: 94%;
+}
+.writereview a {
+  display: inline-block !important;
+}
+#MainContent_userreviews_ddlposttype {
+  border: 1px solid #eaeaea;
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  padding: 5px;
+  width: auto;
+}
+td {
+ 
+  vertical-align: top;
+   }
+
+.comments-user-image{height:55px;width:55px;float:left}
+.comments-user-image img{border-radius:0px;/*wasim change border radius 50px   to 0  10 oct17*/ width:55px !important; height:55px !important;}
+.commentsbyuser .userinfo{float:Right;/* margin:20px 0 10px 20px; */margin:4px 0 18px 0px; width:74%;min-height:20px;}
+.commentsbyuser .user-name{float:left;width:100%;font-size:14px;margin:-1px 0 0 0;}
+.commentsbyuser .user-name a{color:#843719;font-size:14px;font-weight:normal;text-decoration:none}
+.writereview{float:left;margin:10px 0 0 0px}
+.writereview a{font-size:14px;color:#606060 !important;text-decoration:none;outline:none}
+.writereview a:hover{text-decoration:none}
+.commentsbyuser .user-rating{float:left;margin:5px 0 0;width:100%}
+.commentsbyuser .userinfo1{border-top:1px solid #f1f1f1;float:left;margin:5px 0 0;padding:5px 0 10px;width:100%;text-align:center;}
+.commentsbyuser .post-date{color:#707070;float:left;font-size:12px;font-weight:300}
+.commentsbyuser .post-comments{float:right}
+.commentsbyuser .post-comments a{color:#000;font-size:13px;font-weight:600;text-decoration:none}
+.commentsbyuser .post-comments i{color:#2e85dc}
+.commentsbyuser .post-likes{border-right:1px solid #707070;float:right;margin:0 10px 0 0;padding:0 10px 0 0}
+.commentsbyuser .post-likes a{color:#000;font-size:13px;font-weight:600;text-decoration:none}
+.commentsbyuser .post-likes i{color:#2e85dc}
+.commentsbyuser .user-comment{color:#333;/* margin:7px 0;*/ margin: -9px 0 0 0; float:left;padding-left:0% !important;width:26%;font-size:13px;font-weight:400;word-wrap:break-word; font-family: 'Lato', sans-serif !important;line-height:20px;}
+.user-comment img{max-height: 450px;max-width: 450px;border-radius:0px 0;}/*wasim change border radius 70px   to 0  10 oct17*/
+.comments-scroll{width:62%;margin:0 auto;max-height:405px;overflow-y:auto}
+.replybyuser{background:#fff;border:1px solid #f1f1f1;display:block;padding:10px;width:97%;margin:0 auto;display:table}
+.reply-user-image{height:70px;width:70px;float:left}
+.reply-user-image img{border-radius:0%}/*wasim change border radius 50%   to 0  10 oct17*/
+.replybyuser .userinfo{float:left;margin:0px 0 0px 20px;width:80%}
+.replybyuser .user-name{float:left;width:100%}
+.replybyuser .user-name a{color:#292929;font-size:15px;font-weight:400;text-decoration:none;text-transform:capitalize;}
+.replybyuser .user-rating{float:left;margin:5px 0 0;width:100%}
+.replybyuser .post-date{color:#707070;float:left;font-size:12px;font-weight:300;margin:5px 0 0 0;width:100%;}
+.replybyuser .user-comment{color:#000;float:left;margin:10px 0 10px 0px;width:100%;font-size:15px}
+.enterreply{background:#fff;border:1px solid #f1f1f1;display:block;padding:11px;width:60%;margin:0 auto;display:table;}
+.enterreply-user-image{height:70px;width:70px;float:left}
+.enterreply-user-image img{border-radius:0%}/*wasim change border radius 50%   to 0  10 oct17*/
+.enterreply .userinfo{float:left;margin:0px 0 10px 20px;width:70%}
+.enterreply .user-name{float:left;width:100%}
+.enterreply .user-name a{color:#292929;font-size:15px;font-weight:600;text-decoration:none;text-transform:capitalize;}
+.enterreply .user-comment-box{color:#707070;float:left;margin:15px 0 10px 20px;width:85%;font-size:11px}
+.enterreply .user-comment-box textarea{width:100%;float:left;border:1px solid #dedede;font-family:Roboto,Arial,Tahoma,Verdana,serif,sans-serif;resize:none;;height:80px;font-size:13px;color:#333333}
+.enterreply .post-button{float:left;margin:0px;}.enterreply .post-button a{text-transform:uppercase;border:1px solid #2e85dc;color:#000;font-size:12px;padding:5px 10px;display:inline-block;text-decoration:none;font-weight:600;transition:all 0.3s ease 0s}
+.enterreply .post-button a:hover{background:#2e85dc;color:#fff;transition:all 0.3s ease 0s}
+.ratingstar{padding:0 10px;}.ratingstar div{margin:0;}
+.filledRatingStar{background-image:url("../../../themes/creative1.0/images/FilledStar.png");}
+.emptyRatingStar {
+    background: url("../../../themes/creative1.0/images/EmptyStar.png") repeat;}
+	.ratingStar{background:cursor:default;display:block;float:left;font-size:0;height:13px;margin:2px 2px 0 0;width:13px;}
+.following-name.following-title img {
+  height: 32px;
+  width: 32px;
+}
+.user-name i {
+  float: right;
+  font-size: 20px;
+  margin: -18px -42px;
+}
+.wallimg {
+  min-width: 300px !important;
+}
+.multidocext{
+    height:24px !important;
+    width:24px !important;
+}
+.wallimg img {
+	max-height: 150px !important;
+	/* max-width: 60% !important; */
+	height: 338px;
+	width: 250px;
+}
+.wallvideo{
+  width: 450px;
+}
+.wallvideo iframe{
+  height: 300px;
+}
+/* border-radius: 90px 0;
+    #MainContent_homebanner_m_uxmywall_rptwall_lblreviews_0 > iframe {
+  max-width: 400px;
+}*/
+
+.user-comment iframe {
+ 
+  max-height: 450px;
+  max-width: 450px;
+}
+
+
+.fullwidth {width:150px !important; height:90px !important; border-radius: 0px 0;}/*wasim change border radius 30px   to 0  10 oct17*/
+
+.inputpost {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 2% 1%;
+    width: 98%;
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}
+  .border-none{border:none !important; overflow:auto; float:right;}
+  .border-none2{border:none !important; overflow:auto; float:right; position:fixed; right:20px; bottom:20px;}
+/*.inputpost:active{border-bottom:2px solid #2e85dc !important;}*/
+.btnpost {
+    background:rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #F3714F, #F3864B) repeat scroll 0 0;
+  border-radius: 0px;/*wasim change border radius 3px   to 0  10 oct17*/
+  border: 1px solid #f7924f;
+  color: #fff` !important;
+  display: block;
+  float: right;
+  font-size: 16px !important;
+  margin: 0 35px 0 5px;
+  padding: 4px 11px;
+  width:auto;
+  text-decoration:none;
+}
+
+
+.subbtnpost {
+    background:rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #F3714F, #F3864B) repeat scroll 0 0;
+  border-radius: 0px;/*wasim change border radius 3px   to 0  10 oct17*/
+  border: 1px solid #f7924f;
+  color: #fff` !important;
+  display: block;
+  float: right;
+  font-size: 16px !important;
+  margin: 0px 5px;
+  padding: 4px 11px;
+  width:auto;
+  text-decoration:none;
+}
+
+.addbtn {
+    width:500px;
+    display:none;
+}
+
+
+.btnpost:hover{
+     background:rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f14704, #f36e21) repeat scroll 0 0;
+     color:#AE441A;
+}
+.divfavpost {
+  padding: 10px 0 0;
+}
+.favpost i{font-size:20px;}
+
+.gallary-main {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    height: auto;
+    margin: 2% 0 0 1%;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    width: 98%;
+}
+
+.gallary-main2 {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #eaeaea;
+    display: inline-block;
+    height: auto;
+    margin: 0 1%;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+    width: 98%;
+}
+.gallary-image {
+    border: medium none;
+    color: #646464;
+    float: left;
+    height: 100px;
+    margin: 1%;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 45%;
+}
+
+.gallary-image2{
+    border: medium none;
+    color: #646464;
+    float: left;
+    height: 100px;
+    margin: 1%;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 45%;
+	border-radius:0px 0 0 0;/*wasim change border radius 50px   to 0  10 oct17*/
+}
+
+.gallary-image3{
+    border: medium none;
+    color: #646464;
+    float: left;
+    height: 100px;
+    margin: 1%;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 45%;
+	border-radius:0 0 50px 0;
+}
+
+.gallary-image > a {
+    color: #646464;
+    text-decoration: none;
+}
+.gallary-image img {
+    max-width: 100%;
+    min-height: 100px;
+}
+
+.gallary-image2 img {
+    max-width: 100%;
+    min-height: 100px;
+}
+
+.gallary-image3 img {
+    max-width: 100%;
+    min-height: 100px;
+}
+
+
+.following-title {
+    width:96% !important;
+} 
+
+.circularmenu-button {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  border: medium none;
+  bottom: 27%;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 31px;
+  left: 76%;
+  margin-left: -60px;
+  position: absolute;
+  text-align: center;
+  width: 45px;
+  z-index: 11;
+}
+.mywallgrp {
+  width: 100%;
+  display: inline-block;
+}
+.userposts {
+  /*border-bottom: 2px solid hsl(204, 60%, 49%);*/
+  color: hsl(17, 68%, 31%);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 10px 0px 0;
+  padding: 0 0 10px;
+  text-align: left;
+  /*text-transform: uppercase;*/
+  width: 100%;
+}/*wasim comented above line 16 nov 2017*/
+
+.userpostscats {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 400;
+  margin:60px 0 50px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+}
+.userposts > span {
+  color:#0366ba;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  /*text-transform:uppercase;*/ 
+}
+/*wasim comented above line 16 nov 2017*/
+
+.searchposts .txtbox {
+	/* background: #ffffff none repeat scroll 0 0; */
+	/* border: 1px solid #dddddd; */
+	/* box-shadow: none !important; */
+	font-size: 13px;
+	margin: 8px 0 10px;
+	min-width: 200px;
+	padding: 6px 10px !important;
+	transition: all 0.2s ease-in-out 0s;
+	width: auto;
+}
+.searchposts .txtbox1 {
+  /*background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;*/
+  font-size: 13px;
+  margin: 0 0 10px;
+  max-width: 100px;
+  padding: 6px 6px !important;
+  transition: all 0.2s ease-in-out 0s;
+}
+.searchpostbtn {
+  border: 1px solid #338EC9;
+  border-radius: 0px;/*wasim change border radius 3px   to 0  10 oct17*/
+  font-size: 12px;
+  margin: 0 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  /*background-color: #05568b !important;*/
+  color:#338EC9;
+}
+.searchpostbtni {
+  font-size: 16px;
+  margin: 5px;
+}
+/*.searchpostbtn:hover {
+  background: #338EC9;
+  border: 1px solid #338EC9;
+  color: #ffffff !important;
+}*/
+.extimg {
+  margin: 0 !important;
+}
+.userpostlike{
+  border-bottom: 2px solid #f8e497;
+  color: #843719;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 10px 15px 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.userpostlike > span{
+  color: #843719;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  text-transform:uppercase;
+}
+
+.productrowheading_heading {
+  color: hsl(17, 68%, 31%);
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+	border-bottom: 2px solid hsl(48, 86%, 78%);
+	width:52%;
+}
+
+.refinesearch {
+  margin-top: 5px;
+}
+
+
+.sortby {
+  font-weight: 400;
+	margin-bottom:5px;
+}
+
+.mainpostwallcat {
+  margin: 0 auto;
+  width: 100% !important;
+}
+
+/*prajyot added this*/
+.comments-summery1 {
+	display: inline-block;
+	padding: 0 0 0px 0;
+	width: 100%;
+}
+.productrowheading {
+  left: 24%;
+  position: relative;
+	margin-top:1%;
+}
+
+.searchalldirectory {
+  float: right;
+}
+
+.searchalldirectory .txtbox {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 200px;
+  padding: 6px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: auto;
+}
+
+.searchstardirectory .txtbox {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 200px;
+  padding: 6px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: auto;
+}
+.searchstardirectory  {
+  float: right;
+}
+
+.grid-pager .page_disabled {
+  background: #338EC9;
+  border: 1px solid #338EC9;
+	color:#fff !important;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius:0px;/*wasim change border radius 3px   to 0  10 oct17*/
+}
+.grid-pager .page_disabled :hover{
+	color:#fff !important;
+	background:#f26b20;
+	 border: 1px solid #338EC9;
+     border-radius:3px;
+}
+.grid-pager .page_enabled {
+  background: #ffffff;
+  border: 1px solid #338EC9;
+  color: #84391a;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius:0px;/*wasim change border radius 0px   to 0  10 oct17*/
+}
+.grid-pager .page_enabled:hover{
+	color:#fff !important;
+	background:#338EC9;
+	 border: 1px solid #338EC9;
+     border-radius:0px;/*wasim change border radius 3px   to 0  10 oct17*/
+}
+.grid-pager {
+  display: inline-block;
+  margin: 20px 0 10px;
+  width: 100%;
+}
+/* added by hameed*/
+
+    
+ /* added by hameed  */
+
+
+@media only screen and (max-width:1000px) and (min-width:240px)
+{
+	.userposts > span {
+  color: rgb(71, 153, 206);
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+}
+.wallimg > img {
+  display: inline-block;
+  float: left;
+  height: 90% !important;
+  width: 70% !important;
+}
+.searchposts .txtbox {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 254px !important;
+  padding: 9px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: 93% !important;
+}.commentsbyuser{width:90%}.replybyuser{width:90%}.enterreply{width:90%}.commentsdiv{width:100%;}
+	.comments-scroll{width:100%;}.enterreply .user-comment-box{width:80%;}
+.backgroundimage{background-position: center top;}.user-comment img{max-width:400px;}
+	.pnlbirth{width:98%;}.pnlbanner{width:100%;}.pnlcategory{width:98%;}
+	.user-comment img{max-width:300px;}
+	.comments-summerytitle {
+  margin: 0 auto 15px;
+  width: 100%;
+}
+.searchposts .txtbox {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 254px !important;
+  padding: 9px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: auto;
+}
+.searchposts {
+  float: right;
+  margin: 6px !important;
+}
+.searchposts .txtbox1 {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  max-width: 90px;
+  padding: 9px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+}
+.mainpostwallcat {
+  padding: 10px;
+  position: relative !important;
+  text-align: center;
+  width: 94% !important;
+   left: 0 !important;
+}
+.comments-summery1 {
+  display: inline-block;
+  padding: 0;
+  width: 100%;
+}
+.searchposts {
+  float: right;
+  margin: 0 3px 0 0;
+}
+.userposts span {
+  padding: 10px 0 0;
+}
+.userposts > span {
+  color: #4799CE;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.comments-user-image img {
+  border-radius: 0%;/*wasim change border radius 50%   to 0  10 oct17*/
+  height: 55px !important;
+  width: 55px !important;
+}
+.searchposts .txtbox{min-width:100px !important;}
+.commentsbyuser {
+  margin: 0 auto 20px;
+  padding: 2% 0;
+}
+/*.searchposts {
+  float: right;
+}
+.searchposts.txtbox {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 200px;
+  padding: 6px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: auto;
+}
+.searchpostbtn {
+  border: 1px solid #843719;
+  font-size: 12px;
+  padding: 6.5px 16px;
+  text-decoration: none;
+}
+.searchpostbtn i {
+  font-size: 16px;
+  margin: 5px;
+}*/
+.user-comment iframe {max-width:300px; height:150px;}
+
+}
+
+@media only screen and (max-width:600px) and (min-width:240px)
+{.comments-user-image{margin:0 auto;float:none}.commentsbyuser .userinfo{width:100% !important;margin:10px 0;text-align:center}
+	.writereview{width:100%;text-align:center; margin:5px 0;}.reply-user-image{margin:0 auto;float:none}.replybyuser 
+	.userinfo{width:100%;margin:10px 0;text-align:center}.replybyuser .post-date{width:100%;text-align:center}
+	.replybyuser .user-comment{width:100%;margin:0 0 10px}.enterreply-user-image{margin:0 auto;float:none}
+	.enterreply .user-name{text-align:center}.enterreply .user-comment-box{width:99%;margin:0 0 10px}.enterreply 
+	.post-button{width:100%;text-align:center}.commentsdiv {margin: 20px auto 0;width: 100%;}.commentsbyuser 
+	.post-date{width:100%;text-align:center;margin:0 0 15px 0;}.commentsbyuser .post-comments{float:none;margin:0 auto 10px;}
+	.commentsbyuser .post-likes{border:0;float:none;margin:0;padding:0;}.enterreply .userinfo{margin:10px 0;width:100%;}
+	.commentsbyuser .user-rating{width:85px;display:inline-block;margin:10px auto 0;float:none;}.ratingstar div{margin:0;}
+	.commentsbyuser .user-comment {width:98%;}
+	.user-comment img{max-width:303px; border-radius: 0px 0;}/*wasim change border radius 52px   to 0  10 oct17*/.comments-summery{width:100%;}
+	.user-comment iframe {max-width:300px; height:150px;}.wallimg img {
+  height: 150px !important;
+  width: 250px !important;
+}
+.mainpostwallcat {
+  left: 0% !important;
+  position: relative !important;
+  width:90% !important;
+}.grid-pager {
+  display: inline-block;
+  margin: 20px 0 10px;
+  width: 100% !important;
+}
+	
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){.enterreply .user-name a, .enterreply .post-button a, .commentsbyuser .post-likes a, .commentsbyuser .post-comments a{font-weight:400;}}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*	#featuredbox .bx-wrapper .bx-viewport {
+	height: 240px !important;
+}
+#featuredbox {
+	height: 240px !important;
+	margin-bottom: 0;
+	margin-left: 5px;
+	margin-right: 0;
+	margin-top: 47%;
+	width: 640px;
+}*/
+	.mainpostwallcat {
+  left: 0 !important;
+  padding: 10px;
+  position: relative !important;
+  text-align: center;
+  width: 95% !important;
+      margin: 110% 0 0 0 !important;
+}
+.userpostscats {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+#content-container .intern-padding {
+  cursor: auto;
+  padding: 0;
+}
+.comments-user-image img {
+  border-radius: 0%;/*wasim change border radius 50%   to 0  10 oct17*/
+  height: 55px !important;
+  width: 55px !important;
+}
+.searchposts .txtbox {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 5px 10px;
+  min-width: 254px !important;
+  padding: 9px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: 236px !important;
+}
+.searchposts .txtbox1 {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 5px 10px;
+  max-width: 100px;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: 96px !important;
+}
+.searchpostbtn {
+  border: 1px solid rgb(51, 142, 201);
+  border-radius: 0px;/*wasim change border radius 3px   to 0  10 oct17*/
+  font-size: 12px;
+  margin-left: 5px !important;
+  margin-right: 9px !important;
+  padding: 8px 12px;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.searchpostbtn i {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 0;
+  position: relative;
+  text-align: center;
+}
+.userposts .txtbox {
+  display: inline-block;
+  margin-right: 50px !important;
+  position: relative;
+  width: 238px !important;
+}
+.user-comment iframe {
+  height: 150px;
+  max-width: 300px;
+  width: 243px;
+}
+#MainContent_rptwall_updreview_0 {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+}
+.searchposts .txtbox1 {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 5px 10px;
+  max-width: 104px;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: 107px !important;
+}
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.searchposts .txtbox {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: none !important;
+  font-size: 13px;
+  margin: 0 0 10px;
+  min-width: 254px !important;
+  padding: 9px 10px !important;
+  transition: all 0.2s ease-in-out 0s;
+  width: 40% !important;
+}
+.searchpostbtn {
+  border: 1px solid rgb(51, 142, 201);
+  border-radius: 0px;/*wasim change border radius 3px   to 0  10 oct17*/
+  font-size: 12px;
+  margin: 0 5px;
+  padding: 12px 12px 10px;
+}
+#MainContent_rptwall_updreview_0 {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+}
+/*	.commentsbyuser .userinfo {
+  float: left;
+  margin: 10px 0 10px 20px;
+  min-height: 50px;
+  text-align: left;
+  width: 84%;
+}*/
+
+
+.commentsbyuser .userinfo {
+	float: right;
+	margin: 12px 6px 8px 11px;
+	min-height: 0px;
+	text-align: left;
+	width: 58%;
+}
+#MainContent_UpdatePanel1 {
+  background: rgb(255, 255, 255) none repeat scroll 0 0 !important;
+}
+.user-comment {
+	/*margin: 0 0 0 18px !important;*/
+    margin: 0 0 0 0px !important;
+}
+.user-name
+{
+font-size: 11px;
+text-align: left;
+vertical-align:top;
+ margin: 0 0 0 0px !important;
+}
+/*.commentsbyuser .user-comment {
+  color: rgb(51, 51, 51);
+  float: left;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 7px 0;
+  overflow-wrap: break-word;
+  padding-left: 0 !important;
+  text-align: left;
+  width: 90%;
+}*/
+.commentsbyuser .user-comment {
+	color: rgb(51, 51, 51);
+	float: left;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 7px 0;
+	overflow-wrap: break-word;
+	padding-left: 0 !important;
+	text-align: left;
+	width: 36.5%;
+}
+
+.user-comment iframe {
+  height: 200px;
+  max-width: 100%;
+  width: 80%;
+}
+}
+/*.user-comment {
+	margin: -1% 0 0 3.9% !important;
+}*/
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    .searchposts {
+        float: right;
+        margin: -7px 3px 0 0;
+        width: 57% !important;
+    }
+}
+@media and (-webkit-min-device-pixel-ratio:0) {
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+		.commentsbyuser .userinfo {
+	float: right;
+	margin: 0 6px 8px 11px !important;
+	min-height: 0px;
+	text-align: left;
+	width: 60%;
+}
+	} }
+	
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+    @media only screen and (max-width: 1024px) and (min-width: 768px) {
+.commentsbyuser .userinfo {
+	float: right;
+	margin: 0 6px 8px 11px !important;
+	min-height: 0px;
+	text-align: left;
+	width: 60%;
+}
+
+td {
+ 
+  vertical-align: top;
+   }
+	
+
+	}
+}

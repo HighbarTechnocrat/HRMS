@@ -1,0 +1,16 @@
+﻿.registerbox {margin: 25px 0;}
+#woffice-register {height: 100%;width: 100%;background-color:#338EC9;display:block;}
+#woffice-register .registerbox .register-password, #woffice-register .registerbox .register-username {position: relative;}
+.register-username {display: block;margin: 15px 0;width: 100%;}
+#woffice-register .registerbox .register-password input, #woffice-register .registerbox .register-username input {padding-bottom: 15px;padding-left: 40px;padding-top: 15px;}
+.registerinput {padding: 3%;width: 94% !important;}
+input, textarea {border-radius: 0px 0px 0 0;/*wasim change border radius 3px 3px to 0 10 oct17*/border-style: none none solid;border-width: 0 0 2px;margin-top: 15px;}
+#woffice-register .registerbox .register-password::after, #woffice-register .registerbox .register-username::after {bottom: 28px;color: #b5b5b5;font-family: FontAwesome;font-size: 20px;left: 15px;position: absolute;}
+body {font-family: Lato,helvetica,arial,sans-serif;}
+#woffice-register-left {background-image: url("../../../images/login.jpg");background-position: center top;background-repeat: no-repeat;background-size: cover;opacity: 0.2;float: left;height: 100%;width: 50%;}
+#woffice-register-right {background: #fff none repeat scroll 0 0;box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);height: 90%;max-height: 90%;overflow-y: scroll;padding: 5% 5% 0;width: 39%;float:right;}
+#content-container {margin: 0;display: flex !important;position:relative;width:100%;z-index:18;overflow:hidden;height:100%;}
+
+
+
+

@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="home.master.cs" Inherits="home" EnableViewState="true" %>
+<%@ Register Src="~/control/header.ascx" TagName="header" TagPrefix="ucheader" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/footer.ascx" TagName="footer" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/birthday.ascx" TagName="birth" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/category.ascx" TagName="category" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/recentpost.ascx" TagName="recent" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/homejs.ascx" TagName="home" TagPrefix="js" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>oneHR</title>
+	 <style type="text/css" media="print">
+    body { visibility: hidden; display: none;
+	}
+   
+
+</style>
+ 
+<style>
+    
+/* CSS Classes  for  Event & Welcome Popup  */
+
+#myImg 
+{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal 
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 15%;
+    top: 15%;
+    width: 70%; /* Full width */
+    height: 70%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	opacity: 0.9
+}
+
+#myModal{
+
+    z-index: 1000;
+    margin: -154px 0 0 -190px !important;
+    width: 1278px !important;
+    height: 1026px !important;
+    overflow: hidden;
+    position: absolute;
+}
+img#img01 {
+   width: 348px !important;
+    height: 457px !important;
+	/*comment  width: 900px !important;
+    height: 506px !important;*/
+}
+
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    /*width: 80%;
+    max-width: 700px; */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption,#eventcaption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+	-webkit-animation-fill-mode: both;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+ /*For Event Image*/
+    #myeventimg 
+    {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myeventimg:hover 
+    {
+             opacity: 0.7;
+    }
+    /* Caption of Modal Image */
+    #eventcaption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content,#eventcaption 
+    {    
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+	    -webkit-animation-fill-mode: both;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+/* The Close Button */
+.closeEvent {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.closeEvent:hover,
+.closeEvent:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content 
+    {
+        width: 1280px !important;
+        height:1024px !important;
+        z-index:100;
+    }
+	
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px)
+{
+    .modal-content 
+    {
+        width: 100%;
+    }
+}
+</style>
+	
+	
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <link href="<%=ReturnUrl("sitepathmain") %>font/css/font-awesome.min.css" rel="stylesheet" />
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription" />
+    <asp:PlaceHolder runat="server" ID="id1">
+            </asp:PlaceHolder>
+        <link rel="SHORTCUT ICON" href="<%=ReturnUrl("sitepathmain") %>images/Highbar.jpeg"
+            type="image/x-icon" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/hrms.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/scrollbar.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>bxcss/jquery.bxslider.css" type="text/css"/>
+        
+		<src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body class="home-page home page page-id-22 page-template page-template-page-templates page-template-dashboard page-template-page-templatesdashboard-php logged-in menu-is-vertical has_fixed_navbar no-js">
+	
+    <form id="form1" runat="server">
+	
+
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+
+		
+        <div id="page-wrapper">
+		
+		
+            <ucheader:header ID="topseach" runat="server" />
+			
+			
+			
+			
+			
+			
+            <section class="with-sidebar" id="main-content">
+                    <aside id="right-sidebar" class="mobile-hidden" role="complementary">
+        <uc:category ID="uxcategory" runat="server" />
+        <uc:recent ID="uxrecent" runat="server" />
+    </aside>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+			
+                </section>
+            <uc:footer ID="uxfooter" runat="server" />
+            <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+        </div>
+         <js:home ID="uxhomejs" runat="server" />
+        <div id="sitewide-notice" class="admin-bar-off"></div>
+		
+		 <%--  Comment 
+           <div  id="Test" runat="server" class="alert" style="overflow:hidden">
+                <div id="myModal" class="modal" runat="server">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" runat="server">
+                <div id="caption"></div></div>
+                <img id="myImg" src="Images/homepage_imgs/WelcomepagedesignFinal.png" alt="" style="display:none" />
+	
+            </div>
+
+         
+           <div  id="Test2" runat="server" class="alert" style="overflow:hidden">
+                <div id="myevent" class="modal" runat="server"  style="display:none">
+                <span class="closeEvent">&times;</span>
+                <img class="modal-content" id="img02" runat="server">
+                <div id="eventcaption"></div></div>
+                <img id="myeventimg" src="images/homepage_imgs/happy-diwali-25.gif"  alt="" style="display:none;" />
+	
+            </div>
+			 --%>
+			
+	
+    </form>
+	
+
+
+	<!-- The Modal -->
+<script>
+
+ /* Comment do not show welcome message after login to hrms ----
+    //Script for Welcome image & event image
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onload = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var myVar = setInterval(myTimer, 3000);
+
+    function myTimer() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    var mevent = document.getElementById('myevent');
+   
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var imgevent = document.getElementById('myeventimg');
+    var modalImgEvent = document.getElementById("img02");
+    var captionTextEvent = document.getElementById("eventcaption");
+    imgevent.onload = function ()
+    {
+        mevent.style.display = "block";
+        modalImgEvent.src = this.src;
+        captionTextEvent.innerHTML = this.alt;
+        mevent.style.display = "none";
+    }
+    
+
+    // Get the <span> element that closes the modal
+    var spanEvent = document.getElementsByClassName("closeEvent")[0];
+
+    var timeoutevent = setTimeout(myTimeoutEvent, 3000)
+	mevent.style.display = "none";            
+        function myTimeoutEvent()
+        {
+            //mevent.style.display = "inline";            
+        }
+    var myVar = setInterval(myTimerEvent, 50000);
+        function myTimerEvent()
+        {
+            mevent.style.display = "none";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        spanEvent.onclick = function ()
+        {
+            mevent.style.display = "none";
+        }
+
+    //Script for Welcome image & event image end here 
+	end here */
+</script>
+
+
+</body>
+</html>

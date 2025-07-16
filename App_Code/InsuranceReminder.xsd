@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InsuranceReminder" targetNamespace="http://tempuri.org/InsuranceReminder.xsd" xmlns:mstns="http://tempuri.org/InsuranceReminder.xsd" xmlns="http://tempuri.org/InsuranceReminder.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InsuranceReminder" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="InsuranceReminder" msprop:Generator_UserDSName="InsuranceReminder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Insurance" msprop:Generator_TableClassName="InsuranceDataTable" msprop:Generator_TableVarName="tableInsurance" msprop:Generator_RowChangedName="InsuranceRowChanged" msprop:Generator_TablePropName="Insurance" msprop:Generator_RowDeletingName="InsuranceRowDeleting" msprop:Generator_RowChangingName="InsuranceRowChanging" msprop:Generator_RowEvHandlerName="InsuranceRowChangeEventHandler" msprop:Generator_RowDeletedName="InsuranceRowDeleted" msprop:Generator_RowClassName="InsuranceRow" msprop:Generator_UserTableName="Insurance" msprop:Generator_RowEvArgName="InsuranceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Policyno" msprop:Generator_ColumnVarNameInTable="columnPolicyno" msprop:Generator_ColumnPropNameInRow="Policyno" msprop:Generator_ColumnPropNameInTable="PolicynoColumn" msprop:Generator_UserColumnName="Policyno" type="xs:string" minOccurs="0" />
+              <xs:element name="PolicyType" msprop:Generator_ColumnVarNameInTable="columnPolicyType" msprop:Generator_ColumnPropNameInRow="PolicyType" msprop:Generator_ColumnPropNameInTable="PolicyTypeColumn" msprop:Generator_UserColumnName="PolicyType" type="xs:string" minOccurs="0" />
+              <xs:element name="PolicyTypeDesc" msprop:Generator_ColumnVarNameInTable="columnPolicyTypeDesc" msprop:Generator_ColumnPropNameInRow="PolicyTypeDesc" msprop:Generator_ColumnPropNameInTable="PolicyTypeDescColumn" msprop:Generator_UserColumnName="PolicyTypeDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="PolicyStatus" msprop:Generator_ColumnVarNameInTable="columnPolicyStatus" msprop:Generator_ColumnPropNameInRow="PolicyStatus" msprop:Generator_ColumnPropNameInTable="PolicyStatusColumn" msprop:Generator_UserColumnName="PolicyStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="InsuranceCompany" msprop:Generator_ColumnVarNameInTable="columnInsuranceCompany" msprop:Generator_ColumnPropNameInRow="InsuranceCompany" msprop:Generator_ColumnPropNameInTable="InsuranceCompanyColumn" msprop:Generator_UserColumnName="InsuranceCompany" type="xs:string" minOccurs="0" />
+              <xs:element name="SumInsured" msprop:Generator_ColumnVarNameInTable="columnSumInsured" msprop:Generator_ColumnPropNameInRow="SumInsured" msprop:Generator_ColumnPropNameInTable="SumInsuredColumn" msprop:Generator_UserColumnName="SumInsured" type="xs:string" minOccurs="0" />
+              <xs:element name="PremiumAmount" msprop:Generator_ColumnVarNameInTable="columnPremiumAmount" msprop:Generator_ColumnPropNameInRow="PremiumAmount" msprop:Generator_ColumnPropNameInTable="PremiumAmountColumn" msprop:Generator_UserColumnName="PremiumAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="validfrom" msprop:Generator_ColumnVarNameInTable="columnvalidfrom" msprop:Generator_ColumnPropNameInRow="validfrom" msprop:Generator_ColumnPropNameInTable="validfromColumn" msprop:Generator_UserColumnName="validfrom" type="xs:string" minOccurs="0" />
+              <xs:element name="validto" msprop:Generator_ColumnVarNameInTable="columnvalidto" msprop:Generator_ColumnPropNameInRow="validto" msprop:Generator_ColumnPropNameInTable="validtoColumn" msprop:Generator_UserColumnName="validto" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="InsuranceContactName" msprop:Generator_ColumnVarNameInTable="columnInsuranceContactName" msprop:Generator_ColumnPropNameInRow="InsuranceContactName" msprop:Generator_ColumnPropNameInTable="InsuranceContactNameColumn" msprop:Generator_UserColumnName="InsuranceContactName" type="xs:string" minOccurs="0" />
+              <xs:element name="InsuranceContactMobile" msprop:Generator_ColumnVarNameInTable="columnInsuranceContactMobile" msprop:Generator_ColumnPropNameInRow="InsuranceContactMobile" msprop:Generator_ColumnPropNameInTable="InsuranceContactMobileColumn" msprop:Generator_UserColumnName="InsuranceContactMobile" type="xs:string" minOccurs="0" />
+              <xs:element name="InsuranceContactemail" msprop:Generator_ColumnVarNameInTable="columnInsuranceContactemail" msprop:Generator_ColumnPropNameInRow="InsuranceContactemail" msprop:Generator_ColumnPropNameInTable="InsuranceContactemailColumn" msprop:Generator_UserColumnName="InsuranceContactemail" type="xs:string" minOccurs="0" />
+              <xs:element name="respmail" msprop:Generator_ColumnVarNameInTable="columnrespmail" msprop:Generator_ColumnPropNameInRow="respmail" msprop:Generator_ColumnPropNameInTable="respmailColumn" msprop:Generator_UserColumnName="respmail" type="xs:string" minOccurs="0" />
+              <xs:element name="ResponsiblePerson" msprop:Generator_ColumnVarNameInTable="columnResponsiblePerson" msprop:Generator_ColumnPropNameInRow="ResponsiblePerson" msprop:Generator_ColumnPropNameInTable="ResponsiblePersonColumn" msprop:Generator_UserColumnName="ResponsiblePerson" type="xs:string" minOccurs="0" />
+              <xs:element name="PendingSince" msprop:Generator_ColumnVarNameInTable="columnPendingSince" msprop:Generator_ColumnPropNameInRow="PendingSince" msprop:Generator_ColumnPropNameInTable="PendingSinceColumn" msprop:Generator_UserColumnName="PendingSince" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

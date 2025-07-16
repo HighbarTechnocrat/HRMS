@@ -1,0 +1,86 @@
+https://www.youtube.com/watch?v=vTCZrgb2PWc
+
+https://www.youtube.com/watch?v=fBVfaIQpMak
+
+--- procs/RequisitionView.aspx?Recruitment_ReqID=1166
+sadanand.sarmalkar@highbartech.com
+-- procs/EmployeeReferralView.aspx?Pos_ID=8&modl_ID=6 
+
+-- http://localhost/hrms/procs/EmployeeReferralView.aspx?Pos_ID=8&modl_ID=6
+
+https://stackoverflow.com/questions/1920558/what-is-the-difference-between-scope-identity-identity-identity-and-ide
+
+VSCB_CreateInvoice.aspx
+
+VSCB_CreateInvoice.aspx?invid=1257&mngexp=1
+
+localtrvl_btnSave_Click , txtMilestoneInvoiceAmt_TextChanged
+
+Visible='<%# Eval("createbtn").ToString() == "1" ? false : true %>'
+
+GridViewAccountpaidbyAmount
+
+HDmilestoneid = Convert.ToString(GVEditpaymentReqamtpaid.DataKeys[ro.RowIndex].Values[i]).Trim();
+
+https://apply.hdfcbank.com/vivid/trackapplication#
+
+Invoice TDS Amount Change --
+
+trvl_btnSave_Click
+
+hdnEmpCode.Value
+,OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+
+http://localhost/APIAARP/api/ExcelDownload/Download?path1=
+
+hrmsadmin
+
+https://docs.microsoft.com/en-us/certifications/exams/pl-300
+
+8788983799 -- Pradip Thakare
+
+Username:harshad.dhande@highbartech.com
+Password: Hd$Mar2021, kIyDedYt , EMP_ID -631246
+https://iess.hgs-bs.com/Login.aspx?company=HIGHBAR
+
+intimations@cpc.incometax.gov.in
+
+sadanand.sarmalkar@highbartech.com
+
+https://sanjaypatil.atlassian.net/welcome/software
+
+https://www.c-sharpcorner.com/UploadFile/860b29/concatenate-multiple-rows-within-single-row-in-sql-server-20/
+https://stackoverflow.com/questions/37826530/rolling-up-multiple-rows-in-single-row
+
+
+
+
+
+mail.Body = "toMailIDs =" + toMailIDs + "<br> ccMailIDs =" + ccMailIDs + "<br><br>" + Convert.ToString(strbody) + Convert.ToString(strsignature);
+
+
+http://localhost/hrms/procs/InboxMobile.aspx?app=APP
+
+
+
+
+
+
+
+https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill
+
+
+
+https://dotnettutorials.net/lesson/token-based-authentication-web-api/
+https://www.dotnettricks.com/learn/webapi/token-based-authentication-in-aspnet-web-api              
+https://www.dotnettricks.com/learn/aspnetcore/comparison-between-aspnet-mvc5-vs-aspnet-core-mvc
+https://www.c-sharpcorner.com/article/web-ap/
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,321 @@
+https://www.youtube.com/watch?v=YCvIR6Htt0k&t=2090s
+
+
+	if @stype ='OnBoardingSeperationReportNew'
+		 begin
+		 SET ANSI_WARNINGS OFF;
+
+			--DECLARE @rem_id INT = NULL;
+			--DECLARE @from_date DATE = '2024-04-01';
+			--DECLARE @to_date DATE = '2025-03-28';
+			 IF @to_date IS NULL
+				SET @to_date = CAST(GETDATE() AS DATE);
+
+			DECLARE @tblEmployeeOpeningList TABLE(emp_code VARCHAR(10), employment_type VARCHAR(50));
+			DECLARE @tblEmployeeSeparatedList TABLE(emp_code VARCHAR(10), employment_type VARCHAR(50));
+			DECLARE @tblEmployeeOnboardedList TABLE(emp_code VARCHAR(10), employment_type VARCHAR(50));
+			DECLARE @tblEmployeeResignedList TABLE(emp_code VARCHAR(10), employment_type VARCHAR(50));
+			DECLARE @tblEmployeeALWDPassedList TABLE(emp_code VARCHAR(10), employment_type VARCHAR(50));
+
+			-- Opening employee list
+			INSERT INTO @tblEmployeeOpeningList(emp_code, employment_type)
+			SELECT emp_code, EMPLOYMENT_TYPE
+			FROM tbl_Employee_Mst
+			WHERE Emp_Code NOT IN ('99999999') 
+			  AND emp_doj < @from_date 
+			  AND Emp_Code NOT IN (
+				  SELECT EMP_CODE 
+				  FROM TBL_HRMS_EMPLOYEE_EXIT 
+				  WHERE DATE_OF_SEPARATION < @from_date 
+					AND EMP_STATUS IN (1, 3)
+			  );
+
+			-- Onboarded employee list
+			INSERT INTO @tblEmployeeOnboardedList(emp_code, employment_type)
+			SELECT emp_code, EMPLOYMENT_TYPE
+			FROM tbl_Employee_Mst
+			WHERE Emp_Code NOT IN ('99999999') 
+			  AND emp_doj BETWEEN @from_date AND @to_date;
+
+			-- Separated employee list
+			INSERT INTO @tblEmployeeSeparatedList(emp_code, employment_type)
+			SELECT emp_code, EMPLOYMENT_TYPE
+			FROM tbl_Employee_Mst
+			WHERE Emp_Code NOT IN ('99999999') 
+			  AND Emp_Code IN (
+				  SELECT EMP_CODE 
+				  FROM TBL_HRMS_EMPLOYEE_EXIT 
+				  WHERE DATE_OF_SEPARATION BETWEEN @from_date AND @to_date 
+					AND EMP_STATUS IN (1, 3)
+			  );
+
+			-- Resigned employee list
+			INSERT INTO @tblEmployeeResignedList(emp_code, employment_type)
+			SELECT emp_code, EMPLOYMENT_TYPE
+			FROM tbl_Employee_Mst
+			WHERE Emp_Code NOT IN ('99999999') 
+			  AND Resig_Date BETWEEN @from_date AND @to_date;
+
+			-- ALWD passed but separation pending
+			INSERT INTO @tblEmployeeALWDPassedList(emp_code, employment_type)
+			SELECT ex.emp_code, mst.EMPLOYMENT_TYPE
+			FROM TBL_HRMS_EMPLOYEE_EXIT ex
+			INNER JOIN tbl_Employee_Mst mst ON ex.EMP_CODE = mst.Emp_Code
+			WHERE mst.Emp_Code NOT IN ('99999999') 
+			  AND ex.EMP_STATUS IN (1, 3) 
+			  AND ex.DATE_OF_SEPARATION IS NULL
+			   AND (ex.HrReleaseDate < @to_date OR ex.ActualHrReleaseDate < @to_date);
+
+			-- Final summarized output
+			SELECT 
+				ET.Particulars AS EmploymentType,
+				COUNT(DISTINCT O.emp_code) AS Opening,
+				COUNT(DISTINCT S.emp_code) AS Separated,
+				COUNT(DISTINCT OB.emp_code) AS Onboarded,
+				COUNT(DISTINCT R.emp_code) AS Resigned,
+				(COUNT(DISTINCT O.emp_code) - COUNT(DISTINCT S.emp_code) + COUNT(DISTINCT OB.emp_code)) AS Closing,
+				COUNT(DISTINCT ALWD.emp_code) AS ALWDPassed
+			FROM @tblEmployeeOpeningList O
+			FULL OUTER JOIN @tblEmployeeSeparatedList S ON O.emp_code = S.emp_code
+			FULL OUTER JOIN @tblEmployeeOnboardedList OB ON OB.emp_code = O.emp_code
+			FULL OUTER JOIN @tblEmployeeResignedList R ON R.emp_code = O.emp_code
+			FULL OUTER JOIN @tblEmployeeALWDPassedList ALWD ON ALWD.emp_code = O.emp_code
+			LEFT JOIN tbl_HRMS_Employment_Type ET ON ET.PID = COALESCE(O.employment_type, S.employment_type, OB.employment_type, R.employment_type, ALWD.employment_type)
+			GROUP BY ET.Particulars, ET.PID
+			ORDER BY ET.PID;
+
+	        -- Opening employee list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name, r.Particulars as 'ResignedReason',
+				   CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+				   CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+				   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+			FROM @tblEmployeeOpeningList o 
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			LEFT JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			LEFT JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+			INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+			LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+            LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+            LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+			ORDER BY emp_doj;
+
+			-- Closing employee list
+			SELECT *
+			FROM (
+				SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+					   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name ,r.Particulars as 'ResignedReason',
+		               CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+			           CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+					   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+				FROM @tblEmployeeOpeningList o 
+				INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+				INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+				INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			    INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+				LEFT JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			    LEFT JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+				LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			    Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			    LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+                LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+                LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			    Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			    Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			    Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+				UNION
+				SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+					   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+                       WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name ,r.Particulars as 'ResignedReason',
+		               CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+			           CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+					     AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+				FROM @tblEmployeeOnboardedList o 
+				INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+				INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+				INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			    INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+				LEFT JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			    LEFT JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+
+				LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			    Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			    LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+                LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+                LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			    Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			    Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			    Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+			) t 
+			WHERE t.Emp_Code NOT IN (SELECT emp_code FROM @tblEmployeeSeparatedList);
+
+			-- Separated employee list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars, SR.SEPARATION_REASON,b.BAND,CL.Location_name,r.Particulars as 'ResignedReason',
+				   CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+				   CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+				   CONVERT(varchar(10), ex.DATE_OF_SEPARATION, 105) AS Separationdate,
+				   CONVERT(varchar(10), ex.SEPARATION_ENTRYDATE, 105) AS SeparationEntrydate,
+				   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+			FROM @tblEmployeeSeparatedList o 
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+			INNER JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE = o.emp_code AND ex.EMP_STATUS IN (1, 3)
+			INNER JOIN tbl_ExitProc_HR_SEPARATION_REASON SR ON SR.Id = ex.HR_REASON_SEPARATION AND SR.IsActive = 1
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+			INNER JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+
+			LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+            LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+            LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+
+			-- Onboarded employee list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name,r.Particulars as 'ResignedReason',
+				   CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+				   CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+				   CONVERT(varchar(10), ex.DATE_OF_SEPARATION, 105) AS Separationdate,
+				   CONVERT(varchar(10), ex.SEPARATION_ENTRYDATE, 105) AS SeparationEntrydate,
+				   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+			FROM @tblEmployeeOnboardedList o 
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+			LEFT JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			LEFT JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+			LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+            LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+            LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+
+			-- Resigned employee list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name,r.Particulars as 'ResignedReason',
+				   CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+				   CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+				   CONVERT(varchar(10), ex.DATE_OF_SEPARATION, 105) AS Separationdate,
+				   CONVERT(varchar(10), ex.SEPARATION_ENTRYDATE, 105) AS SeparationEntrydate,
+				   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+			FROM @tblEmployeeResignedList o 
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = o.emp_code
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+			INNER JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			INNER JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+			LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+            LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+            LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+
+			-- ALWD passed but not separated
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   CASE   WHEN e.emp_status = 'Resigned' THEN 'Separated'
+            WHEN e.Resig_Date IS NOT NULL AND e.emp_status = 'Onboard' THEN 'Resigned' ELSE e.emp_status END as 'emp_status', e.Department, e.Designation, et.Particulars,b.BAND,CL.Location_name,r.Particulars as 'ResignedReason',
+		           CONVERT(varchar(10), ex.LwdAsperpolicy, 105) AS LwdAsperpolicy,CONVERT(varchar(10), ex.HrReleaseDate, 105) AS HRReleasedate,
+			       CONVERT(varchar(10), ex.ActualHrReleaseDate, 105) AS ActualHRReleasedate,
+				   AM.AgencyName,CV.CVSource AS 'CVSourceType',
+				   COALESCE(CI.Others,JSI.JobSitesName,VI.VenderName,EMPREFby.Emp_Name) as 'CVSource',MO.ModuleDesc,
+                   (select emp_name from tbl_Employee_Mst where Emp_Code = rec.RecruiterID) as RecruiterName
+
+			FROM @tblEmployeeALWDPassedList ALWD
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = ALWD.emp_code
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			INNER JOIN TBL_HRMS_BAND_MASTER B ON B.BAND=e.grade
+			INNER JOIN tbl_hmst_company_Location CL ON CL.comp_code=e.emp_location
+			LEFT JOIN TBL_HRMS_EMPLOYEE_EXIT ex ON ex.EMP_CODE =e.Emp_Code and ex.EMP_STATUS in(1,3)
+			LEFT JOIN tbl_HRMS_Exit_Reasons r ON r.PID=ex.RESIGN_REASON
+			LEFT JOIN tbl_Rec_CandidateInfo CI ON CI.Candidate_ID=e.Candidate_ID
+			Left Join tbl_Rec_mst_CVSource CV ON CV.CVSource_ID=Ci.CVSource_ID
+			LEFT JOIN tbl_Employee_Mst EMPREFby ON EMPREFby.Emp_Code=CI.ReferredBy
+            LEFT JOIN tbl_Rec_JobSitesInfo  JSI ON JSI.JobSitesID =CI.JobSitesID
+            LEFT JOIN tbl_Rec_VendorInfo VI ON VI.VenderID =CI.VenderID
+			Left JOIn TBL_AgencyMaster  AM ON AM.AgencyID =e.AgencyID
+			Left Join TBL_HRMS_MODULE MO ON MO.ModuleId=e.EMP_MODULE
+			Left Join tbl_Rec_RecruitmentReq rec ON rec.Recruitment_ReqID=e.Recruitment_ReqID
+
+			-- Voluntary separated list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   e.emp_status, e.Department, e.Designation, et.Particulars
+			FROM TBL_HRMS_EMPLOYEE_EXIT ex
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = ex.EMP_CODE
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			WHERE HR_REASON_SEPARATION = 1 
+			  AND DATE_OF_SEPARATION BETWEEN @from_date AND @to_date 
+			  AND ex.EMP_STATUS IN (1, 3);
+
+			-- Involuntary separated list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   e.emp_status, e.Department, e.Designation, et.Particulars
+			FROM TBL_HRMS_EMPLOYEE_EXIT ex
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = ex.EMP_CODE
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID
+			WHERE HR_REASON_SEPARATION = 2 
+			  AND DATE_OF_SEPARATION BETWEEN @from_date AND @to_date 
+			  AND ex.EMP_STATUS IN (1, 3);
+
+			-- Retained employee list
+			SELECT e.Emp_Code, e.Emp_Name, CONVERT(varchar(10), e.emp_doj, 105) AS emp_doj, CONVERT(varchar(10), e.Resig_Date, 105) AS Resig_Date,
+				   e.emp_status, e.Department, e.Designation, et.Particulars
+			FROM (
+				SELECT EMP_CODE
+				FROM TBL_HRMS_EMPLOYEE_EXIT
+				WHERE EMP_STATUS = 2 
+				  AND CAST(UPDATEDON AS DATE) BETWEEN @from_date AND @to_date
+				UNION 
+				SELECT EmpCode AS EMP_CODE
+				FROM tbl_ExitProc_ResignationDetails
+				WHERE StatusID = 6 
+				  AND CAST(UPDATEDON AS DATE) BETWEEN @from_date AND @to_date
+			) t
+			INNER JOIN tbl_Employee_Mst e ON e.Emp_Code = t.EMP_CODE
+			INNER JOIN tbl_HRMS_Employment_Type et ON e.EMPLOYMENT_TYPE = et.PID;
+
+		
+			SET ANSI_WARNINGS ON;
+
+	END

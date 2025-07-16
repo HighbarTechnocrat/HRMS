@@ -1,0 +1,804 @@
+ #region Service Request Section 
+    //Create Method 18-01-2021 Vidhyadhar Galande
+    public object InsertServiceRequestDetails(string emp_code, string ServicesDescripation, string qtype, string FilePath, string AssignedTo, char Is_Escalated, int ServiceDepartment, int Status, int ActionStatus, string Actionby, char Escalation_Type)
+    {
+        DataTable dtTravelDetails = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+            sCommand.Parameters.AddWithValue("@qtype", qtype);
+            sCommand.Parameters.AddWithValue("@emp_code", emp_code);
+            sCommand.Parameters.AddWithValue("@ServicesDescripation", ServicesDescripation);
+            sCommand.Parameters.AddWithValue("@FilePath", FilePath);
+            sCommand.Parameters.AddWithValue("@AssignedTo", AssignedTo);
+            sCommand.Parameters.AddWithValue("@Is_Escalated", Is_Escalated);
+            sCommand.Parameters.AddWithValue("@ServiceDepartment", ServiceDepartment);            
+            sCommand.Parameters.AddWithValue("@Status", Status);
+            sCommand.Parameters.AddWithValue("@ActionStatus", ActionStatus);
+            sCommand.Parameters.AddWithValue("@ActionBy", Actionby);
+            sCommand.Parameters.AddWithValue("@Escalation_Type", Escalation_Type);           
+            var status=sCommand.ExecuteScalar();
+            return status;
+        }
+        catch (Exception ex)
+        {
+        }
+        finally
+        {
+
+        }
+        return 0;
+    }
+
+    public DataTable GetSPOCData(int id)
+    {
+        var spocTable = new DataTable();
+        try
+        {
+            sql.con.ConnectionString = connection;
+            sql.con.Open();
+            sql.cmd.Connection = sql.con;
+            sql.cmd.CommandType = CommandType.StoredProcedure;
+            sql.cmd.CommandText = "SP_INSERTSERVICE_REQUEST";
+            sql.cmd.Parameters.AddWithValue("@qtype", "GETSPOCDETAIL");
+            sql.cmd.Parameters.AddWithValue("@id", id);
+            sql.adp.SelectCommand = sql.cmd;
+            spocTable = new DataTable();
+            sql.adp.Fill(spocTable);
+            return spocTable;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            sql.con.Close();
+
+        }
+    }
+
+    public DataTable GetSerivesRequestSPOCInbox(string empCode)
+    {
+        DataTable dttrInbox = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "GETEMPSERVICELIST");
+            sCommand.Parameters.AddWithValue("@emp_code", empCode);
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(dttrInbox);
+
+
+        }
+        catch (Exception ex)
+        {
+        }
+        return dttrInbox;
+
+    }
+
+    public DataTable GetSerivesRequestMyInbox(string empCode)
+    {
+        DataTable dttrInbox = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "GETMYSERVICELIST");
+            sCommand.Parameters.AddWithValue("@emp_code", empCode);
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(dttrInbox);
+
+
+        }
+        catch (Exception ex)
+        {
+        }
+        return dttrInbox;
+
+    }
+
+    public DataTable GetSerivesRequestDepartment()
+    {
+        DataTable dttrInbox = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "DDLDEPARTMENT");
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(dttrInbox);
+
+
+        }
+        catch (Exception ex)
+        {
+        }
+        return dttrInbox;
+
+    }
+
+    public DataSet getServiceRequestDetail(int id,string empCode)
+    {
+        DataSet dsempwrksch = new DataSet();
+        scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+        if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+            scon.Open();
+        sCommand = new SqlCommand();
+        sCommand.Connection = scon;
+        sCommand.CommandTimeout = 0;
+        sCommand.CommandText = "SP_INSERTSERVICE_REQUEST";
+        sCommand.CommandType = CommandType.StoredProcedure;
+        sCommand.Parameters.AddWithValue("@emp_code", empCode);
+        sCommand.Parameters.AddWithValue("@id", id);
+        sCommand.Parameters.AddWithValue("@qtype", "GETApprovelPageDetail");
+
+        sadp = new SqlDataAdapter();
+        sadp.SelectCommand = sCommand;
+        sadp.Fill(dsempwrksch);
+        return dsempwrksch;
+    }
+    public DataTable GetEmpDepartment(int ServiceDepartment)
+    {
+        var spocTable = new DataTable();
+        try
+        {
+            sql.con.ConnectionString = connection;
+            sql.con.Open();
+            sql.cmd.Connection = sql.con;
+            sql.cmd.CommandType = CommandType.StoredProcedure;
+            sql.cmd.CommandText = "SP_INSERTSERVICE_REQUEST";
+            sql.cmd.Parameters.AddWithValue("@qtype", "GETDDLFORSERVICECREATE");
+            sql.cmd.Parameters.AddWithValue("@ServiceDepartment", ServiceDepartment);
+            sql.adp.SelectCommand = sql.cmd;
+            spocTable = new DataTable();
+            sql.adp.Fill(spocTable);
+            return spocTable;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            sql.con.Close();
+
+        }
+    }
+
+    public void AssgineServiceRequestDetails(string emp_code, string ServicesDescripation, string qtype, string FilePath, string AssignedTo, char Is_Escalated, int ServiceDepartment, int Status, int ActionStatus, string Actionby, char Escalation_Type,int id)
+    {
+        DataTable dtTravelDetails = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+            sCommand.Parameters.AddWithValue("@qtype", qtype);
+            sCommand.Parameters.AddWithValue("@Id", id);
+            sCommand.Parameters.AddWithValue("@emp_code", emp_code);
+            sCommand.Parameters.AddWithValue("@ServicesDescripation", ServicesDescripation);
+            sCommand.Parameters.AddWithValue("@FilePath", FilePath);
+            sCommand.Parameters.AddWithValue("@AssignedTo", AssignedTo);
+            sCommand.Parameters.AddWithValue("@Is_Escalated", Is_Escalated);
+            sCommand.Parameters.AddWithValue("@ServiceDepartment", ServiceDepartment);
+            sCommand.Parameters.AddWithValue("@Status", Status);
+            sCommand.Parameters.AddWithValue("@ActionStatus", ActionStatus);
+            sCommand.Parameters.AddWithValue("@ActionBy", Actionby);
+            sCommand.Parameters.AddWithValue("@Escalation_Type", Escalation_Type);
+            var status = sCommand.ExecuteNonQuery();
+        }
+        catch (Exception ex)
+        {
+        }
+        finally
+        {
+
+        }
+
+    }
+
+    public DataTable GETSPOCEXISTS(string empCode)
+    {
+        DataTable dttrInbox = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "GETSPOCDETAILS");
+            sCommand.Parameters.AddWithValue("@emp_code", empCode);
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(dttrInbox);
+
+
+        }
+        catch (Exception ex)
+        {
+        }
+        return dttrInbox;
+
+    }
+
+    public DataTable GETHISTORYBYID(int id)
+    {
+        DataTable dttrInbox = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "GETSERVICEHISTORY");
+            sCommand.Parameters.AddWithValue("@id", id);
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(dttrInbox);
+
+
+        }
+        catch (Exception ex)
+        {
+        }
+        return dttrInbox;
+
+    }
+
+    public DataTable GetDEPARTMENTHOD(int id)
+    {
+        var spocTable = new DataTable();
+        try
+        {
+            sql.con.ConnectionString = connection;
+            sql.con.Open();
+            sql.cmd.Connection = sql.con;
+            sql.cmd.CommandType = CommandType.StoredProcedure;
+            sql.cmd.CommandText = "SP_INSERTSERVICE_REQUEST";
+            sql.cmd.Parameters.AddWithValue("@qtype", "GETDEPTHOD");
+            sql.cmd.Parameters.AddWithValue("@id", id);
+            sql.adp.SelectCommand = sql.cmd;
+            spocTable = new DataTable();
+            sql.adp.Fill(spocTable);
+            return spocTable;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            sql.con.Close();
+
+        }
+    }
+    public DataTable GetCEOEmpCode()
+    {
+        var spocTable = new DataTable();
+        try
+        {
+            sql.con.ConnectionString = connection;
+            sql.con.Open();
+            sql.cmd.Connection = sql.con;
+            sql.cmd.CommandType = CommandType.StoredProcedure;
+            sql.cmd.CommandText = "SP_INSERTSERVICE_REQUEST";
+            sql.cmd.Parameters.AddWithValue("@qtype", "GETCEO");
+            sql.adp.SelectCommand = sql.cmd;
+            spocTable = new DataTable();
+            sql.adp.Fill(spocTable);
+            return spocTable;
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            sql.con.Close();
+
+        }
+    }
+
+    public void sendMailServiceRequest(string toMailIDs, string strsubject, string strbody, string strattchfilepath, string ccMailIDs)
+    {
+        try
+        {
+            MailMessage mail = new MailMessage();
+            string[] strtoEmail = Convert.ToString(toMailIDs).Trim().Split(';');
+
+            string[] strCCEmail = Convert.ToString(ccMailIDs).Trim().Split(';');
+           
+            mail.To.Add("vidhyadhar.galande@highbartech.com");
+            
+            StringBuilder strsignature = new StringBuilder();
+
+            mail.From = new MailAddress("noreply@highbartech.com");
+
+            mail.Subject = strsubject;
+            mail.Body = Convert.ToString(strbody) + Convert.ToString(strsignature);
+            mail.IsBodyHtml = true;
+            mail.Priority = MailPriority.Low;
+
+
+            if (Convert.ToString(strattchfilepath).Trim() != "")
+            {
+                Attachment attch = new Attachment(strattchfilepath);
+                mail.Attachments.Add(attch);
+            }
+
+            SmtpClient smtp = new SmtpClient();
+
+            smtp.Host = "smtp.office365.com"; //Highbar SMTP
+            smtp.Port = 587;
+
+            System.Net.NetworkCredential SMTPUserInfo = new System.Net.NetworkCredential("noreply@highbartech.com", "HBT@2019");
+            smtp.UseDefaultCredentials = false;
+            smtp.Credentials = SMTPUserInfo;
+            smtp.EnableSsl = true;
+            smtp.Send(mail);
+            mail.Dispose();
+        }
+        catch (Exception)
+        {
+
+            throw;
+        }
+
+
+    }
+
+    public void ServiceRequest_send_mailto_SPOC(string serviceRequestno, string toMailIDs,  string employeeName, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+        var strsubject = "New Service Request "+ serviceRequestno + " is created, your action is required";
+        try
+        {
+            strbuild = new StringBuilder();
+
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>Dear Team,</td></tr>");
+            strbuild.Append("<tr><td> This is to inform you that " + employeeName + " has created new Service Request with following details.Please take appropriate action</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Employee Name : </td><td >" + employeeName + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            strbuild.Append("<tr><td>Service Request Description :</td><td >" + requestDescription + "</td></tr>");
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");           
+            strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'>Please click here to take action on Service Request</a></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void ServiceRequest_send_mailto_AssignedAgent(int isEscalated ,string serviceRequestno, string toMailIDs, string employeeName, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+
+        var strsubject = "";
+        if(isEscalated==1)
+        {
+            strsubject = "Escalated Service Request " + serviceRequestno + " is assigned to you, your action is required ";
+        }
+        else 
+        {
+            strsubject = "Service Request " + serviceRequestno + " is assigned to you, your action is required";
+        }
+         
+        try
+        {
+            strbuild = new StringBuilder();
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>Dear Sir/Madam,</td></tr>");
+            if(isEscalated==1)
+            {
+                strbuild.Append("<tr><td> This is to inform you that escalated Service Request of " + employeeName + " with following details is assigned to you. Please take appropriate action</td></tr>");
+
+            }
+            else
+            {
+                strbuild.Append("<tr><td> This is to inform you that " + employeeName + " has created new Service Request with following details.Please take appropriate action</td></tr>");
+
+            }
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Employee Name : </td><td >" + employeeName + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            if(isEscalated==1)
+            {
+                strbuild.Append("<tr><td>Employee Escalation  Desc :</td><td >" + requestDescription + "</td></tr>");
+            }
+            else
+            {
+                strbuild.Append("<tr><td>Service Request Description :</td><td >" + requestDescription + "</td></tr>");
+
+            }
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'>Please click here to take action on Service Request</a></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+    
+    public void ServiceRequest_send_mailto_AssignToEmployee(int IsExceletd, string serviceRequestno, string toMailIDs, string actionName,string actionBy, string assgineTo, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+        var strsubject = "";
+        if(IsExceletd==0)
+        {
+            strsubject = "Action update on your Service Request " + serviceRequestno + "";
+        }
+        else
+        {
+            strsubject = "Action update on your escalated Service Request " + serviceRequestno + "";
+        }
+         
+        //var strsubject = "Action update on your Service Request "+ serviceRequestno + "";
+        try
+        {
+            strbuild = new StringBuilder();
+
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>Dear Sir/Madam,</td></tr>");
+            strbuild.Append("<tr><td>This is to inform you that following action has been taken on your Service Request " + serviceRequestno + ".</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+            strbuild.Append("<tr><td>Action Taken : </td><td >" + actionName + "</td></tr>");
+            strbuild.Append("<tr><td>Action Taken By : </td><td >" + actionBy + "</td></tr>");
+            strbuild.Append("<tr><td>Assigned To : </td><td >" + assgineTo + "</td></tr>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            if(IsExceletd==0)
+            {
+                strbuild.Append("<tr><td>Service Request Description :</td><td >" + requestDescription + "</td></tr>");
+            }
+            else
+            {
+                strbuild.Append("<tr><td>Employee Escalation  Desc.</td><td >" + requestDescription + "</td></tr>");
+            }            
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to view Service Request</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+            
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void ServiceRequest_send_mailto_ActionToEmployee(int IsExceletd, string serviceRequestno, string toMailIDs, string actionName, string actionBy, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+        //Emp_Name = "";
+        //dt_emp = GetEmployeeData_Email(ReqMailID.ToString());
+        //Emp_Name = dt_emp.Rows[0]["Emp_Name"].ToString();
+        var strsubject = "";
+        if(IsExceletd==0)
+        {
+            strsubject = "Action update on your Service Request " + serviceRequestno + "";
+        }
+        else
+        {
+            strsubject= "Action update on your escalated Service Request " + serviceRequestno + "";
+        }
+        
+        try
+        {
+            strbuild = new StringBuilder();
+
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>Dear Sir/Madam,</td></tr>");
+            strbuild.Append("<tr><td>This is to inform you that following action has been taken on your Service Request " + serviceRequestno + ".</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+            strbuild.Append("<tr><td>Action Taken : </td><td >" + actionName + "</td></tr>");
+            strbuild.Append("<tr><td>Action Taken By : </td><td >" + actionBy + "</td></tr>");
+            //strbuild.Append("<tr><td>Assigned To : </td><td >" + assgineTo + "</td></tr>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            if(IsExceletd==0)
+            {
+                strbuild.Append("<tr><td>Service Request Description :</td><td >" + requestDescription + "</td></tr>");
+            }
+            else
+            {
+                strbuild.Append("<tr><td>Employee Escalation  Desc.: </td><td >" + requestDescription + "</td></tr>");
+            }           
+           
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            if(IsExceletd==0)
+            {
+                strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to View/Esclate Service Request</td></tr>");
+            }
+            else if(IsExceletd==1)
+            {
+                strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to View/Esclate Service Request</td></tr>");
+            }
+            else 
+            {
+                strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to View Service Request</td></tr>");
+            }
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+
+
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void ServiceRequest_send_mailto_EscalationHeadOrCEO(int IsCEO,string serviceRequestno, string toMailIDs, string employeeName, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription, string actiondate)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+        //Emp_Name = "";
+        //dt_emp = GetEmployeeData_Email(ReqMailID.ToString());
+        //Emp_Name = dt_emp.Rows[0]["Emp_Name"].ToString();
+
+        var strsubject = "Escalation of Service Request "+serviceRequestno+"";
+        try
+        {
+            strbuild = new StringBuilder();
+
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            if(IsCEO==1)
+            {
+                strbuild.Append("<tr><td>Dear Sir,</td></tr>");
+            }
+            else
+            {
+                strbuild.Append("<tr><td>Dear Sir/Madam,</td></tr>");
+            }
+            
+            strbuild.Append("<tr><td>This is to inform you that "+employeeName+" has escalated Service Request with following details to you. Please take appropriate action</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+           // strbuild.Append("<tr><td>Action Taken : </td><td >" + actionName + "</td></tr>");
+           // strbuild.Append("<tr><td>Action Taken By : </td><td >" + actionBy + "</td></tr>");
+            //strbuild.Append("<tr><td>Assigned To : </td><td >" + assgineTo + "</td></tr>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            strbuild.Append("<tr><td>Action Date :</td><td>" + actiondate + "</td></tr>");
+            strbuild.Append("<tr><td>Action By :</td><td>" + employeeName + "</td></tr>");
+            strbuild.Append("<tr><td>Employee Escalation  Desc. :</td><td >" + requestDescription + "</td></tr>");
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to take action on Service Request</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+
+
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void ServiceRequest_send_mailto_HeadOrCEOToSPOC(int IsCEO, string serviceRequestno, string toMailIDs, string employeeName, string createdDate, string department, string ccmailid, string redirectURL, string requestDescription, string actiondate, string actionBy)
+    {
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient();
+        StringBuilder strbuild = new StringBuilder();
+        DataTable dt_emp = new DataTable();
+        //Emp_Name = "";
+        //dt_emp = GetEmployeeData_Email(ReqMailID.ToString());
+        //Emp_Name = dt_emp.Rows[0]["Emp_Name"].ToString();
+
+        var strsubject = "Escalation of Service Request " + serviceRequestno + "";
+        try
+        {
+            strbuild = new StringBuilder();
+
+            strbuild.Append("<table style='color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular;width:100%'><tr><td>   ");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>Dear Sir/Madam,</td></tr>");
+            if (IsCEO == 1)
+            {
+                strbuild.Append("<tr><td>This is to inform you that CEO has forwarded escalated request of "+ employeeName + " to you. Please take appropriate action</td></tr>");
+            }
+            else if(IsCEO==0)
+            {
+                strbuild.Append("<tr><td>This is to inform you that "+department+" head has forwarded escalated request of " + employeeName +" to you. Please take appropriate action</td></tr>");
+
+            }
+            else
+            {
+                strbuild.Append("<tr><td>This is to inform you that " + actionBy + "  has forwarded service request of " + employeeName + " to you. Please take appropriate action</td></tr>");
+
+            }
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td>");
+            strbuild.Append("<table style='width:60%;color:#000000;font-size:11pt;font-family:Trebuchet MS !important;font-style:Regular'>");
+            // strbuild.Append("<tr><td>Action Taken : </td><td >" + actionName + "</td></tr>");
+            // strbuild.Append("<tr><td>Action Taken By : </td><td >" + actionBy + "</td></tr>");
+            //strbuild.Append("<tr><td>Assigned To : </td><td >" + assgineTo + "</td></tr>");
+            strbuild.Append("<tr><td>Service Request No : </td><td >" + serviceRequestno + "</td></tr>");
+            strbuild.Append("<tr><td>Creation Date : </td><td > " + createdDate + "</td></tr>");
+            strbuild.Append("<tr><td>Created For Department :</td><td>" + department + "</td></tr>");
+            strbuild.Append("<tr><td>Action Date :</td><td>" + actiondate + "</td></tr>");
+            strbuild.Append("<tr><td>Action By :</td><td>" + actionBy + "</td></tr>");
+            strbuild.Append("<tr><td>Employee Escalation  Desc. :</td><td >" + requestDescription + "</td></tr>");
+            strbuild.Append("</table>");
+            strbuild.Append("</td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'><a href='" + redirectURL + "' target='_blank'> Please click here to take action on Service Request </td></tr>");
+            strbuild.Append("<tr><td style='height:20px'></td></tr>");
+            strbuild.Append("<tr><td style='height:20px'>This is system generated mail, please do not reply.</td></tr>");
+            strbuild.Append("</table>");
+
+            sendMailServiceRequest(toMailIDs, strsubject, Convert.ToString(strbuild).Trim(), "", ccmailid);
+
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public DataTable GetServiceRequestById(int id)
+    {
+        var spocTable = new DataTable();
+        try
+        {
+            scon = new SqlConnection(ConfigurationManager.ConnectionStrings["sqlconnection"].ToString());
+            if (scon.State == ConnectionState.Closed || scon.State == ConnectionState.Broken)
+                scon.Open();
+            sCommand = new SqlCommand();
+            sCommand.Connection = scon;
+            sCommand.CommandText = "[SP_INSERTSERVICE_REQUEST]";
+            sCommand.CommandType = CommandType.StoredProcedure;
+
+            sCommand.Parameters.AddWithValue("@qtype", "GETSERVICEDETAILBYID_ID");
+            sCommand.Parameters.AddWithValue("@id", id);
+
+            sadp = new SqlDataAdapter();
+            sadp.SelectCommand = sCommand;
+
+            sadp.Fill(spocTable);
+        }
+        catch (Exception ex)
+        {
+            throw;
+        }
+        finally
+        {
+            sql.con.Close();
+
+        }
+        return spocTable;
+    }
+
+    #endregion

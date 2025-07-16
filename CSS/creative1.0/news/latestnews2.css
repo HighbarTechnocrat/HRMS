@@ -1,0 +1,70 @@
+﻿.carouselproitem {
+  border: 1px solid #ccc;
+  border-radius: 0px;/*wasim change border radius 5px to 0  10 oct17*/
+  margin: 0 auto;
+  min-height: 250px;
+  overflow: hidden;
+  width: 225px;
+}
+.carouselproitem:hover{
+    border:1px solid hsl(30, 89%, 54%);
+}
+.view-content h2 {
+  opacity: 1;
+  transform:none;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.view {
+  cursor: default;
+  display: flex;
+  float: left;
+  overflow:visible;
+  position: relative;
+  text-align: center;
+  width: auto;
+}
+.view h2 {
+  color:hsl(17, 68%, 31%);
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  text-align: left;
+  text-transform: capitalize;
+  white-space: normal;
+  word-wrap:break-word;
+}
+.view-content .mask {
+  background:#fff;
+  opacity:1;
+  transition: all 0.4s ease-in-out 0s;
+}
+.view-content p {
+  opacity: 1;
+  transform:none;
+  transition: all 0.2s linear 0s;
+}
+.view p {
+  color: #000;
+  font-size: 12px;
+  height:130px;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  white-space: normal;
+}
+.mask > a > p > iframe {
+    height: 200px;
+    display:none;
+}
+
+.mask > a > div > p > iframe {
+    height: 220px;
+    display:none;
+}
+
+@media only screen and (max-width:1000px) and (min-width:240px) {
+    
+}

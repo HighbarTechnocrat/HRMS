@@ -1,0 +1,303 @@
+﻿.contactimage {
+  display: inline-block;
+  padding: 5px;
+  width: 90%;
+}
+.contactstar
+{
+     display: inline-block;
+  padding: 5px;
+  width: 90%;
+}
+
+.productsummerytitle {
+  display: inline-block;
+  margin: 0 25px;
+  position: relative;
+  text-align: right;
+  width: 90%;
+}
+.Default {
+  display: inline-block;
+  overflow: visible;
+  width: 100%;
+}
+.productsummery {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  display: inline-block;
+  overflow: visible;
+  width: 60%;
+}
+.productsummery {
+  float: left;
+  padding: 0;
+}
+.contactfileds {
+  display: block;
+  padding: 5px 0 0 90px;
+  text-align: left;
+  width: 350px;
+}
+.contactfiledsnos {
+  display: inline-block;
+  padding-right: 20px;
+  width: 20%;
+}
+.contactlbl {
+  display: inline-block;
+ /* margin: 10px 0 50px;
+  width: 50%;*/
+}
+
+.productsummerytitle {
+  border: medium none;
+  float: right !important;
+  right:0px !important;
+}
+.contactimg {
+    border-radius: 0% 0%;/*wasim change border radius 28% 0% to 0  0 10oct17*/
+    height: 35px;
+    width: 35px;
+	 border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contactimage {
+  background: #ffffff none repeat scroll 0 0 !important;
+  border-bottom: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: table;
+  height: 48px;
+  outline: medium none;
+  table-layout: fixed;
+  width: 100%;
+}
+.maincontactimage {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24) !important;
+  display: inline-block;
+  width: 100%;
+}
+.contactstar{
+      background: #ffffff none repeat scroll 0 0 !important;
+  border-bottom: 1px solid #f1f1f1;
+ 
+  box-sizing: border-box;
+  cursor: pointer;
+  display: table;
+  height: 48px;
+  outline: medium none;
+  table-layout: fixed;
+  width: 100%;
+}
+.imgbuttoncontact > img {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  width: auto%;
+}
+.imgbuttoncontact {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+.contactlbl {
+  border-bottom: 2px solid #f8e497;
+  color: #843719;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 0 15px;
+  padding: 20px 0 0;
+  text-align: left;
+  text-transform: capitalize;
+  width: 100%;
+}
+.contactimage > a{
+  border: medium none;
+  box-sizing: border-box;
+  padding: 2px 20px 0 24px;
+  width: 250px;
+}
+.contactimage > a {
+  color: #404040;
+  display: table-cell;
+  height: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/*.contactfileds {
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+  width: 20%;
+}
+.contactfileds {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}*/
+.contactfiledsnos{
+  width: 22%;
+}
+.contactstar > a {
+  border: medium none;
+  box-sizing: border-box;
+  color: #404040;
+  display: table-cell;
+  height: inherit;
+  padding: 2px 20px 0 24px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 250px;
+}
+.starbtn1 > img:hover {
+  background: rgba(0, 0, 0, 0) url("http://192.168.0.172/csiauser/themes/creative1.0/images/icons/star1hover.png") no-repeat scroll 0 0;
+}
+/*.follow > img:hover {
+  background: rgba(0, 0, 0, 0) url("http://192.168.0.172/csiauser/themes/creative1.0/images/icons/followhover.png") no-repeat scroll 0 0;
+}*/
+.Default1 {
+  display: inline-block;
+  width: 100%;
+}
+.contactfileds2 {
+  display: inline-block;
+  padding: 10px 50px 0 0;
+  position: relative;
+  text-align: right;
+  width: 80%;
+}
+.emailbtn1 {
+  display: inline-block;
+  position: relative;
+  text-align: start;
+  width: 100px;
+}
+.emailbtn1  {
+  float: none;
+  /*background: rgba(0, 0, 0, 0) url("http://192.168.0.172/csiauser/themes/creative1.0/images/icons/message.png") no-repeat scroll 0 0;*/
+}
+.emailbtn1 :hover{
+  /*background: rgba(0, 0, 0, 0) url("http://192.168.0.172/csiauser/themes/creative1.0/images/icons/messagehover.png") no-repeat scroll 0 0;*/
+}
+.productsummery1 {
+  float: right;
+  width: 40%;
+}
+.productsummerytitle {
+  border: medium none;
+  float: none;
+}
+.emailbtn {
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+  position: relative;
+  width: 30%;
+}
+.starbtn {
+  display: inline;
+  float: right;
+  padding: 10px;
+  position: relative;
+  width: 30%;
+}
+.contactfileds1 {
+  display: inline-block;
+  width: 100%;
+}
+.starbtn1 > img {
+    float: none;
+    background: rgba(0, 0, 0, 0) url("http://192.168.0.172/csiauser/themes/creative1.0/images/icons/star1.png") no-repeat scroll 0 0;
+}
+.follow > img {
+  float: none;
+}
+.searchbtn1 {
+  border: 1px solid #843719;
+  font-size: 12px;
+  padding: 6.5px 16px;
+  text-decoration: none;
+}
+.searchbtn1 i {
+  font-size: 16px;
+  margin: 5px;
+}
+.searchbtn1:hover {
+  background: #f27928 none repeat scroll 0 0;
+  border: 1px solid #f27928;
+  color: #fff !important;
+}
+
+@media only screen and (max-width:1000px) and (min-width:240px){
+	
+	.productsummerytitle {
+  right: 0 !important;
+  float:none !important;
+}
+.contactfileds1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 36%;
+}
+.contactlbl {
+  border-bottom: 2px solid #f8e497;
+  color: #843719;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: capitalize;
+  width: 100%;
+}
+.productsummerytitle {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  text-align: center;
+  width: 90%;
+}
+.contactfileds {
+  display: table-cell;
+  padding: 0 40px;
+  text-align: left;
+  width: 200px;
+}
+.contactimage > a {
+  border: medium none;
+  box-sizing: border-box;
+  width: 50%;
+  padding:0px;
+  
+}
+.productsummery1 {
+  float: none;
+ 
+  width: 100%;
+}
+.productsummery {
+  background: #ffffff none repeat scroll 0 0;
+  display: inline-block;
+  overflow: visible;
+  width: 100%;
+}
+.contactstar > a {
+  border: medium none;
+  box-sizing: border-box;
+  color: #404040;
+  display: table-cell;
+  height: 48px;
+  padding: 0;
+  vertical-align: middle;
+  width: 157px;
+}
+.contactfileds {
+  display: table-cell;
+  padding: 0;
+  text-align: left;
+  width: 200px;
+}
+
+.emailbtn1 {
+  display: inline-block;
+  position: relative;
+  text-align: start;
+  width: 50px;
+}
+}

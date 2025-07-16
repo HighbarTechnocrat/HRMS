@@ -1,0 +1,155 @@
+﻿/*body
+{
+    background: #3498db;
+    margin: 0px; 
+    font-family: Sans-Serif;
+}*/
+
+.chat_box, .msg_box
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+    background: #FFFFFF;
+    width: 250px;
+    font-size: 14px;
+    float: right;
+    border-radius: 0px 0px 0px 0px;/*wasim change border radius 5px 5px 0 0 to 0 0 0 0*/
+}
+
+ .msg_box {
+	right:270px;
+}
+.chat_head, .msg_head
+{
+    background: #660066;
+    color: White;
+    border-radius: 0px 0px 0px 0px;/*wasim change border radius 3px 3px 0 0 to 0 0 0 0*/
+    padding: 10px 0px;
+}
+
+.chat_body {
+	height:auto;
+    overflow:auto;
+    overflow-x:hidden;
+    overflow-y:visible;
+    /*border:1px solid #CCCCCC;*/
+}
+
+.chat_body:hover {
+    overflow:auto;
+    overflow-y:visible;
+    overflow-x:hidden;
+}
+
+.close
+{
+    float:right;
+}
+
+.msg_input
+{
+    border:transparent;
+    border-top:1px solid #bdc3c7;
+    width:100%;
+    padding:5px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.msg_body
+{
+    height:250px;
+    font-size:12px;
+    overflow:auto;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    border:1px solid #CCCCCC;
+}
+
+.user
+{
+    width: 100%; 
+    height: 40px; 
+    padding-left:5px;
+    padding-top:5px;
+}
+
+
+.user:hover
+{
+    /*cursor:pointer;*/
+    background: #E8E8E8;
+}
+
+
+/*.user
+{ 
+    cursor:pointer;
+	padding: 10px 30px;
+	background: #CCCCFF; 
+	position: relative;
+	
+}*/
+
+/*.user:before 
+{
+    content: "";
+    position:absolute;
+    background: green;
+    width: 10px;
+	height:10px;
+	left: 10px;
+	top: 15px;
+	border-radius:5px;
+}*/
+
+.msg_a
+{
+    margin-top:10px;
+    margin-right:20px;
+    margin-left:20px;
+    padding:10px;
+    min-height:15px;
+    background:#77e66a;
+    position:relative;
+    border-radius:0px;/*wasim change border radius 5px to 0 10oct17*/
+}
+
+.msg_a:before
+{
+    content:"";
+    position:absolute;
+    width:0px;
+    height:0px;
+    border: 10px solid;
+    left:-24px;
+    top:6px;
+    border-color:transparent #77e66a transparent transparent;
+}
+
+.msg_b
+{
+    margin-top:10px;
+    margin-right:20px;
+    margin-left:20px;
+    padding:10px;
+    min-height:15px;
+    background:#f8fa72;
+    position:relative;
+    border-radius:0px;/*wasim change border radius 5px to 0 10oct17*/
+}
+
+.msg_b:before
+{
+    content:"";
+    position:absolute;
+    width:0px;
+    height:0px;
+    border: 10px solid;
+    right:-24px;
+    top:6px;
+    border-color:transparent transparent transparent #f8fa72;
+}

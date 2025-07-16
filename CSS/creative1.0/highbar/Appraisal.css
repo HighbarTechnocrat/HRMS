@@ -1,0 +1,1239 @@
+﻿select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+input[type=file] {
+    max-width: 85% !important;
+}
+
+
+input, textarea {
+    /* background: #dae1ed; */
+    /*background: #e8e8e8;*/
+    border-color: #05568b !important;
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin: 4px 15px 15px 0 !important;
+    padding: 6px 15px !important;
+    font: 400 13.3333px Arial;
+}
+
+#MainContent_ListBox3 {
+    overflow: hidden;
+}
+#MainContent_lstIntermediate  {
+    overflow: hidden;
+}
+.edit-contact > ul > li {
+    display: inline-block;
+    width:36%;
+    margin-right: 1%;
+}
+.Approver {
+    /*width: 33% !important;*/
+    width: 72% !important;
+}
+.inter {
+    width: 72% !important;
+    margin: 0 0 0 3% !important;
+}
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+}
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+    height: 18px;
+    left: 8px;
+    position: relative;
+    top: -29px;
+    vertical-align: sub;
+    width: 18px;
+}
+.edit-contact input {
+    padding-left: 30px !important;
+    width: 100%;
+}
+.fordate {
+    float: none;
+}
+/*.upload {
+    float: right;
+    margin: -8% 53% 0 0 !important;
+}*/
+.inter {
+    float: none;
+    margin: 0;
+}
+.hodcal{
+	width: 15% !important;
+	    margin: -60px 0 0 800px !important;
+}
+a.LeaveManualLnik {
+    background: #05568b;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+    color: white !important;
+}
+
+
+
+/*.Reason {
+    float: right;
+    margin: -7.7% 54% 0 0 !important;
+}*/
+.fa-caret-down {
+    margin: 0 3px -15px -37px;
+    font-size: 19px;
+}
+
+#MainContent_btnReset {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background-color: #3D1956;
+    color: #febf39 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 8px;
+    margin-top: 25px !important;
+}
+
+#MainContent_btnBack {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background-color: #3D1956;
+    color: #febf39 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 8px;
+	margin-top: 25px !important;
+}
+#MainContent_btnDelete {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background-color: #3D1956;
+    color: #febf39 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 8px;
+	margin-top: 25px !important;
+}
+#MainContent_btnSubmit {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background-color: #3D1956;
+    color: #febf39 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 8px;
+	margin-top: 25px !important;
+}
+
+
+/*prajyot comment this*/
+#user-thumb {
+    display: none;
+}
+/*prajyot comment this*/
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea{
+    width:79%;
+    vertical-align:middle;
+}
+#MainContent_claimfuel_btnSubmit {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 0.7% 1.4%;
+}
+#MainContent_claimfuel_btnDelete {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 0.7% 1.4%;
+}
+#MainContent_claimfuel_btnBack{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 0.7% 1.4%;
+}
+
+
+#MainContent_lnk_mng_SelfAssessment {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_CreateSelfAssessment
+{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_PerformanceRevList
+{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_RecommendationList
+{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+
+#MainContent_lnk_TeamCalendar,#MainContent_lnkempLeaveRpt,#MainContent_lnk_viewAppraisalForm,#MainContent_lnk_HODTEAM {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+
+/*#MainContent_claimfuel_btnSubmit,#MainContent_claimfuel_btnDelete, #MainContent_claimfuel_btnBack {
+    background: #febf39;
+    padding: 5px 15px;
+}*/
+#MainContent_lnk_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+	width: 40%;
+}
+#MainContent_lnk_mng_leaverequest {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1% 1% 1%;
+	 width: 40%;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1%  1% 1% 1%;
+    width: 40%;
+}
+
+#MainContent_lnk_leaveinbox,#MainContent_lnkIbox_mobCOS,#MainContent_lnk_MobACC,#MainContent_lnk_PayACC,#MainContent_lnk_MobCFO,#MainContent_lnk_PayCFO,#MainContent_lnk_COSFuel,#MainContent_lnk_ACCFuel,#MainContent_lnk_approverFuleInbox,#MainContent_lnk_approverPaymentInbox,#MainContent_lnk_MobPastApproved_ACC,#MainContent_lnk_PayPastApproved_ACC,#MainContent_lnk_FuelPastApproved_ACC  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+ 
+#MainContent_lnk_HRLeaveInbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+
+#MainContent_lnk_HRAttendanceInbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+
+#MainContent_lnk_attendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+#MainContent_lnk_leavereport {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+/*added by */
+
+#MainContent_lnk_leaveParametersmst {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+#MainContent_lnk_leaveParametersmst1 {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+/*added  for Reimbursment report*/
+#MainContent_lnk_reimbursmentReport {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+#MainContent_lnk_reimbursmentReport_1 {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+#MainContent_lnk_reimbursmentReport_2{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+#MainContent_lnk_reimbursmentReport_3 {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% 1% 1%;
+    width: 40%;
+}
+
+
+.index {
+    margin: 0 0 2% 0;
+}
+.index ul li {
+    margin: 0 0 3% 0;
+}
+
+#content-container select {
+    display: block;
+    width: 100% !important;
+    border-color: #05568B;
+    border-radius: 3px;
+    /*margin: 0 0 30px 0;
+    padding: 7px 20px 5px 0 !important;*/
+}
+#MainContent_txtLeaveDays,#MainContent_txtReason{
+    
+}
+.leavegrid {
+    margin: 0 0 0 4% !important;
+}
+.manage_grid {
+    margin: 0 0 0 0 !important;
+}
+.aaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -4.2% 30.2% 0 0 !important;
+    
+    float: right;
+}
+.aaaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -2% 6% 0% 0% !important;
+    
+    float: right;
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -3% 28% 0% 0% !important;
+    
+    float: right;
+}
+.upload {
+    width: 33.4% !important;
+}
+#MainContent_TextBox3 {
+    
+    border: 1px solid #000;
+}
+#MainContent_txtFromdate {
+    
+    border: 1px solid #000;
+}
+#MainContent_TextBox1 {
+   
+    border: 1px solid #000;
+}
+#MainContent_txtToDate {
+   
+    border: 1px solid #000;
+}
+#MainContent_TextBox2 {
+    
+    border: 1px solid #000;
+}
+#MainContent_uploadprofile {
+    
+    border: 1px solid #000;
+}
+#MainContent_txtLeaveDays {
+   
+    border: 1px solid #000;
+} 
+#MainContent_txtReason {
+   
+    border: 1px solid #000;
+} 
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -504px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -504px !important;
+}
+
+.checkboxspan {
+    margin: 0px 0px 0px -493px !important;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ .taskparentclasskkk {
+  width: 93.3% !important;
+}
+ .Approver {
+    width: 100% !important;
+}
+
+.aaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 0 20% 2% 0% !important;
+    flex: right !important;
+        
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 0 20% 2% 0% !important;
+    flex: right !important;
+        
+}
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+.inter {
+    width: 100% !important;
+    margin: 0 0 0 0% !important;
+}
+#user-thumb {
+    display: none !important;
+}
+/*.fordate {
+    float: right;
+    margin: 0px !important;
+     padding: 4% 0 0  0 !important;
+}*/
+.date {
+    width: 100% !important;
+}
+/*.Reason {
+    float: right !important;
+    margin: 0 0 0 0 !important;
+     padding:  4% 0 4% 0 !important;
+}*/
+.Approver {
+    padding: 1% 0 0 0;
+}
+.leavedays {
+    padding: 1% 0 1% 0;
+}
+.date {
+    padding: 0 0 1% 0;
+}
+.Savebtndiv {
+    text-align: center;
+}
+
+
+input[type="file"] {
+    max-width: 83% !important;
+}
+#MainContent_lnk_CreateSelfAssessment {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_mng_SelfAssessment {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_mng_PerformanceRevList
+{
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_mng_RecommendationList {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_TeamCalendar,#MainContent_lnkempLeaveRpt,#MainContent_lnk_viewAppraisalForm,#MainContent_lnk_HODTEAM {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_mng_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_leaveinbox,#MainContent_lnkIbox_mobCOS,#MainContent_lnk_MobACC,#MainContent_lnk_PayACC,#MainContent_lnk_MobCFO,#MainContent_lnk_PayCFO,#MainContent_lnk_COSFuel,#MainContent_lnk_ACCFuel,#MainContent_lnk_approverFuleInbox,#MainContent_lnk_approverPaymentInbox,#MainContent_lnk_MobPastApproved_ACC,#MainContent_lnk_PayPastApproved_ACC,#MainContent_lnk_FuelPastApproved_ACC  {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_HRLeaveInbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_attendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_leavereport {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_leaveParametersmst {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+#MainContent_lnk_leaveParametersmst1 {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+/*added  for reimbursment report*/
+#MainContent_lnk_reimbursmentReport {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0% 2% 4% 0%;
+}
+.upload {
+    width: 100% !important;
+}
+
+#MainContent_dgLeaveBalance {
+    width: 100% !important;
+}
+
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+.taskparentclasskkk {
+    width: 32.6% !important;
+}
+/*#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -504px !important;
+}*/
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -380px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -380px !important;
+}
+.checkboxspan {
+    margin: 0px 0px 0px -368px !important;
+}
+#MainContent_txtlocation{
+    margin: 4px 0 0 186px !important;
+}
+#MainContent_txtdepartmentsearch{
+    margin: 4px 0 0 372px !important;
+}
+#MainContent_txtemployee{
+    margin: 4px 0 0 431px !important;
+}
+.hodcal{
+	width: 15% !important;
+	position: absolute !important;
+    top: 175px  !important;
+	right: 3px !important;
+	/*margin: -46px 0 0 708px !important;*/
+}
+/*#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -504px !important;
+}*/
+/*.checkboxspan {
+    margin: 0px 0px 0px -493px !important;
+}*/
+/*.checkboxspan {
+    margin: 0px 0px 0px -94px !important;
+}*/
+.Approver {
+    /*width: 36.5% !important;*/
+    width: 72% !important;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_attendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+    }
+
+
+#MainContent_lnk_CreateSelfAssessment {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_SelfAssessment {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_PerformanceRevList
+{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_RecommendationList {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_TeamCalendar,#MainContent_lnkempLeaveRpt,#MainContent_lnk_viewAppraisalForm,#MainContent_lnk_HODTEAM {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    margin:0% 2% 0% 0%;
+    padding: 1% 1%;
+    width: 40% !important;
+}
+#MainContent_lnk_mng_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveinbox,#MainContent_lnk_lnkIbox_mobCOS,#MainContent_lnk_MobACC,#MainContent_lnk_PayACC,#MainContent_lnk_MobCFO,#MainContent_lnk_PayCFO,#MainContent_lnk_COSFuel,#MainContent_lnk_ACCFuel,#MainContent_lnk_approverFuleInbox,#MainContent_lnk_approverPaymentInbox,#MainContent_lnk_MobPastApproved_ACC,#MainContent_lnk_PayPastApproved_ACC,#MainContent_lnk_FuelPastApproved_ACC {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_HRLeaveInbox {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_HRAttendanceInbox {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leavereport {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveParametersmst {
+ 
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveParametersmst1 {
+ 
+     /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+/*added  for reimbursment report*/
+MainContent_lnk_reimbursmentReport {
+ 
+     /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+
+#MainContent_lnk_reimbursmentReport_1 {
+  /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_reimbursmentReport_2{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_reimbursmentReport_3 {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+   padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+
+
+.aaa {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -10px 30% 13px 0 !important;
+    
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -10px 30% 13px 0 !important;
+    
+}
+.leavegrid a {
+    margin: -44px 30% 0 0 !important;
+}
+.manage_grid a {
+    margin: -44px 30% 0 0 !important;
+}
+}
+ /*@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+.Approver {
+    width: 72% !important;
+}
+.taskparentclasskkk {
+    width: 29.6% !important;
+}
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -504px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -504px !important;
+}
+.checkboxspan {
+    margin: 0px 0px 0px -493px !important;
+}
+ }*/
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) {
+/* .hodcal{
+	    margin: -45px 0 0 710px !important;
+} */
+ }
+
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+.taskparentclasskkk {
+    width: 32.6% !important;
+}
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -109px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -109px !important;
+}
+.checkboxspan {
+    margin: 0px 0px 0px -94px !important;
+}
+.Approver {
+
+    width: 72% !important;
+}
+#MainContent_lnk_mng_Attendancereg {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_attendanceinbox {
+      background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+    }
+
+
+#MainContent_lnk_CreateSelfAssessment {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_SelfAssessment {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_PerformanceRevList
+{
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_mng_RecommendationList {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_TeamCalendar,#MainContent_lnkempLeaveRpt {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_Attendancereg {
+    background: #febf39;
+    margin:0% 2% 0% 0%;
+    padding: 1% 1%;
+    width: 40% !important;
+}
+#MainContent_lnk_mng_leaverequest {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveinbox,#MainContent_lnk_lnkIbox_mobCOS,#MainContent_lnk_MobACC,#MainContent_lnk_PayACC,#MainContent_lnk_MobCFO,#MainContent_lnk_PayCFO,#MainContent_lnk_COSFuel,#MainContent_lnk_ACCFuel,#MainContent_lnk_approverFuleInbox,#MainContent_lnk_approverPaymentInbox,#MainContent_lnk_MobPastApproved_ACC,#MainContent_lnk_PayPastApproved_ACC,#MainContent_lnk_FuelPastApproved_ACC {
+ background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_HRLeaveInbox {
+ background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_HRAttendanceInbox {
+ background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leavereport {
+ background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveParametersmst {
+ 
+     background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_leaveParametersmst1 {
+ 
+     background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+MainContent_lnk_reimbursmentReport {
+ 
+     background: #febf39;
+     padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+
+#MainContent_lnk_reimbursmentReport_1 {
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_reimbursmentReport_2{
+    background: #febf39;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+#MainContent_lnk_reimbursmentReport_3 {
+    background: #febf39;
+   padding: 1% 1%;
+    width: 40% !important;
+    margin:0% 2% 0% 0%;
+}
+
+
+.aaa {
+    background: #febf39;
+    padding: 9px 7px;
+    margin: -10px 30% 13px 0 !important;
+    color: #000 !important;
+}
+.aaab {
+    background: #febf39;
+    padding: 9px 7px;
+    margin: -10px 30% 13px 0 !important;
+    color: #000 !important;
+}
+.leavegrid a {
+    margin: -44px 30% 0 0 !important;
+}
+.manage_grid a {
+    margin: -44px 30% 0 0 !important;
+}
+}*/
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+/*.fordate {
+    float: right !important;
+    margin: -9.3% 54% 0 0 !important;
+}
+      .Reason {
+    float: right;
+    margin: -9.3% 55% 0 0 !important;
+    width: 159px !important;
+}*/
+.Approver {
+    width: 72% !important;
+}
+.taskparentclasskkk {
+    width: 29.6% !important;
+}
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -504px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -504px !important;
+}
+.checkboxspan {
+    margin: 0px 0px 0px -493px !important;
+}
+/*#MainContent_txtlocation{
+    margin: 4px 0 0 186px !important;
+}
+#MainContent_txtdepartmentsearch{
+    margin: 4px 0 0 372px !important;
+}
+#MainContent_txtemployee{
+    margin: 4px 0 0 431px !important;
+}
+.hodcal{
+	    margin: -60px 0 0 850px !important;
+}*/
+ }
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
+/*.fordate {
+    float: right !important;
+    margin: -9.3% 54% 0 0 !important;
+}
+      .Reason {
+    float: right;
+    margin: -9.3% 55% 0 0 !important;
+    width: 159px !important;
+}*/
+.Approver {
+    width: 72% !important;
+}
+.taskparentclasskkk {
+    width: 29.6% !important;
+}
+#MainContent_chkRevieweeAgree {
+    margin: 0px 0 0 -504px !important;
+}
+#MainContent_chkRevieweeDisAgree {
+    margin: 0px 0 0 -504px !important;
+}
+.checkboxspan {
+    margin: 0px 0px 0px -493px !important;
+}
+/* .hodcal{
+	    margin: -60px 0 0 800px !important;
+} */
+ }
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 85% !important;
+}
+input[type="file"] {
+    max-width: 85% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+    height: 18px;
+    left: 10px;
+    position: relative;
+    top: -39px;
+    vertical-align: sub;
+    width: 18px;
+    float: left;
+}
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 960px) {
+/*.Reason {
+    float: right;
+    margin: -11.4% 56.4% 0 0 !important;
+    width: 117px !important;
+}*/
+}
+
+@media only screen and (min-device-width : 412px) and (max-device-width : 732px) {
+
+    input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 87% !important;
+}
+}

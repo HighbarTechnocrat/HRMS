@@ -1,0 +1,221 @@
+﻿select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+
+.edit-contact > ul > li {
+    display: inline-block;
+    margin-right: 0%;
+}
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+    height: 18px;
+    left: 8px;
+    position: relative;
+    top: -29px;
+    vertical-align: sub;
+    width: 18px;
+}
+.taskparentclass {
+    width: 32% !important;
+}
+.inter {
+    width: 363px !important;
+}
+#MainContent_Upl_leavetype {
+    width: 91% !important;
+}
+.trvlExp_Approver {
+    width: 33.5% !important;
+}
+/*.trvlExp_inter {
+    margin: 0 0 0 2%;
+}*/
+.Approver {
+    width: 33% !important;
+}
+input[type=file] {
+    max-width: 80% !important;
+}
+#MainContent_trvlExp_accmo_btn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 2px 12px;
+}
+#MainContent_btnExpTra_Details {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 4px 12px;
+}
+#MainContent_trvlExp_localbtn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3px 7px;
+}
+#MainContent_lnkExpeseDetails {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3px 7px;
+}
+.trvlExp_Reason {
+    padding: 1% 0 0 0;
+}
+.trvlExp_Advances {
+    padding: 1% 0 0 0;
+}
+.trvlExp_Accomodation,.trvlExp_local {
+    padding: 1% 0;
+}
+.trvlExp_Savebtndiv {
+    text-align: center;
+}
+#MainContent_trvlExp_btnSave {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 5px 12px;
+}
+
+#MainContent_trvlExpExp_btnBack {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 5px 12px;
+}
+
+.trvl_Approver {
+      width: 32% !important;
+}
+.trvl_inter {
+    width: 32% !important;
+}
+
+.trvlExp_detail {
+    padding: 0 0 1% 0;
+}
+#MainContent_lstApprover {
+    overflow: hidden;
+}
+#MainContent_lstIntermediate {
+    overflow: hidden;
+} 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.trvlExp_grid {
+    overflow: scroll;
+}
+.trvlExp_Approver {
+    width: 100% !important;
+}
+.edit-contact input {
+    padding-left: 30px !important;
+    width: 86%;
+}
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+input[type="file"] {
+    max-width: 83% !important;
+}
+.trvl_inter {
+    width: 100% !important;
+}
+.trvl_Approver {
+    width: 100% !important;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)  {
+    .edit-contact > ul > li {
+    display: inline-block;
+    margin-right: 10% !important;
+}
+    input[type=file] {
+    max-width: 100% !important;
+}
+         .trvlExp_Approver {
+    width: 43.5% !important;
+}
+   .trvlExp_inter {
+    width: 43% !important;
+}
+   .trvl_Approver {
+    width: 49% !important;
+}
+.trvl_inter {
+    width: 49% !important;
+}
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+     /*.trvlExp_Approver {
+    width: 43.5% !important;
+}*/
+   
+     /*.trvlExp_inter {
+    margin: 0px 0 0 2% !important;
+}*/
+     .trvl_inter {
+    width: 45% !important;
+}
+.trvl_Approver {
+    width: 45% !important;
+}
+ }
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 85% !important;
+}
+input[type="file"] {
+    max-width: 85% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /*.trvlExp_Approver {
+    width: 33.5% !important;
+}*/
+    .edit-contact > ul > li {
+    display: inline-block;
+    margin-right: 0% !important;
+    width: 36%;
+}
+
+}
+
+@media only screen and (min-device-width : 412px) and (max-device-width : 732px) {
+
+    input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 87% !important;
+}
+}
+.trvlExp_Approver {
+    width: 34.5% !important;
+    margin: 0 2% 0 0 !important;
+}
+.trvlExp_inter {
+    width: 33% !important;
+}
+input[type=file] {
+    max-width: 80% !important;
+}

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="vscb_powo_contents" targetNamespace="http://tempuri.org/vscb_powo_contents.xsd" xmlns:mstns="http://tempuri.org/vscb_powo_contents.xsd" xmlns="http://tempuri.org/vscb_powo_contents.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="vscb_powo_contents" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="vscb_powo_contents" msprop:Generator_UserDSName="vscb_powo_contents">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="powocontent" msprop:Generator_TableClassName="powocontentDataTable" msprop:Generator_TableVarName="tablepowocontent" msprop:Generator_TablePropName="powocontent" msprop:Generator_RowDeletingName="powocontentRowDeleting" msprop:Generator_RowChangingName="powocontentRowChanging" msprop:Generator_RowEvHandlerName="powocontentRowChangeEventHandler" msprop:Generator_RowDeletedName="powocontentRowDeleted" msprop:Generator_UserTableName="powocontent" msprop:Generator_RowChangedName="powocontentRowChanged" msprop:Generator_RowEvArgName="powocontentRowChangeEvent" msprop:Generator_RowClassName="powocontentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="powocontent" msprop:Generator_ColumnVarNameInTable="columnpowocontent" msprop:Generator_ColumnPropNameInRow="powocontent" msprop:Generator_ColumnPropNameInTable="powocontentColumn" msprop:Generator_UserColumnName="powocontent" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="powodetail" msprop:Generator_TableClassName="powodetailDataTable" msprop:Generator_TableVarName="tablepowodetail" msprop:Generator_TablePropName="powodetail" msprop:Generator_RowDeletingName="powodetailRowDeleting" msprop:Generator_RowChangingName="powodetailRowChanging" msprop:Generator_RowEvHandlerName="powodetailRowChangeEventHandler" msprop:Generator_RowDeletedName="powodetailRowDeleted" msprop:Generator_UserTableName="powodetail" msprop:Generator_RowChangedName="powodetailRowChanged" msprop:Generator_RowEvArgName="powodetailRowChangeEvent" msprop:Generator_RowClassName="powodetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PONumber" msprop:Generator_ColumnVarNameInTable="columnPONumber" msprop:Generator_ColumnPropNameInRow="PONumber" msprop:Generator_ColumnPropNameInTable="PONumberColumn" msprop:Generator_UserColumnName="PONumber" type="xs:string" minOccurs="0" />
+              <xs:element name="PODate" msprop:Generator_ColumnVarNameInTable="columnPODate" msprop:Generator_ColumnPropNameInRow="PODate" msprop:Generator_ColumnPropNameInTable="PODateColumn" msprop:Generator_UserColumnName="PODate" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorCode" msprop:Generator_ColumnVarNameInTable="columnVendorCode" msprop:Generator_ColumnPropNameInRow="VendorCode" msprop:Generator_ColumnPropNameInTable="VendorCodeColumn" msprop:Generator_UserColumnName="VendorCode" type="xs:string" minOccurs="0" />
+              <xs:element name="vendorName" msprop:Generator_ColumnVarNameInTable="columnvendorName" msprop:Generator_ColumnPropNameInRow="vendorName" msprop:Generator_ColumnPropNameInTable="vendorNameColumn" msprop:Generator_UserColumnName="vendorName" type="xs:string" minOccurs="0" />
+              <xs:element name="GSTIN_NO" msprop:Generator_ColumnVarNameInTable="columnGSTIN_NO" msprop:Generator_ColumnPropNameInRow="GSTIN_NO" msprop:Generator_ColumnPropNameInTable="GSTIN_NOColumn" msprop:Generator_UserColumnName="GSTIN_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="vendor_address" msprop:Generator_ColumnVarNameInTable="columnvendor_address" msprop:Generator_ColumnPropNameInRow="vendor_address" msprop:Generator_ColumnPropNameInTable="vendor_addressColumn" msprop:Generator_UserColumnName="vendor_address" type="xs:string" minOccurs="0" />
+              <xs:element name="powoterms" msprop:Generator_ColumnVarNameInTable="columnpowoterms" msprop:Generator_ColumnPropNameInRow="powoterms" msprop:Generator_ColumnPropNameInTable="powotermsColumn" msprop:Generator_UserColumnName="powoterms" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="powo_milestones" msprop:Generator_TableClassName="powo_milestonesDataTable" msprop:Generator_TableVarName="tablepowo_milestones" msprop:Generator_TablePropName="powo_milestones" msprop:Generator_RowDeletingName="powo_milestonesRowDeleting" msprop:Generator_RowChangingName="powo_milestonesRowChanging" msprop:Generator_RowEvHandlerName="powo_milestonesRowChangeEventHandler" msprop:Generator_RowDeletedName="powo_milestonesRowDeleted" msprop:Generator_UserTableName="powo_milestones" msprop:Generator_RowChangedName="powo_milestonesRowChanged" msprop:Generator_RowEvArgName="powo_milestonesRowChangeEvent" msprop:Generator_RowClassName="powo_milestonesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Srno" msprop:Generator_ColumnVarNameInTable="columnSrno" msprop:Generator_ColumnPropNameInRow="Srno" msprop:Generator_ColumnPropNameInTable="SrnoColumn" msprop:Generator_UserColumnName="Srno" type="xs:string" minOccurs="0" />
+              <xs:element name="MilestoneName" msprop:Generator_ColumnVarNameInTable="columnMilestoneName" msprop:Generator_ColumnPropNameInRow="MilestoneName" msprop:Generator_ColumnPropNameInTable="MilestoneNameColumn" msprop:Generator_UserColumnName="MilestoneName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:double" minOccurs="0" />
+              <xs:element name="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" msprop:Generator_UserColumnName="Rate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="milestonebaseAmt" msprop:Generator_ColumnVarNameInTable="columnmilestonebaseAmt" msprop:Generator_ColumnPropNameInRow="milestonebaseAmt" msprop:Generator_ColumnPropNameInTable="milestonebaseAmtColumn" msprop:Generator_UserColumnName="milestonebaseAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IGST_Per" msprop:Generator_ColumnVarNameInTable="columnIGST_Per" msprop:Generator_ColumnPropNameInRow="IGST_Per" msprop:Generator_ColumnPropNameInTable="IGST_PerColumn" msprop:Generator_UserColumnName="IGST_Per" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SGST_Per" msprop:Generator_ColumnVarNameInTable="columnSGST_Per" msprop:Generator_ColumnPropNameInRow="SGST_Per" msprop:Generator_ColumnPropNameInTable="SGST_PerColumn" msprop:Generator_UserColumnName="SGST_Per" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CGST_Per" msprop:Generator_ColumnVarNameInTable="columnCGST_Per" msprop:Generator_ColumnPropNameInRow="CGST_Per" msprop:Generator_ColumnPropNameInTable="CGST_PerColumn" msprop:Generator_UserColumnName="CGST_Per" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IGST_Amt" msprop:Generator_ColumnVarNameInTable="columnIGST_Amt" msprop:Generator_ColumnPropNameInRow="IGST_Amt" msprop:Generator_ColumnPropNameInTable="IGST_AmtColumn" msprop:Generator_UserColumnName="IGST_Amt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SGST_Amt" msprop:Generator_ColumnVarNameInTable="columnSGST_Amt" msprop:Generator_ColumnPropNameInRow="SGST_Amt" msprop:Generator_ColumnPropNameInTable="SGST_AmtColumn" msprop:Generator_UserColumnName="SGST_Amt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CGST_Amt" msprop:Generator_ColumnVarNameInTable="columnCGST_Amt" msprop:Generator_ColumnPropNameInRow="CGST_Amt" msprop:Generator_ColumnPropNameInTable="CGST_AmtColumn" msprop:Generator_UserColumnName="CGST_Amt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MilestoneAmtWithTax" msprop:Generator_ColumnVarNameInTable="columnMilestoneAmtWithTax" msprop:Generator_ColumnPropNameInRow="MilestoneAmtWithTax" msprop:Generator_ColumnPropNameInTable="MilestoneAmtWithTaxColumn" msprop:Generator_UserColumnName="MilestoneAmtWithTax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Milestone_due_date" msprop:Generator_ColumnVarNameInTable="columnMilestone_due_date" msprop:Generator_ColumnPropNameInRow="Milestone_due_date" msprop:Generator_ColumnPropNameInTable="Milestone_due_dateColumn" msprop:Generator_UserColumnName="Milestone_due_date" type="xs:string" minOccurs="0" />
+              <xs:element name="stype" msprop:Generator_ColumnVarNameInTable="columnstype" msprop:Generator_ColumnPropNameInRow="stype" msprop:Generator_ColumnPropNameInTable="stypeColumn" msprop:Generator_UserColumnName="stype" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="powo_Amt_inwords" msprop:Generator_TableClassName="powo_Amt_inwordsDataTable" msprop:Generator_TableVarName="tablepowo_Amt_inwords" msprop:Generator_TablePropName="powo_Amt_inwords" msprop:Generator_RowDeletingName="powo_Amt_inwordsRowDeleting" msprop:Generator_RowChangingName="powo_Amt_inwordsRowChanging" msprop:Generator_RowEvHandlerName="powo_Amt_inwordsRowChangeEventHandler" msprop:Generator_RowDeletedName="powo_Amt_inwordsRowDeleted" msprop:Generator_UserTableName="powo_Amt_inwords" msprop:Generator_RowChangedName="powo_Amt_inwordsRowChanged" msprop:Generator_RowEvArgName="powo_Amt_inwordsRowChangeEvent" msprop:Generator_RowClassName="powo_Amt_inwordsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AmountinWords" msprop:Generator_ColumnVarNameInTable="columnAmountinWords" msprop:Generator_ColumnPropNameInRow="AmountinWords" msprop:Generator_ColumnPropNameInTable="AmountinWordsColumn" msprop:Generator_UserColumnName="AmountinWords" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWO_Approvers" msprop:Generator_TableClassName="POWO_ApproversDataTable" msprop:Generator_TableVarName="tablePOWO_Approvers" msprop:Generator_TablePropName="POWO_Approvers" msprop:Generator_RowDeletingName="POWO_ApproversRowDeleting" msprop:Generator_RowChangingName="POWO_ApproversRowChanging" msprop:Generator_RowEvHandlerName="POWO_ApproversRowChangeEventHandler" msprop:Generator_RowDeletedName="POWO_ApproversRowDeleted" msprop:Generator_UserTableName="POWO_Approvers" msprop:Generator_RowChangedName="POWO_ApproversRowChanged" msprop:Generator_RowEvArgName="POWO_ApproversRowChangeEvent" msprop:Generator_RowClassName="POWO_ApproversRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Rec_Date" msprop:Generator_ColumnVarNameInTable="columnRec_Date" msprop:Generator_ColumnPropNameInRow="Rec_Date" msprop:Generator_ColumnPropNameInTable="Rec_DateColumn" msprop:Generator_UserColumnName="Rec_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Rel_Date" msprop:Generator_ColumnVarNameInTable="columnRel_Date" msprop:Generator_ColumnPropNameInRow="Rel_Date" msprop:Generator_ColumnPropNameInTable="Rel_DateColumn" msprop:Generator_UserColumnName="Rel_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWOPreparedBy" msprop:Generator_TableClassName="POWOPreparedByDataTable" msprop:Generator_TableVarName="tablePOWOPreparedBy" msprop:Generator_RowChangedName="POWOPreparedByRowChanged" msprop:Generator_TablePropName="POWOPreparedBy" msprop:Generator_RowDeletingName="POWOPreparedByRowDeleting" msprop:Generator_RowChangingName="POWOPreparedByRowChanging" msprop:Generator_RowEvHandlerName="POWOPreparedByRowChangeEventHandler" msprop:Generator_RowDeletedName="POWOPreparedByRowDeleted" msprop:Generator_RowClassName="POWOPreparedByRow" msprop:Generator_UserTableName="POWOPreparedBy" msprop:Generator_RowEvArgName="POWOPreparedByRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Created_On" msprop:Generator_ColumnVarNameInTable="columnCreated_On" msprop:Generator_ColumnPropNameInRow="Created_On" msprop:Generator_ColumnPropNameInTable="Created_OnColumn" msprop:Generator_UserColumnName="Created_On" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedLabel" msprop:Generator_ColumnVarNameInTable="columnApprovedLabel" msprop:Generator_ColumnPropNameInRow="ApprovedLabel" msprop:Generator_ColumnPropNameInTable="ApprovedLabelColumn" msprop:Generator_UserColumnName="ApprovedLabel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWOCheckedBy" msprop:Generator_TableClassName="POWOCheckedByDataTable" msprop:Generator_TableVarName="tablePOWOCheckedBy" msprop:Generator_RowChangedName="POWOCheckedByRowChanged" msprop:Generator_TablePropName="POWOCheckedBy" msprop:Generator_RowDeletingName="POWOCheckedByRowDeleting" msprop:Generator_RowChangingName="POWOCheckedByRowChanging" msprop:Generator_RowEvHandlerName="POWOCheckedByRowChangeEventHandler" msprop:Generator_RowDeletedName="POWOCheckedByRowDeleted" msprop:Generator_RowClassName="POWOCheckedByRow" msprop:Generator_UserTableName="POWOCheckedBy" msprop:Generator_RowEvArgName="POWOCheckedByRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Rel_Date" msprop:Generator_ColumnVarNameInTable="columnRel_Date" msprop:Generator_ColumnPropNameInRow="Rel_Date" msprop:Generator_ColumnPropNameInTable="Rel_DateColumn" msprop:Generator_UserColumnName="Rel_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedLabel" msprop:Generator_ColumnVarNameInTable="columnApprovedLabel" msprop:Generator_ColumnPropNameInRow="ApprovedLabel" msprop:Generator_ColumnPropNameInTable="ApprovedLabelColumn" msprop:Generator_UserColumnName="ApprovedLabel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWOApprovedByHOD" msprop:Generator_TableClassName="POWOApprovedByHODDataTable" msprop:Generator_TableVarName="tablePOWOApprovedByHOD" msprop:Generator_RowChangedName="POWOApprovedByHODRowChanged" msprop:Generator_TablePropName="POWOApprovedByHOD" msprop:Generator_RowDeletingName="POWOApprovedByHODRowDeleting" msprop:Generator_RowChangingName="POWOApprovedByHODRowChanging" msprop:Generator_RowEvHandlerName="POWOApprovedByHODRowChangeEventHandler" msprop:Generator_RowDeletedName="POWOApprovedByHODRowDeleted" msprop:Generator_RowClassName="POWOApprovedByHODRow" msprop:Generator_UserTableName="POWOApprovedByHOD" msprop:Generator_RowEvArgName="POWOApprovedByHODRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Rel_Date" msprop:Generator_ColumnVarNameInTable="columnRel_Date" msprop:Generator_ColumnPropNameInRow="Rel_Date" msprop:Generator_ColumnPropNameInTable="Rel_DateColumn" msprop:Generator_UserColumnName="Rel_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedLabel" msprop:Generator_ColumnVarNameInTable="columnApprovedLabel" msprop:Generator_ColumnPropNameInRow="ApprovedLabel" msprop:Generator_ColumnPropNameInTable="ApprovedLabelColumn" msprop:Generator_UserColumnName="ApprovedLabel" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWOApprovedBY_COO" msprop:Generator_TableClassName="POWOApprovedBY_COODataTable" msprop:Generator_TableVarName="tablePOWOApprovedBY_COO" msprop:Generator_RowChangedName="POWOApprovedBY_COORowChanged" msprop:Generator_TablePropName="POWOApprovedBY_COO" msprop:Generator_RowDeletingName="POWOApprovedBY_COORowDeleting" msprop:Generator_RowChangingName="POWOApprovedBY_COORowChanging" msprop:Generator_RowEvHandlerName="POWOApprovedBY_COORowChangeEventHandler" msprop:Generator_RowDeletedName="POWOApprovedBY_COORowDeleted" msprop:Generator_RowClassName="POWOApprovedBY_COORow" msprop:Generator_UserTableName="POWOApprovedBY_COO" msprop:Generator_RowEvArgName="POWOApprovedBY_COORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Rel_Date" msprop:Generator_ColumnVarNameInTable="columnRel_Date" msprop:Generator_ColumnPropNameInRow="Rel_Date" msprop:Generator_ColumnPropNameInTable="Rel_DateColumn" msprop:Generator_UserColumnName="Rel_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedLabel" msprop:Generator_ColumnVarNameInTable="columnApprovedLabel" msprop:Generator_ColumnPropNameInRow="ApprovedLabel" msprop:Generator_ColumnPropNameInTable="ApprovedLabelColumn" msprop:Generator_UserColumnName="ApprovedLabel" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="POWOApprovedBY_CEO" msprop:Generator_TableClassName="POWOApprovedBY_CEODataTable" msprop:Generator_TableVarName="tablePOWOApprovedBY_CEO" msprop:Generator_RowChangedName="POWOApprovedBY_CEORowChanged" msprop:Generator_TablePropName="POWOApprovedBY_CEO" msprop:Generator_RowDeletingName="POWOApprovedBY_CEORowDeleting" msprop:Generator_RowChangingName="POWOApprovedBY_CEORowChanging" msprop:Generator_RowEvHandlerName="POWOApprovedBY_CEORowChangeEventHandler" msprop:Generator_RowDeletedName="POWOApprovedBY_CEORowDeleted" msprop:Generator_RowClassName="POWOApprovedBY_CEORow" msprop:Generator_UserTableName="POWOApprovedBY_CEO" msprop:Generator_RowEvArgName="POWOApprovedBY_CEORowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Rel_Date" msprop:Generator_ColumnVarNameInTable="columnRel_Date" msprop:Generator_ColumnPropNameInRow="Rel_Date" msprop:Generator_ColumnPropNameInTable="Rel_DateColumn" msprop:Generator_UserColumnName="Rel_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="ApprovedLabel" msprop:Generator_ColumnVarNameInTable="columnApprovedLabel" msprop:Generator_ColumnPropNameInRow="ApprovedLabel" msprop:Generator_ColumnPropNameInTable="ApprovedLabelColumn" msprop:Generator_UserColumnName="ApprovedLabel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

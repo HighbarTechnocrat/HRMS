@@ -1,0 +1,1 @@
+jQuery(function (c) { c("#basic-modal-content").modal(), c("#basic-modal .basic").click(function () { return c("#basic-modal-content").modal(), !1 }) });

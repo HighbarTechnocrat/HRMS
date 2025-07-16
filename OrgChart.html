@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--<script src="http://www.google.com/jsapi"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        //google.charts.load('current', { packages: ["orgchart"] });
+        google.load('visualization', '1', { packages: ['table', 'orgchart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function draw() {
+            $.ajax({
+                type: "POST",
+                url: "http://localhost/hrms/OrgService.svc/",
+                data: "{}",
+                dataType: "json",
+                contentType: "application/json",
+                success: function (x, textStatus) {
+                    var data = JSON.parse(x);
+
+                    if ((emp_count = data.length) > 0) {
+                        var l_data_table = new google.visualization.DataTable();
+                        l_data_table.addColumn('string', 'Name');
+                        l_data_table.addColumn('string', 'Manager');
+                        l_data_table.addRows(emp_count);
+
+                        for (i = 0; i < emp_count; i++) {
+                            l_data_table.setCell(i, 0, data[i].name);
+                            l_data_table.setCell(i, 1, data[i].Manger);
+                        }
+
+                        var chart = new google.visualization.OrgChart(document.getElementById('org_div'));
+                        chart.draw(l_data_table, { allowHtml: true });
+
+
+                    }
+                }
+            });
+        }
+
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Name');
+            data.addColumn('string', 'Manager');
+            data.addColumn('string', 'ToolTip');
+
+            // For each orgchart box, provide the name, manager, and tooltip to show.
+            data.addRows([
+              [{ 'v': 'Mike', 'f': 'Mike<div style="color:red; font-style:italic">President</div>' },
+               '', 'The President'],
+              [{ 'v': 'Jim', 'f': 'Jim<div style="color:red; font-style:italic">Vice President</div>' },
+               'Mike', 'VP'],
+              ['Alice', 'Mike', ''],
+              ['Bob', 'Jim', 'Bob Sponge'],
+              ['Carol', 'Bob', '']
+            ]);
+
+            // Create the chart.
+            var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+            // Draw the chart, setting the allowHtml option to true for the tooltips.
+            chart.draw(data, { 'allowHtml': true });
+        }
+    </script>
+</head>
+<body>
+    <div id="chart_div"></div>
+</body>
+</html>

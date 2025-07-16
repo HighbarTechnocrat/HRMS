@@ -1,0 +1,197 @@
+﻿<head>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;            
+        }
+        .style2
+        {
+            height: 20px;
+        }
+        .tdhead
+        {
+            font-weight:bold;
+            min-width:40%;
+        }
+        .tdvalue
+        {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+        .thhead
+        {
+            text-align:center;
+            font-weight:bold;
+            padding:5px;
+            min-width:20%;
+             max-width:30%;
+        }
+        .tdfoot
+        {
+            text-align:center;
+            padding:5px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-width:20%;
+            max-width:30%;
+        }
+    </style>
+</head>
+<div id="maincontainer" style="width:80%;height:auto;margin:20px auto auto auto">
+
+    <div id="logo" style="width:100%;height:80px;text-align:left;">
+        <img alt="" src='ReturnUrl("sitepath")images/logo.png' />
+
+    </div>
+<div> INVOICE</div>
+    <div id="contents" style="width:100%;height:auto;margin-top:20px;">
+        <div id="left" style="float:left;width:80%;">
+       
+            <table class="style1">
+                <tr>
+                    <td class="tdhead">
+                        Order-Id</td>
+                    <td class="tdvalue">
+                     <% =this.orderno %>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="tdhead">
+                        Order-date</td>
+                    <td  class="tdvalue">
+                      <% =this.orderdate %></td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr  <%= this.addflag %>>
+                    <td class="tdhead">
+                        Address</td>
+                    <td  class="tdvalue">
+                       <%= this.username %>,<br />
+            <%= this.shipaddress %></td>
+                </tr>
+                <tr <%= this.addflag %>>
+                    <td class="style2">
+                        &nbsp;</td>
+                    <td class="style2"> 
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="tdhead">
+                        E-Mail</td>
+                    <td  class="tdvalue"> 
+                       <%= this.mailto %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="tdhead" <% =this.gvmflag %> >
+                        Gift Voucher Amount (INR)</td>
+                    <td  class="tdvalue" <% =this.gvmflag %>>
+                      <% =this.gvamt %></td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdhead">
+
+                        Promo Amount <% =this.promotype %>
+                    </td>
+                    <td class="tdvalue">
+                        <% =this.promoamt %>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td class="tdhead">
+                        Order Detail</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table class="style1" border="1">
+                            <tr>
+                                <td class="thhead" style="width:30%;">
+                                    <%= this.packageflaghead %>
+                                </td>
+                    </td>
+                                <td  class="thhead">
+                                    Expiry Date</td>
+                                <td class="thhead">
+                                   Subtotal (INR)</td>
+                                <td class="thhead">
+                                    Grand Total (INR)</td>
+                                <td class="thhead">
+                                    Package Type
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdfoot" style="width:30%;">
+                                    <%= this.packagename %>
+                                </td>
+                                <td class="tdfoot">
+                                  <%= this.validto %>
+           </td>
+                                <td class="tdfoot">
+                                  <%= this.total %></td>
+                                <td class="tdfoot">
+                                 <% =this.grandtotal %></td>
+                                <td class="tdfoot">
+                                    <% =this.packageflag %>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                  <tr>
+                    <td>
+                      </td>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                  <tr>
+                    <td>
+                    </td>
+                    <td>
+                        </td>
+                </tr>
+            </table>
+        
+        </div>
+     </div>
+</div>

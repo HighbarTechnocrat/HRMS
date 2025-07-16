@@ -1,0 +1,12 @@
+Line No :- 540 (ServiceRequestReport_Audit.aspx)
+
+var isCEO = Convert.ToString(hflCEO.Value);
+        if (isCEO == "NO")
+        {
+            ddlDepartment.Items.Insert(0, new ListItem("Select Department", "0")); //updated code
+        }
+        else
+        {
+            ddlDepartment.Items.Insert(0, new ListItem("Select Department", "0")); //updated code
+            ddlDepartment.Items.Insert(1, new ListItem("ALL", "00")); //updated code
+        }

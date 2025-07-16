@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Web.Http;
+
+public class File_Download : ApiController
+{
+    // GET api/<controller>
+    public IEnumerable<string> Get()
+    {
+        return new string[] { "value1", "value2" };
+    }
+
+    // GET api/<controller>/5
+    public string Get(int id)
+    {
+        return "value";
+    }
+
+    // POST api/<controller>
+    public void Post([FromBody]string value)
+    {
+    }
+
+    // PUT api/<controller>/5
+    public void Put(int id, [FromBody]string value)
+    {
+    }
+
+    // DELETE api/<controller>/5
+    public void Delete(int id)
+    {
+    }
+
+    [HttpGet]
+    public HttpResponseMessage DownloadViewFile(string Filepath, string Filename)
+    {
+        HttpResponseMessage httpResponseMessage = new HttpResponseMessage();
+        string myNetworkPath = Filepath + Filename;
+        if (!string.IsNullOrEmpty(myNetworkPath))
+        {
+            var splittedWord = myNetworkPath.Split('\\');
+            var firstWord = Filepath;
+            var secondWord = Filename;
+            try
+            {
+
+                var dataBytes = File.ReadAllBytes(myNetworkPath);
+
+                //adding bytes to memory stream   
+                var dataStream = new MemoryStream(dataBytes);
+
+                httpResponseMessage = Request.CreateResponse(HttpStatusCode.OK);
+                httpResponseMessage.Content = new StreamContent(dataStream);
+                httpResponseMessage.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment");
+                httpResponseMessage.Content.Headers.ContentDisposition.FileName = secondWord;
+                httpResponseMessage.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+            }
+            catch (Exception ex)
+            {
+                string Message = ex.Message.ToString();
+            }
+        }
+        else return Request.CreateResponse(HttpStatusCode.NotFound);
+
+        //}
+        return httpResponseMessage;
+    }
+
+}

@@ -1,0 +1,626 @@
+select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+/*#content-container select {
+    -moz-appearance: none !important;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e8e8e8;
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    color: hsl(0, 0%, 39%);
+    float: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-top: 3px;
+    outline: 0 none;
+    padding: 10px 20px 10px 0;
+    width: 63% !important;
+    height: 83px !important;
+}*/
+input, textarea {
+    /* background: #dae1ed; */
+    /*background: #e8e8e8;*/
+    border-color: #05568b !important;
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin: 4px 15px 15px 0 !important;
+    padding: 6px 15px !important;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea{
+    /*width:100%;*/
+
+}
+
+ #MainContent_btnTra_Details {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ #MainContent_trvl_accmo_btn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ #MainContent_trvl_localbtn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ #MainContent_lnkbtn_expdtls {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ .trvl_Accomodation a {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+	/*margin: 25px !important;*/
+    padding: 6px 17px;
+}
+.aaaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -2% 6% 0% 0% !important;
+    color: #000 !important;
+    float: right;
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -3% 28% 0% 0% !important;
+    color: #000 !important;
+    float: right;
+}
+.leavegrid {
+    margin: 0 0 0 4% !important;
+}
+ .trvL_detail {
+    padding: 0% 0 1% 0;
+}
+
+#MainContent_btnTra_Details{
+    /*margin: 0% 0% 0% 51% !important;*/
+    margin: 0% 0% 0% 0% !important;
+}
+#MainContent_trvl_accmo_btn {
+    /*margin: 0% 0% 0% 47% !important;*/
+    margin: 0% 0% 0% 0% !important;
+}
+#MainContent_trvl_localbtn{
+    /*margin: 0% 0% 0% 53% !important;*/
+    margin: 0% 0% 0% 0% !important;
+}
+#MainContent_lnkbtn_expdtls{
+    /*margin: 0% 0% 0% 39% !important;*/
+    margin: 0% 0% 0% 0% !important;
+}
+.trvl_grid {
+    width: 100% !important;
+}
+#MainContent_trvl_btnSave,#MainContent_btnMod,#MainContent_btnCancel,#MainContent_btnback_mng, #MainContent_btnApprove,#MainContent_btnCorrection,#MainContent_btnReject,#MainContent_btnBack,#MainContent_lnkCalculate,#MainContent_btnApprove_TDCOS,#MainContent_btnApprove_ACC{
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 8px 18px;
+    
+}
+
+.trvl_Approver {
+      width: 83% !important;
+}
+.trvl_inter {
+    width: 83% !important;
+}
+.trvl_Savebtndiv {
+    text-align: center;
+	margin-top: 40px;
+}
+input {
+    border: 1px solid #000 !important;
+}
+#MainContent_lstApprover {
+    overflow: hidden;
+}
+#MainContent_lstIntermediate {
+    overflow: hidden;
+} 
+.edit-contact > ul > li {
+    display: inline-block;
+    margin-right: 0%;
+    width: 36%;
+}
+
+
+input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -153px;
+}
+input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -153px;
+}
+input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    /*Commented by R1 on 27092018 left: -107px;*/
+	left: -124px;	
+}
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    left: -86px;
+}
+span.accmo_test {
+    position: relative;
+    left: 30px;
+    top: -18px;
+}
+span.accmo_test3 {
+    position: relative;
+    left: 328px;
+    margin-top: -97px;
+    display: block;
+    top: -19px;
+    float: left;
+}
+span.accmo_test4 {
+    position: relative;
+    left: 596px;
+    margin-top: -80px;
+    display: block;
+    top: -19px;
+    float: left;
+}
+span.accmo_test2 {
+    position: relative;
+    top: -67px;
+    left: 118px;
+}
+li.Accomodation_location {
+   
+    margin: 0 0 0 0;
+}
+li.Arrangement {
+    position: relative;
+    top: 11px;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+span.accmo_test4 {
+    position: relative;
+    left: 46px;
+    margin-top: -75px;
+    display: block;
+    top: 46px;
+    float: none;
+}
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    left: -155px;
+}
+ span.accmo_test2 {
+    position: relative;
+    top: 0 !important;
+    left: 14.2%;
+}
+
+li.Accomodation_location {
+    margin: 86px 0 0 0;
+}
+span.accmo_test {
+    position: relative;
+    left: 13.7% !important;
+    top: 0 !important;
+}
+input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -155px;
+}
+input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    left: -157px;
+}
+span.accmo_test3 {
+    position: relative;
+    left:15% !important;
+    margin-top: 0 !important;
+    display: block;
+    top: 0 !important;
+    margin-bottom:16px;
+    float:none;
+}
+#MainContent_GridView1 {
+    width: 100% !important;
+}
+#MainContent_GridView2 {
+    width: 100% !important;
+}
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+.trvl_Reason {
+    padding: 1% 0 1% 0;
+}
+.aaaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 0 20% 2% 0% !important;
+    flex: right !important;
+        
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 0 20% 2% 0% !important;
+    flex: right !important;
+        
+}
+.trvL_detail {
+    padding: 1% 0 3% 0;
+}
+.trvl_Accomodation {
+    padding: 2% 0 3% 0;
+}
+.trvl_local {
+    padding: 2% 0 3% 0;
+}
+input[type="file"] {
+    max-width: 83% !important;
+}
+.trvl_inter {
+    width: 100% !important;
+}
+.trvl_Approver {
+    width: 100% !important;
+}
+.trvl_grid {
+    overflow: scroll;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -157px;
+}
+span.accmo_test3 {
+    /*commented by R1 on 27092018 position: relative;
+    left: 18px;
+    margin-top: -37px;
+    display: block;
+    top: -44px;
+    float: left;*/
+	position: relative;
+    left: 343px;
+    margin-top: -37px;
+    display: block;
+    top: -79px;
+    /* float: left; */
+}
+span.accmo_test4 {
+    /*commented by R1 on 27092018 position: relative;
+    left: 254px;
+    margin-top: -80px;
+    display: block;
+    top: -12.3px;
+    float: left;*/
+    position: relative;
+    left: 588px;
+    margin-top: -80px;
+    display: block;
+    top: -48.3px;
+    /* float: left; */	
+}
+span.accmo_test2 {
+    position: relative;
+    top: -67px;
+    /*Commented by R1 on 27092018 left: 260px;*/
+	left:117px;
+}
+span.accmo_test {
+    position: relative;
+    left: 18px;
+    top: -18px;
+}
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    /*Commented by R1 on 27092018 left: -74px;*/
+	left: -87px;
+}
+#MainContent_btnTra_Details, #MainContent_trvl_accmo_btn, #MainContent_trvl_localbtn,#MainContent_lnkbtn_expdtls {
+    /*margin: 0% 0% 0% 50% !important;*/
+}
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    /*width: 100% !important;*/
+    height: 20px;
+}
+.trvl_type {
+    width: 36% !important;
+}
+.trvl_Approver {
+    width: 83% !important;
+}
+.trvl_inter {
+    width: 83% !important;
+}
+    .taskparentclasskkk {
+    width: 40% !important;
+}
+.aaab {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -10px 30% 13px 0 !important;
+    color: #000 !important;
+}
+.aaaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -2% 6% 0% 0% !important;
+    color: #000 !important;
+}
+.leavegrid a {
+    margin: -44px 30% 0 0 !important;
+}
+}
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .trvl_type {
+    width: 36% !important;
+}
+    .taskparentclasskkk {
+    width: 36% !important;
+}
+    /*.trvl_Approver {
+    width: 45% !important;
+}*/
+.trvl_inter {
+    width: 83% !important;
+}
+.trvl_Approver {
+    width: 83% !important;
+}
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 87% !important;
+}
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+
+input[type="file"] {
+    max-width: 87% !important;
+}
+input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -163px ;
+}
+ input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -166px !important;
+}
+ input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    left: -164px;
+}
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    left: -162px;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+
+
+
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -178px;
+}
+    input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -181px !important;
+}
+    input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    left: -179px;
+}
+} 
+
+@media only screen and (min-device-width : 412px) and (max-device-width : 736px) {
+    input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -178px;
+}
+    input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -181px !important;
+}
+    input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    left: -179px;
+}
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    left: -173px;
+}
+} 
+@media only screen and (width:768px) {
+input#MainContent_rdoOwnArgmnet {
+    position: relative;
+    top: 30px;
+    left: -83px;
+}
+    span.accmo_test {
+    position: relative;
+    left: 11% !important;
+    top: -19px;
+}
+    input#MainContent_rdoAccomodation {
+    position: relative;
+    top: 30px;
+    left: -132px !important;
+}
+   span.accmo_test3 {
+    position: relative;
+    left: 12% !important;
+    margin-top: -28px;
+    display: block;
+    top: -49px;
+}
+span.accmo_test4 {
+    position: relative;
+    left: 272px;
+    margin-top: -80px;
+    display: block;
+    top: -19px;
+    float: left;
+}
+    input#MainContent_rdoFood {
+    position: relative;
+    top: 29px;
+    left: -134px;
+}
+span.accmo_test2 {
+    position: relative;
+    top: -67px;
+    left: 119%;
+}
+    input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    left: -117px;
+}
+}
+@media only screen and (width:1280px) {
+	
+    input#MainContent_rdoAccomodation {
+        position: relative;
+        top: 30px;
+        left: -207px;
+    }
+span.accmo_test2 {
+    /*commented by R1 on 27092018 position: relative;
+    top: -67px;
+    left: 20%;*/
+    position: relative;
+    top: -67px;
+    left: 127px;	
+}
+span.accmo_test4 {
+    /*commented by R1 on 27092018 position: relative;
+    left: 74px;
+    margin-top: -80px;
+    display: block;
+    top: -1px;
+    float: left;*/
+    position: relative;
+    left: 625px;
+    margin-top: -80px;
+    display: block;
+    top: -68px;
+    /* float: left; */	
+}
+input#MainContent_rdoFood {
+    /*commented by R1 on 27092018 position: relative;
+    top: 29px;
+    left: -12px;*/
+	position: relative;
+    top: 29px;
+    left: -198px;
+}
+span.accmo_test3 {
+    /*commented by R1 on 27092018 position: relative;
+    left: 7%;
+    margin-top: -17px;
+    display: block;
+    top: -46px;
+    float: left;*/
+	    position: relative;
+    left: 357px;
+    margin-top: -17px;
+    display: block;
+    top: -99px;
+    /* float: left; */
+}
+    input#MainContent_rdoFoodAccomodation {
+    position: relative;
+    top: 30px;
+    /*commented by R1 on 27092018 left: -116px;*/
+	left: -123px;
+}
+    li.Accomodation_location {
+    margin: 0 0 0 0 !important;
+}
+    li.Accomodation_location {
+    margin: 0 0 0 0 !important;
+}
+}

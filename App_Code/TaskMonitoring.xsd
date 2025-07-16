@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TaskMonitoringDS" targetNamespace="http://tempuri.org/TimesheetReportDs.xsd" xmlns:mstns="http://tempuri.org/TimesheetReportDs.xsd" xmlns="http://tempuri.org/TimesheetReportDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sqlconnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sqlconnection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sqlconnection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TaskMonitoringDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TaskMonitoringDS" msprop:Generator_DataSetName="TaskMonitoringDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAuditTrailReport" msprop:Generator_RowEvHandlerName="dtAuditTrailReportRowChangeEventHandler" msprop:Generator_RowDeletedName="dtAuditTrailReportRowDeleted" msprop:Generator_RowDeletingName="dtAuditTrailReportRowDeleting" msprop:Generator_RowEvArgName="dtAuditTrailReportRowChangeEvent" msprop:Generator_TablePropName="dtAuditTrailReport" msprop:Generator_RowChangedName="dtAuditTrailReportRowChanged" msprop:Generator_RowChangingName="dtAuditTrailReportRowChanging" msprop:Generator_TableClassName="dtAuditTrailReportDataTable" msprop:Generator_RowClassName="dtAuditTrailReportRow" msprop:Generator_TableVarName="tabledtAuditTrailReport" msprop:Generator_UserTableName="dtAuditTrailReport">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Task_Reference_ID" msprop:Generator_ColumnPropNameInRow="Task_Reference_ID" msprop:Generator_ColumnPropNameInTable="Task_Reference_IDColumn" msprop:Generator_ColumnVarNameInTable="columnTask_Reference_ID" msprop:Generator_UserColumnName="Task_Reference_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Task_Reference_Date" msprop:Generator_ColumnPropNameInRow="Task_Reference_Date" msprop:Generator_ColumnPropNameInTable="Task_Reference_DateColumn" msprop:Generator_ColumnVarNameInTable="columnTask_Reference_Date" msprop:Generator_UserColumnName="Task_Reference_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Meeting_Discussion_Title" msprop:Generator_ColumnPropNameInRow="Meeting_Discussion_Title" msprop:Generator_ColumnPropNameInTable="Meeting_Discussion_TitleColumn" msprop:Generator_ColumnVarNameInTable="columnMeeting_Discussion_Title" msprop:Generator_UserColumnName="Meeting_Discussion_Title" type="xs:string" minOccurs="0" />
+              <xs:element name="Task_ID" msprop:Generator_ColumnPropNameInRow="Task_ID" msprop:Generator_ColumnPropNameInTable="Task_IDColumn" msprop:Generator_ColumnVarNameInTable="columnTask_ID" msprop:Generator_UserColumnName="Task_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Task_Creation_Date" msprop:Generator_ColumnPropNameInRow="Task_Creation_Date" msprop:Generator_ColumnPropNameInTable="Task_Creation_DateColumn" msprop:Generator_ColumnVarNameInTable="columnTask_Creation_Date" msprop:Generator_UserColumnName="Task_Creation_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Task_Description" msprop:Generator_ColumnPropNameInRow="Task_Description" msprop:Generator_ColumnPropNameInTable="Task_DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnTask_Description" msprop:Generator_UserColumnName="Task_Description" type="xs:string" minOccurs="0" />
+              <xs:element name="TaskExecuter" msprop:Generator_ColumnPropNameInRow="TaskExecuter" msprop:Generator_ColumnPropNameInTable="TaskExecuterColumn" msprop:Generator_ColumnVarNameInTable="columnTaskExecuter" msprop:Generator_UserColumnName="TaskExecuter" type="xs:string" minOccurs="0" />
+              <xs:element name="TaskSupervisor" msprop:Generator_ColumnPropNameInRow="TaskSupervisor" msprop:Generator_ColumnPropNameInTable="TaskSupervisorColumn" msprop:Generator_ColumnVarNameInTable="columnTaskSupervisor" msprop:Generator_UserColumnName="TaskSupervisor" type="xs:string" minOccurs="0" />
+              <xs:element name="Due_Date" msprop:Generator_ColumnPropNameInRow="Due_Date" msprop:Generator_ColumnPropNameInTable="Due_DateColumn" msprop:Generator_ColumnVarNameInTable="columnDue_Date" msprop:Generator_UserColumnName="Due_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="OvershootDays" msprop:Generator_ColumnPropNameInRow="OvershootDays" msprop:Generator_ColumnPropNameInTable="OvershootDaysColumn" msprop:Generator_ColumnVarNameInTable="columnOvershootDays" msprop:Generator_UserColumnName="OvershootDays" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusTitle" msprop:Generator_ColumnPropNameInRow="StatusTitle" msprop:Generator_ColumnPropNameInTable="StatusTitleColumn" msprop:Generator_ColumnVarNameInTable="columnStatusTitle" msprop:Generator_UserColumnName="StatusTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="L_TaskID" msprop:Generator_ColumnPropNameInRow="L_TaskID" msprop:Generator_ColumnPropNameInTable="L_TaskIDColumn" msprop:Generator_ColumnVarNameInTable="columnL_TaskID" msprop:Generator_UserColumnName="L_TaskID" type="xs:string" minOccurs="0" />
+              <xs:element name="L_DueDate" msprop:Generator_ColumnPropNameInRow="L_DueDate" msprop:Generator_ColumnPropNameInTable="L_DueDateColumn" msprop:Generator_ColumnVarNameInTable="columnL_DueDate" msprop:Generator_UserColumnName="L_DueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="L_TaskRemark" msprop:Generator_ColumnPropNameInRow="L_TaskRemark" msprop:Generator_ColumnPropNameInTable="L_TaskRemarkColumn" msprop:Generator_ColumnVarNameInTable="columnL_TaskRemark" msprop:Generator_UserColumnName="L_TaskRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="L_ActionStatus" msprop:Generator_ColumnPropNameInRow="L_ActionStatus" msprop:Generator_ColumnPropNameInTable="L_ActionStatusColumn" msprop:Generator_ColumnVarNameInTable="columnL_ActionStatus" msprop:Generator_UserColumnName="L_ActionStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="L_ActionBy" msprop:Generator_ColumnPropNameInRow="L_ActionBy" msprop:Generator_ColumnPropNameInTable="L_ActionByColumn" msprop:Generator_ColumnVarNameInTable="columnL_ActionBy" msprop:Generator_UserColumnName="L_ActionBy" type="xs:string" minOccurs="0" />
+              <xs:element name="ProjectLocation" msprop:Generator_ColumnPropNameInRow="ProjectLocation" msprop:Generator_ColumnPropNameInTable="ProjectLocationColumn" msprop:Generator_ColumnVarNameInTable="columnProjectLocation" msprop:Generator_UserColumnName="ProjectLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="ClosedDate" msprop:Generator_ColumnPropNameInRow="ClosedDate" msprop:Generator_ColumnPropNameInTable="ClosedDateColumn" msprop:Generator_ColumnVarNameInTable="columnClosedDate" msprop:Generator_UserColumnName="ClosedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="L_ActionOn" msprop:Generator_ColumnPropNameInRow="L_ActionOn" msprop:Generator_ColumnPropNameInTable="L_ActionOnColumn" msprop:Generator_ColumnVarNameInTable="columnL_ActionOn" msprop:Generator_UserColumnName="L_ActionOn" type="xs:string" minOccurs="0" />
+              <xs:element name="DueRequestChangeCount" msprop:Generator_ColumnPropNameInRow="DueRequestChangeCount" msprop:Generator_ColumnPropNameInTable="DueRequestChangeCountColumn" msprop:Generator_ColumnVarNameInTable="columnDueRequestChangeCount" msprop:Generator_UserColumnName="DueRequestChangeCount" type="xs:string" minOccurs="0" />
+              <xs:element name="Due_DateCount" msprop:Generator_ColumnPropNameInRow="Due_DateCount" msprop:Generator_ColumnPropNameInTable="Due_DateCountColumn" msprop:Generator_ColumnVarNameInTable="columnDue_DateCount" msprop:Generator_UserColumnName="Due_DateCount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

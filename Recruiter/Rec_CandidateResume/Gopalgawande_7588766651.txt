@@ -1,0 +1,62 @@
+Name - Vibhuti Acchutrao Tapre
+Bank Name - Janata Sahakari bank Ltd
+Branch Name - Moshi , Pune
+IFSC Code - JSBP0000055
+Account No- 055220100001641
+
+
+
+
+http://localhost/hrms/procs/InterviewerShortList.aspx?ReqID=1
+
+RR.Status_ID=2
+
+interverier , requert, interview 
+
+
+select * from tbl_Employee_Mst where Emp_Code like '00630643%'
+
+Select * from tbl_Rec_RecruitmentReq
+Select * from tbl_Rec_CandidateInfo
+
+Select * from tbl_Rec_InterviewShortListMain
+Select * from tbl_Rec_InterviewShortListDetail
+Select * from tbl_Rec_Interview_CandidateScheduleRound
+Select * from tbl_Rec_OtherFileAttachCanScheduleRound
+Select * from tbl_Rec_Interview_jobJoiningDetail
+Select * from tbl_Rec_mst_InterviewFeedback
+-- update tbl_Rec_CandidateInfo set  BlockBY=null
+
+-- Truncate table tbl_Rec_InterviewShortListMain
+-- Truncate table tbl_Rec_InterviewShortListDetail
+-- Truncate table tbl_Rec_Interview_CandidateScheduleRound
+-- Truncate table tbl_Rec_OtherFileAttachCanScheduleRound
+
+
+send_mailto_Req_Requisition_Next_Approver
+
+DECLARE @count INT;
+SET @count = 1;
+    
+WHILE @count<= 5
+BEGIN
+   PRINT @count
+   SET @count = @count + 1;
+END;
+
+
+
+
+
+
+
+FileName_2021_05_10_154489.csv
+
+
+
+
+
+
+
+
+

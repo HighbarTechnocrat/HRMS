@@ -1,0 +1,30 @@
+
+
+
+
+EmployeeExitAdd
+
+Approver Name
+ DataFormatString="{0:MM/dd/yyyy}"
+
+Payment_Req.aspx
+
+
+,OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+
+Select * from tbl_HRMS_Employment_Type
+Select * from TBL_HRMS_LEAVE_QUOTA
+Select * from tblLeaveTypeMaster
+
+
+
+-- http://localhost/hrms/Login.aspx
+
+
+
+
+
+procs/Timesheet.aspx
+
+
+Vijaykumar Patil

@@ -1,0 +1,51 @@
+ 
+ //Exit Process
+//InboxResignation
+if @qtype='InboxResignations'  
+	     begin
+			select eps.Req_ID,es.Emp_Code,es.Emp_Name,es.emp_location,es.Department,es.Designation,CONVERT(varchar(10),es.emp_doj,105) as doj,es.Emp_Emailaddress,
+		      rd.ResignationID,rd.EmpCode,CONVERT(varchar(10), rd.ResignationDate,103) as ResignationDate,CONVERT(varchar(10), rd.LastWorkingDate,103) as LastWorkingDate,er.Particulars as ResigReason,rd.Remarks,rd.StatusID,
+			rd.[FileName],CONVERT(varchar(10), rd.CreatedOn,103) as ResigSubmittedOn,sm.Request_status as Action
+			FROM tbl_Employee_Mst es left join tbl_ExitProc_ResignationDetails rd on rd.EmpCode=es.Emp_Code
+			left join tbl_HRMS_Exit_Reasons er on er.PID=rd.ReasonID
+			left join tbl_ExitProcApprovalStatus eps on eps.ResignationID=rd.ResignationID
+			left join tbl_ExitProc_StatusMaster sm on sm.Status_id=rd.StatusID
+	        where eps.ApproverEmpCode=@EmpCode and eps.StatusID=1 and rd.StatusID=1
+	     end
+
+
+//Inbox Team Exit
+
+else if @Type='GetTeamExitInterviewList'
+		begin
+			select distinct rsg.ResignationID,em.Emp_Code as 'EmployeeCode',em.Emp_Name 'Employee Name',dpt.Department_Name,em.emp_projectName,CONVERT(varchar(10), rsg.ResignationDate,103) as 'Resignation Date',
+			CONVERT(varchar(10), rsg.LastWorkingDate ,103) as LastWorkingDay,hrs.Particulars as 'Reason Of Resignation',
+			CONVERT(varchar(10), rsg.CreatedOn,103) as 'Resignation submitted on'
+			from tbl_ExitProc_ResignationDetails rsg 
+			left join tbl_Employee_Mst em on rsg.EmpCode=em.EMP_CODE
+			inner join tblDepartmentMaster dpt on dpt.Department_id = em.dept_id
+			left join tbl_HRMS_Exit_Reasons hrs on hrs.PID=rsg.ReasonID
+			inner join tbl_ExitProcSurveyUserDetails exts on rsg.ResignationID=exts.ResignationID
+			left join tbl_Employee_OMStructure om on rsg.EmpCode=om.EMP_CODE and om.APPR_ID=1 
+			where om.A_EMP_CODE=@EmpCode and rsg.StatusID=2
+			--and cast ((DATEADD(DAY,-10, rsg.LastWorkingDate)) as Date) <= cast( GETDATE() as date)
+			and cast ((DATEADD(DAY,-10, rsg.HrReleaseDate)) as Date) <= cast( GETDATE() as date)
+			and rsg.ResignationID not in ( select ResignationID from tbl_ExitProcInterviewUserDetails)
+			
+		end
+
+
+
+//Inbox clearance 
+else if @Type='GetClearanceInbox'
+		begin
+			select distinct rsg.ResignationID,em.Emp_Code as 'EmployeeCode',em.Emp_Name 'Employee Name',dpt.Department_Name,em.emp_projectName,CONVERT(varchar(10), rsg.ResignationDate,103) as 'Resignation Date',
+			CONVERT(varchar(10), rsg.LastWorkingDate ,103) as LastWorkingDay,hrs.Particulars as 'Reason Of Resignation',
+			CONVERT(varchar(10), rsg.CreatedOn,103) as 'Resignation submitted on'
+			from tbl_ExitProcClearanceStatus ext 
+			left join tbl_ExitProc_ResignationDetails rsg on ext.EmpCode=rsg.EmpCode and ext.ResignationID=rsg.ResignationID
+			left join tbl_Employee_Mst em on ext.EmpCode=em.EMP_CODE
+			inner join tblDepartmentMaster dpt on dpt.Department_id = em.dept_id
+			left join tbl_HRMS_Exit_Reasons hrs on hrs.PID=rsg.ReasonID
+			where ext.VerifyBy=@EmpCode and Verify=0 and rsg.StatusID=2
+		end

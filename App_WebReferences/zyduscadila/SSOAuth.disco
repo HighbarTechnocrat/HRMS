@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://portal.hccindia.com/UserManagement/SSOAuth.asmx?wsdl" docRef="http://portal.hccindia.com/UserManagement/SSOAuth.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://portal.hccindia.com/UserManagement/SSOAuth.asmx" xmlns:q1="http://portal.hccindia.com/" binding="q1:SSOAuthSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://portal.hccindia.com/UserManagement/SSOAuth.asmx" xmlns:q2="http://portal.hccindia.com/" binding="q2:SSOAuthSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

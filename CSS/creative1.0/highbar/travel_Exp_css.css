@@ -1,0 +1,246 @@
+﻿select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+/*#content-container select {
+    -moz-appearance: none !important;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e8e8e8;
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    color: hsl(0, 0%, 39%);
+    float: left;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-top: 3px;
+    outline: 0 none;
+    padding: 10px 20px 10px 0;
+    width: 63% !important;
+    height: 83px !important;
+}*/
+input, textarea {
+    /* background: #dae1ed; */
+    /*background: #e8e8e8;*/
+    border-color: #05568b !important;
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin: 4px 15px 15px 0 !important;
+    padding: 6px 15px !important;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea{width:100%;}
+
+ #MainContent_trvl_accmo_btn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 4px 19px;
+}
+ #MainContent_btnTra_Details {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ #MainContent_trvl_accmo_btn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ #MainContent_trvl_localbtn {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 16px;
+}
+ .trvl_Accomodation a {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 6px 17px;
+}
+
+ .trvL_detail {
+    padding: 0% 0 1% 0;
+}
+
+#MainContent_btnTra_Details,#MainContent_trvl_accmo_btn,#MainContent_trvl_localbtn {
+    margin: 0 0 0 30%;
+}
+.trvl_grid {
+    width: 100% !important;
+}
+#MainContent_trvl_btnSave {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 8px 18px;
+    
+}
+
+.trvl_Approver {
+      width: 32% !important;
+}
+.trvl_inter {
+    width: 32% !important;
+}
+.trvl_Savebtndiv {
+    text-align: center;
+}
+input {
+    border: 1px solid #000 !important;
+}
+#MainContent_lstApprover {
+    overflow: hidden;
+}
+#MainContent_lstIntermediate {
+    overflow: hidden;
+} 
+.edit-contact > ul > li {
+    display: inline-block;
+    margin-right: 0% !important;
+    width: 36%;
+}
+.trvl_inter {
+    margin: 0 0 0 4%;
+}
+input[type=file] {
+    max-width: 79% !important;
+}
+.trvl_Approver {
+    width: 33.4% !important;
+}
+.trvl_inter {
+    width: 33.4% !important;
+     margin: 0 0 0 3.4%;
+
+}
+
+   
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+#MainContent_GridView1 {
+    width: 100% !important;
+}
+#MainContent_GridView2 {
+    width: 100% !important;
+}
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+.trvl_Reason {
+    padding: 1% 0 1% 0;
+}
+.trvL_detail {
+    padding: 1% 0 3% 0;
+}
+.trvl_Accomodation {
+    padding: 2% 0 3% 0;
+}
+.trvl_local {
+    padding: 2% 0 3% 0;
+}
+input[type="file"] {
+    max-width: 83% !important;
+}
+.trvl_inter {
+    width: 100% !important;
+}
+.trvl_Approver {
+    width: 100% !important;
+}
+
+.trvl_grid {
+    overflow: scroll;
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #MainContent_btnTra_Details, #MainContent_trvl_accmo_btn, #MainContent_trvl_localbtn {
+    margin: 0 0 0 0;
+}
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 100% !important;
+    height: 20px;
+}
+.trvl_type {
+    width: 36% !important;
+}
+
+
+.trvl_inter {
+    width: 45.4% !important;
+    margin: 0 0 0 4%;
+}
+    .taskparentclasskkk {
+    width: 40% !important;
+}
+
+.trvl_Approver {
+    width: 45% !important;
+}
+input[type=file] {
+    max-width: 100% !important;
+}
+
+
+}
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .trvl_type {
+    width: 36% !important;
+}
+    .taskparentclasskkk {
+    width: 36% !important;
+}
+    /*.trvl_Approver {
+    width: 45% !important;
+}*/
+.trvl_inter {
+    width: 45% !important;
+}
+.trvl_Approver {
+    width: 45% !important;
+}
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 87% !important;
+}
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1366px) {
+
+
+
+}

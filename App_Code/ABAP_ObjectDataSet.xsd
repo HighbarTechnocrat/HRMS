@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ABAP_ObjectDataSet" targetNamespace="http://tempuri.org/ABAP_ObjectDataSet.xsd" xmlns:mstns="http://tempuri.org/ABAP_ObjectDataSet.xsd" xmlns="http://tempuri.org/ABAP_ObjectDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ABAP_ObjectDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ABAP_ObjectDataSet" msprop:Generator_UserDSName="ABAP_ObjectDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ds_MIS_ObjectSummary" msprop:Generator_TableClassName="ds_MIS_ObjectSummaryDataTable" msprop:Generator_TableVarName="tableds_MIS_ObjectSummary" msprop:Generator_TablePropName="ds_MIS_ObjectSummary" msprop:Generator_RowDeletingName="ds_MIS_ObjectSummaryRowDeleting" msprop:Generator_RowChangingName="ds_MIS_ObjectSummaryRowChanging" msprop:Generator_RowEvHandlerName="ds_MIS_ObjectSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="ds_MIS_ObjectSummaryRowDeleted" msprop:Generator_UserTableName="ds_MIS_ObjectSummary" msprop:Generator_RowChangedName="ds_MIS_ObjectSummaryRowChanged" msprop:Generator_RowEvArgName="ds_MIS_ObjectSummaryRowChangeEvent" msprop:Generator_RowClassName="ds_MIS_ObjectSummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EmployeeName" msdata:Caption="SNo" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName" type="xs:int" minOccurs="0" />
+              <xs:element name="ObjectType" msdata:Caption="emp_location" msprop:Generator_ColumnVarNameInTable="columnObjectType" msprop:Generator_ColumnPropNameInRow="ObjectType" msprop:Generator_ColumnPropNameInTable="ObjectTypeColumn" msprop:Generator_UserColumnName="ObjectType" type="xs:string" minOccurs="0" />
+              <xs:element name="Completed" msdata:Caption="EMPLOYMENT" msprop:Generator_ColumnVarNameInTable="columnCompleted" msprop:Generator_ColumnPropNameInRow="Completed" msprop:Generator_ColumnPropNameInTable="CompletedColumn" msprop:Generator_UserColumnName="Completed" type="xs:string" minOccurs="0" />
+              <xs:element name="NotCompleted" msdata:Caption="EMP_CODE" msprop:Generator_ColumnVarNameInTable="columnNotCompleted" msprop:Generator_ColumnPropNameInRow="NotCompleted" msprop:Generator_ColumnPropNameInTable="NotCompletedColumn" msprop:Generator_UserColumnName="NotCompleted" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsEmp_ObjectCompletedDetails" msprop:Generator_TableClassName="dsEmp_ObjectCompletedDetailsDataTable" msprop:Generator_TableVarName="tabledsEmp_ObjectCompletedDetails" msprop:Generator_TablePropName="dsEmp_ObjectCompletedDetails" msprop:Generator_RowDeletingName="dsEmp_ObjectCompletedDetailsRowDeleting" msprop:Generator_RowChangingName="dsEmp_ObjectCompletedDetailsRowChanging" msprop:Generator_RowEvHandlerName="dsEmp_ObjectCompletedDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="dsEmp_ObjectCompletedDetailsRowDeleted" msprop:Generator_UserTableName="dsEmp_ObjectCompletedDetails" msprop:Generator_RowChangedName="dsEmp_ObjectCompletedDetailsRowChanged" msprop:Generator_RowEvArgName="dsEmp_ObjectCompletedDetailsRowChangeEvent" msprop:Generator_RowClassName="dsEmp_ObjectCompletedDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msdata:Caption="SNo" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:int" minOccurs="0" />
+              <xs:element name="ObjectType" msdata:Caption="emp_location" msprop:Generator_ColumnVarNameInTable="columnObjectType" msprop:Generator_ColumnPropNameInRow="ObjectType" msprop:Generator_ColumnPropNameInTable="ObjectTypeColumn" msprop:Generator_UserColumnName="ObjectType" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectName" msdata:Caption="EMPLOYMENT" msprop:Generator_ColumnVarNameInTable="columnObjectName" msprop:Generator_ColumnPropNameInRow="ObjectName" msprop:Generator_ColumnPropNameInTable="ObjectNameColumn" msprop:Generator_UserColumnName="ObjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectDescription" msdata:Caption="EMP_CODE" msprop:Generator_ColumnVarNameInTable="columnObjectDescription" msprop:Generator_ColumnPropNameInRow="ObjectDescription" msprop:Generator_ColumnPropNameInTable="ObjectDescriptionColumn" msprop:Generator_UserColumnName="ObjectDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="RMName" msdata:Caption="emp_name" msprop:Generator_ColumnVarNameInTable="columnRMName" msprop:Generator_ColumnPropNameInRow="RMName" msprop:Generator_ColumnPropNameInTable="RMNameColumn" msprop:Generator_UserColumnName="RMName" type="xs:string" minOccurs="0" />
+              <xs:element name="RMRemarks" msdata:Caption="DOJ" msprop:Generator_ColumnVarNameInTable="columnRMRemarks" msprop:Generator_ColumnPropNameInRow="RMRemarks" msprop:Generator_ColumnPropNameInTable="RMRemarksColumn" msprop:Generator_UserColumnName="RMRemarks" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsEmp_ObjectNotCompletedDetails" msprop:Generator_TableClassName="dsEmp_ObjectNotCompletedDetailsDataTable" msprop:Generator_TableVarName="tabledsEmp_ObjectNotCompletedDetails" msprop:Generator_TablePropName="dsEmp_ObjectNotCompletedDetails" msprop:Generator_RowDeletingName="dsEmp_ObjectNotCompletedDetailsRowDeleting" msprop:Generator_RowChangingName="dsEmp_ObjectNotCompletedDetailsRowChanging" msprop:Generator_RowEvHandlerName="dsEmp_ObjectNotCompletedDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="dsEmp_ObjectNotCompletedDetailsRowDeleted" msprop:Generator_UserTableName="dsEmp_ObjectNotCompletedDetails" msprop:Generator_RowChangedName="dsEmp_ObjectNotCompletedDetailsRowChanged" msprop:Generator_RowEvArgName="dsEmp_ObjectNotCompletedDetailsRowChangeEvent" msprop:Generator_RowClassName="dsEmp_ObjectNotCompletedDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Name" msdata:Caption="SNo" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:int" minOccurs="0" />
+              <xs:element name="ObjectType" msdata:Caption="emp_location" msprop:Generator_ColumnVarNameInTable="columnObjectType" msprop:Generator_ColumnPropNameInRow="ObjectType" msprop:Generator_ColumnPropNameInTable="ObjectTypeColumn" msprop:Generator_UserColumnName="ObjectType" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectName" msdata:Caption="EMPLOYMENT" msprop:Generator_ColumnVarNameInTable="columnObjectName" msprop:Generator_ColumnPropNameInRow="ObjectName" msprop:Generator_ColumnPropNameInTable="ObjectNameColumn" msprop:Generator_UserColumnName="ObjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectDescription" msdata:Caption="EMP_CODE" msprop:Generator_ColumnVarNameInTable="columnObjectDescription" msprop:Generator_ColumnPropNameInRow="ObjectDescription" msprop:Generator_ColumnPropNameInTable="ObjectDescriptionColumn" msprop:Generator_UserColumnName="ObjectDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="RMName" msdata:Caption="emp_name" msprop:Generator_ColumnVarNameInTable="columnRMName" msprop:Generator_ColumnPropNameInRow="RMName" msprop:Generator_ColumnPropNameInTable="RMNameColumn" msprop:Generator_UserColumnName="RMName" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="RMRemarks" msdata:Caption="DOJ" msprop:Generator_ColumnVarNameInTable="columnRMRemarks" msprop:Generator_ColumnPropNameInRow="RMRemarks" msprop:Generator_ColumnPropNameInTable="RMRemarksColumn" msprop:Generator_UserColumnName="RMRemarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dsEmp_ObjectAllCompleteDetails" msprop:Generator_TableClassName="dsEmp_ObjectAllCompleteDetailsDataTable" msprop:Generator_TableVarName="tabledsEmp_ObjectAllCompleteDetails" msprop:Generator_TablePropName="dsEmp_ObjectAllCompleteDetails" msprop:Generator_RowDeletingName="dsEmp_ObjectAllCompleteDetailsRowDeleting" msprop:Generator_RowChangingName="dsEmp_ObjectAllCompleteDetailsRowChanging" msprop:Generator_RowEvHandlerName="dsEmp_ObjectAllCompleteDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="dsEmp_ObjectAllCompleteDetailsRowDeleted" msprop:Generator_UserTableName="dsEmp_ObjectAllCompleteDetails" msprop:Generator_RowChangedName="dsEmp_ObjectAllCompleteDetailsRowChanged" msprop:Generator_RowEvArgName="dsEmp_ObjectAllCompleteDetailsRowChangeEvent" msprop:Generator_RowClassName="dsEmp_ObjectAllCompleteDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MainID" msprop:Generator_ColumnVarNameInTable="columnMainID" msprop:Generator_ColumnPropNameInRow="MainID" msprop:Generator_ColumnPropNameInTable="MainIDColumn" msprop:Generator_UserColumnName="MainID" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Name" msdata:Caption="SNo" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_UserColumnName="Emp_Name" type="xs:int" minOccurs="0" />
+              <xs:element name="IsObjectCompleted" msprop:Generator_ColumnVarNameInTable="columnIsObjectCompleted" msprop:Generator_ColumnPropNameInRow="IsObjectCompleted" msprop:Generator_ColumnPropNameInTable="IsObjectCompletedColumn" msprop:Generator_UserColumnName="IsObjectCompleted" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectType" msdata:Caption="emp_location" msprop:Generator_ColumnVarNameInTable="columnObjectType" msprop:Generator_ColumnPropNameInRow="ObjectType" msprop:Generator_ColumnPropNameInTable="ObjectTypeColumn" msprop:Generator_UserColumnName="ObjectType" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectName" msdata:Caption="EMPLOYMENT" msprop:Generator_ColumnVarNameInTable="columnObjectName" msprop:Generator_ColumnPropNameInRow="ObjectName" msprop:Generator_ColumnPropNameInTable="ObjectNameColumn" msprop:Generator_UserColumnName="ObjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="ObjectDescription" msdata:Caption="EMP_CODE" msprop:Generator_ColumnVarNameInTable="columnObjectDescription" msprop:Generator_ColumnPropNameInRow="ObjectDescription" msprop:Generator_ColumnPropNameInTable="ObjectDescriptionColumn" msprop:Generator_UserColumnName="ObjectDescription" type="xs:string" minOccurs="0" />
+              <xs:element name="RMName" msdata:Caption="emp_name" msprop:Generator_ColumnVarNameInTable="columnRMName" msprop:Generator_ColumnPropNameInRow="RMName" msprop:Generator_ColumnPropNameInTable="RMNameColumn" msprop:Generator_UserColumnName="RMName" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" msprop:Generator_UserColumnName="Location" type="xs:string" minOccurs="0" />
+              <xs:element name="RMRemarks" msdata:Caption="DOJ" msprop:Generator_ColumnVarNameInTable="columnRMRemarks" msprop:Generator_ColumnPropNameInRow="RMRemarks" msprop:Generator_ColumnPropNameInTable="RMRemarksColumn" msprop:Generator_UserColumnName="RMRemarks" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

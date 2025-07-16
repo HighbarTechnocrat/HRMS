@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="inner.master.cs" Inherits="inner" EnableViewState="true" %>
+
+<%@ Register Src="~/control/header.ascx" TagName="header" TagPrefix="ucheader" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/footer.ascx" TagName="footer" TagPrefix="uc" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/birthday.ascx" TagName="birth" TagPrefix="uc" %>
+
+<%--JAYESH COMMENTED BELOW CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+<%--<%@ Register Src="~/themes/creative1.0/LayoutControls/category.ascx" TagName="category" TagPrefix="uc" %>--%>
+<%--<%@ Register Src="~/themes/creative1.0/LayoutControls/recentpost.ascx" TagName="recent" TagPrefix="uc" %>--%>
+<%--JAYESH COMMENTED ABOVE CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+
+<%@ Register Src="~/themes/creative1.0/LayoutControls/homejs.ascx" TagName="home" TagPrefix="js" %>
+<%@ Register Src="~/themes/creative1.0/LayoutControls/topbanner.ascx" TagName="top" TagPrefix="uc" %>
+<%--Comment by Sanjay Footer control not required<%@ Register Src="~/themes/creative1.0/LayoutControls/profile/navigation.ascx" TagName="nav" TagPrefix="uc" %>--%>
+<%--SAGAR COMMENTED BELOW LINE FOR REMOVING INNERHEADER CONTROL FROM INNER PAGES 14OCT2017--%>
+<%-- <%@ Register Src="~/themes/creative1.0/LayoutControls/profile/innerheader.ascx" TagName="innerheader" TagPrefix="uc" %>  --%>
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>oneHR</title>
+    <style type="text/css" media="print">
+        body {
+            visibility: hidden;
+            display: none
+        }
+    </style>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription" />
+    <asp:PlaceHolder runat="server" ID="id1"></asp:PlaceHolder>
+    <asp:PlaceHolder runat="server"></asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="home-page home page page-id-22 page-template page-template-page-templates page-template-dashboard page-template-page-templatesdashboard-php logged-in menu-is-vertical has_fixed_navbar no-js woffice-2-x ">
+    <link href="<%=ReturnUrl("sitepathmain")%>font/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="SHORTCUT ICON" href="<%=ReturnUrl("sitepathmain")%>images/Highbar.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/hrms.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/scrollbar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<%=ReturnUrl("css") %>bxcss/jquery.bxslider.css" type="text/css" />
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+        <div id="page-wrapper">
+            <ucheader:header ID="topseach" runat="server" />
+            <section class="with-sidebar" id="main-content">
+                <aside id="right-sidebar" class="mobile-hidden" role="complementary">
+                    <uc:birth ID="uxbirthday" runat="server" />
+                    <%--JAYESH COMMENTED BELOW CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+                    <%-- <uc:category ID="uxcategory" runat="server" />--%>
+                    <%--<uc:recent ID="uxrecent" runat="server" />--%>
+                    <%--JAYESH COMMENTED ABOVE CODE TO REMOVE UNWANTED DIV IN INEER PAGES 12oct2017--%>
+                </aside>
+                <div id="left-content">
+                    <div id="content-container">
+                        <div id="content">
+                            <article id="post-0" class="bp_members type-bp_members box content post-0 page type-page status-publish hentry">
+                                <div id="buddypress">
+
+
+                                    <%--SAGAR COMMENTED BELOW LINE FOR REMOVING INNERHEADER CONTROL FROM INNER PAGES 14OCT2017--%>
+                                    <%--<uc:innerheader ID="uxinnerheader" runat="server" />--%>
+                                    <%-- Jayesh_Prajyot Commented below  code to hide cover photo 14sep2017--%>
+                                    <%--                                    <uc:nav ID="uxnav" runat="server" /> --%>
+                                    <%--   Jayesh_Prajyot Commented above code to hide cover photo 14sep2017--%>
+
+                                    <div id="item-body" role="main">
+                                        <div class="intern-padding">
+                                            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="scroll-top-container">
+                        <a href="#main-header" id="scroll-top">
+                            <i class="fa fa-arrow-circle-o-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <uc:footer ID="uxfooter" runat="server" />
+        </div>
+        <js:home ID="uxhomejs" runat="server" />
+        <div id="sitewide-notice" class="admin-bar-off"></div>
+    </form>
+</body>
+</html>

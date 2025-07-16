@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster"    %>
+
+<%--<%@ Register Src="~/Components/Common/topheader.ascx" TagName="header" TagPrefix="ucheader" %>--%>
+
+<%--<%@ Register Src="~/control/topheader.ascx" TagName="header" TagPrefix="ucheader" %>--%>
+<%@ Register Src="~/control/script.ascx" TagName="js" TagPrefix="ucjs"  %>
+<%@ Register Src="~/control/headerfootercss.ascx" TagName="hf" TagPrefix="hfcss" %>
+
+<%@ Register Src="~/Components/Common/loginjscall.ascx" TagName="loginjs" TagPrefix="ucloginjs" %>
+<%@ Register Src="~/Themes/creative1.0/LayoutControls/megamenu.ascx" TagName="uxmegamenu"
+    TagPrefix="ucuxmegamenu" %>
+<%--<%@ Register Src="~/Themes/creative1.0/LayoutControls/topheadermenu.ascx" TagName="uxheadermenu"
+    TagPrefix="ucuxheadermenu" %>--%>
+	<style type="text/css" media="print">
+    body { visibility: hidden; display: none }
+</style>
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+ <title></title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
+   
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription"/>
+     <asp:PlaceHolder runat="server" id="id1">
+          <script src="~/themes/creative1.0/js/jsframework.js" type="text/javascript"></script>
+     <link rel="SHORTCUT ICON" href="~/themes/creative1.0/images/favicon.ico"
+      type="image/x-icon" />
+         
+      </asp:PlaceHolder>
+    
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"/>
+     
+    
+     <style type="text/css">
+
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+     </style>
+    
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form1">
+
+        <ucloginjs:loginjs ID="cntrlloginjs" runat="server" />
+
+
+        <hfcss:hf ID="headerfooter" runat="server" />
+
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableCdn="false" CombineScripts="true" ScriptMode="Release" >
+    </ajaxToolkit:ToolkitScriptManager>
+
+       <%--  <ucheader:header ID="topseach" runat="server" />--%>
+
+        <div class="mainContainer clearfix">
+                 <ucuxmegamenu:uxmegamenu ID="megamenu" runat="server" />
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    
+    </div>
+         <div id="cms" >
+             <asp:Literal ID="cms1" runat="server"></asp:Literal>
+         </div>
+       
+
+    </form>
+            <ucjs:js ID="cntrljs" runat="server" />
+
+        <link rel="stylesheet" href="<%=ReturnUrl("css") %>datepicker/jquery-ui.css" type="text/css" media="all" />
+
+
+</body>
+</html>

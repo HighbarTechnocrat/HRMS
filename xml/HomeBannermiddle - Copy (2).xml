@@ -1,0 +1,38 @@
+<NewDataSet>
+  <Table1>
+    <bannerid>44</bannerid>
+    <imagename>banner1_20160413_113205.jpg</imagename>
+    <simage />
+    <linkname>cisa banner5</linkname>
+    <altname>CSIA Banner 5</altname>
+    <target />
+    <url>http://www.indusguru.in</url>
+    <descupper>default</descupper>
+    <desclower>H</desclower>
+    <sequence>0</sequence>
+  </Table1>
+  <Table1>
+    <bannerid>43</bannerid>
+    <imagename>airport4_20160412_060629.jpg</imagename>
+    <simage />
+    <linkname>CSIA banner 4</linkname>
+    <altname>Csia Banner 4</altname>
+    <target />
+    <url>http://www.hccindia.com</url>
+    <descupper>default</descupper>
+    <desclower>H</desclower>
+    <sequence>0</sequence>
+  </Table1>
+  <Table1>
+    <bannerid>40</bannerid>
+    <imagename>airport_20160412_055419.jpg</imagename>
+    <simage />
+    <linkname>CSAI Banner1</linkname>
+    <altname>top header banner</altname>
+    <target />
+    <url>http://www.hostgator.in</url>
+    <descupper>default</descupper>
+    <desclower>H</desclower>
+    <sequence>0</sequence>
+  </Table1>
+</NewDataSet>

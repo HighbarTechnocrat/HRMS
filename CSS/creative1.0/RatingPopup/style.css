@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);#lean_overlay{position:fixed;z-index:100;top:0px;left:0px;height:100%;width:100%;background:#000;display:none !important;}
+.popupcontainer{position:absolute;width:300px;height:auto;left:45%;top:80px;background:#FFF;border:4px solid #338EC9;z-index:999999;}
+#modal_trigger{margin:100px auto;width:100px;display:block;}
+.btn{padding:10px 20px;background:#F4F4F2;}
+.btn_red{background:#ED6347;color:#FFF;}
+.btn:hover{background:#E4E4E2;}
+.btn_red:hover{background:#C12B05;}
+a.btn{color:#666;text-align:center;text-decoration:none;}
+a.btn_red{color:#FFF;}
+.one_half{width:50%;display:block;float:left;}
+.one_half.last{width:45%;margin-left:5%;}
+.movie-name{color:rgb(29, 31, 32);font-size:18px !important;font-weight:700;overflow-wrap:break-word;text-align:center;text-transform:uppercase;}
+.popupcontainer{background:rgb(255, 255, 255) none repeat scroll 0 0;border:4px solid rgb(51, 142, 201);height:auto;margin-top:80px;width:300px;}
+.popupheader{font-size:16px;text-transform:uppercase;}
+.popupheader{float:left;margin:10px 0 0;width:100%;}
+.popupbody{padding:20px;float:left;width:88%;}
+.movie-info{width:100%;float:left;padding:0 0 10px;}
+.movie-name{float:left;width:100%;text-align:center;font-size:24px;color:#1d1f20;text-transform:uppercase;font-weight:700;word-wrap:break-word;}
+.movie-year{float:left;width:100%;text-align:center;font-size:15px;color:#454545;font-weight:300;}
+.movie-rating-div{width:100%;float:left;margin:10px 0 0 0;}
+.rating-heading{float:left;width:100%;text-align:center;font-size:14px;color:#454545;font-weight:400;margin:0 0 10px;}
+.movie-rating{width:100%;text-align:center;}
+.movie-comment-div{width:100%;float:left;margin:10px 0 0 0;}
+.movie-comment{width:100%;text-align:center;}
+.movie-comment textarea{width:96%;border:1px solid #e1e1e1;resize:none;padding:5px;font-family:"Open Sans",sans-serif;}
+.movie-comment-character{color:rgb(69, 69, 69);font-size:13px;font-weight:400;margin-top:10px;text-align:center;width:96%;}
+.movie-post-comment{float:left;margin:15px 0 0;width:100%;}
+.movie-post-comment a{border:1px solid #338EC9;color:#338EC9;display:inline-block;font-size:15px;font-weight:600;padding:5px 15px;text-decoration:none;transition:all 0.3s ease 0s;text-transform:uppercase;}
+.movie-post-comment a:hover{background:#338EC9 none repeat scroll 0 0;color:#fff !important;transition:all 0.3s ease 0s;}
+.modal_close{border:1px solid #338EC9;color:#338EC9;display:inline-block;font-size:15px;font-weight:600;padding:5px 15px;text-decoration:none;transition:all 0.3s ease 0s;text-transform:capitalize;cursor:pointer;}
+.modal_close:hover{background:#338EC9;color:#fff !important;transition:all 0.3s ease 0s;border:1px solid #338EC9;}
+@media only screen and (min-device-width:320px) and (max-device-width:480px){.popupcontainer{background:rgb(255, 255, 255) none repeat scroll 0 0;border:4px solid rgb(51, 142, 201);height:270px;left:160px !important;margin-top:100px;width:80%;}
+.movie-name{color:rgb(29, 31, 32);font-size:12px;font-weight:700;overflow-wrap:break-word;text-align:center;text-transform:uppercase;}
+.movie-comment textarea{border:1px solid rgb(225, 225, 225);font-family:"Open Sans",sans-serif;height:50px;margin-right:5px;margin-top:4px;padding:5px;resize:none;width:93%;}
+}
+@media only screen and (max-width:1024px) and (min-width:768px){.popupcontainer{background:rgb(255, 255, 255) none repeat scroll 0 0;border:4px solid rgb(51, 142, 201);height:30%;left:375px !important;margin-top:100px;width:40%;}
+.movie-comment textarea{border:1px solid rgb(225, 225, 225);font-family:"Open Sans",sans-serif;height:110px;margin-right:5px;margin-top:4px;padding:5px;resize:none;width:93%;}
+.movie-name{color:rgb(29, 31, 32);font-size:13px;font-weight:700;overflow-wrap:break-word;text-align:center;text-transform:uppercase;}
+#nav-buttons a{display:inline-block;font-size:1.6em;height:75px;overflow:hidden;padding:0 15px;width:5%;}
+}
+@media only screen and (max-width:1280px) and (min-width:980px){.popupcontainer{background:rgb(255, 255, 255) none repeat scroll 0 0;border:4px solid rgb(51, 142, 201);height:30%;left:475px !important;margin-top:20px;width:35%;}
+.movie-name{color:rgb(29, 31, 32);font-size:16px;font-weight:700;overflow-wrap:break-word;text-align:center;text-transform:uppercase;}
+}
+@media only screen and (min-device-width:360px) and (max-device-width:640px){.popupcontainer{background:rgb(255, 255, 255) none repeat scroll 0 0;border:4px solid rgb(51, 142, 201);height:270px;left:185px !important;margin-top:100px;width:80%;}
+}

@@ -1,0 +1,670 @@
+﻿.contactuspage{font-size:20px;float:left;margin:20px 0;width:98%;padding:0 10px 10px;height:550px}.contactmapadd{width:950px;margin:0 auto}.contactuspage table{width:59%;float:right}.contactuspage table tr{height:15%}.formtitle{padding:0 10px;text-align:left;vertical-align:top;width:2%;font-weight:400}.formtitle font{color:red;font-size:12px}.formtitle span{color:#fff;font-size:12px}.forminput{color:#000;padding:5px 0;text-align:left;width:15%}.forminput input{border:1px solid #505050;width:96%;padding:5px 0;font-size:13px;outline:0;background:#303030;color:#fff}.forminput input:focus{background:#fff;color:#000}.forminput textarea{border:1px solid #505050;width:96%;padding:5px 0;font-size:13px;outline:0;background:#303030;color:#fff}.forminput textarea:focus{background:#fff;color:#000}.forminput font{color:#fff;font-size:12px;font-weight:400;float:left}.forminput span{color:red;float:left;font-size:11px;font-weight:400;text-align:left;width:100%}.googlemap{background:#fff;border:1px solid #ccc;display:flex;float:left;margin:0 0 20px;padding:5px;width:100%}.googlemap iframe{width:100%;height:300px}.contactaddress{float:left;margin:0;text-align:left;padding:0 10px 10px;font-size:13px;line-height:24px;color:#fff}.contactaddress b{font-weight:700;font-size:15px;color:#fff;float:left;width:100%;margin:0 0 10px}.contactaddress div{width:30px;height:30px;float:left}.contactaddress a{color:#589dbe;text-decoration:underline}.contactaddress a:hover{text-decoration:none}.contactnote{color:#fff;font-size:15px;padding:5px;text-align:center;margin:0 0 10px}.contactnote span{color:red;font-size:24px;vertical-align:sub}.contactenquiryheading{border-bottom:1px solid #CCC;color:#000;font-size:18px;margin:0 auto;padding:0 0 10px;text-align:center;text-transform:uppercase;width:98%}
+.submitbtn {
+  background-color: rgb(49, 139, 199);
+  border: 0 none;
+  border-radius: 25px;
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}.submitbtndiv{
+	float:left;padding:5px 0;margin:0 4px 0 0}
+	/*.submitbtn:active,.submitbtn:hover{color:#fff;background:#f28820;border:1px solid #f28820}*/.contactsentsuccessfully{font-size:12px;color:green;width:54%;text-align:center;float:left;margin-top:7px}.addressform{margin:0 auto;width:720px}.contact-container{width:100%;min-height:400px;display:inline-block;}.contact-container > ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}.contact-container li {
+  border-bottom: 1px solid #eaeaea;
+  display: inline-table;
+  margin: 5px;
+  min-width: 276px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}.contact-container li:last-child {
+  border: medium none;
+  margin-top: 30px;
+}
+ .btndiv{
+     padding-bottom:50px !important;
+ }
+.userpostscats > span {
+  font-size: 18px;
+}
+ .formerror{
+     color:red;
+     font-weight:400;
+ }
+ /*.profileheading {
+  text-decoration-color: -moz-use-text-color;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}*/
+.profileheading {
+  margin-top: 3px;
+  text-decoration: none;
+}
+ .viewlable {
+  font-size: 20px;
+  font-weight: 500;
+  width: 90%;
+}
+ .contact-container input {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px 2px #eaeaea inset;
+  padding: 10px 10px 10px 30px;
+  width: 220px;
+}.contact-container select {
+    border:1px solid #ccc;
+  width: 262px;
+    box-shadow:inset 0px 0px 1px 2px #eaeaea;
+  padding:  10px 10px 10px 30px;
+}
+ .contact-container textarea {
+    border:1px solid hsl(0, 0%, 62%);
+  width:814px;
+    box-shadow:inset 0px 0px 1px 2px #eaeaea;
+  padding: 10px 10px 10px 30px;height:80px;
+}.contact-container span {
+  color: hsl(0, 0%, 20%);
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+.submitbtndiv i {
+  margin-right: 8px;
+}
+.personal {
+  width: 32%;
+}
+.viewlable i {
+  float: left;
+}
+.viewlable:hover {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0;
+  cursor: pointer;
+}
+.viewlable {
+  margin:0 !important;
+   padding: 14px 0 !important; 
+}
+.viewlable > img {
+  background: hsla(0, 0%, 0%, 0) none repeat scroll 0 0;
+  float: left;
+  vertical-align: middle;
+}.checkbox-container {
+  float: right;
+}
+ .user-nicename span {
+  color: #fff !important;
+}
+.texticon {
+  cursor: pointer;
+  font-size: 16px;
+  height: 18px;
+  left: 0;
+  margin-right: 9px !important;
+  padding: 10px;
+  position: relative;
+  right: 10px;
+  top: -38px;
+  vertical-align: sub;
+  width: 18px;
+}
+.texticonselect {
+  cursor: pointer;
+  font-size: 16px;
+  height: 18px;
+  left: 8px;
+  position: relative;
+  top: -40px;
+  vertical-align: sub;
+  width: 18px;
+}
+.edit-contact > ul > li {
+  display: inline-block;
+  margin-right: 9%;
+  width: 40%;
+}
+.edit-contact input {
+  padding-left: 30px !important;
+  width: 100%;
+}
+.commentsbyuser.slideInLeft.animated {
+  border-bottom: 1px solid hsl(0, 0%, 92%);
+  margin: 0 0 30px;
+  padding: 0 0 20px;
+}
+.edit-contact input:focus {
+  border-bottom: 2px solid rgb(51, 142, 201) !important;
+}
+.userposts {
+  border-bottom: 2px solid hsl(204, 60%, 49%);
+  color: hsl(17, 68%, 31%);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 10px 15px 0;
+  padding: 0 0 10px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.userposts > span {
+  color: hsl(0, 0%, 20%);
+  font-size: 21px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+}
+.profile-edit {
+  margin-top: 26px;
+}
+#MainContent_editform > li {
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 600;
+}
+.profile-edit1 {
+  bottom: 66px !important;
+  position: relative;
+  width: 40% !important;
+}
+.gender {
+  background: hsl(0, 0%, 95%) none repeat scroll 0 0;
+  border-bottom: 2px solid hsl(0, 0%, 62%);
+  bottom: -31px !important;
+  display: inline-block;
+  padding: 2px 35px 14px 10px;
+  position: relative;
+  width: 100% !important;
+}
+.profile-edit1 .rbtnprofile > input {
+  margin-right: 10px;
+  width: 0;
+}
+.profile-edit2 .medium {
+  margin: 0;
+  padding: 10px 0 0 34px !important;
+}
+.profile-edit2 {
+  margin-top: 50px;
+  position: relative;
+  top: -21px;
+}
+.submitbtnupdate {
+  background-color: hsl(204, 60%, 49%);
+  border: 0 none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.cancelbtncncl{
+  background-color: hsl(204, 60%, 49%);
+  border: 0 none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.profile-edit4 {
+  margin-bottom: -20px;
+  margin-top: 60px;
+  position: relative;
+  top: -36px;
+}
+.cancelbtndiv {
+  float: left;
+  margin: 0 4px 0 0;
+  padding: 5px 0;
+}
+.submitcancelbtn {
+  display: inline-block !important;
+  position: relative;
+  width: 100% !important;
+  margin: 0 !important;
+}
+.submitbtndiv i {
+  margin-right: 5px;
+  margin-top: 3px;
+  padding-right: 5px;
+}
+.cancelbtndiv i{
+  margin-right: 5px;
+  margin-top: 3px;
+  padding-right: 5px;
+}
+.profile-edit2 .texticon.tooltip {
+  padding: 10px !important;
+  top: -57px;
+}
+.contact-container.msg-container .msglable {
+  border-bottom: medium none;
+  float: left;
+  width: 45%;
+}
+.contact-container.msg-container .msglable1 {
+  border-bottom: medium none;
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 50%;
+}
+.proviewbtn {
+  float: right;
+  left: 20px;
+}
+.movierow {
+  float: left !important;
+  list-style: outside none none;
+  margin-left: 50px !important;
+  margin-right: 0 !important;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 30% !important;
+}
+.movie-likes i {
+  color: hsl(204, 57%, 54%);
+    margin-right: 5px;
+}
+.movie-comments i {
+  color: hsl(204, 57%, 54%);
+  margin-right: 5px;
+}
+.userpostwall1 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.contact-container.msg-container .msglable .titlewriteonwall {
+  color: hsl(0, 0%, 0%);
+  display: inline-block !important;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+  width: 86% !important;
+}
+.contact-container.msg-container .tiltewall {
+  margin-top: 50px;
+  width: 94% !important;
+}
+.contact-container.msg-container .msgtitle {
+  border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  float: left;
+  height: 50px;
+  margin: 0;
+  position: relative;
+  top: -30px;
+}
+.contact-container.msg-container .msglable {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 !important;
+}
+.msglable1 > span {
+  font-weight: 600 !important;
+}
+.contact-container.msg-container textarea {
+  border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+  border-style: none none solid !important;
+  border-width: medium medium 2px !important;
+  height: 50px !important;
+}
+.msgboardheading {
+  color: hsl(0, 0%, 20%);
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 0 !important;
+  text-transform: uppercase;
+}
+.submitbtnupdate1 {
+  background-color: hsl(204, 60%, 49%);
+  border: 0 none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.submitbtnupdate2 {
+  background-color: hsl(204, 60%, 49%);
+  border: 0 none;
+  border-radius: 25px;
+  color: hsl(0, 0%, 100%) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.submitbtnupdate1 i {
+  margin-bottom: 0 !important;
+  margin-top: 1px !important;
+}
+.submitbtnupdate2 i {
+  margin-bottom: 0 !important;
+  margin-top: 1px !important;
+}
+#content-container select {
+  -moz-appearance: none !important;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: hsl(0, 0%, 97%) none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  color: hsl(0, 0%, 39%);
+  float: right;
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-left: 38px;
+  margin-top: 3px;
+  outline: 0 none;
+  padding: 10px 20px 10px 0;
+  width: 30%;
+}
+.mypost {
+  /*bottom: -18px !important;*/
+  color: hsl(0, 0%, 0%) !important;
+  display: inline-block;
+  font-weight: 400 !important;
+  position: relative;
+}
+.userpost2 {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 60%;
+}
+.userpostlike {
+  border-bottom: 2px solid hsl(204, 60%, 49%);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 10px 20px 0;
+  padding: 0 0 10px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.commentsdiv.mywall1 {
+  display: inline-block;
+  margin:20px 0 0;
+  width: 100% !important;
+}
+.userpostlike > span {
+  color: hsl(0, 0%, 0%);
+  font-size: 21px;
+  font-weight: 400 !important;
+  text-align: left;
+  text-transform: uppercase;
+}
+.movie-info-div {
+  background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+  border: 1px solid hsl(0, 0%, 95%) !important;
+  box-shadow: 0 1px 1px hsl(0, 0%, 93%);
+  float: left;
+  padding: 10px;
+  width: 94%;
+}
+.movieinfo {
+  display: inline-block;
+  height: auto;
+  margin: 0 5px 10px;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.updmovieinfo {
+  display: inline-block;
+  height: auto;
+  transition: all 0.3s ease 0s;
+  width: 100% !important;
+}
+#movierow > div {
+  width: 100% !important;
+  text-align:left;
+}
+ @media only screen and (max-width:1000px) and (min-width:240px){.contactuspage{width:auto;float:none}.addressform,.contactmapadd{width:100%}.contactaddress{width:auto;float:none;border-bottom:1px solid #303030}.contactuspage table{float:left;width:98%;margin:10px 0 0}.contactnote{text-align:center;padding:0}.formtitle{width:5%;padding:0 10px 0 0}.forminput input,.forminput textarea{width:100%}.checkbox-container {
+  margin: 10px 0 0;
+  width: 100%;
+}}
+@media only screen and (max-width:1000px) and (min-width:240px){}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.contact-container.msg-container .msgtitle {
+  border-color: -moz-use-text-color -moz-use-text-color rgb(158, 158, 158);
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  float: left;
+  height: 50px;
+  margin: 0;
+  position: relative;
+  top: -30px;
+  width: 83% !important;
+}
+.rbtnprofile > input {
+  width: 5% !important;
+}
+.rbtnprofile {
+  display: inline-block;
+  font-size: 12px !important;
+  width: 42% !important;
+}
+.proviewbtn .cancelbtndiv {
+  float: left;
+  margin: 8px 15px 0 0;
+  padding: 5px 0;
+}
+.profile-edit2 .texticon.tooltip {
+  padding: 10px !important;
+  top: -35px;
+}
+
+.cancelbtndiv {
+  float: left;
+  margin: 8px 15px 0 0;
+  padding: 5px 0;
+}
+.profile-edit1.lihight {
+  margin-bottom: 30px !important;
+}
+.contact-container.msg-container .msglable {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 !important;
+  width: 43% !important;
+}
+.contact-container.msg-container textarea {
+  border-color: -moz-use-text-color -moz-use-text-color rgb(158, 158, 158) !important;
+  border-style: none none solid !important;
+  border-width: medium medium 2px !important;
+  height: 50px !important;
+  width: 100% !important;
+}
+.msglable1 > span {
+  font-weight: 600 !important;
+  width: 76% !important;
+}
+.userpost2 {
+  display: inline-block;
+  float: left;
+  position: relative;
+  width: 100%;
+}
+#content-container .intern-padding {
+  cursor: auto;
+  padding: 10px !important;
+}.movierow {
+  float: right !important;
+  list-style: outside none none;
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  width: 98% !important;
+}
+.movie-info-div {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(242, 242, 242) !important;
+  box-shadow: 0 1px 1px rgb(237, 237, 237);
+  float: left;
+  padding: 10px;
+  width: 88% !important;
+}.contact-container li {
+  border-bottom: 1px solid rgb(234, 234, 234);
+  display: inline-table;
+  margin: 5px;
+  padding: 10px 0;
+  position: relative;
+  width: 100% !important;
+}
+.personal {
+  width: 100%;
+}
+.contact-container li {
+  min-width: 100%;
+  width: 100%;
+}.edit-contact input {
+  padding-left: 30px !important;
+  width: 83% ;
+}
+.edit-contact > ul {
+  padding: 0;
+}
+.edit-contact > ul > li {
+  display: inline-block;
+  margin-right: 9%;
+  width: 100%;
+}
+.profile-edit1 {
+  bottom: -4px !important;
+  position: relative;
+  width: 83% !important;
+}
+.profile-edit2 {
+  margin-top: 50px;
+  position: relative;
+  top: -21px;
+  width: 87% !important;
+}
+.medium {
+  width: 88% !important;
+}
+.submitbtnupdate1 {
+  background-color: rgb(49, 139, 199);
+  border: 0 none;
+  border-radius: 25px;
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.textwidget.bd_wall {
+  text-align: center !important;
+}
+.bd_wallright {
+  float: right;
+  width: 100% !important;
+}
+.viewlable > span {
+  width: 80%;
+}
+.personal {
+  width: 70% !important;
+}
+.profiledetails {
+  width: 80%;
+}
+.personal {
+  font-weight: 600 !important;
+  width: 70% !important;
+}.submitbtnupdate2 {
+  background-color: rgb(49, 139, 199);
+  border: 0 none;
+  border-radius: 25px;
+  color: rgb(255, 255, 255) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding: 10px 17px;
+  text-transform: uppercase;
+  white-space: normal;
+}}
+@media only screen and (max-width:1024px) and (min-width:768){
+	.personal {
+  font-weight: 600 !important;
+
+}
+.checkbox-container {
+  margin: 0;
+  width: 20% !important;
+}
+
+.movie-info-div {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 1px solid rgb(242, 242, 242) !important;
+  box-shadow: 0 1px 1px rgb(237, 237, 237);
+  float: left;
+  padding: 10px;
+  width: 88% !important;
+}
+.viewlable > span {
+  width: 50%;
+}
+.personal {
+  width: 34% ;
+}
+
+.profiledetails {
+  padding: 0 !important;
+
+}
+.personal {
+  font-weight: 600 !important;
+  
+}
+.profiledetails {
+  width: 88% ;
+}
+.personal {
+  width: 33% ;
+}
+.temryaddress {
+  width: 60% !important;
+}
+.temryaddress .profiledetails {
+  margin-left: 10px;
+  position: relative;
+  top: -18px;
+}
+}

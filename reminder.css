@@ -1,0 +1,17 @@
+.reminder-overlay{background:#000;bottom:0;height:100%;left:0;display:none;opacity:0.6;position:fixed;right:0;top:0;width:100%;z-index:600;}
+.reminder-container{background:#fff;border-radius:3px;box-shadow:0 0 10px 0 #000;display:none;bottom:0;height:300px;left:0;margin:auto;position:absolute;right:0;top:0;width:500px;z-index:999;}
+.reminder-wrapper{height:100%;position:relative;width:100%;}
+.reminder-head{height:20px;background:#2196F3;color:#fff;padding:10px;position:relative;border-radius:3px 3px 0 0;}
+.reminder-head-title{font-size:16px;left:10px;position:absolute;}
+.rmdclose{background:#fff;border-radius:2px;color:#2196F3;cursor:pointer;font-size:14px;padding:2px 5px;position:absolute;right:10px;}
+.reminder-body{height:220px;position:relative;width:100%;}
+.reminder-content{background:#F5F5F5;height:220px;margin:15px;position:relative;}
+.reminder-content-list{background:#eaeaea;display:block;height:215px;list-style:none;margin:0;padding:5px 0 5px 5px;width:100%;}
+.reminder-content-list li{margin:0 0 5px;position:relative;width:100%;}
+.reminder-content-list a{background:#4D4D4D;border-radius:3px;color:#fff;display:inline-flex;padding:10px 5px;width:98%;}
+.reminder-content-list a:hover{background:#fff;color:#333;}
+.reminder-content-list a span{display:block;font-size:14px;}
+.reminder-content-list span > i{font-size:20px;margin:0 5px 0 0;}
+.mCSB_inside > .mCSB_container{margin-right:0px;}
+.reminder-guest{font-size:13px !important;margin:0;padding:0 25px 0 0;}
+.rmclose{color:#fff;cursor:pointer;position:absolute;right:5px;top:10px;z-index:999999;}

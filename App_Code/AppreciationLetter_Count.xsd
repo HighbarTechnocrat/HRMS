@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AppreciationLetter_Count" targetNamespace="http://tempuri.org/AppreciationLetter_Count.xsd" xmlns:mstns="http://tempuri.org/AppreciationLetter_Count.xsd" xmlns="http://tempuri.org/AppreciationLetter_Count.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AppreciationLetter_Count" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="AppreciationLetter_Count" msprop:Generator_DataSetName="AppreciationLetter_Count">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Count" msprop:Generator_RowEvHandlerName="CountRowChangeEventHandler" msprop:Generator_RowDeletedName="CountRowDeleted" msprop:Generator_RowDeletingName="CountRowDeleting" msprop:Generator_RowEvArgName="CountRowChangeEvent" msprop:Generator_TablePropName="Count" msprop:Generator_RowChangedName="CountRowChanged" msprop:Generator_UserTableName="Count" msprop:Generator_RowChangingName="CountRowChanging" msprop:Generator_RowClassName="CountRow" msprop:Generator_TableClassName="CountDataTable" msprop:Generator_TableVarName="tableCount">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Appreciation_Letter" msprop:Generator_ColumnPropNameInTable="Appreciation_LetterColumn" msprop:Generator_ColumnPropNameInRow="Appreciation_Letter" msprop:Generator_UserColumnName="Appreciation_Letter" msprop:Generator_ColumnVarNameInTable="columnAppreciation_Letter" type="xs:string" minOccurs="0" />
+              <xs:element name="AppreciationLetter_Count" msprop:Generator_ColumnPropNameInTable="AppreciationLetter_CountColumn" msprop:Generator_ColumnPropNameInRow="AppreciationLetter_Count" msprop:Generator_UserColumnName="AppreciationLetter_Count" msprop:Generator_ColumnVarNameInTable="columnAppreciationLetter_Count" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Details" msprop:Generator_RowEvHandlerName="DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="DetailsRowDeleted" msprop:Generator_RowDeletingName="DetailsRowDeleting" msprop:Generator_RowEvArgName="DetailsRowChangeEvent" msprop:Generator_TablePropName="Details" msprop:Generator_RowChangedName="DetailsRowChanged" msprop:Generator_UserTableName="Details" msprop:Generator_RowChangingName="DetailsRowChanging" msprop:Generator_RowClassName="DetailsRow" msprop:Generator_TableClassName="DetailsDataTable" msprop:Generator_TableVarName="tableDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emp_name" msprop:Generator_ColumnPropNameInTable="emp_nameColumn" msprop:Generator_ColumnPropNameInRow="emp_name" msprop:Generator_UserColumnName="emp_name" msprop:Generator_ColumnVarNameInTable="columnemp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_UserColumnName="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" type="xs:string" minOccurs="0" />
+              <xs:element name="Appreciation_Letter_list" msprop:Generator_ColumnPropNameInTable="Appreciation_Letter_listColumn" msprop:Generator_ColumnPropNameInRow="Appreciation_Letter_list" msprop:Generator_UserColumnName="Appreciation_Letter_list" msprop:Generator_ColumnVarNameInTable="columnAppreciation_Letter_list" type="xs:string" minOccurs="0" />
+              <xs:element name="Send_to" msprop:Generator_ColumnPropNameInTable="Send_toColumn" msprop:Generator_ColumnPropNameInRow="Send_to" msprop:Generator_UserColumnName="Send_to" msprop:Generator_ColumnVarNameInTable="columnSend_to" type="xs:string" minOccurs="0" />
+              <xs:element name="Send_date" msprop:Generator_ColumnPropNameInTable="Send_dateColumn" msprop:Generator_ColumnPropNameInRow="Send_date" msprop:Generator_UserColumnName="Send_date" msprop:Generator_ColumnVarNameInTable="columnSend_date" type="xs:string" minOccurs="0" />
+              <xs:element name="point" msprop:Generator_ColumnPropNameInTable="pointColumn" msprop:Generator_ColumnPropNameInRow="point" msprop:Generator_UserColumnName="point" msprop:Generator_ColumnVarNameInTable="columnpoint" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="send_count" msprop:Generator_RowEvHandlerName="send_countRowChangeEventHandler" msprop:Generator_RowDeletedName="send_countRowDeleted" msprop:Generator_RowDeletingName="send_countRowDeleting" msprop:Generator_RowEvArgName="send_countRowChangeEvent" msprop:Generator_TablePropName="send_count" msprop:Generator_RowChangedName="send_countRowChanged" msprop:Generator_UserTableName="send_count" msprop:Generator_RowChangingName="send_countRowChanging" msprop:Generator_RowClassName="send_countRow" msprop:Generator_TableClassName="send_countDataTable" msprop:Generator_TableVarName="tablesend_count">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Appreciation_Letter" msprop:Generator_ColumnPropNameInTable="Appreciation_LetterColumn" msprop:Generator_ColumnPropNameInRow="Appreciation_Letter" msprop:Generator_UserColumnName="Appreciation_Letter" msprop:Generator_ColumnVarNameInTable="columnAppreciation_Letter" type="xs:string" minOccurs="0" />
+              <xs:element name="AppreciationLetter_Count" msprop:Generator_ColumnPropNameInTable="AppreciationLetter_CountColumn" msprop:Generator_ColumnPropNameInRow="AppreciationLetter_Count" msprop:Generator_UserColumnName="AppreciationLetter_Count" msprop:Generator_ColumnVarNameInTable="columnAppreciationLetter_Count" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Send_Details" msprop:Generator_RowEvHandlerName="Send_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Send_DetailsRowDeleted" msprop:Generator_RowDeletingName="Send_DetailsRowDeleting" msprop:Generator_RowEvArgName="Send_DetailsRowChangeEvent" msprop:Generator_TablePropName="Send_Details" msprop:Generator_RowChangedName="Send_DetailsRowChanged" msprop:Generator_UserTableName="Send_Details" msprop:Generator_RowChangingName="Send_DetailsRowChanging" msprop:Generator_RowClassName="Send_DetailsRow" msprop:Generator_TableClassName="Send_DetailsDataTable" msprop:Generator_TableVarName="tableSend_Details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emp_name" msprop:Generator_ColumnPropNameInTable="emp_nameColumn" msprop:Generator_ColumnPropNameInRow="emp_name" msprop:Generator_UserColumnName="emp_name" msprop:Generator_ColumnVarNameInTable="columnemp_name" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_UserColumnName="Designation" msprop:Generator_ColumnVarNameInTable="columnDesignation" type="xs:string" minOccurs="0" />
+              <xs:element name="Appreciation_Letter_list" msprop:Generator_ColumnPropNameInTable="Appreciation_Letter_listColumn" msprop:Generator_ColumnPropNameInRow="Appreciation_Letter_list" msprop:Generator_UserColumnName="Appreciation_Letter_list" msprop:Generator_ColumnVarNameInTable="columnAppreciation_Letter_list" type="xs:string" minOccurs="0" />
+              <xs:element name="Send_date" msprop:Generator_ColumnPropNameInTable="Send_dateColumn" msprop:Generator_ColumnPropNameInRow="Send_date" msprop:Generator_UserColumnName="Send_date" msprop:Generator_ColumnVarNameInTable="columnSend_date" type="xs:string" minOccurs="0" />
+              <xs:element name="point" msprop:Generator_ColumnPropNameInTable="pointColumn" msprop:Generator_ColumnPropNameInRow="point" msprop:Generator_UserColumnName="point" msprop:Generator_ColumnVarNameInTable="columnpoint" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

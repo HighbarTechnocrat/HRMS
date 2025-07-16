@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="eventcalendar.master.cs" Inherits="home" EnableViewState="true"%>
+
+<%--<%@ Register Src="~/control/topheader.ascx" TagName="header" TagPrefix="ucheader" %>--%>
+<%@ Register Src="~/control/eventjs.ascx" TagName="js" TagPrefix="ucjs" %>
+<%--<%@ Register Src="~/Themes/creative1.0/LayoutControls/topheadermenu.ascx" TagName="uxheadermenu"
+    TagPrefix="ucuxheadermenu" %>--%>
+<%@ Register Src="~/Themes/creative1.0/LayoutControls/megamenu.ascx" TagName="uxmegamenu"
+    TagPrefix="ucuxmegamenu" %>
+	 
+<!doctype html>
+<html>
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription" />
+    <asp:PlaceHolder runat="server" ID="id1">
+        <link rel="SHORTCUT ICON" href="<%#ReturnUrl("sitepathmain")%>images/favicon.ico"
+            type="image/x-icon" />
+    </asp:PlaceHolder>
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="<%=ReturnUrl("css") %>includes/css.css" rel="stylesheet" type="text/css">
+    <link href="<%=ReturnUrl("css") %>includes/boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="<%=ReturnUrl("css") %>includes/footerstyle.css" rel="stylesheet" type="text/css">
+    <link href="<%=ReturnUrl("css") %>includes/layout.css" rel="stylesheet" type="text/css">
+    <link href="<%=ReturnUrl("css") %>includes/headstyle.css" rel="stylesheet" type="text/css">
+    <link href="<%=ReturnUrl("css") %>includes/menu.css" rel="stylesheet" type="text/css" />
+   <%-- <link rel="stylesheet" href="<%=ReturnUrl("css") %>jqwidgets/jqx.base.css" type="text/css" />--%>
+    <!-- New Content End Here -->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form runat="server" id="form1">
+<%--        <ajaxToolkit:ToolkitScriptManager ID="scriptmanager" runat="server" CombineScripts="true" EnableCdn="true" EnableViewState="false" ViewStateMode="Disabled"></ajaxToolkit:ToolkitScriptManager>--%>
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+    </ajaxToolkit:ToolkitScriptManager>
+        <%--<ucheader:header ID="topseach" runat="server" />--%>
+
+       <%-- <ucuxheadermenu:uxheadermenu ID="menu1" runat="server" />--%> 
+        <div>
+        <div class="mainContainer clearfix">
+         <ucuxmegamenu:uxmegamenu ID="megamenu" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        </div>
+         <div id="cms">
+            <asp:Literal ID="cms1" runat="server"></asp:Literal>
+        </div>
+       <%-- <ucjs:js ID="cntrljs" runat="server" /> --%>
+  
+<%--    <script type="text/javascript" src="~/themes/creative1.0/js/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="~/themes/creative1.0/js/jqwidgets/jqxrating.js"></script>--%>
+    </form>
+</body>
+</html>
+

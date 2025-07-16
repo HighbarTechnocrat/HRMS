@@ -1,0 +1,54 @@
+ 
+ .tt {
+    /* background: -webkit-linear-gradient(left, #93B874, #C9DCB9); 
+    background: -o-linear-gradient(right, #93B874, #C9DCB9); 
+    background: -moz-linear-gradient(right, #93B874, #C9DCB9); 
+    background: linear-gradient(to right, #93B874, #C9DCB9); 
+
+
+	    -webkit-animation: fadeinout 10s linear forwards;
+    animation: fadeinout 15s linear forwards;
+	 */
+}
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: orange;
+  }
+  /* You could think of as "step 2" */
+  100% {
+    background: black;
+  }
+}
+
+.elementToFadeInAndOut {
+    
+    /*background: red;*/
+
+    -webkit-animation: fadeinout 10s linear forwards;
+    animation: fadeinout 15s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.elementToFadeInAndOut {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    /*width:30em;
+    height:18em;*/
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+	z-index: 600;
+}

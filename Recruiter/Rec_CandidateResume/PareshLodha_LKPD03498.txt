@@ -1,0 +1,35 @@
+Name - Vibhuti Acchutrao Tapre
+Bank Name - Janata Sahakari bank Ltd
+Branch Name - Moshi , Pune
+IFSC Code - JSBP0000055
+Account No- 055220100001641
+
+
+
+RequistionAgainsetCandidateIDStore
+
+jeva me 6 candidate search krto anni tya paiki 3 selected krnr  mg 3 selected candidate la blocked by field madhe requrter id cha emp code padnr
+bakila ny pdnr
+
+
+
+Select * from [dbo].[Req_Candidate_Details]
+-- SP_INSERTSERVICE_REQUEST
+Select * from [dbo].[tbldesignationMaster]
+select * from tbl_Employee_Mst where first_name like 'raj%'
+Select * from [dbo].[tbl_HRMS_Employment_Type]
+Select * from TBL_HRMS_BAND_MASTER
+select * from [dbo].[tbl_hmst_company_Location]
+Select * from [dbo].[Req_Location]
+Select * from [dbo].[tblRequestStatusMaster]
+select * from [dbo].[tbl_Mobile_Approval_Status]
+select * from [dbo].[tbl_Mobile_Approval_Matrix] where grade= 'I' and CONDITIONTYPE=2
+Select * from [dbo].[TBL_HRMS_MODULE]
+sELECT * from tblDepartmentMaster
+select * from [dbo].[tbl_HRMS_Employment_Type]
+
+SP_getInterviewerInoxList
+
+
+
+

@@ -1,0 +1,70 @@
+-- old query
+
+
+Select Distinct CT.*,CT1.Recruitment_ReqID,--CT1.CandidateName1 as CandidateName,
+
+CASE CT.RecStatusID WHEN  5 THEN CT0.CandidateName 
+WHEN  6 THEN CT0.CandidateName 
+WHEN CT.RecStatusID THEN CT1.CandidateName1 
+END AS CandidateName,
+CT1.InterviewedBy,
+CT1.LatestInterviewDate,CT1.InterviewTime,CT1.InterviewStatus,CT1.InterviewRound, CT1.InterviewFeedback,
+                
+				 CASE CT1.InterviewFeedback WHEN 'Finalized' THEN CT2.HiringFeedback END AS HiringFeedback,
+				 CASE CT2.StatusUpdate_ID WHEN  6 THEN CT2.JoiningDate 
+                                          WHEN  7 THEN CT2.JoiningDate 
+										  WHEN  8 THEN CT2.JoiningDate
+                 END AS JoiningDate
+from (Select RR.Recruitment_ReqID,RR.RequisitionNumber,PC.PositionCriticality AS 'Critical',RR.RecruiterID,rr.loc_code,rr.ModuleId,
+       RR.PositionCriticality_ID,RR.Department_id,
+       EMP.Emp_Name AS 'RequisitionBy',PT.PositionTitle AS 'PositionTitle',HRMS.ModuleDesc 'SkillSet',
+	   CL.Location_name AS 'Location', BAND.BAND, RR.RequisitionDate, RR.ToBeFilledIn_Days As 'fillindays',
+		DATEADD(DAY,CAST(RR.ToBeFilledIn_Days AS int ),CAST(CAST(RR.RequisitionDate As VARCHAR(12)) AS date))   AS 'Requiredby' ,
+	   RS.RecruitmentStatus,RS.RecStatusID , RR.CREATEDON,
+	 
+	   CASE  WHEN DATEDIFF(DAY, RR.CREATEDON, GETDATE()) < 0 THEN 0   ELSE DATEDIFF(DAY, RR.CREATEDON, GETDATE()) END AS Agingasonfromdate
+		--RS.RecruitmentStatus
+      from tbl_Rec_RecruitmentReq RR
+        INNER JOIN tbl_Rec_mst_PositionCriticality PC   ON RR.PositionCriticality_ID=PC.PositionCriticality_ID
+        INNER JOIN tbl_Employee_Mst EMP                 ON RR.Emp_Code=EMP.Emp_Code
+        INNER JOIN tbl_Rec_mst_PositionTitle PT         ON PT.PositionTitle_ID=RR.PositionTitle_ID
+        INNER JOIN [dbo].[TBL_HRMS_MODULE]  HRMS        ON HRMS.ModuleId = RR.ModuleId
+        INNER JOIN [dbo].[tbl_hmst_company_Location] CL ON CL.comp_code = RR.loc_code
+        INNER JOIN TBL_HRMS_BAND_MASTER      BAND       ON BAND.BAND = RR.BAND
+		LEFT JOIN  tbl_Rec_mst_RecruitmentStatus  RS    ON RS.RecStatusID=RR.RecStatusID
+		Left JOIN tbl_Rec_InterviewShortListMain ISLM ON  RR.Recruitment_ReqID=ISLM.Recruitment_ReqID) CT
+		LEFT JOIN 
+		(Select Distinct RR.Recruitment_ReqID,CI.CandidateName ,CI.Candidate_ID
+             from tbl_Rec_RecruitmentReq RR
+            INNER JOIN tbl_Rec_InterviewShortListMain ISLM ON  RR.Recruitment_ReqID=ISLM.Recruitment_ReqID
+		   INNER JOIN tbl_Rec_InterviewShortListDetail ISLD ON ISLD.InterviewShortListMain_ID = ISLM.InterviewShortListMain_ID
+           INNER JOIN tbl_Rec_CandidateInfo CI              ON CI.Candidate_ID =ISLD.Candidate_ID
+          -- where ISLD.Candidate_ID not IN(Select Candidate_ID From tbl_Rec_Interview_CandidateScheduleRound group BY Candidate_ID)
+		   )CT0
+          ON CT0.Recruitment_ReqID=CT.Recruitment_ReqID
+
+		LEFT JOIN 
+		(Select  RR.Recruitment_ReqID,CI.CandidateName as 'CandidateName1',EMP.Emp_Name as 'InterviewedBy', CSR.InterviewDate AS 'LatestInterviewDate',CSR.InterviewTime AS InterviewTime,IES.InterviewStatus AS InterviewStatus,
+                 IEF.InterviewFeedback AS InterviewFeedback,IR.InterviewRound,CI.Candidate_ID
+             from tbl_Rec_RecruitmentReq RR
+            INNER JOIN tbl_Rec_InterviewShortListMain ISLM ON  RR.Recruitment_ReqID=ISLM.Recruitment_ReqID
+           LEFT JOIN tbl_Rec_Interview_CandidateScheduleRound CSR ON RR.Recruitment_ReqID =CSR.Recruitment_ReqID 
+		  -- LEFT JOIN tbl_Rec_InterviewShortListDetail ISLD ON ISLD.InterviewShortListMain_ID = ISLM.InterviewShortListMain_ID
+           left JOIN tbl_Rec_CandidateInfo CI              ON CI.Candidate_ID =CSR.Candidate_ID
+           left JOIN tbl_Rec_mst_InterviewStatus IES ON IES.InterviewStatus_ID = CSR.InterviewStatus_ID
+           left JOIN tbl_Rec_mst_InterviewFeedback IEF ON IEF.InterviewFeedback_ID = CSR.InterviewFeedback_ID
+		   LEFT JOIN tbl_Rec_mst_InterviewRound IR  ON IR.InterviewRound_ID = CSR.InterviewRound_ID
+           LEFT JOIN tbl_Employee_Mst EMP              ON EMP.Emp_Code=CSR.Emp_Code_Inter1
+           where CSR.CandidateScheduleRound_ID  IN(Select MAX(CandidateScheduleRound_ID) From tbl_Rec_Interview_CandidateScheduleRound group BY Candidate_ID))CT1 
+          ON CT1.Recruitment_ReqID=CT.Recruitment_ReqID AND CT0.Candidate_ID=CT1.Candidate_ID
+        LEFT JOIN 
+(Select JJD.Candidate_ID, RR.Recruitment_ReqID,SU.StatusUpdate AS  'HiringFeedback',SU.StatusUpdate_ID,JJD.JoiningDate
+from tbl_Rec_RecruitmentReq RR
+INNER JOIN tbl_Rec_Interview_jobJoiningDetail JJD ON RR.Recruitment_ReqID= JJD.Recruitment_ReqID
+INNER JOIN tbl_Rec_mst_StatusUpdate SU  ON JJD.StatusUpdate_ID=SU.StatusUpdate_ID
+where JJD.RecJobJoiningID IN (Select MAX(JJD.RecJobJoiningID) from tbl_Rec_Interview_jobJoiningDetail JJD group BY JJD.Candidate_ID))
+CT2 ON CT.Recruitment_ReqID=CT2.Recruitment_ReqID AND CT1.Candidate_ID =CT2.Candidate_ID 
+ where CT.Recruitment_ReqID=58
+ -- (CONVERT(date,CT.CREATEDON) BETWEEN CONVERT(DATE,@FromDate) AND CONVERT(DATE,@ToDate)) AND
+                     
+order BY CT.Agingasonfromdate  DESC

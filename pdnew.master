@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="pdnew.master.cs" Inherits="pdnew" %>
+
+<%--<%@ Register Src="~/control/topheader.ascx" TagName="header" TagPrefix="ucheader" %>--%>
+<%@ Register Src="~/control/script.ascx" TagName="js" TagPrefix="ucjs" %>
+<%@ Register Src="~/Themes/creative1.0/LayoutControls/megamenu.ascx" TagName="uxmegamenu"
+    TagPrefix="ucuxmegamenu" %>
+
+
+<%@ Register Src="~/Components/Common/pdnewglobal.ascx" TagName="pdnewglobal" TagPrefix="ucpdnewglobal" %>
+ 
+<!DOCTYPE html>
+
+<html itemscope itemtype="http://schema.org/Product" xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <%--<meta itemprop="name" content="<%# getProductTitle(Request.QueryString["p"]) %>" />
+    <meta itemprop="image" content="<%# getProductImg(Request.QueryString["p"]) %>" />
+    <meta property="og:image" content="<%# getProductImg(Request.QueryString["p"]) %>" />--%>
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="475" />
+    <meta property="og:image:height" content="475" />
+    <meta name="twitter:card" content="summary" />
+
+
+    <%--<meta name="twitter:image:src" content="<%# getProductImg(Request.QueryString["p"]) %>" />
+    <meta name="twitter:title" content="<%# getProductTitle(Request.QueryString["p"]) %>" />
+    <meta name="twitter:domain" content="Intranet.com" />
+    <meta itemprop="description" content="<%# getProductDesc(Request.QueryString["p"]) %>" />
+    <meta name="twitter:description" content="<%# getProductDesc(Request.QueryString["p"]) %>" />--%>
+    <asp:PlaceHolder runat="server" ID="PlaceHolder1">
+        <link rel="SHORTCUT ICON" href="~/images/Highbar.jpeg"
+            type="image/x-icon" />
+    </asp:PlaceHolder>
+    <title></title>
+   <%-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css' />--%>
+    <link href="<%=ReturnUrl("css") %>boilerplate.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>fontawesome/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>accountdropdown/accountdropdown.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>movie-detail/movie-detail.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>navigation/navi.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>navigation/mobile-navi-dd.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>scrollbar/scrollbar.css" rel="stylesheet" type="text/css" />
+
+    <%--   <link href="<%=ReturnUrl("css") %>header/header.css" rel="stylesheet" type="text/css"  />--%>
+    <link href="<%=ReturnUrl("css") %>includes/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>includes/headstyle.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>includes/footerstyle.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>includes/menu.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>search/search.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>comments/comments.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>animation/animate.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>carouselnew/carousel.css" rel="stylesheet" type="text/css" />
+    <link href="<%=ReturnUrl("css") %>RatingPopup/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="<%=ReturnUrl("css") %>footerstyle.css" />
+    <link href="<%=ReturnUrl("css") %>includes/layout.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="<%=ReturnUrl("css") %>jqwidgets/jqx.base.css" type="text/css" />
+
+
+    <style>
+        .flex-direction-nav .flex-next {
+            background: rgba(0, 0, 0, 0) url("../../images/next_arrow.png") repeat scroll 0 0;
+        }
+
+        .flex-direction-nav .flex-prev {
+            background: rgba(0, 0, 0, 0) url("../../images/prew_arrow.png") repeat scroll 0 0;
+        }
+    </style>
+    <asp:PlaceHolder runat="server" ID="metakeyword" />
+    <asp:PlaceHolder runat="server" ID="metadescription" />
+    <asp:PlaceHolder runat="server" ID="id1">
+        <link rel="SHORTCUT ICON" href="<%#ReturnUrl("sitepathmain")%>images/favicon.ico" type="image/x-icon" />
+    </asp:PlaceHolder>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnablePageMethods="true" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+        </ajaxToolkit:ToolkitScriptManager>
+        <div>
+            <div class="mainContainer clearfix">
+               <%-- <ucuxmegamenu:uxmegamenu ID="menu1" runat="server" />--%>
+                <%--<div class="sitelogodiv" style="display: none;"><a title="Intranet" runat="server" id="lnklogo"><span class="sitelogo"></span></a></div>--%>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+       <%-- SAGAR COMMENTED THIS FOR REMOVING FOOTER ON PAGE WHEN WE OPEN ONE POST OF PHOTO 12OCT2017 STARS HERE--%>
+      <%--  <div id="cms">
+            <asp:Literal ID="cms1" runat="server"></asp:Literal>
+        </div>--%>
+         <%-- SAGAR COMMENTED THIS FOR REMOVING FOOTER ON PAGE WHEN WE OPEN ONE POST OF PHOTO 12OCT2017 ENDS HERE--%>
+
+        <!-- js starts from here -->
+        <ucjs:js ID="cntrljs" runat="server" />
+<%--        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/explore/explore.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/comments/masonry.pkgd.min.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/comments/imagesloaded.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/comments/classie.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/comments/animonscroll.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/animation/animation.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/RatingPopup/jquery.leanModal.min.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/jqwidgets/jqxcore.js"></script>
+        <script type="text/javascript" src="<%#ReturnUrl("sitepath")%>js/jqwidgets/jqxrating.js"></script>
+   
+
+        <script>
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $('.header').addClass('sticky-show-navigation fixed-navigation');
+                } else {
+                    $('.header').removeClass('sticky-show-navigation fixed-navigation');
+                    $('.header').addClass('fixed-navigation-hidden sticky-show-navigation');
+                }
+            });
+        </script>
+
+        <script type="text/javascript">
+            new AnimOnScroll(document.getElementById('comment-grid'), {
+                minDuration: 0.4,
+                maxDuration: 0.7,
+                viewportFactor: 0.2
+            });
+        </script>
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                // Create jqxRating.
+                $("#jqxRating").jqxRating({ height: 35, value: document.getElementById("MainContent_pdnewglobal_m_uxPdLayout_ctl04_hdvalue2").value });
+                // bind to jqxRating 'change' event.
+                $("#jqxRating").bind('change', function (event) {
+                    document.getElementById("MainContent_pdnewglobal_m_uxPdLayout_ctl04_hdvalue2").value = event.value;
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(".popup_trigger").leanModal({ top: 0, overlay: 0.8, closeButton: ".modal_close" });
+        </script>--%>
+    
+    </form>
+</body>
+</html>

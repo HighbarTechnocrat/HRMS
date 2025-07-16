@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="update_photo" targetNamespace="http://tempuri.org/update_photo.xsd" xmlns:mstns="http://tempuri.org/update_photo.xsd" xmlns="http://tempuri.org/update_photo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="update_photo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="update_photo" msprop:Generator_DataSetName="update_photo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Update_Photo" msprop:Generator_RowClassName="Update_PhotoRow" msprop:Generator_RowEvHandlerName="Update_PhotoRowChangeEventHandler" msprop:Generator_RowDeletedName="Update_PhotoRowDeleted" msprop:Generator_RowDeletingName="Update_PhotoRowDeleting" msprop:Generator_RowEvArgName="Update_PhotoRowChangeEvent" msprop:Generator_TablePropName="Update_Photo" msprop:Generator_RowChangedName="Update_PhotoRowChanged" msprop:Generator_UserTableName="Update_Photo" msprop:Generator_RowChangingName="Update_PhotoRowChanging" msprop:Generator_TableClassName="Update_PhotoDataTable" msprop:Generator_TableVarName="tableUpdate_Photo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Emp_Code" msprop:Generator_UserColumnName="Emp_Code" msprop:Generator_ColumnPropNameInTable="Emp_CodeColumn" msprop:Generator_ColumnPropNameInRow="Emp_Code" msprop:Generator_ColumnVarNameInTable="columnEmp_Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Name" msprop:Generator_ColumnPropNameInRow="Emp_Name" msprop:Generator_ColumnPropNameInTable="Emp_NameColumn" msprop:Generator_ColumnVarNameInTable="columnEmp_Name" msprop:Generator_UserColumnName="Emp_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_UserColumnName="Department" type="xs:string" minOccurs="0" />
+              <xs:element name="Designation" msprop:Generator_ColumnPropNameInRow="Designation" msprop:Generator_ColumnPropNameInTable="DesignationColumn" msprop:Generator_ColumnVarNameInTable="columnDesignation" msprop:Generator_UserColumnName="Designation" type="xs:string" minOccurs="0" />
+              <xs:element name="Emp_Emailaddress" msprop:Generator_ColumnPropNameInRow="Emp_Emailaddress" msprop:Generator_ColumnPropNameInTable="Emp_EmailaddressColumn" msprop:Generator_ColumnVarNameInTable="columnEmp_Emailaddress" msprop:Generator_UserColumnName="Emp_Emailaddress" type="xs:string" minOccurs="0" />
+              <xs:element name="Pending_approved_status" msprop:Generator_ColumnPropNameInRow="Pending_approved_status" msprop:Generator_ColumnPropNameInTable="Pending_approved_statusColumn" msprop:Generator_ColumnVarNameInTable="columnPending_approved_status" msprop:Generator_UserColumnName="Pending_approved_status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

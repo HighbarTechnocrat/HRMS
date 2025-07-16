@@ -1,0 +1,48 @@
+.containerDiv {
+  border: 1px solid #a6acac;
+  width: 77%;
+}
+
+.rowDivHeader {
+  border: 1px solid #668db6;
+  background-color: #05568B;
+  color: white;
+  font-weight: bold;
+}
+
+.rowDiv {
+  background-color: #dae1ed;
+  border: 1px solid #a6acac;
+}
+
+.cellDivHeader {
+  border-right: 1px solid white;
+  display: table-cell;
+  width:12%;
+  padding: 1px;
+  text-align: center;
+}
+
+.cellDiv {
+  border-bottom: medium none;
+  border-right: 2px solid #a6acac;
+  display: table-cell;
+  padding-right: 4px;
+  text-align: center;
+  width: 260.6px;
+}
+
+.lastCell {
+  border-right: none;
+}
+/*
+.cellDiv.cellwpl {
+  width: 20%;
+}
+.cellDiv.cellwp2 {
+  width: 20%;
+}
+.cellDiv.cellwp3 {
+  width: 20%;
+}
+*/

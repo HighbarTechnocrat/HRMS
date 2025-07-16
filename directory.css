@@ -1,0 +1,295 @@
+﻿.directorysearch {margin-left: 30px;}
+.directoryreset{margin-left:5px;}
+.formerror {color:#ff0000;}
+.userdirectory-searchbtn {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-color: #338ec9;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: #338ec9;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #338ec9;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #338ec9;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: #338ec9 !important;
+  display: inline-block;
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 10px;
+  text-align: center;
+  width: auto;
+}
+
+.userdirectory-searchbtn:hover {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #338ec9;
+  background-image: none;
+  background-origin: padding-box;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-bottom-color: #338ec9;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: #338ec9;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #338ec9;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #338ec9;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: none;
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+    .directorysearch {
+  margin-left: 50px;
+}
+    .userdirectory-searchbtn{
+        margin-top:10px;
+    }
+	.restbtn2 {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid rgb(49, 139, 199);
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  left: -144px;
+  margin-left: 25px;
+  margin-top: 7px;
+  padding: 10px 14px;
+  position: relative;
+  text-align: center;
+  top: 5px;
+  width: auto;
+}
+#content-container select {
+  -moz-appearance: none !important;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: rgb(247, 247, 247) none repeat scroll 0 0;
+  border-color: -moz-use-text-color -moz-use-text-color rgb(158, 158, 158);
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 2px;
+  color: rgb(99, 99, 99);
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-left: 38px;
+  margin-top: 3px;
+  outline: 0 none;
+  padding: 10px 20px 10px 0;
+}
+.searchstardirectory1 .txtbox {
+  border-bottom: 2px solid rgb(158, 158, 158);
+  bottom: -4px !important;
+  display: inline-block;
+  margin: 0 !important;
+  padding: 12px !important;
+  position: relative;
+}
+
+.msgselect1 {
+  float: left;
+  margin-left: 10px !important;
+  width: 40% !important;
+}
+.searchstardirectory1 {
+  margin-left: 20px !important;
+  width: 40% !important;
+}
+.contactimage > a {
+  height: auto;
+  position: relative;
+  width: auto;
+}
+.contactimgprofile {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: 50px;
+  max-width: 150px;
+  padding: 0 !important;
+  position: relative;
+  top: 10px;
+  vertical-align: middle;
+  width: 50px !important;
+}
+.contactimg {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  height: 37px;
+  width: 50px !important;
+}
+.mail {
+  bottom: 20px;
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  margin-left: 57px;
+  margin-top: 20px;
+  max-width: 100%;
+  position: relative;
+  vertical-align: middle;
+  width: 80%;
+}
+.contactfieldsname5 {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  margin-left: 57px;
+  max-width: 100%;
+  position: relative;
+  top: -25px;
+  vertical-align: middle;
+  width: 80%;
+}
+.contactfieldsphone {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  margin-left: 54px;
+  max-width: 100%;
+  position: relative;
+  top: -31px;
+  vertical-align: middle;
+  width: 50%;
+}
+.follow {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  max-width: 100%;
+  padding-right: 10px !important;
+  position: relative;
+  top: -17px;
+  vertical-align: middle;
+  width: 15% !important;
+}
+.starred {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  max-width: 100%;
+  position: relative;
+  top: -33px;
+  vertical-align: middle;
+  width: 10%;
+}
+.contactfieldsname {
+  display: inline-block;
+  height: inherit;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.contactfieldsname {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 13px;
+  width: 100%;
+}
+.contactfileds2 {
+  color: rgb(0, 132, 198);
+  margin-left: 20px;
+  outline: medium none;
+}
+.contactfileds3 {
+  margin-left: 16px;
+}
+.restbtn2 {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid rgb(49, 139, 199);
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  left: -131px;
+  margin-left: 25px;
+  margin-top: 7px;
+  padding: 10px 14px;
+  position: relative;
+  text-align: center;
+  top: 5px;
+  width: auto;
+}
+.searchstardirectory1 .txtbox {
+  border-bottom: 2px solid rgb(158, 158, 158);
+  bottom: -4px !important;
+  display: inline-block;
+  font-size: 11px;
+  margin: 0 !important;
+  padding: 12px !important;
+  position: relative;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width:1024px) and (min-width:768px){
+	
+	.contactimgprofile {
+  color: rgb(63, 63, 63);
+  display: inline-block;
+  height: inherit;
+  max-width: 150px;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+.contactimage > a {
+  height: auto;
+  position: relative;
+  width: auto;
+}
+.contactfileds2 {
+  margin-left: 12px;
+}
+}

@@ -1,0 +1,564 @@
+﻿select#MainContent_ddlFromFor {
+    background: #dae1ed;
+}
+input[type=file] {
+    max-width: 85% !important;
+}
+/*#content-container select {
+    -moz-appearance: none !important;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e8e8e8;
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    color: hsl(0, 0%, 39%);
+    float: left;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-top: 3px;
+    outline: 0 none;
+    padding: 10px 20px 10px 0;
+    width: 63% !important;
+    height: 34px !important;
+}*/
+/*input, textarea {
+    border-color: -moz-use-text-color -moz-use-text-color hsl(0, 0%, 62%);
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin-top: 15px;
+    padding: 15px;
+}*/
+input, textarea {
+    /* background: #dae1ed; */
+    /*background: #e8e8e8;*/
+    border-color: #05568b !important;
+    border-radius: 3px 3px 0 0;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    box-shadow: none !important;
+    margin: 4px 15px 15px 0 !important;
+    padding: 6px 15px !important;
+}
+
+#MainContent_ListBox3 {
+    overflow: hidden;
+}
+#MainContent_lstIntermediate  {
+    overflow: hidden;
+}
+.edit-contact > ul > li {
+    display: inline-block;
+    width:36%;
+    margin-right: 1%;
+}
+.Approver {
+    width: 33% !important;
+}
+.inter {
+    width: 33% !important;
+    margin: 0 0 0 3% !important;
+}
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+}
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+    height: 18px;
+    left: 8px;
+    position: relative;
+    top: -29px;
+    vertical-align: sub;
+    width: 18px;
+}
+.edit-contact input {
+    padding-left: 30px !important;
+    width: 100%;
+}
+.fordate {
+    float: none;
+}
+/*.upload {
+    float: right;
+    margin: -8% 53% 0 0 !important;
+}*/
+.inter {
+    float: none;
+    margin: 0;
+}
+
+
+
+
+/*.Reason {
+    float: right;
+    margin: -7.7% 54% 0 0 !important;
+}*/
+.fa-caret-down {
+    margin: 0 3px -15px -37px;
+    font-size: 19px;
+}
+#MainContent_btnBack {
+    background-attachment: scroll;
+    background-clip: border-box;
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background-color: #3D1956;
+    color: #febf39 !important;
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 8px;
+}
+/*prajyot comment this*/
+#user-thumb {
+    display: none;
+}
+/*prajyot comment this*/
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea{width:79%;}
+
+#MainContent_lnk_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 13% 1% 1%;
+
+}
+
+#MainContent_lnk_Attendancereg {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+  padding: 1% 5.7% 1% 1%;
+
+}
+#MainContent_lnk_mng_leaverequest {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 7% 1% 1%;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1%  0.7% 1% 0.7% !important;
+
+}
+
+#MainContent_lnk_leaveinbox {
+/*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 8% 1% 1%;
+}
+#MainContent_lnk_attendanceinbox {
+/*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+  padding: 1% 1.5% 1% 1%;
+
+}
+#MainContent_lnk_leavereport {
+/*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 14.6% 1% 0.8%;
+
+}
+#MainContent_lnk_leaveParametersmst {
+ 
+     /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 6.7% 1% 1%;
+}
+.index {
+    margin: 0 0 2% 0;
+}
+.index ul li {
+    margin: 0 0 3% 0;
+}
+
+#content-container select {
+    display: block;
+    width: 100% !important;
+    margin: 0 0 30px 0;
+    border-color: #05568B;
+    border-radius: 3px;
+    padding: 7px 20px 5px 0 !important;
+}
+#MainContent_txtLeaveDays,#MainContent_txtReason {
+    
+}
+.leavegrid {
+    margin: 0 0 0 4% !important;
+}
+.aaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: -4.2% 30.2% 0 0 !important;
+    
+    float: right;
+}
+.upload {
+    width: 33.4% !important;
+}
+#MainContent_TextBox3 {
+    
+    border: 1px solid #000;
+}
+#MainContent_txtFromdate {
+    
+    border: 1px solid #000;
+}
+#MainContent_TextBox1 {
+   
+    border: 1px solid #000;
+}
+#MainContent_txtToDate {
+   
+    border: 1px solid #000;
+}
+#MainContent_TextBox2 {
+    
+    border: 1px solid #000;
+}
+#MainContent_uploadprofile {
+    
+    border: 1px solid #000;
+}
+#MainContent_txtLeaveDays {
+   
+    border: 1px solid #000;
+} 
+#MainContent_txtReason {
+   
+    border: 1px solid #000;
+} 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ .taskparentclasskkk {
+  width: 93.3% !important;
+}
+ .Approver {
+    width: 100% !important;
+}
+
+.aaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 0 20% 2% 0% !important;
+    flex: right !important:
+        
+}
+.edit-contact > ul > li {
+    display: block;
+    margin-right: 0%;
+    width: 100%;
+}
+.inter {
+    width: 100% !important;
+    margin: 0 0 0 0% !important;
+}
+#user-thumb {
+    display: none !important;
+}
+/*.fordate {
+    float: right;
+    margin: 0px !important;
+     padding: 4% 0 0  0 !important;
+}*/
+.date {
+    width: 100% !important;
+}
+/*.Reason {
+    float: right !important;
+    margin: 0 0 0 0 !important;
+     padding:  4% 0 4% 0 !important;
+}*/
+.Approver {
+    padding: 1% 0 0 0;
+}
+.leavedays {
+    padding: 1% 0 1% 0;
+}
+.date {
+    padding: 0 0 1% 0;
+}
+.Savebtndiv {
+    text-align: center;
+}
+
+
+input[type="file"] {
+    max-width: 83% !important;
+}
+#MainContent_lnk_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_Attendancereg {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_mng_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_leaveinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_attendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_leavereport {
+   /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+#MainContent_lnk_leaveParametersmst {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 3% 1%;
+    width: 100%;
+    margin: 0 2% 4% 0;
+}
+.upload {
+    width: 100% !important;
+}
+
+#MainContent_dgLeaveBalance {
+    width: 100% !important;
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)  {
+
+.taskparentclasskkk {
+    width: 32.6% !important;
+}
+
+.Approver {
+    width: 36.5% !important;
+}
+#MainContent_lnk_mng_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% !important;
+    width: 40% !important;
+    margin: 1% 0 0 0 !important;
+}
+#MainContent_lnk_attendanceinbox {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1% !important;
+    width: 40% !important;
+    margin: 1% 0 0 0 !important;
+    }
+#MainContent_lnk_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40% !important;
+    margin: 0 2% 0 0;
+}
+#MainContent_lnk_Attendancereg {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    margin: 0 2% 0 0;
+    padding: 1% 1%;
+    width: 40% !important;
+}
+#MainContent_lnk_mng_leaverequest {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40%;
+    margin: 0 2% 0 0;
+}
+#MainContent_lnk_leaveinbox {
+ /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40%;
+    margin:0 2% 0 0;
+}
+#MainContent_lnk_leavereport {
+/*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 1% 1%;
+    width: 40%;
+    margin:0 2% 0 0;
+}
+#MainContent_lnk_leaveParametersmst {
+ 
+     /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+     padding: 1% 1%;
+    width: 40%;
+    margin:0 2% 0 0;
+}
+
+.aaa {
+    /*by Highbartech on 24-06-2020
+        background: #febf39;*/
+    background: #3D1956;
+    color: #febf39 !important;
+    padding: 9px 7px;
+    margin: 27px 30% 13px 0 !important;
+    
+}
+.leavegrid a {
+    margin: -44px 30% 0 0 !important;
+}
+}
+ @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+/*.fordate {
+    float: right !important;
+    margin: -9.3% 54% 0 0 !important;
+}
+      .Reason {
+    float: right;
+    margin: -9.3% 55% 0 0 !important;
+    width: 159px !important;
+}*/
+.Approver {
+    width: 35% !important;
+}
+.taskparentclasskkk {
+    width: 29.6% !important;
+}
+ }
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  {
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 85% !important;
+}
+input[type="file"] {
+    max-width: 85% !important;
+}
+
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+.texticonselect {
+    cursor: pointer;
+    font-size: 16px;
+    height: 18px;
+    left: 10px;
+    position: relative;
+    top: -39px;
+    vertical-align: sub;
+    width: 18px;
+    float: left;
+}
+input[type="file"] {
+    max-width: 87% !important;
+}
+
+}
+
+@media only screen and (min-device-width : 600px) and (max-device-width : 960px) {
+/*.Reason {
+    float: right;
+    margin: -11.4% 56.4% 0 0 !important;
+    width: 117px !important;
+}*/
+}
+
+@media only screen and (min-device-width : 412px) and (max-device-width : 732px) {
+
+    input[type="text"], input[type="url"], input[type="email"], input[type="password"], textarea {
+    width: 87% !important;
+}
+}

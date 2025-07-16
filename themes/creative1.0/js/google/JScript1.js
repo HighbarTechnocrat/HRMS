@@ -1,0 +1,1 @@
+﻿$(document).ready(function () { $("[id$=btngmaillogout]").click(function (n) { n.preventDefault(), setInterval(function () { window.open("http://accounts.google.com/logout", "_blank") }, 5e3) }) });

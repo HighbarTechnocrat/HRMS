@@ -1,0 +1,32 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+ <asp:Login SkinId="LoginSkin" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333">
+            <TextBoxStyle Font-Size="0.8em" />
+            <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px"
+                Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
+            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+            <TitleTextStyle BackColor="#5D7B9D" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+        </asp:Login>
+      
+        <asp:DropDownList runat="server" class="listbox"></asp:DropDownList>
+        
+        <asp:Button  CssClass="button_form"   runat="server" />
+        
+      
+        
+        <asp:LinkButton CssClass="table_link" runat="server"></asp:LinkButton>
+     <asp:HyperLink runat="server" CssClass="table_link"></asp:HyperLink>
+        

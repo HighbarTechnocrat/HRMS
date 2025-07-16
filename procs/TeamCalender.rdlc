@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixCorner>
+          <TablixCornerRows>
+            <TablixCornerRow>
+              <TablixCornerCell>
+                <CellContents>
+                  <Textbox Name="Textbox3">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>Emp Name</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontSize>11pt</FontSize>
+                              <FontWeight>Bold</FontWeight>
+                              <Color>White</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Textbox3</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>#7292cc</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#4c68a2</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixCornerCell>
+            </TablixCornerRow>
+          </TablixCornerRows>
+        </TablixCorner>
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2.84396cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.70584cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="thedate1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=iif(Fields!Status_id.Value &lt;&gt; 0,Fields!Status_id.Value,"")</Value>
+                              <Style>
+                                <FontFamily>Tahoma</FontFamily>
+                                <Color>=iif(Fields!Status_id.Value="1","#3A7DCE",iif(Fields!Status_id.Value="2","#D17F7D",iif(Fields!Status_id.Value="3","#d7e4bc",iif(Fields!Status_id.Value="4","#A3C266",iif(Fields!Status_id.Value="5","#60497B",iif(Fields!Status_id.Value="8","#7030A0",iif(Fields!Status_id.Value="7","#00b050","")))))))</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>thedate1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#e5e5e5</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>=iif(Fields!Status_id.Value="1","#3A7DCE",iif(Fields!Status_id.Value="2","#D17F7D",iif(Fields!Status_id.Value="3","#d7e4bc",iif(Fields!Status_id.Value="4","#A3C266",iif(Fields!Status_id.Value="5","#60497B",iif(Fields!Status_id.Value="8","#7030A0",iif(Fields!Status_id.Value="7","#00b050","")))))))</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="thedate">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!thedate.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!thedate.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>0.86459cm</Size>
+                <CellContents>
+                  <Textbox Name="thedate">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Format(Fields!thedate.Value,"dd-MM-yyyy")</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontWeight>Bold</FontWeight>
+                              <Color>#465678</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>thedate</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>#c6daf8</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>=iif(WeekdayName(DatePart(DateInterval.Weekday,Fields!thedate.Value,FirstDayOfWeek.System,FirstWeekOfYear.System),true,0) = "Sun" or WeekdayName(DatePart(DateInterval.Weekday,Fields!thedate.Value,FirstDayOfWeek.System,FirstWeekOfYear.System),true,0) = "Sat","Red","Silver")</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <FixedData>true</FixedData>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Emp_Name">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Emp_Name.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!Emp_Name.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixHeader>
+                <Size>5.70146cm</Size>
+                <CellContents>
+                  <Textbox Name="Emp_Name">
+                    <CanGrow>true</CanGrow>
+                    <KeepTogether>true</KeepTogether>
+                    <Paragraphs>
+                      <Paragraph>
+                        <TextRuns>
+                          <TextRun>
+                            <Value>=Fields!Emp_Name.Value</Value>
+                            <Style>
+                              <FontFamily>Tahoma</FontFamily>
+                              <FontWeight>Bold</FontWeight>
+                              <Color>#465678</Color>
+                            </Style>
+                          </TextRun>
+                        </TextRuns>
+                        <Style />
+                      </Paragraph>
+                    </Paragraphs>
+                    <rd:DefaultName>Emp_Name</rd:DefaultName>
+                    <Style>
+                      <Border>
+                        <Color>#c6daf8</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <BackgroundColor>#9eb6e4</BackgroundColor>
+                      <PaddingLeft>2pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                  </Textbox>
+                </CellContents>
+              </TablixHeader>
+              <TablixMembers>
+                <TablixMember>
+                  <FixedData>true</FixedData>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <FixedColumnHeaders>true</FixedColumnHeaders>
+        <FixedRowHeaders>true</FixedRowHeaders>
+        <DataSetName>DataSet1</DataSetName>
+        <Height>1.57043cm</Height>
+        <Width>8.54542cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Image Name="Image7">
+        <Source>Embedded</Source>
+        <Value>TeamCalender_Legends</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>3.06599cm</Top>
+        <Left>0.3937cm</Left>
+        <Height>3.61667cm</Height>
+        <Width>4.51401cm</Width>
+        <ZIndex>1</ZIndex>
+        <ToolTip>Legends</ToolTip>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+    </ReportItems>
+    <Height>2.90995in</Height>
+    <Style />
+  </Body>
+  <Width>3.46317in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="hrm_rpt">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>8babd870-a85f-4147-aae7-9a8e72bcf4ec</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>hrm_rpt</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Emp_Code">
+          <DataField>Emp_Code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Emp_Name">
+          <DataField>Emp_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="thedate">
+          <DataField>thedate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="StatusName">
+          <DataField>StatusName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Status_id">
+          <DataField>Status_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>hrm_rpt</rd:DataSetName>
+        <rd:SchemaPath>D:\hccforms\App_Code\hrm_rpt.xsd</rd:SchemaPath>
+        <rd:TableName>GET_YEARLY_LEAVE_Teamwise_rpt</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>GET_YEARLY_LEAVE_Teamwise_rptTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="leaveRqstPending">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAFEAAAAYCAIAAAANuobFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA9SURBVFhH7c8BEYBAAMMwdOENi1gavI50lwnodT8vZVvNgJoNNRtqNtRsqNlQs6FmQ82Gmg01G07zf2vbBx63I23dKDZFAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="leaveRqstApproved">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAFAAAAAZCAIAAAApJD5eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABCSURBVFhH7c+xEQAwCMNAyN65zJiJoGEKoW/sVvnfjU3O7BoG0xlMZzCdwXQG0xlMZzCdwXQG0xlMZzBdVtXcDSIajlwE+3XLX8wAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="Correction">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAFYAAAAWCAYAAABaDmubAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABSSURBVFhH7dAxAYAwEMDAB3d1UR+IhwUJzXa3ZM+11/MOx91/OczYiLERYyPGRoyNGBsxNmJsxNiIsRFjI8ZGjI0YGzE2YmzE2IixEWMjxiZmPgEbAk+DSqtEAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="Holiday">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAFcAAAAXCAYAAAB+kNMAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABSSURBVGhD7dChAcAwDMCwbC/12l2bkb5gJhFzP/udHRLvLQFzQ+aGzA2ZGzI3ZG7I3JC5IXND5obMDZkbMjdkbsjckLkhc0PmhswNmRsyNzPzA2LWAvhMUIzMAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="Pending_leaves_team">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAGQAAAAYCAIAAACDYM+5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABPSURBVFhH7dBBEQAgDMAwJCENSTgdFug/vSjoOvvyyazArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKxgjT6beXS0ZoldSxJSAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="approveTravels">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAFkAAAAYCAYAAACRD1FmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABdSURBVGhD7dChAcMwEMDAdxZsN202dAqygoXukLDW3N89HLM/v7ne5iCTAyYHTA6YHDA5YHLA5IDJAZMDJgdMDpgcMDlgcsDkgMkBkwMmB0wOmBwwObD239scMfMAZDgIJ9H+qjQAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="TeamCalender_Legends">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0527ba5f-037c-47c8-8748-3bf7ae30a555</rd:ReportID>
+</Report>

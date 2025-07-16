@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<%@ Register Src="~/control/script.ascx" TagName="js" TagPrefix="ucjs2" %>
+<%@ Register Src="~/Components/Common/psjscall.ascx" TagName="js" TagPrefix="ucjs" %>
+<%@ Register Src="~/Themes/creative1.0/LayoutControls/megamenu.ascx" TagName="uxmegamenu"
+    TagPrefix="ucuxmegamenu" %>
+
+<%@ Register Src="~/Themes/creative1.0/LayoutControls/profileheader.ascx" TagName="profileheader" TagPrefix="ucheader" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head  id="Head1" runat="server">
+
+
+
+
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <title></title>
+
+   <asp:PlaceHolder runat="server" ID="metakeyword"/>
+    <asp:PlaceHolder runat="server" ID="metadescription"/>
+     <asp:PlaceHolder runat="server" id="id1">
+      <link rel="SHORTCUT ICON" href="~/themes/creative1.0/images/favicon.ico" type="image/x-icon" />
+     </asp:PlaceHolder>
+
+   
+    <script src="~/themes/creative1.0/js/jsframework.js" type="text/javascript"></script>
+
+       <link href="<%=ReturnUrl("css") %>psstyle.css" rel="stylesheet" type="text/css" />   
+     <link href="<%=ReturnUrl("css") %>boilerplate.css" rel="stylesheet" type="text/css"  />
+    <link href="<%=ReturnUrl("css") %>fontawesome/font-awesome.css" rel="stylesheet" type="text/css"  />
+    <link href="<%=ReturnUrl("css") %>layout.css" rel="stylesheet" type="text/css"  />
+     <link href="<%=ReturnUrl("css") %>includes/headstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="<%=ReturnUrl("css") %>includes/footerstyle.css" rel="stylesheet" type="text/css"  />
+    <link href="<%=ReturnUrl("css") %>includes/menu.css" rel="stylesheet" type="text/css"/>
+    <link href="<%=ReturnUrl("css") %>includes/inline.css" rel="stylesheet" type="text/css"/>
+    
+      <link href="<%=ReturnUrl("css") %>includes/layout.css" rel="stylesheet" type="text/css" />
+    
+
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableCdn="false" CombineScripts="true" ScriptMode="Release">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div class="mainContainer clearfix">
+                <ucuxmegamenu:uxmegamenu ID="menu1" runat="server" />
+       <ucheader:profileheader ID="profilehead" runat="server" />
+       <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+     
+    </div>
+
+    <div id="cms">
+        <asp:Literal ID="cms1" runat="server"></asp:Literal>
+    </div>
+        
+     <ucjs2:js ID="cntrljs" runat="server" />
+
+    </form>
+</body>
+</html>
+<style type="text/css" media="print">
+    body { visibility: hidden; display: none }
+</style>

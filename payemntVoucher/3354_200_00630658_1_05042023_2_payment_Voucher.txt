@@ -1,0 +1,112 @@
+ IF(@stype='get_POWO_Approval_Report') 
+        Begin
+
+	         set @POWOID=iif(@POWOID='',NULL,@POWOID)
+             set @VendorID=iif(@VendorID='',NULL,@VendorID) 
+		     set @Costcenter=iif(@Costcenter='',NULL,@Costcenter)
+
+		   Select @POWOmvalue=STRING_AGG(Convert(nvarchar(max),POID),',') from (Select Distinct p.POID  from VSCB_tbl_Trn_POWODetail p
+           INNER JOIN VSCB_tbl_Mst_Department d on d.Dept_ID=p.Prj_Dept_id
+           where (p.Emp_Code=@empcode)   AND ( @VendorID IS NULL OR p.VendorId=@VendorID) AND (@POWOID IS NULL OR p.POID=@POWOID) 
+			     AND (@Costcenter IS NULL OR p.Prj_Dept_id=@Costcenter)
+           UNION
+           Select Distinct PD.POID from VSCB_tbl_Trn_POWODetail PD
+           INNER JOIN  VSCB_tbl_Trn_POWODetail_ApprovalStatus ASS ON ASS.POID=PD.POID
+           where   (ASS.Approval_Emp_Code=@empcode) AND  (@VendorID IS NULL OR PD.VendorId=@VendorID) AND ( @POWOID IS NULL OR PD.POID=@POWOID) 
+		           AND (@Costcenter IS NULL OR PD.Prj_Dept_id=@Costcenter))TT
+            
+		 if(@empcode = '99999999')
+			 begin
+
+			Select @POWOmvalue_A=STRING_AGG(Convert(nvarchar(max),POID),',') from 
+            (Select Distinct POID  from VSCB_tbl_Trn_POWODetail  where 
+		    (@VendorID IS NULL OR VendorId=@VendorID) AND ( @POWOID IS NULL OR POID=@POWOID) AND (@Costcenter IS NULL OR Prj_Dept_id=@Costcenter))TTT  
+
+		    Set @POWOmvalue =  @POWOmvalue_A
+
+		   end
+
+        ;with CTE_tbl as
+         (SELECT Distinct '' as Approval_Emp_Code,
+          TPI.PONumber,TPI.POID,CONVERT(varchar(10),TPI.PODate,105) as PODate,FORMAT(TPI.POWOAmt, 'n', MSTC.CurName) as POWOAmount,
+		  CONVERT(varchar(10),TPI.Created_On,105) as POuploaddate,MSt.Emp_Name as POWOCreatedBy,TPI.Prj_Dept_id,
+		  MSTD.Tallycode as 'CostCenter','' as ResourceName,TPI.VendorID, Ven.Name as VendorName,'' as Appr_ID
+
+          FROM VSCB_tbl_Trn_POWODetail TPI
+          INNER JOIN VSCB_tbl_Mst_Vendor Ven ON Ven.VendorID=TPI.VendorId
+          INNER JOIN tbl_Employee_Mst MSt ON MSt.Emp_Code =TPI.Emp_Code
+	      INNER JOIN VSCB_tbl_Mst_Currency MSTC ON MSTC.CurID=TPI.CurID
+	      INNER JOIN VSCB_tbl_Mst_Department MSTD ON TPI.Prj_Dept_id=MSTD.Dept_ID
+          where   TPI.POID in (select * from STRING_SPLIT(@POWOmvalue, ','))
+          )
+       
+	     select  POID,PONumber,poDate,POWOAmount,POuploaddate,POWOCreatedBy,CostCenter,VendorID,VendorName,ResourceName,
+	          Max(case when APPR_ID=1 then '' end )as Approver1,Max(case when APPR_ID=7 then '' end )as Approver2,
+              Max(case when APPR_ID=11 then '' end )as Approver3,Max(case when APPR_ID=13 then '' end )as Approver4,
+              Max(case when APPR_ID=3 then  '' end )as Approver5,Prj_Dept_id
+        FROM CTE_tbl
+		where (@VendorID IS NULL OR VendorId=@VendorID) AND (@POWOID IS NULL OR POID=@POWOID) AND (@Costcenter IS NULL OR Prj_Dept_id=@Costcenter)
+        group By POID,Prj_Dept_id,POWOCreatedBy,ResourceName,CostCenter,VendorID,VendorName,PONumber,poDate,POWOAmount,POuploaddate
+		order by POID DESC
+
+
+
+		 Select P.POID,VendorId,P.Prj_Dept_id,Appr_ID,apst.Emp_Code,P.Emp_Code as POWOEmpCode ,
+		case when exists(Select * from VSCB_tbl_Trn_POWODetail_ApprovalStatus t where t.POID=apst.POID and t.Approval_Emp_Code=apst.Emp_Code and t.Appr_ID=apst.Appr_ID) then
+		 ( Select top 1 e.Emp_Name + ' (' + APS.Action  + '-' + 
+		 Case APS.Action when 'Pending' then CONVERT(varchar,APS.Rec_Date,105) When 'Correction' then CONVERT(varchar,APS.Rel_Date,105) 
+		 When 'Cancelled' then CONVERT(varchar,APS.Rel_Date,105)
+		  When 'Reject' then CONVERT(varchar,APS.Rel_Date,105)
+		   When 'Approved' then CONVERT(varchar,APS.Rel_Date,105)
+		 ELSE CONVERT(varchar,APS.Rec_Date,105) END  + ')' 
+		 from VSCB_tbl_Trn_POWODetail_ApprovalStatus APS 
+		 inner join  tbl_Employee_Mst e on e.Emp_Code=aps.Approval_Emp_Code
+		 where APS.POID=apst.POID and APS.Approval_Emp_Code =apst.Emp_Code and aps.Appr_ID=apst.Appr_ID
+		 )
+		 else
+		  (Select e.Emp_Name from tbl_Employee_Mst e where e.Emp_Code=apst.Emp_Code) 
+		 end as Approval_Emp_Code
+		from ( 
+		SELECT INS.POID,INS.Appr_ID,MSt1.Emp_Code 
+		FROM VSCB_tbl_Trn_POWODetail_ApprovalStatus INS
+		INNER JOIN tbl_Employee_Mst MSt1 ON MSt1.Emp_Code =INS.Approval_Emp_Code 
+		INNER JOIN VSCB_tbl_Trn_POWODetail P ON P.POID=INS.POID
+		where  P.appr_StatusId in(1,5,2,3,4) 
+		and p.POID in (select * from STRING_SPLIT(@POWOmvalue, ',')) 
+		 union
+		SELECT P.POID,AMM.Appr_ID,MSt1.Emp_Code  
+		FROM VSCB_tbl_Trn_POWODetail P
+		INNER JOIN VSCB_tbl_Mst_Department VSCBD ON VSCBD.Dept_ID=p.Prj_Dept_id
+		INNER JOIN VSCB_tbl_Mst_PO_WO_ApprovalMatrix AMM ON AMM.cond_id=P.cond_id 
+		INNER JOIN tbl_Employee_Mst MSt1 ON MSt1.Emp_Code =AMM.APPR_Emp_Code 
+		where p.POID in (select * from STRING_SPLIT(@POWOmvalue, ','))
+		and p.Prj_Dept_id not in ( Select d.Dept_ID from VSCB_tbl_Mst_Department d inner join VSCB_tbl_Mst_PO_WO_ApprovalMatrix_PRM_DH prm on prm.Tallycode=d.Tallycode and prm.PoTypeId=p.POTypeID)
+		 and  P.appr_StatusId not in (2) 
+		union
+		SELECT P.POID, 7 as Appr_ID ,(Select top 1 DH as emp_code
+		from tbl_hmst_company_Location l where l.TallyCode=VSCBD.Tallycode and l.isactive='A') as Emp_Code
+		FROM VSCB_tbl_Trn_POWODetail P
+		INNER JOIN VSCB_tbl_Mst_Department VSCBD ON VSCBD.Dept_ID=p.Prj_Dept_id  
+		where  p.POID in (select * from STRING_SPLIT(@POWOmvalue, ','))  and VSCBD.IsDept=0
+		 and p.Prj_Dept_id not in ( Select d.Dept_ID from VSCB_tbl_Mst_Department d inner join VSCB_tbl_Mst_PO_WO_ApprovalMatrix_PRM_DH prm on prm.Tallycode=d.Tallycode and prm.PoTypeId=p.POTypeID)
+		  and  P.appr_StatusId not in (2) 
+		union 
+		   SELECT P.POID,om.APPR_ID ,om.APPR_Emp_Code as Emp_Code
+		FROM VSCB_tbl_Trn_POWODetail P
+		INNER JOIN VSCB_tbl_Mst_Department VSCBD ON VSCBD.Dept_ID=p.Prj_Dept_id  
+		inner join VSCB_tbl_Mst_PO_WO_ApprovalMatrix_PRM_DH om on om.Tallycode=VSCBD.Tallycode and om.PoTypeId=p.POTypeID
+		where p.POID in ( select * from STRING_SPLIT(@POWOmvalue, ',')) and VSCBD.IsDept=0
+		and p.Prj_Dept_id   in ( Select d.Dept_ID from VSCB_tbl_Mst_Department d inner join VSCB_tbl_Mst_PO_WO_ApprovalMatrix_PRM_DH prm on prm.Tallycode=d.Tallycode and prm.PoTypeId=p.POTypeID)
+		  and  P.appr_StatusId not in (2) 
+		) apst 
+		 inner join tbl_Employee_Mst e on e.Emp_Code=apst.Emp_Code
+		 inner join VSCB_tbl_Trn_POWODetail p on p.POID=apst.POID 
+		where (@VendorID IS NULL OR VendorId=@VendorID) 
+		AND (@POWOID IS NULL OR p.POID=@POWOID) AND (@Costcenter IS NULL OR Prj_Dept_id=@Costcenter)   
+		  
+		 
+		order by apst.POID,apst.Appr_ID ASC 
+       
+ 
+  
+        END 

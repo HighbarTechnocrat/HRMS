@@ -1,0 +1,192 @@
+﻿body {
+}
+.categoryheading-home {
+  color: #646464;
+  float: left;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 30px 20px 0;
+  padding: 0 0 5px;
+  text-align: left;
+  text-transform: capitalize;
+  width: 98%;
+}.carouselproitem {
+  border: 1px solid #ccc;
+  border-radius: 0px;/*wasim change border radius 5px  to 0 0 10 oct17*/
+  float: left;
+  margin: 0 auto 0 20px;
+  min-height: 300px;
+  overflow: hidden;
+  width: 225px;
+}.list_carousel {
+  float: left;
+  margin: 30px 0;
+  width: 100%;
+}
+ .cancelbtndiv {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 4px;
+  margin-top: 0;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5px;
+}
+ .cancelbtndiv i {
+  margin-right: 5px;
+  margin-top: 3px;
+  padding-right: 5px;
+  font-size:16px !important;
+}
+ .submitbtnupdate1 {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: hsl(204, 60%, 49%);
+  border-bottom-color: -moz-use-text-color;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-style: none;
+  border-bottom-width: 0;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: -moz-use-text-color;
+  border-left-style: none;
+  border-left-width: 0;
+  border-right-color: -moz-use-text-color;
+  border-right-style: none;
+  border-right-width: 0;
+  border-top-color: -moz-use-text-color;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-style: none;
+  border-top-width: 0;
+  color: hsl(0, 0%, 100%) !important;
+  cursor: pointer;
+  float: none;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-size:16px !important;
+}
+.mainpostwallcat1 {
+  left: 0 !important;
+  position: relative !important;
+  width: 100% !important;
+}    
+.notifications-photo {
+  float: left;
+  margin-left: 10px;
+  width: 50px;
+}
+.notifications-photo img {
+  border: medium none;
+  border-radius: 0%;/*wasim change border radius 50% to 0 0 10 oct17*/
+  height: 40px;
+  width: 40px;
+}
+.comments-summery2 {
+  display: inline-block;
+  margin: 0 5%;
+  padding: 0px 0;
+  width: 90%;
+}
+  .commentsbyuser1 {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  border:none;
+  width: 100%;
+}  
+.notifications-read {
+  float: right;
+  font-size: 18px;
+  margin: 0 20px 0 0;
+  width: 4% !important;
+}
+    .notifications-detail1 {
+  border-bottom: 1px solid #eaeaea;
+  float: left;
+  padding: 2% 0;
+  width: 100%;
+}
+.notification-date1 {
+  color: #333;
+  float: left;
+  font-size: 12px;
+  font-weight: 300;
+  left: 0;
+  margin: 0;
+  width: 85%;
+  padding-top:2px;
+  padding-left:5px;
+}
+
+.notificationsdiv {
+  float: left;
+  margin: 0 0 0 10px;
+  width: 70%;
+}
+
+.notifications-heading1 {
+  color: #333;
+  float: left;
+  font-size: 12px;
+  margin: 0 0 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.notifications-heading1 a > span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/*.notifications-heading1 a :hover {
+  color: #f28820;
+}*/
+.like-o-thumbs-up {
+  color: #333;
+  display: inline-block;
+  width: auto;
+  float:left;
+}
+
+@media only screen and (max-width:1000px) and (min-width:240px){
+.commentsbyuser1 {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.grid-pager {
+  display: inline-block;
+  margin: 20px 0 10px;
+  width: 100%;
+}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	
+	.notifications-read {
+  float: right;
+  font-size: 18px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: -18px;
+  width: 4% !important;
+}
+}

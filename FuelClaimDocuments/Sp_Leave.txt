@@ -1,0 +1,37 @@
+create procedure sp_SaveLeave(
+@Emp_Code	[varchar](8),
+
+@Appl_Type	varchar	(10),
+@Leave_Type	Varchar	(30),
+@LeaveConditionTypeid [int], 
+@Leave_FromDate	datetime,	
+@Leave_ToDate	datetime,	
+@Leave_For	varchar (25),
+@Leave_To	varchar	(25),
+@LeaveDays	int,
+@Reason	varchar(100),
+@UploadFile	varchar	(100),
+@Status_id int
+As
+Begin
+insert into tblLeaveDetails  values (@Emp_Code,
+                                     @Appl_Type,@Leave_Type,@Leave_FromDate,@Leave_ToDate,
+				     @Leave_For,@Leave_To,@LeaveDays,@Reason,
+                                     @UploadFile,@Status_id)
+
+End
+
+
+	[Emp_Code] [varchar](8) NULL,
+	[Req_id] [numeric](18, 0) IDENTITY(1,1) NOT NULL,
+	[Appl_Type] [int] NULL,
+	[Leave_Type] [int] NULL,
+	[LeaveConditionTypeid] [int] NULL,
+	[Leave_FromDate] [datetime] NULL,
+	[Leave_ToDate] [datetime] NULL,
+	[For_From] [varchar](25) NULL,
+	[For_To] [varchar](25) NULL,
+	[LeaveDays] [int] NULL,
+	[Reason] [varchar](100) NULL,
+	[UploadFile] [varchar](100) NULL,
+	[Status_id] [int] NULL

@@ -1,0 +1,147 @@
+﻿
+#MainContent_ModalPopupExtenderLogin_foregroundElement,#MainContent_ModalPopupExtenderDG_foregroundElement {
+    position: fixed !important;
+    z-index: 10001 !important;
+    left: 13% !important;
+    top: 10% !important;
+    width: 25% !important;
+}
+
+.modalBackground {
+    background-color: Black;
+    filter: alpha(opacity=90);
+    opacity: 0.8;
+}
+
+.modalPopup {
+    background-color: #FFFFFF;
+    /*border-width: 3px;
+    border-style: solid !important;
+    border-color: black !important;*/
+    border: 1px solid #000 !important;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    width: 300% !important;
+    /*height: 330px !important;*/
+    height: auto !important;
+}
+.Req_Requi_Cmt {
+    width: 90% !important;
+}
+.Req_Requi_Esse {
+    width: 40% !important;
+}
+.Req_Job_Desc > div {
+    width: 302% !important;
+    height: 350PX !important
+}
+.Req_Job_Desc
+div.jHtmlArea iframe, div.jHtmlArea textarea {
+    border: none;
+    width: 248% !important;
+   
+}
+.Req_Job_Desc > div div > iframe {
+    height: 320px !important;
+}
+.Req_Savebtndiv {
+    padding-left: 14% !important;
+}
+.Req_Position {
+    padding-bottom: 15px !important;
+}
+  .Req_Position select {
+   width: 98% !important;
+}
+.Req_Salary input {
+    width: 33% !important;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    margin-top: 5px !important;
+    margin-right: 5px !important;
+}
+
+.TLQuestio  {
+    padding: 10px 85px 0px 85px;
+}
+.Quest_Savebtndiv {
+    text-align: center;
+    margin: 3% 0 0 -27% !important;
+}
+.JD_Savebtndiv {
+    text-align: center;
+    margin: 0% 0 0 -16% !important;
+}
+Div.jHtmlArea iframe, div.jHtmlArea textarea {
+    border: none;
+    width: 258% !important;
+}
+#MainContent_ModalPopupExtenderIRSheet_foregroundElement, #MainContent_ModalPopupExtenderIRSheet_foregroundElement {
+	position: fixed !important;
+	z-index: 10001 !important;	
+	top: 10% !important;
+	width: 90% !important;
+	
+}
+
+.IRmodalPopup {
+	background-color: #FFFFFF;
+	border: 1px solid #000 !important;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	height: 250% !important;
+}
+.IRSheetBtn {
+	text-align: right;
+	margin-right: 30px;
+
+}
+#MainContent_lnkuplodedfile,#MainContent_Lnk_Questionnaire {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+/*--Generate Offer Latter changes 17-08-22---*/
+#MainContent_btn_Generate_Offer, #MainContent_btn_Offer_Back, #MainContent_lnk_Offer_Submit,
+#MainContent_lnk_Offer_Cancle, #MainContent_btn_Offer_Back4, #MainContent_Linkbtn_CandidateShortlisting {
+	background: #3D1956;
+	color: #febf39 !important;
+	padding: 0.7% 1.4%;
+}
+
+#MainContent_ModalPopupExtenderGenerateOffer_foregroundElement,
+#MainContent_ModalPopupExtenderDisplayOffer_foregroundElement {
+	position: fixed !important;
+	z-index: 10001 !important;
+	top: 10% !important;
+	width: 73% !important;
+}
+.TLOffer1 {
+	padding: 10px 85px 0px 85px;
+	background-color: White;
+	border: 2px solid Navy;
+	width: 100%;
+	border-collapse: collapse;
+}
+.TLOffer1 tbody tr td {
+	padding: 5px 0px 5px 20px;
+}
+	.TLOffer {
+	padding: 10px 85px 0px 85px;
+	background-color: White;
+	border: 2px solid Navy;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+	.TLOffer tbody tr td {
+		border: 1px solid Navy;
+		width: 100px;
+		overflow: hidden;
+	}
+.Offermargin {
+	margin: 5px 0px 5px 0 !important
+}

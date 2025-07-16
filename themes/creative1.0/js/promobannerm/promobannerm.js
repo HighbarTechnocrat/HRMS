@@ -1,0 +1,1 @@
+function DropDown(o) { this.dd = o, this.initEvents() } DropDown.prototype = { initEvents: function () { var o = this; o.dd.on("click", function (o) { $(this).toggleClass("active"), o.stopPropagation() }) } }, $(function () { new DropDown($("#promodd")); $(document).click(function () { $(".promodropdownm").removeClass("active") }) });
