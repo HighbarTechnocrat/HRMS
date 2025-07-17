@@ -3,11 +3,6 @@
 <%@ Register Assembly="eWorld.UI, Version=2.0.6.2393, Culture=neutral, PublicKeyToken=24d65337282035f2"
     Namespace="eWorld.UI" TagPrefix="ew" %>
 
-
-
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="Server">
 
     <link rel="stylesheet" href="<%=ReturnUrl("css") %>highbar/leave_css.css" type="text/css" media="all" />
