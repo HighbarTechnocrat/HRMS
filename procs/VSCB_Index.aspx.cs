@@ -16,10 +16,8 @@ public partial class procs_VSCB_Index : System.Web.UI.Page
 	LeaveBalance bl = new LeaveBalance();
 	SP_Methods spm = new SP_Methods();
 	Leave_Request_Parameters lpm = new Leave_Request_Parameters();
-
-
-
-	protected void lnkhome_Click(object sender, EventArgs e)
+    
+    protected void lnkhome_Click(object sender, EventArgs e)
 	{
 		Response.Redirect(ReturnUrl("sitepathmain") + "default");
 	}
