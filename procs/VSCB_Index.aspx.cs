@@ -17,7 +17,7 @@ public partial class procs_VSCB_Index : System.Web.UI.Page
 	SP_Methods spm = new SP_Methods();
 	Leave_Request_Parameters lpm = new Leave_Request_Parameters();
     
-    //Comment 5
+    //Comment 6
     protected void lnkhome_Click(object sender, EventArgs e)
 	{
 		Response.Redirect(ReturnUrl("sitepathmain") + "default");
